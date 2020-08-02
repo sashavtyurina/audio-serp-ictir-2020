@@ -1,0 +1,445 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html>
+<!-- This Source Code Form is subject to the terms of the Mozilla Public
+   - License, v. 2.0. If a copy of the MPL was not distributed with this
+   - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" lang="en-US">
+  <head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <meta http-equiv="Content-Security-Policy" content="default-src chrome:" />
+    <title>Warning: Potential Security Risk Ahead</title>
+    <link rel="stylesheet" href="chrome://browser/skin/aboutNetError.css" type="text/css" media="all" />
+    <!-- If the location of the favicon is changed here, the FAVICON_ERRORPAGE_URL symbol in
+         toolkit/components/places/src/nsFaviconService.h should be updated. -->
+    <link rel="icon" id="favicon" href="chrome://global/skin/icons/warning.svg" />
+    <link rel="localization" href="browser/aboutCertError.ftl" />
+    <link rel="localization" href="branding/brand.ftl" />
+  </head>
+
+  <body dir="ltr" class="certerror caution" code="SEC_ERROR_EXPIRED_CERTIFICATE">
+    <!-- ERROR ITEM CONTAINER (removed during loading to avoid bug 39098) -->
+    <div id="errorContainer">
+      <div id="errorPageTitlesContainer">
+        <span id="ept_nssBadCert">Warning: Potential Security Risk Ahead</span>
+        <span id="ept_nssBadCert_sts">Did Not Connect: Potential Security Issue</span>
+        <span id="ept_captivePortal">Log in to network</span>
+        <span id="ept_dnsNotFound">Server Not Found</span>
+        <span id="ept_malformedURI">Invalid URL</span>
+        <span id="ept_blockedByPolicy">Blocked Page</span>
+      </div>
+      <div id="errorTitlesContainer">
+        <h1 id="et_generic">Oops.</h1>
+        <h1 id="et_captivePortal">Log in to network</h1>
+        <h1 id="et_dnsNotFound">Hmm. We’re having trouble finding that site.</h1>
+        <h1 id="et_fileNotFound">File not found</h1>
+        <h1 id="et_fileAccessDenied">Access to the file was denied</h1>
+        <h1 id="et_malformedURI">Hmm. That address doesn’t look right.</h1>
+        <h1 id="et_unknownProtocolFound">The address wasn’t understood</h1>
+        <h1 id="et_connectionFailure">Unable to connect</h1>
+        <h1 id="et_netTimeout">The connection has timed out</h1>
+        <h1 id="et_redirectLoop">The page isn’t redirecting properly</h1>
+        <h1 id="et_unknownSocketType">Unexpected response from server</h1>
+        <h1 id="et_netReset">The connection was reset</h1>
+        <h1 id="et_notCached">Document Expired</h1>
+        <h1 id="et_netOffline">Offline mode</h1>
+        <h1 id="et_netInterrupt">The connection was interrupted</h1>
+        <h1 id="et_deniedPortAccess">This address is restricted</h1>
+        <h1 id="et_proxyResolveFailure">Unable to find the proxy server</h1>
+        <h1 id="et_proxyConnectFailure">The proxy server is refusing connections</h1>
+        <h1 id="et_contentEncodingError">Content Encoding Error</h1>
+        <h1 id="et_unsafeContentType">Unsafe File Type</h1>
+        <h1 id="et_nssFailure2">Secure Connection Failed</h1>
+        <h1 id="et_nssBadCert">Warning: Potential Security Risk Ahead</h1>
+        <h1 id="et_nssBadCert_sts">Did Not Connect: Potential Security Issue</h1>
+        <h1 id="et_cspBlocked">Blocked by Content Security Policy</h1>
+        <h1 id="et_remoteXUL">Remote XUL</h1>
+        <h1 id="et_corruptedContentErrorv2">Corrupted Content Error</h1>
+        <h1 id="et_sslv3Used">Unable to Connect Securely</h1>
+        <h1 id="et_inadequateSecurityError">Your connection is not secure</h1>
+        <h1 id="et_blockedByPolicy">Blocked Page</h1>
+        <h1 id="et_mitm">Software is Preventing Firefox From Safely Connecting to This Site</h1>
+        <h1 id="et_clockSkewError">Your Computer Clock is Wrong</h1>
+        <h1 id="et_networkProtocolError">Network Protocol Error</h1>
+      </div>
+      <div id="errorDescriptionsContainer">
+        <div id="ed_generic">
+<p>Firefox can’t load this page for some reason.</p>
+</div>
+        <div id="ed_captivePortal">
+<p>You must log in to this network before you can access the Internet.</p>
+</div>
+        <div id="ed_dnsNotFound">
+<strong>If that address is correct, here are three other things you can try:</strong>
+<ul>
+  <li>Try again later.</li>
+  <li>Check your network connection.</li>
+  <li>If you are connected but behind a firewall, check that Firefox has permission to access the Web.</li>
+</ul>
+</div>
+        <div id="ed_fileNotFound">
+<ul>
+  <li>Check the file name for capitalization or other typing errors.</li>
+  <li>Check to see if the file was moved, renamed or deleted.</li>
+</ul>
+</div>
+        <div id="ed_fileAccessDenied">
+<ul>
+  <li>It may have been removed, moved, or file permissions may be preventing access.</li>
+</ul>
+</div>
+        <div id="ed_malformedURI"></div>
+        <div id="ed_unknownProtocolFound">
+<ul>
+  <li>You might need to install other software to open this address.</li>
+</ul>
+</div>
+        <div id="ed_connectionFailure">
+<ul>
+  <li>The site could be temporarily unavailable or too busy. Try again in a few
+    moments.</li>
+  <li>If you are unable to load any pages, check your computer’s network
+    connection.</li>
+  <li>If your computer or network is protected by a firewall or proxy, make sure
+    that Firefox is permitted to access the Web.</li>
+</ul>
+</div>
+        <div id="ed_netTimeout">
+<ul>
+  <li>The site could be temporarily unavailable or too busy. Try again in a few
+    moments.</li>
+  <li>If you are unable to load any pages, check your computer’s network
+    connection.</li>
+  <li>If your computer or network is protected by a firewall or proxy, make sure
+    that Firefox is permitted to access the Web.</li>
+</ul>
+</div>
+        <div id="ed_redirectLoop">
+<ul>
+  <li>This problem can sometimes be caused by disabling or refusing to accept
+    cookies.</li>
+</ul>
+</div>
+        <div id="ed_unknownSocketType">
+<ul>
+  <li>Check to make sure your system has the Personal Security Manager
+    installed.</li>
+  <li>This might be due to a non-standard configuration on the server.</li>
+</ul>
+</div>
+        <div id="ed_netReset">
+<ul>
+  <li>The site could be temporarily unavailable or too busy. Try again in a few
+    moments.</li>
+  <li>If you are unable to load any pages, check your computer’s network
+    connection.</li>
+  <li>If your computer or network is protected by a firewall or proxy, make sure
+    that Firefox is permitted to access the Web.</li>
+</ul>
+</div>
+        <div id="ed_notCached"><p>The requested document is not available in Firefox’s cache.</p><ul><li>As a security precaution, Firefox does not automatically re-request sensitive documents.</li><li>Click Try Again to re-request the document from the website.</li></ul></div>
+        <div id="ed_netOffline">
+<ul>
+  <li>Press "Try Again" to switch to online mode and reload the page.</li>
+</ul>
+</div>
+        <div id="ed_netInterrupt">
+<ul>
+  <li>The site could be temporarily unavailable or too busy. Try again in a few
+    moments.</li>
+  <li>If you are unable to load any pages, check your computer’s network
+    connection.</li>
+  <li>If your computer or network is protected by a firewall or proxy, make sure
+    that Firefox is permitted to access the Web.</li>
+</ul>
+</div>
+        <div id="ed_deniedPortAccess"></div>
+        <div id="ed_proxyResolveFailure">
+<ul>
+  <li>Check the proxy settings to make sure that they are correct.</li>
+  <li>Check to make sure your computer has a working network connection.</li>
+  <li>If your computer or network is protected by a firewall or proxy, make sure
+    that Firefox is permitted to access the Web.</li>
+</ul>
+</div>
+        <div id="ed_proxyConnectFailure">
+<ul>
+  <li>Check the proxy settings to make sure that they are correct.</li>
+  <li>Contact your network administrator to make sure the proxy server is
+    working.</li>
+</ul>
+</div>
+        <div id="ed_contentEncodingError">
+<ul>
+  <li>Please contact the website owners to inform them of this problem.</li>
+</ul>
+</div>
+        <div id="ed_unsafeContentType">
+<ul>
+  <li>Please contact the website owners to inform them of this problem.</li>
+</ul>
+</div>
+        <div id="ed_nssFailure2">
+<ul>
+  <li>The page you are trying to view cannot be shown because the authenticity of the received data could not be verified.</li>
+  <li>Please contact the website owners to inform them of this problem.</li>
+</ul>
+</div>
+        <div id="ed_nssBadCert">Firefox detected a potential security threat and did not continue to <span class="hostname">www.hydroworld.com</span>. If you visit this site, attackers could try to steal information like your passwords, emails, or credit card details.</div>
+        <div id="ed_nssBadCert_sts">Firefox detected a potential security threat and did not continue to <span class="hostname">www.hydroworld.com</span> because this website requires a secure connection.</div>
+        <div id="ed_nssBadCert_SEC_ERROR_EXPIRED_CERTIFICATE">Firefox detected an issue and did not continue to <span class="hostname">www.hydroworld.com</span>. The website is either misconfigured or your computer clock is set to the wrong time.</div>
+        <div id="ed_mitm"><span class="hostname">www.hydroworld.com</span> is most likely a safe site, but a secure connection could not be established. This issue is caused by <span class="mitm-name"></span>, which is either software on your computer or your network.</div>
+        <div id="ed_cspBlocked"><p>Firefox prevented this page from loading in this way because the page has a content security policy that disallows it.</p></div>
+        <div id="ed_remoteXUL"><p><ul><li>Please contact the website owners to inform them of this problem.</li></ul></p></div>
+        <div id="ed_corruptedContentErrorv2"><p>The page you are trying to view cannot be shown because an error in the data transmission was detected.</p><ul><li>Please contact the website owners to inform them of this problem.</li></ul></div>
+        <div id="ed_sslv3Used">Advanced info: SSL_ERROR_UNSUPPORTED_VERSION</div>
+        <div id="ed_inadequateSecurityError"><p><span class="hostname">www.hydroworld.com</span>
+ uses security technology that is outdated and vulnerable to attack. An 
+attacker could easily reveal information which you thought to be safe. 
+The website administrator will need to fix the server first before you 
+can visit the site.</p><p>Error code: NS_ERROR_NET_INADEQUATE_SECURITY</p></div>
+        <div id="ed_blockedByPolicy"></div>
+        <div id="ed_clockSkewError">Your computer thinks it is <span id="wrongSystemTime_systemDate1">10/21/2019</span>, which prevents Firefox from connecting securely. To visit <span class="hostname">www.hydroworld.com</span>, update your computer clock in your system settings to the current date, time, and time zone, and then refresh <span class="hostname">www.hydroworld.com</span>.</div>
+        <div id="ed_networkProtocolError"><p>The page you are trying to view cannot be shown because an error in the network protocol was detected.</p><ul><li>Please contact the website owners to inform them of this problem.</li></ul></div>
+      </div>
+      <div id="errorDescriptions2Container">
+          <div id="ed2_nssBadCert_SEC_ERROR_EXPIRED_CERTIFICATE">It’s 
+likely the website’s certificate is expired, which prevents Firefox from
+ connecting securely. If you visit this site, attackers could try to 
+steal information like your passwords, emails, or credit card details.</div>
+          <div id="ed2_nssBadCert_SEC_ERROR_EXPIRED_CERTIFICATE_sts">It’s likely the website’s certificate is expired, which prevents Firefox from connecting securely.</div>
+      </div>
+      <div id="whatCanYouDoAboutItTitleContainer">
+        <div id="edd_nssBadCert"><strong>What can you do about it?</strong></div>
+      </div>
+      <div id="whatCanYouDoAboutItContainer">
+        <div id="es_nssBadCert_SEC_ERROR_UNKNOWN_ISSUER">
+<p>The issue is most likely with the website, and there is nothing you can do to resolve it.</p>
+<p>If you are on a corporate network or using anti-virus software, you 
+can reach out to the support teams for assistance. You can also notify 
+the website’s administrator about the problem.</p>
+</div>
+        <div id="es_nssBadCert_SEC_ERROR_EXPIRED_CERTIFICATE">
+<p>Your computer clock is set to <span id="wrongSystemTime_systemDate2">10/21/2019</span>. Make sure your computer is set to the correct date, time, and time zone in your system settings, and then refresh <span class="hostname">www.hydroworld.com</span>.</p>
+<p>If your clock is already set to the right time, the website is likely
+ misconfigured, and there is nothing you can do to resolve the issue. 
+You can notify the website’s administrator about the problem.</p>
+</div>
+        <div id="es_nssBadCert_SEC_ERROR_EXPIRED_ISSUER_CERTIFICATE">
+<p>Your computer clock is set to <span id="wrongSystemTime_systemDate2">10/21/2019</span>. Make sure your computer is set to the correct date, time, and time zone in your system settings, and then refresh <span class="hostname">www.hydroworld.com</span>.</p>
+<p>If your clock is already set to the right time, the website is likely
+ misconfigured, and there is nothing you can do to resolve the issue. 
+You can notify the website’s administrator about the problem.</p>
+</div>
+        <div id="es_nssBadCert_MOZILLA_PKIX_ERROR_NOT_YET_VALID_CERTIFICATE">
+<p>Your computer clock is set to <span id="wrongSystemTime_systemDate2">10/21/2019</span>. Make sure your computer is set to the correct date, time, and time zone in your system settings, and then refresh <span class="hostname">www.hydroworld.com</span>.</p>
+<p>If your clock is already set to the right time, the website is likely
+ misconfigured, and there is nothing you can do to resolve the issue. 
+You can notify the website’s administrator about the problem.</p>
+</div>
+        <div id="es_nssBadCert_MOZILLA_PKIX_ERROR_NOT_YET_VALID_ISSUER_CERTIFICATE">
+<p>Your computer clock is set to <span id="wrongSystemTime_systemDate2">10/21/2019</span>. Make sure your computer is set to the correct date, time, and time zone in your system settings, and then refresh <span class="hostname">www.hydroworld.com</span>.</p>
+<p>If your clock is already set to the right time, the website is likely
+ misconfigured, and there is nothing you can do to resolve the issue. 
+You can notify the website’s administrator about the problem.</p>
+</div>
+        <div id="es_nssBadCert_SSL_ERROR_BAD_CERT_DOMAIN">
+<p>The issue is most likely with the website, and there is nothing you 
+can do to resolve it. You can notify the website’s administrator about 
+the problem.</p>
+</div>
+        <div id="es_nssBadCert_MOZILLA_PKIX_ERROR_MITM_DETECTED">
+          <ul>
+            <li>If your antivirus software includes a feature that scans
+ encrypted connections (often called “web scanning” or “https 
+scanning”), you can disable that feature. If that doesn’t work, you can 
+remove and reinstall the antivirus software.</li>
+            <li>If you are on a corporate network, you can contact your IT department.</li>
+            <li id="mitmWhatCanYouDoAboutIt3">If you are not familiar with <span class="mitm-name"></span>, then this could be an attack and you should not continue to the site.</li>
+          </ul>
+        </div>
+      </div>
+      <!-- Stores an alternative text for when we don't want to add "Recommended" to the
+           return button. This is one of many l10n atrocities in this file and should be
+           removed when we finally switch to Fluent. -->
+      <span id="stsReturnButtonText">Go Back</span>
+      <span id="stsMitmWhatCanYouDoAboutIt3">If you are not familiar with <span class="mitm-name"></span>, then this could be an attack, and there is nothing you can do to access the site.</span>
+    </div>
+
+    <!-- PAGE CONTAINER (for styling purposes only) -->
+    <div id="errorPageContainer" class="container">
+      <div id="text-container" style="margin-top: calc(-201px + 50vh);">
+        <!-- Error Title -->
+        <div class="title">
+          <h1 class="title-text">Warning: Potential Security Risk Ahead</h1>
+        </div>
+
+        <!-- LONG CONTENT (the section most likely to require scrolling) -->
+        <div id="errorLongContent">
+
+          <!-- Short Description -->
+          <div id="errorShortDesc">
+            <p id="errorShortDescText">Firefox detected an issue and did not continue to <span xmlns="http://www.w3.org/1999/xhtml" class="hostname">www.hydroworld.com</span>. The website is either misconfigured or your computer clock is set to the wrong time.</p>
+          </div>
+
+          <div id="errorShortDesc2">
+              <p id="errorShortDescText2">It’s likely the website’s 
+certificate is expired, which prevents Firefox from connecting securely.
+ If you visit this site, attackers could try to steal information like 
+your passwords, emails, or credit card details.</p>
+          </div>
+
+          <div id="errorWhatToDoTitle">
+              <p id="errorWhatToDoTitleText" style="font-weight: bold;">What can you do about it?</p>
+          </div>
+
+          <div id="errorWhatToDo">
+              <p id="badStsCertExplanation" hidden="true"><span class="hostname">www.hydroworld.com</span>
+ has a security policy called HTTP Strict Transport Security (HSTS), 
+which means that Firefox can only connect to it securely. You can’t add 
+an exception to visit this site.</p>
+              <p id="errorWhatToDoText">
+<p xmlns="http://www.w3.org/1999/xhtml">Your computer clock is set to <span id="wrongSystemTime_systemDate2">10/21/2019</span>. Make sure your computer is set to the correct date, time, and time zone in your system settings, and then refresh <span class="hostname">www.hydroworld.com</span>.</p>
+<p xmlns="http://www.w3.org/1999/xhtml">If your clock is already set to 
+the right time, the website is likely misconfigured, and there is 
+nothing you can do to resolve the issue. You can notify the website’s 
+administrator about the problem.</p>
+</p>
+          </div>
+
+          <div id="errorWhatToDo2">
+              <p id="errorWhatToDoText2"></p>
+              <p id="badStsCertExplanation" hidden="true"><span class="hostname">www.hydroworld.com</span>
+ has a security policy called HTTP Strict Transport Security (HSTS), 
+which means that Firefox can only connect to it securely. You can’t add 
+an exception to visit this site.</p>
+          </div>
+
+          <!-- Long Description (Note: See netError.dtd for used XHTML tags) -->
+          <div id="errorLongDesc"></div>
+
+          <div id="learnMoreContainer" style="display: block;">
+            <p><a id="learnMoreLink" target="new" data-telemetry-id="learn_more_link" href="https://support.mozilla.org/1/firefox/69.0.2/Darwin/en-US/time-errors">Learn more…</a></p>
+          </div>
+        </div>
+
+        <!-- UI for option to report certificate errors to Mozilla. Removed on
+             init for other error types .-->
+        <div id="prefChangeContainer" class="button-container">
+          <p>It looks like your network security settings might be causing this. Do you want the default settings to be restored?</p>
+          <button id="prefResetButton" class="primary">Restore default settings</button>
+        </div>
+
+        <div id="certErrorAndCaptivePortalButtonContainer" class="button-container"><button id="returnButton" class="primary" data-telemetry-id="return_button_top" autofocus="true">Go Back (Recommended)</button>
+          
+          <button id="openPortalLoginPageButton" class="primary">Open Network Login Page</button>
+          <button class="primary try-again">Try Again</button>
+          <button id="advancedButton" data-telemetry-id="advanced_button">Advanced…</button>
+        </div>
+      </div>
+
+      <div id="netErrorButtonContainer" class="button-container">
+        <button class="primary try-again">Try Again</button>
+      </div>
+
+      <div id="advancedPanelContainer">
+        <div id="badCertAdvancedPanel" class="advanced-panel">
+          <p id="badCertTechnicalInfo"><label data-l10n-id="cert-error-expired-now" data-l10n-args="{&quot;hostname&quot;:&quot;www.hydroworld.com&quot;,&quot;not-after-local-time&quot;:&quot;10/20/2019&quot;}">Websites prove their identity via certificates, which are valid for a set time period. The certificate for www.hydroworld.com expired on 10/20/2019.</label>
+ 
+<label data-l10n-id="cert-error-code-prefix-link" data-l10n-args="{&quot;error&quot;:&quot;SEC_ERROR_EXPIRED_CERTIFICATE&quot;}">Error code: <a id="errorCode" data-l10n-name="error-code-link" data-telemetry-id="error_code_link">SEC_ERROR_EXPIRED_CERTIFICATE</a></label>
+ 
+</p>
+          <a id="viewCertificate" href="javascript:void(0)">View Certificate</a>
+          <div id="advancedPanelButtonContainer" class="button-container">
+            <button id="advancedPanelReturnButton" class="primary" data-telemetry-id="return_button_adv">Go Back (Recommended)</button>
+            <button class="primary try-again">Try Again</button>
+            <div class="exceptionDialogButtonContainer">
+              <button id="exceptionDialogButton" data-telemetry-id="exception_button">Accept the Risk and Continue</button>
+            </div>
+          </div>
+        </div>
+
+        <div id="certificateErrorReporting" style="display: block;">
+            <p class="toggle-container-with-text">
+                <input type="checkbox" id="automaticallyReportInFuture" role="checkbox" data-telemetry-id="auto_report_cb" />
+                <label for="automaticallyReportInFuture">Report errors like this to help Mozilla identify and block malicious sites</label>
+            </p>
+        </div>
+
+        <div id="certificateErrorDebugInformation">
+          <button id="copyToClipboard" data-telemetry-id="clipboard_button_top">Copy text to clipboard</button>
+          <div id="certificateErrorText">https://www.hydroworld.com/industry-news/new-development.html
+
+Peer’s Certificate has expired.
+
+HTTP Strict Transport Security: false
+HTTP Public Key Pinning: false
+
+Certificate chain:
+
+-----BEGIN CERTIFICATE-----
+MIIFbTCCBFWgAwIBAgISA6IySx2fC4HwdhrKPw4rmrfmMA0GCSqGSIb3DQEBCwUA
+MEoxCzAJBgNVBAYTAlVTMRYwFAYDVQQKEw1MZXQncyBFbmNyeXB0MSMwIQYDVQQD
+ExpMZXQncyBFbmNyeXB0IEF1dGhvcml0eSBYMzAeFw0xOTA3MjIxMTU1MjRaFw0x
+OTEwMjAxMTU1MjRaMB0xGzAZBgNVBAMTEnd3dy5oeWRyb3dvcmxkLmNvbTCCASIw
+DQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBAPDy5MuXh4eDq+9Msem+DetjgtLM
+yZE9atfeawM14z3GGldsOn36JPWvE8nDQyxUtTsZ92/w88OW5gmjndBebZ0nylnU
+sQ7dtSSl5c+Hg3tNqIK1YadSKvjGiFRbB4NU1kES+ugucrf0het1FoggOslkXOiU
+l3IRXTT0XWwHAJsAXx2xWToT6hnxTX5Xclt6ghJwrX7esr+IvLPJbu3DSMqEVM3q
+iiLHWaZ240lUGdCQURQeYaUQTS2q03dRVNimHMz2GbxdClSnZPBOH902gIUvbERV
+jVgAdlWjFikK4fJnbql4lXVCQErYjRDpXVnxuHbwrUzjFkEzCLmPkEU4gFkCAwEA
+AaOCAngwggJ0MA4GA1UdDwEB/wQEAwIFoDAdBgNVHSUEFjAUBggrBgEFBQcDAQYI
+KwYBBQUHAwIwDAYDVR0TAQH/BAIwADAdBgNVHQ4EFgQUTGx/cDB0id4NXLxr719T
+M0FZMM4wHwYDVR0jBBgwFoAUqEpqYwR93brm0Tm3pkVl7/Oo7KEwbwYIKwYBBQUH
+AQEEYzBhMC4GCCsGAQUFBzABhiJodHRwOi8vb2NzcC5pbnQteDMubGV0c2VuY3J5
+cHQub3JnMC8GCCsGAQUFBzAChiNodHRwOi8vY2VydC5pbnQteDMubGV0c2VuY3J5
+cHQub3JnLzAtBgNVHREEJjAkgg5oeWRyb3dvcmxkLmNvbYISd3d3Lmh5ZHJvd29y
+bGQuY29tMEwGA1UdIARFMEMwCAYGZ4EMAQIBMDcGCysGAQQBgt8TAQEBMCgwJgYI
+KwYBBQUHAgEWGmh0dHA6Ly9jcHMubGV0c2VuY3J5cHQub3JnMIIBBQYKKwYBBAHW
+eQIEAgSB9gSB8wDxAHcAdH7agzGtMxCRIZzOJU9CcMK//V5CIAjGNzV55hB7zFYA
+AAFsGcA6kwAABAMASDBGAiEAxUuMd67yN0K+owr1+sVh/FuVECma6Xjxzr/cuv+C
+aDECIQC5jJgVlhqmkQ0Yv2M0yfnoa5lXqFy/GGXuaqRCGR+9owB2AGPy283oO8ws
+zwtyhCdXazOkjWF3j711pjixx2hUS9iNAAABbBnAPKUAAAQDAEcwRQIhAMVNYkDX
+8muOFyPXlUt2DRzwNIHQ+L/oGSax8QvrEA61AiApB3bDgshREVjGqAvV6nZvx3kw
+Gm0jpPNVfOGtYlks8TANBgkqhkiG9w0BAQsFAAOCAQEAmqHHONy8IHm26l2rfkgj
+4MV/QXdIayYy3EZmk+LpicG7S5yqLMAXK/0gaCvV+j11cb6yTrBbSrUZA2qicSKW
+brQFkIr3Nq4W2JcEBVfX74nQKbGkYlEQZlV93j2VRGgMvAlbTIq4F2crOt7p5VdF
+7APZ+mDrgcDWfCN6WHb8AX7nhAuaOOLNd6lsCQlni4VJlp3c+aw3LS/1qA9q7AaR
+DN/TtCs9BSq9u4CE4TqKnKbdAWrRpgYNOLOSWC6njqVpuz1FDflaULpnoaMLIOHY
+TJWQuPGTuyevRzz0IRC1KLV+4Ca1mr3XWYhB2sqVsMa0en7/xZkvoz7ZMNcVol6F
+Fw==
+-----END CERTIFICATE-----
+-----BEGIN CERTIFICATE-----
+MIIEkjCCA3qgAwIBAgIQCgFBQgAAAVOFc2oLheynCDANBgkqhkiG9w0BAQsFADA/
+MSQwIgYDVQQKExtEaWdpdGFsIFNpZ25hdHVyZSBUcnVzdCBDby4xFzAVBgNVBAMT
+DkRTVCBSb290IENBIFgzMB4XDTE2MDMxNzE2NDA0NloXDTIxMDMxNzE2NDA0Nlow
+SjELMAkGA1UEBhMCVVMxFjAUBgNVBAoTDUxldCdzIEVuY3J5cHQxIzAhBgNVBAMT
+GkxldCdzIEVuY3J5cHQgQXV0aG9yaXR5IFgzMIIBIjANBgkqhkiG9w0BAQEFAAOC
+AQ8AMIIBCgKCAQEAnNMM8FrlLke3cl03g7NoYzDq1zUmGSXhvb418XCSL7e4S0EF
+q6meNQhY7LEqxGiHC6PjdeTm86dicbp5gWAf15Gan/PQeGdxyGkOlZHP/uaZ6WA8
+SMx+yk13EiSdRxta67nsHjcAHJyse6cF6s5K671B5TaYucv9bTyWaN8jKkKQDIZ0
+Z8h/pZq4UmEUEz9l6YKHy9v6Dlb2honzhT+Xhq+w3Brvaw2VFn3EK6BlspkENnWA
+a6xK8xuQSXgvopZPKiAlKQTGdMDQMc2PMTiVFrqoM7hD8bEfwzB/onkxEz0tNvjj
+/PIzark5McWvxI0NHWQWM6r6hCm21AvA2H3DkwIDAQABo4IBfTCCAXkwEgYDVR0T
+AQH/BAgwBgEB/wIBADAOBgNVHQ8BAf8EBAMCAYYwfwYIKwYBBQUHAQEEczBxMDIG
+CCsGAQUFBzABhiZodHRwOi8vaXNyZy50cnVzdGlkLm9jc3AuaWRlbnRydXN0LmNv
+bTA7BggrBgEFBQcwAoYvaHR0cDovL2FwcHMuaWRlbnRydXN0LmNvbS9yb290cy9k
+c3Ryb290Y2F4My5wN2MwHwYDVR0jBBgwFoAUxKexpHsscfrb4UuQdf/EFWCFiRAw
+VAYDVR0gBE0wSzAIBgZngQwBAgEwPwYLKwYBBAGC3xMBAQEwMDAuBggrBgEFBQcC
+ARYiaHR0cDovL2Nwcy5yb290LXgxLmxldHNlbmNyeXB0Lm9yZzA8BgNVHR8ENTAz
+MDGgL6AthitodHRwOi8vY3JsLmlkZW50cnVzdC5jb20vRFNUUk9PVENBWDNDUkwu
+Y3JsMB0GA1UdDgQWBBSoSmpjBH3duubRObemRWXv86jsoTANBgkqhkiG9w0BAQsF
+AAOCAQEA3TPXEfNjWDjdGBX7CVW+dla5cEilaUcne8IkCJLxWh9KEik3JHRRHGJo
+uM2VcGfl96S8TihRzZvoroed6ti6WqEBmtzw3Wodatg+VyOeph4EYpr/1wXKtx8/
+wApIvJSwtmVi4MFU5aMqrSDE6ea73Mj2tcMyo5jMd6jmeWUHK8so/joWUoHOUgwu
+X4Po1QYz+3dszkDqMp4fklxBwXRsW10KXzPMTZ+sOPAveyxindmjkW8lGy+QsRlG
+PfZ+G6Z6h7mjem0Y+iWlkYcV4PIWL1iwBi8saCbGS5jN2p8M+X+Q7UNKEkROb3N6
+KOqkqm57TH2H3eDJAkSnh6/DNFu0Qg==
+-----END CERTIFICATE-----
+</div>
+          <button id="copyToClipboard" data-telemetry-id="clipboard_button_bot">Copy text to clipboard</button>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="chrome://browser/content/aboutNetError.js"></script>
+</html>

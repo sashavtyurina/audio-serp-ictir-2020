@@ -1,0 +1,7650 @@
+/*
+  Running Squiz Matrix
+  Developed by Squiz - http://www.squiz.net
+  Squiz, Squiz Matrix, MySource, MySource Matrix and Squiz.net are registered Trademarks of Squiz Pty Ltd
+  Page generated: 22 October 2019 07:18:05
+*/
+
+
+@charset "UTF-8";
+
+/**
+ * version: 0.1.0
+ * file:    main.min.css
+ * author:  Squiz Australia
+ * updated: 21-05-2019 21:25
+ *
+ * Table of Contents
+ *
+ * - Reset
+ * - Utilities
+ * - General
+ * - Content
+ * - Modules
+ *    accordion (0.0.12)
+ *    typeahead (0.1.3)
+ */
+.visuallyhidden,
+.sr-only,
+.quick-search__submit[type="submit"],
+.filters-topics__legend {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+.visuallyhidden.focusable:active,
+.focusable.sr-only:active,
+.visuallyhidden.focusable:focus,
+.focusable.sr-only:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+.sq-form-question-tickbox-list ul,
+.sq-form-question-option-list ul,
+.main-content .sq-form-question ul,
+.main-nav__list,
+.home-slider__section .slick-dots,
+.quick-links__list,
+.lhs-nav__list,
+.lhs-nav__list-sub1,
+.lhs-nav__list-sub2,
+.breadcrumbs__list,
+.rhs-column ul,
+.layout-sidebar ul,
+.preview-media__box ul,
+.alternative.module .newsletter ul,
+.module-3-col .newsletter ul,
+.module-2-col .newsletter ul,
+.featured-link__list,
+.footer-nav__list,
+.footer-ext-links__list,
+.social-links__list,
+.tabs__tab-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.sq-form-question-tickbox-list ul li,
+.sq-form-question-option-list ul li,
+.main-content .sq-form-question ul li,
+.main-nav__list li,
+.home-slider__section .slick-dots li,
+.quick-links__list li,
+.lhs-nav__list li,
+.lhs-nav__list-sub1 li,
+.lhs-nav__list-sub2 li,
+.breadcrumbs__list li,
+.rhs-column ul li,
+.layout-sidebar ul li,
+.preview-media__box ul li,ite
+.alternative.module .newsletter ul li,
+.module-3-col .newsletter ul li,
+.module-2-col .newsletter ul li,
+.featured-link__list li,
+.footer-nav__list li,
+.footer-ext-links__list li,
+.social-links__list li,
+.tabs__tab-list li {
+    padding: 0;
+}
+
+.sq-form-question-tickbox-list ul li:before,
+.sq-form-question-option-list ul li:before,
+.main-content .sq-form-question ul li:before,
+.main-nav__list li:before,
+.home-slider__section .slick-dots li:before,
+.quick-links__list li:before,
+.lhs-nav__list li:before,
+.lhs-nav__list-sub1 li:before,
+.lhs-nav__list-sub2 li:before,
+.breadcrumbs__list li:before,
+.rhs-column ul li:before,
+.layout-sidebar ul li:before,
+.preview-media__box ul li:before,
+.alternative.module .newsletter ul li:before,
+.module-3-col .newsletter ul li:before,
+.module-2-col .newsletter ul li:before,
+.featured-link__list li:before,
+.footer-nav__list li:before,
+.footer-ext-links__list li:before,
+.social-links__list li:before,
+.tabs__tab-list li:before {
+    display: none;
+}
+
+.highlight,
+.sq-form .sq-form-question-datetime input[type="password"],
+.sq-form .sq-form-question-datetime input[type="text"],
+.sq-form .sq-form-question-datetime label,
+.sq-form .sq-form-question-datetime select {
+    display: inline-block;
+    *display: inline;
+    zoom: 1;
+}
+
+.clearfix,
+.sq-form-question-tickbox-list li,
+.sq-form-question-option-list li,
+.sq-form-question,
+.standard__form,
+.sq-form-question-answer,
+.pagination,
+.summary__item,
+.search__form,
+.lhs-nav,
+.lhs-nav__list,
+.lhs-nav__list-sub1,
+.lhs-nav__list-sub2,
+.breadcrumbs,
+.addthis,
+.rhs-column,
+.layout-sidebar,
+.page-module-banner__item,
+.page-module-banner-cta__item,
+.preview-media,
+.social-feed,
+.filters-topics__form,
+.alternative.module,
+.module-3-col,
+.module-2-col,
+.alternative.module .newsletter form,
+.module-3-col .newsletter form,
+.module-2-col .newsletter form,
+.featured-link__box,
+.footer-nav__list,
+.footer-ext-links__list,
+.search-results__form,
+.az-index__toc {
+    *zoom: 1;
+}
+
+.clearfix:before,
+.sq-form-question-tickbox-list li:before,
+.sq-form-question-option-list li:before,
+.sq-form-question:before,
+.standard__form:before,
+.sq-form-question-answer:before,
+.pagination:before,
+.summary__item:before,
+.search__form:before,
+.lhs-nav:before,
+.lhs-nav__list:before,
+.lhs-nav__list-sub1:before,
+.lhs-nav__list-sub2:before,
+.breadcrumbs:before,
+.addthis:before,
+.rhs-column:before,
+.layout-sidebar:before,
+.page-module-banner__item:before,
+.page-module-banner-cta__item:before,
+.preview-media:before,
+.social-feed:before,
+.filters-topics__form:before,
+.alternative.module:before,
+.module-3-col:before,
+.module-2-col:before,
+.alternative.module .newsletter form:before,
+.module-3-col .newsletter form:before,
+.module-2-col .newsletter form:before,
+.featured-link__box:before,
+.footer-nav__list:before,
+.footer-ext-links__list:before,
+.search-results__form:before,
+.az-index__toc:before,
+.clearfix:after,
+.sq-form-question-tickbox-list li:after,
+.sq-form-question-option-list li:after,
+.sq-form-question:after,
+.standard__form:after,
+.sq-form-question-answer:after,
+.pagination:after,
+.summary__item:after,
+.search__form:after,
+.lhs-nav:after,
+.lhs-nav__list:after,
+.lhs-nav__list-sub1:after,
+.lhs-nav__list-sub2:after,
+.breadcrumbs:after,
+.addthis:after,
+.rhs-column:after,
+.layout-sidebar:after,
+.page-module-banner__item:after,
+.page-module-banner-cta__item:after,
+.preview-media:after,
+.social-feed:after,
+.filters-topics__form:after,
+.alternative.module:after,
+.module-3-col:after,
+.module-2-col:after,
+.alternative.module .newsletter form:after,
+.module-3-col .newsletter form:after,
+.module-2-col .newsletter form:after,
+.featured-link__box:after,
+.footer-nav__list:after,
+.footer-ext-links__list:after,
+.search-results__form:after,
+.az-index__toc:after {
+    content: '';
+    display: table;
+    line-height: 0;
+}
+
+.clearfix:after,
+.sq-form-question-tickbox-list li:after,
+.sq-form-question-option-list li:after,
+.sq-form-question:after,
+.standard__form:after,
+.sq-form-question-answer:after,
+.pagination:after,
+.summary__item:after,
+.search__form:after,
+.lhs-nav:after,
+.lhs-nav__list:after,
+.lhs-nav__list-sub1:after,
+.lhs-nav__list-sub2:after,
+.breadcrumbs:after,
+.addthis:after,
+.rhs-column:after,
+.layout-sidebar:after,
+.page-module-banner__item:after,
+.page-module-banner-cta__item:after,
+.preview-media:after,
+.social-feed:after,
+.filters-topics__form:after,
+.alternative.module:after,
+.module-3-col:after,
+.module-2-col:after,
+.alternative.module .newsletter form:after,
+.module-3-col .newsletter form:after,
+.module-2-col .newsletter form:after,
+.featured-link__box:after,
+.footer-nav__list:after,
+.footer-ext-links__list:after,
+.search-results__form:after,
+.az-index__toc:after {
+    clear: both;
+}
+
+.menu__btn,
+.search__btn {
+    border: none;
+    background: none;
+    padding: 0;
+}
+
+/* Slider */
+.slick-slider {
+    position: relative;
+    display: block;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -ms-touch-action: pan-y;
+    touch-action: pan-y;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.slick-list {
+    position: relative;
+    overflow: hidden;
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+
+.slick-list:focus {
+    outline: none;
+}
+
+.slick-list.dragging {
+    cursor: pointer;
+    cursor: hand;
+}
+
+.slick-slider .slick-track,
+.slick-slider .slick-list {
+    -webkit-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
+    -ms-transform: translate3d(0, 0, 0);
+    -o-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+}
+
+.slick-track {
+    position: relative;
+    left: 0;
+    top: 0;
+    display: block;
+}
+
+.slick-track:before,
+.slick-track:after {
+    content: "";
+    display: table;
+}
+
+.slick-track:after {
+    clear: both;
+}
+
+.slick-loading .slick-track {
+    visibility: hidden;
+}
+
+.slick-slide {
+    float: left;
+    height: 100%;
+    min-height: 1px;
+    display: none;
+}
+
+[dir="rtl"] .slick-slide {
+    float: right;
+}
+
+.slick-slide img {
+    display: block;
+}
+
+.slick-slide.slick-loading img {
+    display: none;
+}
+
+.slick-slide.dragging img {
+    pointer-events: none;
+}
+
+.slick-initialized .slick-slide {
+    display: block;
+}
+
+.slick-loading .slick-slide {
+    visibility: hidden;
+}
+
+.slick-vertical .slick-slide {
+    display: block;
+    height: auto;
+    border: 1px solid transparent;
+}
+
+/*
+--------------------
+Reset (normalize.css)
+--------------------
+*/
+/*! normalize.css v2.1.0 | MIT License | git.io/normalize */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+nav,
+section,
+summary {
+    display: block;
+}
+
+audio,
+canvas,
+video {
+    display: inline-block;
+}
+
+audio:not([controls]) {
+    display: none;
+    height: 0;
+}
+
+[hidden] {
+    display: none;
+}
+
+html {
+    font-family: sans-serif;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+}
+
+body {
+    margin: 0;
+}
+
+a:focus {
+    outline: thin dotted;
+}
+
+a:active,
+a:hover {
+    outline: 0;
+}
+
+h1 {
+    font-size: 2em;
+    margin: 0.67em 0;
+}
+
+abbr[title] {
+    border-bottom: 1px dotted;
+}
+
+b,
+strong {
+    font-weight: bold;
+}
+
+dfn {
+    font-style: italic;
+}
+
+hr {
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+    height: 0;
+}
+
+mark {
+    background: #ff0;
+    color: #000;
+}
+
+code,
+kbd,
+pre,
+samp {
+    font-family: monospace, serif;
+    font-size: 1em;
+}
+
+pre {
+    white-space: pre-wrap;
+}
+
+q {
+    quotes: "\201C""\201D""\2018""\2019";
+}
+
+small {
+    font-size: 80%;
+}
+
+sub,
+sup {
+    font-size: 75%;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline;
+}
+
+sup {
+    top: -0.5em;
+}
+
+sub {
+    bottom: -0.25em;
+}
+
+img {
+    border: 0;
+}
+
+svg:not(:root) {
+    overflow: hidden;
+}
+
+figure {
+    margin: 0;
+}
+
+fieldset {
+    border: 1px solid #c0c0c0;
+    margin: 0 2px;
+    padding: 0.35em 0.625em 0.75em;
+}
+
+legend {
+    border: 0;
+    padding: 0;
+}
+
+button,
+input,
+select,
+textarea {
+    font-family: inherit;
+    font-size: 100%;
+    margin: 0;
+}
+
+button,
+input {
+    line-height: normal;
+}
+
+button,
+select {
+    text-transform: none;
+}
+
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+    -webkit-appearance: button;
+    cursor: pointer;
+}
+
+button[disabled],
+html input[disabled] {
+    cursor: default;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+    box-sizing: border-box;
+    padding: 0;
+}
+
+input[type="search"] {
+    -webkit-appearance: textfield;
+    -moz-box-sizing: content-box;
+    -webkit-box-sizing: content-box;
+    box-sizing: content-box;
+}
+
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+    -webkit-appearance: none;
+}
+
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+    border: 0;
+    padding: 0;
+}
+
+textarea {
+    overflow: auto;
+    vertical-align: top;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/*! normalize-opentype v0.2.0 | MIT License | kennethormandy.com/journal/normalize-opentype-css */
+::selection {
+    color: inherit;
+    text-shadow: inherit;
+}
+
+html,
+body {
+    font-feature-settings: "kern"1, "liga"1, "calt"1, "pnum"1, "tnum"0, "onum"0, "lnum"0, "dlig"0;
+}
+
+h1,
+h2,
+h3 {
+    font-feature-settings: "kern"1, "liga"1, "calt"1, "pnum"1, "tnum"0, "onum"0, "lnum"0, "dlig"0;
+}
+
+abbr {
+    text-transform: uppercase;
+    font-feature-settings: "kern"1, "liga"1, "calt"1, "pnum"1, "tnum"0, "onum"1, "lnum"0, "smcp"1, "c2sc"1;
+}
+
+/*
+ * TODO: Turn on diagonal fractions where appropriate
+ */
+time {
+    font-feature-settings: "kern"1, "liga"1, "calt"1, "pnum"1, "tnum"0, "onum"1, "lnum"0;
+}
+
+pre,
+kbd,
+samp,
+code {
+    font-feature-settings: "kern"0, "liga"0, "calt"1, "dlig"0, "pnum"0, "tnum"1, "onum"0, "lnum"1, "zero"1;
+}
+
+sup {
+    font-feature-settings: "kern"1, "liga"1, "calt"1, "pnum"1, "tnum"0, "onum"1, "lnum"0, "dlig"0, "sups"1;
+}
+
+sub {
+    font-feature-settings: "kern"1, "liga"1, "calt"1, "pnum"1, "tnum"0, "onum"1, "lnum"0, "dlig"0, "subs"1;
+}
+
+input[type="color"],
+input[type="date"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="number"],
+input[type="range"],
+input[type="tel"],
+input[type="week"] {
+    font-feature-settings: "kern"0, "liga"1, "calt"1, "pnum"1, "tnum"0, "onum"0, "lnum"1, "zero"0;
+}
+
+table {
+    font-feature-settings: "kern"0, "liga"1, "calt"1, "pnum"0, "tnum"1, "onum"0, "lnum"1, "zero"1;
+}
+
+table thead,
+table tfoot {
+    font-feature-settings: "kern"1, "liga"1, "calt"1, "pnum"1, "tnum"0, "onum"0, "lnum"0, "dlig"0;
+}
+
+*,
+*:before,
+*:after {
+    -webkit-box-sizing: inherit;
+    -moz-box-sizing: inherit;
+    box-sizing: inherit;
+}
+
+html {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+/*
+--------------------
+Utilities
+--------------------
+*/
+.container {
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    width: auto;
+}
+
+@media screen and (min-width: 37.5em) {
+    .container {
+        padding-left: 125px;
+        padding-right: 125px;
+    }
+}
+
+@media screen and (min-width: 60em) {
+    .container {
+        padding-left: 15px;
+        padding-right: 15px;
+        max-width: 100%;
+        min-width: 48em;
+        width: 79.6666667em;
+    }
+}
+
+.container-fluid {
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.row {
+    margin-left: -15px;
+    margin-right: -15px;
+}
+
+.col-xs-1,
+.col-sm-1,
+.col-md-1,
+.col-lg-1,
+.col-xs-2,
+.col-sm-2,
+.col-md-2,
+.col-lg-2,
+.col-xs-3,
+.col-sm-3,
+.col-md-3,
+.col-lg-3,
+.col-xs-4,
+.col-sm-4,
+.col-md-4,
+.col-lg-4,
+.col-xs-5,
+.col-sm-5,
+.col-md-5,
+.col-lg-5,
+.col-xs-6,
+.col-sm-6,
+.col-md-6,
+.col-lg-6,
+.col-xs-7,
+.col-sm-7,
+.col-md-7,
+.col-lg-7,
+.col-xs-8,
+.col-sm-8,
+.col-md-8,
+.col-lg-8,
+.col-xs-9,
+.col-sm-9,
+.col-md-9,
+.col-lg-9,
+.col-xs-10,
+.col-sm-10,
+.col-md-10,
+.col-lg-10,
+.col-xs-11,
+.col-sm-11,
+.col-md-11,
+.col-lg-11,
+.col-xs-12,
+.col-sm-12,
+.col-md-12,
+.col-lg-12 {
+    position: relative;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.col-xs-1,
+.col-xs-2,
+.col-xs-3,
+.col-xs-4,
+.col-xs-5,
+.col-xs-6,
+.col-xs-7,
+.col-xs-8,
+.col-xs-9,
+.col-xs-10,
+.col-xs-11,
+.col-xs-12 {
+    float: left;
+}
+
+.col-xs-12 {
+    width: 100%;
+}
+
+.col-xs-11 {
+    width: 91.66666667%;
+}
+
+.col-xs-10 {
+    width: 83.33333333%;
+}
+
+.col-xs-9 {
+    width: 75%;
+}
+
+.col-xs-8 {
+    width: 66.66666667%;
+}
+
+.col-xs-7 {
+    width: 58.33333333%;
+}
+
+.col-xs-6 {
+    width: 50%;
+}
+
+.col-xs-5 {
+    width: 41.66666667%;
+}
+
+.col-xs-4 {
+    width: 33.33333333%;
+}
+
+.col-xs-3 {
+    width: 25%;
+}
+
+.col-xs-2 {
+    width: 16.66666667%;
+}
+
+.col-xs-1 {
+    width: 8.33333333%;
+}
+
+.col-xs-pull-12 {
+    right: 100%;
+}
+
+.col-xs-pull-11 {
+    right: 91.66666667%;
+}
+
+.col-xs-pull-10 {
+    right: 83.33333333%;
+}
+
+.col-xs-pull-9 {
+    right: 75%;
+}
+
+.col-xs-pull-8 {
+    right: 66.66666667%;
+}
+
+.col-xs-pull-7 {
+    right: 58.33333333%;
+}
+
+.col-xs-pull-6 {
+    right: 50%;
+}
+
+.col-xs-pull-5 {
+    right: 41.66666667%;
+}
+
+.col-xs-pull-4 {
+    right: 33.33333333%;
+}
+
+.col-xs-pull-3 {
+    right: 25%;
+}
+
+.col-xs-pull-2 {
+    right: 16.66666667%;
+}
+
+.col-xs-pull-1 {
+    right: 8.33333333%;
+}
+
+.col-xs-pull-0 {
+    right: auto;
+}
+
+.col-xs-push-12 {
+    left: 100%;
+}
+
+.col-xs-push-11 {
+    left: 91.66666667%;
+}
+
+.col-xs-push-10 {
+    left: 83.33333333%;
+}
+
+.col-xs-push-9 {
+    left: 75%;
+}
+
+.col-xs-push-8 {
+    left: 66.66666667%;
+}
+
+.col-xs-push-7 {
+    left: 58.33333333%;
+}
+
+.col-xs-push-6 {
+    left: 50%;
+}
+
+.col-xs-push-5 {
+    left: 41.66666667%;
+}
+
+.col-xs-push-4 {
+    left: 33.33333333%;
+}
+
+.col-xs-push-3 {
+    left: 25%;
+}
+
+.col-xs-push-2 {
+    left: 16.66666667%;
+}
+
+.col-xs-push-1 {
+    left: 8.33333333%;
+}
+
+.col-xs-push-0 {
+    left: auto;
+}
+
+.col-xs-offset-12 {
+    margin-left: 100%;
+}
+
+.col-xs-offset-11 {
+    margin-left: 91.66666667%;
+}
+
+.col-xs-offset-10 {
+    margin-left: 83.33333333%;
+}
+
+.col-xs-offset-9 {
+    margin-left: 75%;
+}
+
+.col-xs-offset-8 {
+    margin-left: 66.66666667%;
+}
+
+.col-xs-offset-7 {
+    margin-left: 58.33333333%;
+}
+
+.col-xs-offset-6 {
+    margin-left: 50%;
+}
+
+.col-xs-offset-5 {
+    margin-left: 41.66666667%;
+}
+
+.col-xs-offset-4 {
+    margin-left: 33.33333333%;
+}
+
+.col-xs-offset-3 {
+    margin-left: 25%;
+}
+
+.col-xs-offset-2 {
+    margin-left: 16.66666667%;
+}
+
+.col-xs-offset-1 {
+    margin-left: 8.33333333%;
+}
+
+.col-xs-offset-0 {
+    margin-left: 0%;
+}
+
+/*
+@media (min-width: 768px) {
+  .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12 {
+    float: left;
+  }
+  .col-sm-12 {
+    width: 100%;
+  }
+  .col-sm-11 {
+    width: 91.66666667%;
+  }
+  .col-sm-10 {
+    width: 83.33333333%;
+  }
+  .col-sm-9 {
+    width: 75%;
+  }
+  .col-sm-8 {
+    width: 66.66666667%;
+  }
+  .col-sm-7 {
+    width: 58.33333333%;
+  }
+  .col-sm-6 {
+    width: 50%;
+  }
+  .col-sm-5 {
+    width: 41.66666667%;
+  }
+  .col-sm-4 {
+    width: 33.33333333%;
+  }
+  .col-sm-3 {
+    width: 25%;
+  }
+  .col-sm-2 {
+    width: 16.66666667%;
+  }
+  .col-sm-1 {
+    width: 8.33333333%;
+  }
+  .col-sm-pull-12 {
+    right: 100%;
+  }
+  .col-sm-pull-11 {
+    right: 91.66666667%;
+  }
+  .col-sm-pull-10 {
+    right: 83.33333333%;
+  }
+  .col-sm-pull-9 {
+    right: 75%;
+  }
+  .col-sm-pull-8 {
+    right: 66.66666667%;
+  }
+  .col-sm-pull-7 {
+    right: 58.33333333%;
+  }
+  .col-sm-pull-6 {
+    right: 50%;
+  }
+  .col-sm-pull-5 {
+    right: 41.66666667%;
+  }
+  .col-sm-pull-4 {
+    right: 33.33333333%;
+  }
+  .col-sm-pull-3 {
+    right: 25%;
+  }
+  .col-sm-pull-2 {
+    right: 16.66666667%;
+  }
+  .col-sm-pull-1 {
+    right: 8.33333333%;
+  }
+  .col-sm-pull-0 {
+    right: auto;
+  }
+  .col-sm-push-12 {
+    left: 100%;
+  }
+  .col-sm-push-11 {
+    left: 91.66666667%;
+  }
+  .col-sm-push-10 {
+    left: 83.33333333%;
+  }
+  .col-sm-push-9 {
+    left: 75%;
+  }
+  .col-sm-push-8 {
+    left: 66.66666667%;
+  }
+  .col-sm-push-7 {
+    left: 58.33333333%;
+  }
+  .col-sm-push-6 {
+    left: 50%;
+  }
+  .col-sm-push-5 {
+    left: 41.66666667%;
+  }
+  .col-sm-push-4 {
+    left: 33.33333333%;
+  }
+  .col-sm-push-3 {
+    left: 25%;
+  }
+  .col-sm-push-2 {
+    left: 16.66666667%;
+  }
+  .col-sm-push-1 {
+    left: 8.33333333%;
+  }
+  .col-sm-push-0 {
+    left: auto;
+  }
+  .col-sm-offset-12 {
+    margin-left: 100%;
+  }
+  .col-sm-offset-11 {
+    margin-left: 91.66666667%;
+  }
+  .col-sm-offset-10 {
+    margin-left: 83.33333333%;
+  }
+  .col-sm-offset-9 {
+    margin-left: 75%;
+  }
+  .col-sm-offset-8 {
+    margin-left: 66.66666667%;
+  }
+  .col-sm-offset-7 {
+    margin-left: 58.33333333%;
+  }
+  .col-sm-offset-6 {
+    margin-left: 50%;
+  }
+  .col-sm-offset-5 {
+    margin-left: 41.66666667%;
+  }
+  .col-sm-offset-4 {
+    margin-left: 33.33333333%;
+  }
+  .col-sm-offset-3 {
+    margin-left: 25%;
+  }
+  .col-sm-offset-2 {
+    margin-left: 16.66666667%;
+  }
+  .col-sm-offset-1 {
+    margin-left: 8.33333333%;
+  }
+  .col-sm-offset-0 {
+    margin-left: 0%;
+  }
+}
+*/
+/*
+@media (min-width: 992px) {
+  .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12 {
+    float: left;
+  }
+  .col-md-12 {
+    width: 100%;
+  }
+  .col-md-11 {
+    width: 91.66666667%;
+  }
+  .col-md-10 {
+    width: 83.33333333%;
+  }
+  .col-md-9 {
+    width: 75%;
+  }
+  .col-md-8 {
+    width: 66.66666667%;
+  }
+  .col-md-7 {
+    width: 58.33333333%;
+  }
+  .col-md-6 {
+    width: 50%;
+  }
+  .col-md-5 {
+    width: 41.66666667%;
+  }
+  .col-md-4 {
+    width: 33.33333333%;
+  }
+  .col-md-3 {
+    width: 25%;
+  }
+  .col-md-2 {
+    width: 16.66666667%;
+  }
+  .col-md-1 {
+    width: 8.33333333%;
+  }
+  .col-md-pull-12 {
+    right: 100%;
+  }
+  .col-md-pull-11 {
+    right: 91.66666667%;
+  }
+  .col-md-pull-10 {
+    right: 83.33333333%;
+  }
+  .col-md-pull-9 {
+    right: 75%;
+  }
+  .col-md-pull-8 {
+    right: 66.66666667%;
+  }
+  .col-md-pull-7 {
+    right: 58.33333333%;
+  }
+  .col-md-pull-6 {
+    right: 50%;
+  }
+  .col-md-pull-5 {
+    right: 41.66666667%;
+  }
+  .col-md-pull-4 {
+    right: 33.33333333%;
+  }
+  .col-md-pull-3 {
+    right: 25%;
+  }
+  .col-md-pull-2 {
+    right: 16.66666667%;
+  }
+  .col-md-pull-1 {
+    right: 8.33333333%;
+  }
+  .col-md-pull-0 {
+    right: auto;
+  }
+  .col-md-push-12 {
+    left: 100%;
+  }
+  .col-md-push-11 {
+    left: 91.66666667%;
+  }
+  .col-md-push-10 {
+    left: 83.33333333%;
+  }
+  .col-md-push-9 {
+    left: 75%;
+  }
+  .col-md-push-8 {
+    left: 66.66666667%;
+  }
+  .col-md-push-7 {
+    left: 58.33333333%;
+  }
+  .col-md-push-6 {
+    left: 50%;
+  }
+  .col-md-push-5 {
+    left: 41.66666667%;
+  }
+  .col-md-push-4 {
+    left: 33.33333333%;
+  }
+  .col-md-push-3 {
+    left: 25%;
+  }
+  .col-md-push-2 {
+    left: 16.66666667%;
+  }
+  .col-md-push-1 {
+    left: 8.33333333%;
+  }
+  .col-md-push-0 {
+    left: auto;
+  }
+  .col-md-offset-12 {
+    margin-left: 100%;
+  }
+  .col-md-offset-11 {
+    margin-left: 91.66666667%;
+  }
+  .col-md-offset-10 {
+    margin-left: 83.33333333%;
+  }
+  .col-md-offset-9 {
+    margin-left: 75%;
+  }
+  .col-md-offset-8 {
+    margin-left: 66.66666667%;
+  }
+  .col-md-offset-7 {
+    margin-left: 58.33333333%;
+  }
+  .col-md-offset-6 {
+    margin-left: 50%;
+  }
+  .col-md-offset-5 {
+    margin-left: 41.66666667%;
+  }
+  .col-md-offset-4 {
+    margin-left: 33.33333333%;
+  }
+  .col-md-offset-3 {
+    margin-left: 25%;
+  }
+  .col-md-offset-2 {
+    margin-left: 16.66666667%;
+  }
+  .col-md-offset-1 {
+    margin-left: 8.33333333%;
+  }
+  .col-md-offset-0 {
+    margin-left: 0%;
+  }
+}
+*/
+@media (min-width: 60em) {
+
+    .col-lg-1,
+    .col-lg-2,
+    .col-lg-3,
+    .col-lg-4,
+    .col-lg-5,
+    .col-lg-6,
+    .col-lg-7,
+    .col-lg-8,
+    .col-lg-9,
+    .col-lg-10,
+    .col-lg-11,
+    .col-lg-12 {
+        float: left;
+    }
+
+    .col-lg-12 {
+        width: 100%;
+    }
+
+    .col-lg-11 {
+        width: 91.66666667%;
+    }
+
+    .col-lg-10 {
+        width: 83.33333333%;
+    }
+
+    .col-lg-9 {
+        width: 75%;
+    }
+
+    .col-lg-8 {
+        width: 66.66666667%;
+    }
+
+    .col-lg-7 {
+        width: 58.33333333%;
+    }
+
+    .col-lg-6 {
+        width: 50%;
+    }
+
+    .col-lg-5 {
+        width: 41.66666667%;
+    }
+
+    .col-lg-4 {
+        width: 33.33333333%;
+    }
+
+    .col-lg-3 {
+        width: 25%;
+    }
+
+    .col-lg-2 {
+        width: 16.66666667%;
+    }
+
+    .col-lg-1 {
+        width: 8.33333333%;
+    }
+
+    .col-lg-pull-12 {
+        right: 100%;
+    }
+
+    .col-lg-pull-11 {
+        right: 91.66666667%;
+    }
+
+    .col-lg-pull-10 {
+        right: 83.33333333%;
+    }
+
+    .col-lg-pull-9 {
+        right: 75%;
+    }
+
+    .col-lg-pull-8 {
+        right: 66.66666667%;
+    }
+
+    .col-lg-pull-7 {
+        right: 58.33333333%;
+    }
+
+    .col-lg-pull-6 {
+        right: 50%;
+    }
+
+    .col-lg-pull-5 {
+        right: 41.66666667%;
+    }
+
+    .col-lg-pull-4 {
+        right: 33.33333333%;
+    }
+
+    .col-lg-pull-3 {
+        right: 25%;
+    }
+
+    .col-lg-pull-2 {
+        right: 16.66666667%;
+    }
+
+    .col-lg-pull-1 {
+        right: 8.33333333%;
+    }
+
+    .col-lg-pull-0 {
+        right: auto;
+    }
+
+    .col-lg-push-12 {
+        left: 100%;
+    }
+
+    .col-lg-push-11 {
+        left: 91.66666667%;
+    }
+
+    .col-lg-push-10 {
+        left: 83.33333333%;
+    }
+
+    .col-lg-push-9 {
+        left: 75%;
+    }
+
+    .col-lg-push-8 {
+        left: 66.66666667%;
+    }
+
+    .col-lg-push-7 {
+        left: 58.33333333%;
+    }
+
+    .col-lg-push-6 {
+        left: 50%;
+    }
+
+    .col-lg-push-5 {
+        left: 41.66666667%;
+    }
+
+    .col-lg-push-4 {
+        left: 33.33333333%;
+    }
+
+    .col-lg-push-3 {
+        left: 25%;
+    }
+
+    .col-lg-push-2 {
+        left: 16.66666667%;
+    }
+
+    .col-lg-push-1 {
+        left: 8.33333333%;
+    }
+
+    .col-lg-push-0 {
+        left: auto;
+    }
+
+    .col-lg-offset-12 {
+        margin-left: 100%;
+    }
+
+    .col-lg-offset-11 {
+        margin-left: 91.66666667%;
+    }
+
+    .col-lg-offset-10 {
+        margin-left: 83.33333333%;
+    }
+
+    .col-lg-offset-9 {
+        margin-left: 75%;
+    }
+
+    .col-lg-offset-8 {
+        margin-left: 66.66666667%;
+    }
+
+    .col-lg-offset-7 {
+        margin-left: 58.33333333%;
+    }
+
+    .col-lg-offset-6 {
+        margin-left: 50%;
+    }
+
+    .col-lg-offset-5 {
+        margin-left: 41.66666667%;
+    }
+
+    .col-lg-offset-4 {
+        margin-left: 33.33333333%;
+    }
+
+    .col-lg-offset-3 {
+        margin-left: 25%;
+    }
+
+    .col-lg-offset-2 {
+        margin-left: 16.66666667%;
+    }
+
+    .col-lg-offset-1 {
+        margin-left: 8.33333333%;
+    }
+
+    .col-lg-offset-0 {
+        margin-left: 0%;
+    }
+}
+
+.clearfix:before,
+.clearfix:after,
+.container:before,
+.container:after,
+.container-fluid:before,
+.container-fluid:after,
+.row:before,
+.row:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after,
+.container:after,
+.container-fluid:after,
+.row:after {
+    clear: both;
+}
+
+.center-block {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.pull-right {
+    float: right !important;
+}
+
+.pull-left {
+    float: left !important;
+}
+
+.hide {
+    display: none !important;
+}
+
+.show {
+    display: block !important;
+}
+
+.invisible {
+    visibility: hidden;
+}
+
+.text-hide {
+    font: 0/0 a;
+    color: transparent;
+    text-shadow: none;
+    background-color: transparent;
+    border: 0;
+}
+
+.hidden {
+    display: none !important;
+}
+
+.affix {
+    position: fixed;
+}
+
+/*
+--------------------
+Utilities
+--------------------
+*/
+h1.visuallyhidden,
+h1.sr-only {
+    color: #265f7c;
+}
+
+label.sr-only {
+    color: #757575;
+}
+
+.hidden {
+    display: none !important;
+    visibility: hidden;
+}
+
+.invisible {
+    visibility: hidden;
+}
+
+.no-padding {
+    padding: 0;
+}
+
+.pull-left {
+    float: left;
+}
+
+.image-caption {
+    display: inline-block;
+}
+
+.image-caption p {
+    color: #063f5c;
+    border-bottom: 2px solid #68c7bb;
+}
+
+.image-caption.pull-left,
+.image-caption.pull-right,
+.image-caption.centre {
+    float: none !important;
+    margin-bottom: 8px;
+}
+
+.image-caption.pull-left.quarter-width,
+.image-caption.pull-right.quarter-width,
+.image-caption.centre.quarter-width {
+    /*margin-right: 20px;*/
+}
+
+.image-caption.pull-left {
+    clear: left;
+}
+
+.image-caption.pull-right {
+    clear: right;
+}
+
+.image-caption.for-video {
+    max-width: 570px;
+    margin-bottom: 20px;
+}
+
+@media screen and (min-width: 60em) {
+    .video__pull-right {
+        float: right;
+        margin-left: 30px;
+    }
+}
+
+@media screen and (min-width: 60em) {
+    .video__pull-left {
+        float: left;
+        margin-right: 30px;
+    }
+}
+
+.pull-right {
+    float: right;
+}
+
+.auto-width.pull-right {
+    margin-left: 30px;
+}
+
+.auto-width.pull-left {
+    margin-right: 30px;
+}
+
+.print-only {
+    display: none;
+    visibility: hidden;
+}
+
+.video-container,
+.video-container-inside,
+.iframe-responsive {
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 30px;
+    height: 0;
+    overflow: hidden;
+    margin-bottom: 18px;
+}
+
+@media screen and (min-width: 60em) {
+
+    .video__pull-left .video-container,
+    .video__pull-right .video-container,
+    .video__pull-left .video-container-inside,
+    .video__pull-right .video-container-inside,
+    .video__pull-left .iframe-responsive,
+    .video__pull-right .iframe-responsive {
+        padding-bottom: 0 !important;
+        padding-top: 0 !important;
+        height: auto !important;
+        overflow: hidden !important;
+        margin-bottom: 0 !important;
+    }
+}
+
+@media screen and (min-width: 60em) {
+
+    .content-has-nav-section .video-container,
+    .content-has-sidebar .video-container,
+    .content-has-nav-section .video-container-inside,
+    .content-has-sidebar .video-container-inside,
+    .content-has-nav-section .iframe-responsive,
+    .content-has-sidebar .iframe-responsive {
+        max-width: 570px;
+        height: 350px;
+        padding-bottom: 0;
+    }
+}
+
+@media screen and (min-width: 60em) {
+
+    .content-has-sidebar.content-has-nav-section .video-container,
+    .content-has-sidebar.content-has-nav-section .video-container-inside,
+    .content-has-sidebar.content-has-nav-section .iframe-responsive {
+        max-width: none;
+        height: 0;
+        padding-bottom: 56.25%;
+    }
+}
+
+@media screen and (min-width: 60em) {
+
+    .video-container,
+    .video-container-inside,
+    .iframe-responsive {
+        max-width: 570px;
+        height: 350px;
+        padding-bottom: 0;
+    }
+}
+
+iframe {
+    border: none;
+}
+
+.video-container iframe,
+.video-container-inside iframe,
+.video-container object,
+.video-container embed,
+.iframe-responsive iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+@media screen and (min-width: 60em) {
+
+    .video__pull-left .video-container iframe,
+    .video__pull-right .video-container iframe,
+    .video__pull-left .video-container-inside iframe,
+    .video__pull-right .video-container-inside iframe,
+    .video__pull-left .video-container object,
+    .video__pull-right .video-container object,
+    .video__pull-left .video-container embed,
+    .video__pull-right .video-container embed,
+    .video__pull-left .iframe-responsive iframe,
+    .video__pull-right .iframe-responsive iframe {
+        position: relative;
+        top: 0;
+        left: 0;
+        width: auto;
+        height: auto;
+    }
+}
+
+/*
+--------------------
+General
+--------------------
+*/
+::-moz-selection {
+    background-color: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background-color: #b3d4fc;
+    text-shadow: none;
+}
+
+*:focus {
+    outline: none;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    /* Always show scrollbar to prevent content jumping */
+    overflow-y: scroll;
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    max-width: 100%;
+    height: unset;
+}
+
+input,
+button,
+select,
+textarea {
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+}
+
+@-ms-viewport {
+    width: device-width;
+}
+
+@page {
+    margin: 0.5cm;
+}
+
+/*
+--------------------
+Content
+--------------------
+*/
+/* General */
+body {
+    font-family: "Roboto", sans-serif;
+    font-size: 0.9375em;
+    line-height: 1.5;
+    font-weight: 300;
+    letter-spacing: -0.2px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: bold;
+    color: #063f5c;
+    margin: 0;
+    padding: 0;
+    line-height: 1.1;
+    width: 100%;
+}
+
+h1 {
+    font-size: 2em;
+    padding-bottom: 22px;
+}
+
+h2 {
+    font-size: 1.73333em;
+    padding: 25px 0 8px;
+}
+
+h3 {
+    font-size: 1.28em;
+    padding: 25px 0 8px;
+}
+
+h4 {
+    font-size: 1.2em;
+    padding: 25px 0 8px;
+    color: #000;
+}
+
+h5 {
+    font-size: 1.06667em;
+    padding: 25px 0 8px;
+    color: #000;
+}
+
+h6 {
+    font-size: 1em;
+    padding: 25px 0 8px;
+    color: #000;
+}
+
+p {
+    margin: 0;
+    padding: 0 0 8px 0;
+}
+
+.content-wrapper ul,
+.content-wrapper ol {
+    list-style-position: outside;
+    text-indent: -0.85em;
+    padding: 0px 0px 0px 1em;
+    margin-bottom: 0.5em;
+}
+
+.content-wrapper ul ul,
+.content-wrapper ul ol,
+.content-wrapper ol ul,
+.content-wrapper ol ol {
+    margin-bottom: 0px;
+    margin-left: 2em;
+}
+
+.content-wrapper ul ol,
+.content-wrapper ol ol {
+    counter-reset: counter(dpi-ol);
+}
+
+.content-wrapper ul li:before,
+.content-wrapper ol li:before {
+    margin-right: 0.5em;
+}
+
+/* start merge style from client */
+.content-wrapper .fix-sq-list ul {
+    text-indent: 0;
+    padding-left: 0;
+    margin-top: 6px;
+}
+
+.content-wrapper .fix-sq-list ul>li {
+    text-indent: 0;
+    padding-left: 0;
+}
+
+.content-wrapper .fix-sq-list ul>li:before {
+    content: '';
+}
+
+.content-wrapper ol[type="a"]>li:before {
+    content: counter(dpi-ol, lower-alpha);
+}
+
+.content-wrapper ol[type="A"]>li:before {
+    content: counter(dpi-ol, upper-latin);
+}
+
+.content-wrapper ol[type="I"]>li:before {
+    content: counter(dpi-ol, upper-roman);
+}
+
+.content-wrapper ol[type="i"]>li:before {
+    content: counter(dpi-ol, lower-roman);
+}
+
+.auto-widths .form-control {
+    width: auto;
+}
+
+span.mandatory {
+    color: red;
+}
+
+input {
+    float: none;
+    margin-bottom: 0;
+}
+
+input[type="file"] {
+    clear: left;
+}
+
+/* end merge style from client */
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0 0 8px 0;
+    /* Specificity overrides to restore Bootstrap styles */
+}
+
+ul li {
+    position: relative;
+    padding-left: 16px;
+}
+
+ul li:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 9px;
+    background: #063f5c;
+    width: 6px;
+    height: 6px;
+}
+
+.content-wrapper ul li {
+    position: static;
+    padding-left: 0px;
+}
+
+.content-wrapper ul li:before {
+    position: static;
+    background-color: transparent;
+    width: auto;
+    height: auto;
+}
+
+.content-wrapper ul>li:before {
+    content: '\2022';
+}
+
+.content-wrapper ul ul {
+    text-indent: -1em;
+}
+
+.content-wrapper ul ul>li:before {
+    content: '\25E6';
+}
+
+.content-wrapper ul ul ul {
+    text-indent: -0.85em;
+}
+
+.content-wrapper ul ul ul>li:before {
+    content: '-';
+}
+
+.layout-sidebar-module ul {
+    text-indent: 0px;
+    padding-left: 0px;
+}
+
+ul.list-unstyled li {
+    position: static;
+    padding-left: 0px;
+}
+
+ul.list-unstyled li:before {
+    content: none;
+    position: static;
+    background-color: transparent;
+    width: auto;
+    height: auto;
+}
+
+ol {
+    margin: 0;
+    padding: 0 0 8px 16px;
+}
+
+.content-wrapper ol {
+    list-style-type: none;
+    counter-reset: dpi-ol;
+}
+
+.content-wrapper ol>li:before {
+    content: counter(dpi-ol);
+    counter-increment: dpi-ol;
+}
+
+.content-wrapper ol>li ol {
+    counter-reset: dpi-ol-lev2;
+}
+
+.content-wrapper ol>li ol>li {
+    content: counter(dpi-ol-lev2);
+}
+
+.content-wrapper ol>li ol>li:before {
+    content: counter(dpi-ol-lev2, lower-alpha);
+    counter-increment: dpi-ol-lev2;
+}
+
+.content-wrapper ol>li ol>li ol {
+    counter-reset: dpi-ol-lev3;
+}
+
+.content-wrapper ol>li ol>li ol>li {
+    content: counter(dpi-ol-lev3);
+}
+
+.content-wrapper ol>li ol>li ol>li:before {
+    content: counter(dpi-ol-lev3, decimal);
+    counter-increment: dpi-ol-lev3;
+}
+
+.content-wrapper ul>li ol {
+    counter-reset: dpi-ol-ul;
+}
+
+.content-wrapper ul>li ol>li {
+    content: counter(dpi-ol-ul);
+}
+
+.content-wrapper ul>li ol>li:before {
+    content: counter(dpi-ol-ul);
+    counter-increment: dpi-ol-ul;
+}
+
+.content-wrapper ul>li ol>li ol {
+    counter-reset: dpi-ol-ul-lev2;
+}
+
+.content-wrapper ul>li ol>li ol>li {
+    content: counter(dpi-ol-ul-lev2);
+}
+
+.content-wrapper ul>li ol>li ol>li:before {
+    content: counter(dpi-ol-ul-lev2, lower-alpha);
+    counter-increment: dpi-ol-ul-lev2;
+}
+
+.content-wrapper ul>li ol>li ol>li ol {
+    counter-reset: dpi-ol-ul-lev3;
+}
+
+.content-wrapper ul>li ol>li ol>li ol>li {
+    content: counter(dpi-ol-ul-lev3);
+}
+
+.content-wrapper ul>li ol>li ol>li ol>li:before {
+    content: counter(dpi-ol-ul-lev3);
+    counter-increment: dpi-ol-ul-lev3;
+}
+
+dl {
+    margin: 0;
+    padding: 0;
+}
+
+dl dt {
+    margin: 0;
+    padding: 0;
+}
+
+dl dd {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    color: #063f5c;
+    text-decoration: underline;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+a span.ext {
+    position: relative;
+    width: 18px;
+    height: 12px;
+    display: inline-block;
+}
+
+a span.ext:before {
+    content: "";
+    position: absolute;
+    background-image: url("https://www.dpi.nsw.gov.au/__data/assets/file/0011/567326/spritesheet.svg?v=0.0.13");
+    background-size: 320px 800px;
+    background-position: -40px -120px;
+    width: 12px;
+    height: 12px;
+    left: 4px;
+    top: 2px;
+}
+
+.no-svg a span.ext:before {
+    background-image: url("https://www.dpi.nsw.gov.au/__data/assets/image/0003/567327/spritesheet.png?v=0.0.8");
+}
+
+.footer a span.ext:before {
+    background-size: 360px 900px;
+    background-position: -135px -90px;
+    left: 8px;
+}
+
+img.align-left,
+img.pull-left,
+img.align-right,
+img.pull-right,
+img.caption,
+img.full-width {
+    margin-bottom: 8px;
+    width: 100%;
+}
+
+img.align-left,
+img.pull-left {
+    padding-right: 0;
+}
+
+img.align-right,
+img.pull-right {
+    padding-left: 0;
+}
+
+hr {
+    border-width: 2px 0px 0px;
+    border-style: solid none none;
+    border-color: #e9e9e9 transparent transparent;
+}
+
+.p-caption {
+    color: #063f5c;
+    border-bottom: 2px solid #68c7bb;
+    width: 100%;
+}
+
+.p-caption.for-video {
+    margin-bottom: 20px;
+}
+
+/* Forms */
+/* Input placeholder opacity fix */
+input:-webkit-input-placeholder {
+    color: #063f5c;
+    opacity: 1 !important;
+    /* for chrome */
+}
+
+input::-webkit-input-placeholder {
+    color: #063f5c;
+    opacity: 1 !important;
+    /* for chrome */
+}
+
+input:-moz-placeholder {
+    /* Firefox 18- */
+    color: #063f5c;
+    opacity: 1 !important;
+}
+
+input::-moz-placeholder {
+    /* Firefox 19+ */
+    color: #063f5c;
+    opacity: 1 !important;
+}
+
+input:-ms-input-placeholder {
+    color: #063f5c;
+    opacity: 1 !important;
+}
+
+/* Buttons */
+.btn,
+.button {
+    display: inline-block;
+    width: 100%;
+    background: #087cc1;
+    text-align: center;
+    color: #ffffff;
+    font-size: 1em;
+    font-weight: 400;
+    border: none;
+    text-decoration: none;
+    height: 40px;
+    padding: 8px;
+    -moz-border-radius: 0;
+    -webkit-border-radius: 0;
+    border-radius: 0;
+}
+
+.cta__btn {
+    background: #e9e9e9;
+    color: #063f5c;
+    font-weight: bold;
+    font-size: 1em;
+    padding: 14px 17px;
+    height: auto;
+    width: 100%;
+}
+
+.home-content .cta__btn {
+    margin: 0;
+}
+
+.cta__wrap {
+    float: left;
+    width: 50%;
+    background: #e9e9e9;
+    text-align: center;
+    padding: 14px 0;
+}
+
+.cta__wrap.border {
+    border-right: 4px solid #fff;
+    clear: left;
+}
+
+/* Quotes */
+blockquote {
+    position: relative;
+    padding-left: 3em;
+    margin: 2em 0;
+}
+
+blockquote:before {
+    font-size: 75px;
+    font-size: 5rem;
+    color: #2b2b2b;
+    content: "\201C";
+    position: absolute;
+    top: 0;
+    left: 0;
+    line-height: 1em;
+}
+
+.pull-quote {
+    border-top: 1px solid #2b2b2b;
+    padding: 1em .5em 0 .5em;
+    margin: 1em;
+}
+
+/* Highlight */
+.highlight {
+    background: #cccccc;
+    padding: .1em .5em;
+}
+
+/* Tables */
+caption {
+    font-size: 12px;
+    font-size: 0.8rem;
+    font-style: italic;
+}
+
+th {
+    background: #2b2b2b;
+    color: #d4d4d4;
+}
+
+td {
+    border: 1px solid #2b2b2b;
+}
+
+table,
+.table {
+    margin: 0.5em 0 32px;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+table th,
+.table th {
+    background: #063f5c;
+    padding: 0 22px;
+    font-size: 1.06667em;
+    font-weight: bold;
+    color: #ffffff;
+    text-align: left;
+    height: 36px;
+    font-weight: 400;
+    word-wrap: break-word;
+}
+
+table th .tablesorter-header-inner,
+.table th .tablesorter-header-inner {
+    display: inline;
+    position: relative;
+}
+
+table th.tablesorter-header,
+.table th.tablesorter-header {
+    position: relative;
+}
+
+table th.tablesorter-header:before,
+table th.tablesorter-header:after,
+.table th.tablesorter-header:before,
+.table th.tablesorter-header:after {
+    content: "";
+    position: absolute;
+    background-image: url("https://www.dpi.nsw.gov.au/__data/assets/file/0011/567326/spritesheet.svg?v=0.0.13");
+    background-size: 400px 1000px;
+    background-position: 0 -150px;
+    right: 5px;
+    top: 50%;
+    width: 13px;
+    height: 9px;
+    margin-top: -8px;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    opacity: 0.6;
+}
+
+.no-svg table th.tablesorter-header:before,
+.no-svg table th.tablesorter-header:after,
+.no-svg .table th.tablesorter-header:before,
+.no-svg .table th.tablesorter-header:after {
+    background-image: url("https://www.dpi.nsw.gov.au/__data/assets/image/0003/567327/spritesheet.png?v=0.0.8");
+}
+
+table th.tablesorter-header:after,
+.table th.tablesorter-header:after {
+    background-size: 400px 1000px;
+    background-position: -149px -200px;
+    margin-top: 1px;
+}
+
+table th.tablesorter-headerDesc.tablesorter-header:before,
+.table th.tablesorter-headerDesc.tablesorter-header:before {
+    opacity: 1;
+}
+
+table th.tablesorter-headerDesc.tablesorter-header:after,
+.table th.tablesorter-headerDesc.tablesorter-header:after {
+    opacity: 0.6;
+}
+
+table th.tablesorter-headerAsc.tablesorter-header:before,
+.table th.tablesorter-headerAsc.tablesorter-header:before {
+    opacity: 0.6;
+}
+
+table th.tablesorter-headerAsc.tablesorter-header:after,
+.table th.tablesorter-headerAsc.tablesorter-header:after {
+    opacity: 1;
+}
+
+table tr:nth-child(even),
+table tr.tr-even td,
+.table tr:nth-child(even),
+.table tr.tr-even td {
+    background-color: #e6ebee;
+}
+
+table td,
+.table td {
+    vertical-align: top;
+    padding: 15px 22px;
+    border: none;
+}
+
+.table-wrapper {
+    overflow-x: scroll;
+    max-width: 100%;
+}
+
+/* Prevent Tablesorter from conflicting with Bootstrap table styles */
+.sort.table-condensed>thead>tr>.tablesorter-header,
+.sort.table-condensed>tbody>tr>.tablesorter-header,
+.sort.table-condensed>tfoot>tr>.tablesorter-header {
+    padding-right: 22px;
+}
+
+/* User-defined class: remove table stripes */
+.table-not-striped tr:nth-child(even) {
+    background-color: transparent;
+}
+
+/* Tabs */
+.nav-tabs {
+    padding: 0;
+    border: none;
+}
+
+.content-wrapper .nav-tabs {
+    /* Override hanging punctuation on lists */
+    text-indent: 0px;
+    padding-left: 0px;
+    margin: 0;
+}
+
+.nav-tabs>li {
+    width: 100%;
+}
+
+.nav-tabs>li:before {
+    display: none;
+}
+
+.nav-tabs>li>a,
+.nav-tabs>li>a:hover,
+.nav-tabs>li>a:focus,
+.nav-tabs>li.active>a,
+.nav-tabs>li.active>a:hover,
+.nav-tabs>li.active>a:focus {
+    margin-bottom: 1px;
+    border: 0px none;
+    border-bottom: 1px solid #fff;
+}
+
+.nav-tabs>li>a {
+    cursor: pointer;
+    display: block;
+    position: relative;
+    background-color: #063f5c;
+    color: #ffffff;
+    font-size: 1.06667em;
+    font-weight: 400;
+    text-decoration: none;
+    padding: 10px 15px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    width: 100%;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+.nav-tabs>li>a:before {
+    display: none;
+}
+
+.nav-tabs>li>a:focus,
+.nav-tabs>li>a:hover {
+    background: #f4f4f4;
+    color: #063f5c;
+}
+
+.nav-tabs>li.active>a {
+    width: 100%;
+    background: #f4f4f4;
+    color: #063f5c;
+}
+
+.nav-tabs>li.active>a:focus,
+.nav-tabs>li.active>a:hover {
+    background: #f4f4f4;
+    color: #063f5c;
+}
+
+.nav-tabs>li .tab-pane {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.tab-content {
+    border: none;
+    margin: 0;
+    background: #f4f4f4;
+    padding: 20px 22px;
+}
+
+.tab-content p {
+    padding: 0;
+}
+
+/* Forms */
+.sq-form-section,
+.sq-form,
+.sq-form fieldset {
+    border: 0;
+    padding: 0;
+    margin: 0;
+}
+
+.sq-form textarea {
+    padding: 0;
+}
+
+.sq-form-question-title,
+.sq-form-question-answer label {
+    display: block;
+    float: left;
+    width: 100%;
+}
+
+.sq-form-question-title span,
+.sq-form-question-answer label span {
+    color: red;
+    float: right;
+}
+
+.sq-form-question-tickbox-list li,
+.sq-form-question-option-list li {
+    display: block;
+    margin-bottom: 7px;
+}
+
+.sq-form-question-tickbox-list li:last-child,
+.sq-form-question-option-list li:last-child {
+    margin-bottom: 0;
+}
+
+.sq-form input[type="radio"],
+.sq-form input[type="checkbox"],
+.sq-form input[type="radio"]~label,
+.sq-form input[type="checkbox"]~label {
+    float: left;
+}
+
+.sq-form-question-note {
+    display: block;
+}
+
+.sq-form .sq-form-question-datetime input[type="password"],
+.sq-form .sq-form-question-datetime input[type="text"],
+.sq-form .sq-form-question-datetime label,
+.sq-form .sq-form-question-datetime select {
+    width: auto;
+}
+
+abbr.sq-form-required-field {
+    border: none;
+}
+
+.sq-form-error {
+    clear: left;
+}
+
+.standard__form {
+    margin-bottom: 32px;
+    text-align: left;
+}
+
+.sq-form-unattached {
+    float: left;
+    margin: 0 -14px;
+    text-align: left;
+}
+
+.sq-form-question {
+    width: 100%;
+    float: left;
+}
+
+.sq-form-question.sq-form-question-text,
+.sq-form-question.sq-form-question-email-address {
+    width: 100%;
+}
+
+.sq-form-question-answer {
+    position: relative;
+}
+
+.sq-form-question-answer ul {
+    /* Override hanging punctuation on lists */
+    text-indent: 0px;
+    padding-left: 0px;
+}
+
+input {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -o-appearance: none;
+    appearance: none;
+    -webkit-border-radius: 0;
+    border-radius: 0;
+    float: left;
+    /* Input placeholder opacity fix */
+}
+
+input:checked+label:before {
+    background-size: 400px 1000px;
+    background-position: 0 0;
+}
+
+input,
+.sq-form-question input {
+    color: #2b2b2b;
+    padding: 0px 10px;
+    width: 100%;
+    margin-bottom: 18px;
+    background-color: #f4f4f4;
+    border: none;
+    font-weight: 300;
+    height: 42px;
+}
+
+input[type="checkbox"],
+.sq-form-question input[type="checkbox"] {
+    display: none;
+}
+
+input[type="checkbox"]+label,
+.sq-form-question input[type="checkbox"]+label {
+    padding-left: 25px;
+    position: relative;
+    cursor: pointer;
+}
+
+.lt-ie9 input[type="checkbox"]+label,
+.lt-ie9 .sq-form-question input[type="checkbox"]+label {
+    padding-left: 10px;
+}
+
+input[type="checkbox"]+label:before,
+.sq-form-question input[type="checkbox"]+label:before {
+    content: "";
+    position: absolute;
+    background-image: url(https://www.dpi.nsw.gov.au/__data/assets/file/0011/567326/spritesheet.svg?v=0.0.13);
+    background-size: 400px 1000px;
+    background-position: 0 -400px;
+    width: 17px;
+    height: 17px;
+    left: 0;
+    top: 3px;
+}
+
+.no-svg input[type="checkbox"]+label:before,
+.no-svg .sq-form-question input[type="checkbox"]+label:before {
+    background-image: url(https://www.dpi.nsw.gov.au/__data/assets/image/0003/567327/spritesheet.png?v=0.0.8);
+}
+
+.lt-ie9 input[type="checkbox"]+label:before,
+.lt-ie9 .sq-form-question input[type="checkbox"]+label:before {
+    display: none;
+}
+
+input[type="checkbox"]:checked+label:before,
+.sq-form-question input[type="checkbox"]:checked+label:before {
+    background-size: 400px 1000px;
+    background-position: -50px -400px;
+}
+
+.lt-ie9 .search-filter__wrap input[type="checkbox"],
+.lt-ie9 .search-filter__wrap .sq-form-question input[type="checkbox"] {
+    margin: 4px 10px 0 0;
+}
+
+.lt-ie9 input[type="checkbox"],
+.lt-ie9 .sq-form-question input[type="checkbox"] {
+    display: block;
+    border: none;
+    padding: 4px 0 0 0;
+    margin-bottom: 0;
+    width: 20px;
+}
+
+input[type="radio"],
+.sq-form-question input[type="radio"] {
+    display: none;
+}
+
+input[type="radio"]+label,
+.sq-form-question input[type="radio"]+label {
+    padding-left: 25px;
+    position: relative;
+    cursor: pointer;
+}
+
+.lt-ie9 input[type="radio"]+label,
+.lt-ie9 .sq-form-question input[type="radio"]+label {
+    padding-left: 10px;
+}
+
+input[type="radio"]+label:before,
+.sq-form-question input[type="radio"]+label:before {
+    content: "";
+    position: absolute;
+    background-image: url(https://www.dpi.nsw.gov.au/__data/assets/file/0011/567326/spritesheet.svg?v=0.0.13);
+    background-size: 400px 1000px;
+    background-position: -100px -400px;
+    width: 17px;
+    height: 18px;
+    left: 0;
+    top: 3px;
+}
+
+.no-svg input[type="radio"]+label:before,
+.no-svg .sq-form-question input[type="radio"]+label:before {
+    background-image: url(https://www.dpi.nsw.gov.au/__data/assets/image/0003/567327/spritesheet.png?v=0.0.8);
+}
+
+.lt-ie9 input[type="radio"]+label:before,
+.lt-ie9 .sq-form-question input[type="radio"]+label:before {
+    display: none;
+}
+
+input[type="radio"]:checked+label:before,
+.sq-form-question input[type="radio"]:checked+label:before {
+    background-size: 400px 1000px;
+    background-position: -150px -400px;
+}
+
+.lt-ie9 input[type="radio"],
+.lt-ie9 .sq-form-question input[type="radio"] {
+    display: block;
+    border: none;
+    padding: 4px 0 0 0;
+}
+
+input:-webkit-input-placeholder {
+    color: #2b2b2b;
+    opacity: 1 !important;
+    /* for chrome */
+}
+
+input::-webkit-input-placeholder {
+    color: #2b2b2b;
+    opacity: 1 !important;
+    /* for chrome */
+}
+
+input:-moz-placeholder {
+    /* Firefox 18- */
+    color: #2b2b2b;
+    opacity: 1 !important;
+}
+
+input::-moz-placeholder {
+    /* Firefox 19+ */
+    color: #2b2b2b;
+    opacity: 1 !important;
+}
+
+input:-ms-input-placeholder {
+    color: #2b2b2b;
+    opacity: 1 !important;
+}
+
+button {
+    border: 0px none;
+}
+
+input[type="reset"],
+input[type="submit"],
+button {
+    float: right;
+    font-weight: 400;
+    padding: 0;
+    height: 40px;
+}
+
+input[type="reset"],
+button[type="reset"] {
+    background-color: #ffffff;
+    color: #087cc1;
+    border: 2px solid #087cc1;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+input[type="submit"],
+button[type="submit"],
+button[type="button"] {
+    background-color: #087cc1;
+    color: #ffffff;
+}
+
+textarea {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -o-appearance: none;
+    appearance: none;
+    -webkit-border-radius: 0;
+    border-radius: 0;
+}
+
+.sq-form-question textarea {
+    color: #2b2b2b;
+    padding: 12px 10px;
+    width: 100%;
+    margin-bottom: 18px;
+    background-color: #f4f4f4;
+    border: none;
+    font-weight: 300;
+    height: 88px;
+}
+
+.sq-form-question label,
+.sq-form-question legend {
+    color: #063f5c;
+    margin-bottom: 0;
+    width: 100%;
+}
+
+.sq-form-question fieldset {
+    border: none;
+    padding: 0;
+    margin: 0 0 18px;
+}
+
+select {
+    /*-webkit-appearance: none;*/
+    /*-moz-appearance: none;*/
+    /*-o-appearance: none;*/
+    /*appearance: none;*/
+    -webkit-border-radius: 0;
+    border-radius: 0;
+    position: relative;
+    background: transparent;
+}
+
+.sq-form-question select,
+.rhs-column select,
+.layout-sidebar select {
+    color: #2b2b2b;
+    padding: 10px;
+    width: 100%;
+    margin-bottom: 0;
+    background: none;
+    border: none;
+    font-weight: 300;
+    height: 42px;
+    width: 100%;
+}
+
+select:-moz-focusring {
+    color: transparent;
+    text-shadow: 0 0 0 #000;
+}
+
+.lt-ie10 select {
+    width: 110%;
+    margin-left: -10px;
+}
+
+.style-select {
+    position: relative;
+    width: 100%;
+    background-color: #f4f4f4;
+    float: left;
+    margin-bottom: 18px;
+    overflow: hidden;
+}
+
+.style-select:before {
+    content: "";
+    position: absolute;
+    background-image: url(https://www.dpi.nsw.gov.au/__data/assets/file/0011/567326/spritesheet.svg?v=0.0.13);
+    background-size: 400px 1000px;
+    background-position: -32px -181px;
+    width: 50px;
+    height: 42px;
+    right: 0;
+    top: 0;
+    border-left: 1px solid #fafafa;
+    z-index: 0;
+}
+
+.no-svg .style-select:before {
+    background-image: url(https://www.dpi.nsw.gov.au/__data/assets/image/0003/567327/spritesheet.png?v=0.0.8);
+}
+
+.main-content .sq-form-question ul li {
+    width: 100%;
+    float: left;
+}
+
+.main-content .sq-form-question ul li:before {
+    display: none;
+}
+
+.main-content .sq-form-question ul li input {
+    width: auto;
+    float: left;
+    margin: 5px 7px 0 0;
+}
+
+.main-content .sq-form-question ul li label {
+    width: auto;
+    float: left;
+    font-weight: normal;
+    color: #2b2b2b;
+}
+
+label.error {
+    color: #c80000;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: auto;
+}
+
+label.error:before {
+    content: "*";
+    position: absolute;
+    left: -10px;
+}
+
+input.error {
+    background-color: #fff4f4;
+    border: 1px solid #da5151;
+}
+
+/*
+Form Style Fix: http://www.dpi.nsw.gov.au/about-us/rural-support/loop2
+*/
+#form_email_668156 input[type="checkbox"]+label {
+    padding-left: 40px;
+}
+
+/* Pagination */
+.pagination {
+    display: block;
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    border-radius: 0px;
+}
+
+.pagination.count-pages-1 {
+    display: none;
+}
+
+.pagination__list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.pagination__list li {
+    padding: 0;
+}
+
+.pagination__list li:before {
+    display: none;
+}
+
+.content-wrapper .pagination__list {
+    /* Override hanging punctuation on lists */
+    text-indent: 0px;
+    padding-left: 0px;
+}
+
+.pagination__link {
+    float: left;
+    line-height: 1em;
+    text-decoration: none;
+    padding: 0.5em 0.8em;
+    margin-right: 10px;
+}
+
+.pagination__link:last-of-type {
+    margin-right: 0px;
+}
+
+.current .pagination__link,
+.prev .pagination__link,
+.next .pagination__link,
+.pagination__link:focus,
+.pagination__link:hover {
+    background: #002e45;
+    color: #ffffff;
+}
+
+.prev .pagination__link,
+.next .pagination__link {
+    font-weight: bold;
+}
+
+.prev .pagination__link:before,
+.next .pagination__link:after {
+    content: '';
+    background-image: url("https://www.dpi.nsw.gov.au/__data/assets/file/0011/567326/spritesheet.svg?v=0.0.13");
+    width: 10px;
+    height: 14px;
+}
+
+.no-svg .prev .pagination__link:before,
+.no-svg .next .pagination__link:after {
+    background-image: url("https://www.dpi.nsw.gov.au/__data/assets/image/0003/567327/spritesheet.png?v=0.0.8");
+}
+
+.prev .pagination__link:before {
+    float: left;
+    background-size: 400px 1000px;
+    background-position: -100px -150px;
+    margin-right: 10px;
+}
+
+.next .pagination__link:after {
+    float: right;
+    background-size: 400px 1000px;
+    background-position: -150px -150px;
+    margin-left: 10px;
+}
+
+.js-back-to-top {
+    order: 3;
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+    background-image: url("https://www.dpi.nsw.gov.au/__data/assets/file/0011/567326/spritesheet.svg?v=0.0.13");
+    background-size: 400px 1000px;
+    background-position: -300px -150px;
+    text-indent: -9999px;
+    border: none;
+    width: 46px;
+    height: 46px;
+}
+
+.no-svg .js-back-to-top {
+    background-image: url("https://www.dpi.nsw.gov.au/__data/assets/image/0003/567327/spritesheet.png?v=0.0.8");
+}
+
+.rhs-column .js-back-to-top {
+    margin-top: -46px;
+}
+
+.lhs-nav .js-back-to-top {
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+/* ----- Landing ----- */
+.landing-toc__list {
+    background-color: #fbfbfb;
+    padding: 24px 24px 28px 24px;
+    margin-bottom: 30px;
+    border-bottom: 6px solid #68c7bb;
+    margin-top: 12px;
+}
+
+.landing-toc__sizer,
+.landing-toc__grid {
+    width: 100%;
+}
+
+.landing-toc__grid {
+    float: left;
+}
+
+.landing-toc__item {
+    float: left;
+    width: 100%;
+}
+
+.landing-toc__item-title {
+    font-size: 1em;
+    font-weight: 300;
+    padding: 0px;
+}
+
+.landing-toc__item-link {
+    color: #2b2b2b;
+}
+
+.landing-toc__list-lev2 {
+    display: none;
+}
+
+.content-wrapper .landing-toc__list-lev2 {
+    padding-top: 20px;
+    margin-bottom: 0px;
+}
+
+.landing-toc__item-link-lev2 {
+    color: #2b2b2b;
+}
+
+/* ----- Generic Summary Listings ----- */
+.summary__list {
+    clear: both;
+}
+
+.summary__item {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    position: relative;
+    background-color: #f4f4f4;
+    text-decoration: none;
+    padding: 16px;
+    margin-bottom: 1em;
+}
+
+.summary__item-thumb-link {
+    display: none;
+}
+
+.summary__item-title-wrapper p {
+    padding-bottom: 0px;
+}
+
+.summary__item-title {
+    font-size: 1.2em;
+    padding-top: 0px;
+}
+
+.summary__item-link {
+    text-decoration: none;
+}
+
+.summary__item-link:hover,
+.summary__item-link:focus {
+    text-decoration: underline;
+}
+
+.summary__item-info:before {
+    content: '';
+    display: inline-block;
+    position: relative;
+    top: 2px;
+    background-image: url("https://www.dpi.nsw.gov.au/__data/assets/file/0011/567326/spritesheet.svg?v=0.0.13");
+    background-size: 400px 1000px;
+    background-position: -350px 0px;
+    margin-right: 4px;
+    width: 15px;
+    height: 16px;
+}
+
+.no-svg .summary__item-info:before {
+    background-image: url("https://www.dpi.nsw.gov.au/__data/assets/image/0003/567327/spritesheet.png?v=0.0.8");
+}
+
+.summary__item-datetime,
+.summary__item-date-close {
+    font-weight: bold;
+}
+
+.summary__item-desc {
+    clear: both;
+    padding-top: 1em;
+    margin-top: 1em;
+    border-top: 1px solid #e9e9e9;
+}
+
+/*
+--------------------
+Global
+--------------------
+*/
+#page-wrapper {
+    overflow: hidden;
+    position: relative;
+    z-index: 2;
+}
+
+.header {
+    background-color: #063f5c;
+    position: relative;
+    z-index: 3;
+    height: 145px;
+}
+
+.site-logo {
+    background-image: url("https://www.dpi.nsw.gov.au/__data/assets/file/0011/567326/spritesheet.svg?v=0.0.13");
+    background-size: 304px 760px;
+    background-position: 0 -190px;
+    display: block;
+    width: 207px;
+    height: 54px;
+    margin-top: 19px;
+    margin-bottom: 20px;
+    text-indent: -9999px;
+}
+
+.no-svg .site-logo {
+    background-image: url("https://www.dpi.nsw.gov.au/__data/assets/image/0003/567327/spritesheet.png?v=0.0.8");
+}
+
+.top-controls {
+    background-color: white;
+    padding-right: 0px;
+    padding-left: 0px;
+    border-top: 1px solid #b4c5cf;
+}
+
+.top-controls__box {
+    height: 51px;
+}
+
+.top-nav {
+    position: relative;
+}
+
+.top-nav__list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    padding: 30px 0;
+    float: left;
+    width: 100%;
+}
+
+.top-nav__list li {
+    padding: 0;
+}
+
+.top-nav__list li:before {
+    display: none;
+}
+
+.top-controls .top-nav__list {
+    display: none;
+}
+
+.main-nav__wrap .top-nav__list {
+    display: block;
+}
+
+.top-nav__link {
+    color: #063f5c;
+    padding: 0 15px;
+    margin-bottom: 20px;
+    display: block;
+}
+
+.top-nav__item:last-child .top-nav__link {
+    margin-bottom: 0;
+}
+
+.menu__btn,
+.search__btn {
+    float: none;
+    height: auto;
+}
+
+.menu__btn {
+    position: relative;
+    left: 15px;
+    z-index: 1;
+    color: #063f5c;
+    padding-right: 43px;
+    margin-top: 15px;
+}
+
+.menu__btn:before {
+    content: "";
+    position: absolute;
+    background-image: url("https://www.dpi.nsw.gov.au/__data/assets/file/0011/567326/spritesheet.svg?v=0.0.13");
+    background-size: 180px 450px;
+    background-position: -135px -112.5px;
+    width: 34px;
+    height: 21px;
+    right: 0;
+}
+
+.no-svg .menu__btn:before {
+    background-image: url("https://www.dpi.nsw.gov.au/__data/assets/image/0003/567327/spritesheet.png?v=0.0.8");
+}
+
+.menu__btn.close-menu__btn {
+    text-indent: -9999px;
+    width: 70px;
+}
+
+.menu__btn.close-menu__btn:before {
+    content: "Close";
+    position: absolute;
+    left: 0;
+    z-index: 4;
+    background-image: url("https://www.dpi.nsw.gov.au/__data/assets/file/0011/567326/spritesheet.svg?v=0.0.13");
+    background-size: 180px 450px;
+    background-position: -90px -202.5px;
+    text-align: left;
+    text-indent: 0;
+    width: 71px;
+    height: 25px;
+}
+
+.no-svg .menu__btn.close-menu__btn:before {
+    background-image: url("https://www.dpi.nsw.gov.au/__data/assets/image/0003/567327/spritesheet.png?v=0.0.8");
+}
+
+.search__btn {
+    float: right;
+    position: relative;
+    right: 15px;
+    text-indent: -9999px;
+    margin-top: 15px;
+    width: 25px;
+    height: 25px;
+}
+
+.search__btn:before {
+    content: "";
+    position: absolute;
+    background-image: url("https://www.dpi.nsw.gov.au/__data/assets/file/0011/567326/spritesheet.svg?v=0.0.13");
+    background-size: 552px 1380px;
+    background-position: 0 0;
+    width: 25px;
+    height: 25px;
+    left: 0;
+    top: 0;
+}
+
+.no-svg .search__btn:before {
+    background-image: url("https://www.dpi.nsw.gov.au/__data/assets/image/0003/567327/spritesheet.png?v=0.0.8");
+}
+
+.search__btn.close-search__btn:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 4;
+    background-image: url("https://www.dpi.nsw.gov.au/__data/assets/file/0011/567326/spritesheet.svg?v=0.0.13");
+    background-size: 180px 450px;
+    background-position: -135px -202.5px;
+    width: 25px;
+    height: 25px;
+}
+
+.no-svg .search__btn.close-search__btn:before {
+    background-image: url("https://www.dpi.nsw.gov.au/__data/assets/image/0003/567327/spritesheet.png?v=0.0.8");
+}
+
+.quick-search__box {
+    width: 0;
+    position: absolute;
+    top: 0px;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+.quick-search__box.sq-active {
+    width: 100%;
+}
+
+.quick-search__label {
+    color: #fff !important;
+}
+
+.quick-search__input,
+.tt-hint {
+    background-color: #ffffff !important;
+    font-size: 1.2em;
+    color: #063f5c;
+    font-weight: 300;
+    padding: 0;
+    margin: 0;
+    border: none;
+}
+
+.quick-search__input::-ms-clear,
+.tt-hint::-ms-clear {
+    display: none;
+}
+
+.search__form {
+    position: relative;
+    width: 100%;
+    z-index: 1;
+    margin: 0;
+}
+
+.shadow-mobile {
+    display: none;
+}
+
+.shadow-mobile.sq-active {
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 2;
+}
+
+.main-nav__wrap {
+    max-height: 0;
+    overflow: hidden;
+    margin: 0 -15px;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+.main-nav__wrap .row {
+    background-color: #dbdbdb;
+}
+
+.main-nav__wrap.sq-active {
+    max-height: 1000px;
+}
+
+.main-nav__list {
+    text-align: justify;
+}
+
+.main-nav__item {
+    position: relative;
+    min-height: 46px;
+    border-bottom: 1px solid #ececec;
+    float: left;
+    width: 100%;
+}
+
+.main-nav__list .main-nav__item {
+    padding: 0 15px;
+}
+
+.main-nav__link {
+    float: left;
+    padding: 11px 0;
+    width: 100%;
+    color: #063f5c;
+    text-decoration: none;
+    position: relative;
+    z-index: 0;
+}
+
+.main-nav__link:after {
+    content: "";
+    position: absolute;
+    background-image: url("https://www.dpi.nsw.gov.au/__data/assets/file/0011/567326/spritesheet.svg?v=0.0.13");
+    background-size: 400px 1000px;
+    background-position: -200px -100px;
+    -webkit-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+    cursor: pointer;
+    width: 30px;
+    height: 44px;
+    right: -20px;
+    top: -8px;
+    z-index: 1;
+}
+
+.no-svg .main-nav__link:after {
+    background-image: url("https://www.dpi.nsw.gov.au/__data/assets/image/0003/567327/spritesheet.png?v=0.0.8");
+}
+
+.main-nav-lev2__list {
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    float: left;
+    width: 100%;
+    padding: 0;
+    -webkit-transition: opacity 0.3s ease;
+    -moz-transition: opacity 0.3s ease;
+    transition: opacity 0.3s ease;
+}
+
+.main-nav__list .main-nav-lev2__item {
+    padding: 0 15px;
+    min-height: 46px;
+    border-bottom: 1px solid #dbdbdb;
+}
+
+.main-nav__list .main-nav-lev2__item:last-child {
+    border-bottom: none;
+}
+
+.main-nav-lev2__link {
+    color: #063f5c;
+    float: left;
+    padding: 11px 0 10px;
+    position: relative;
+    text-decoration: none;
+    width: 100%;
+    z-index: 0;
+}
+
+.alert-panel {
+    display: block;
+    overflow: hidden;
+    background-color: #002e45;
+    text-decoration: none;
+    width: 100%;
+}
+
+.alert-panel:hover,
+.alert-panel:focus {
+    background-color: #000;
+}
+
+.alert-panel .alert-panel__title:before {
+    background-size: 400px 1000px;
+    background-position: -300px -350px;
+}
+
+.alert-panel.home-alert:hover,
+.alert-panel.home-alert:focus,
+.alert-panel.warning:hover,
+.alert-panel.warning:focus,
+.alert-panel.info:hover,
+.alert-panel.info:focus {
+    opacity: 0.85;
+}
+
+.alert-panel.home-alert {
+    background-color: #a9173a;
+}
+
+.alert-panel.home-alert .alert-panel__title:before {
+    background-size: 400px 1000px;
+    background-position: -250px -350px;
+}
+
+.alert-panel.warning {
+    background-color: #ca4b20;
+}
+
+.alert-panel.warning .alert-panel__title:before {
+    background-size: 400px 1000px;
+    background-position: -250px -350px;
+}
+
+.alert-panel.info {
+    background-color: #328252;
+}
+
+.alert-panel.info .alert-panel__title:before {
+    background-size: 400px 1000px;
+    background-position: -300px -350px;
+}
+
+.alert-panel__box {
+    padding: 15px 0;
+}
+
+.alert-panel__title {
+    font-size: 16px;
+    font-weight: 400;
+    padding-left: 40px;
+    padding-right: 20px;
+    position: relative;
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+
+.alert-panel__title:before {
+    content: '';
+    position: absolute;
+    background-image: url("https://www.dpi.nsw.gov.au/__data/assets/file/0011/567326/spritesheet.svg?v=0.0.13");
+    width: 30px;
+    height: 30px;
+    left: -4px;
+    top: 0;
+}
+
+.no-svg .alert-panel__title:before {
+    background-image: url("https://www.dpi.nsw.gov.au/__data/assets/image/0003/567327/spritesheet.png?v=0.0.8");
+}
+
+.alert-panel__desc {
+    display: table-cell;
+    color: #ffffff;
+}
+
+.home-slider {
+    z-index: 1;
+}
+
+.home-slider__section {
+    height: auto;
+    overflow: hidden;
+    position: relative;
+    margin: 0 -15px;
+}
+
+.home-slider__section .slick-dots {
+    display: table !important;
+    bottom: 20px;
+    left: 0;
+    margin: auto;
+    position: relative;
+    right: 0;
+}
+
+.home-slider__section .slick-dots li {
+    float: left;
+    width: 11px;
+    height: 11px;
+    margin: 0 5px;
+}
+
+.home-slider__section .slick-dots li button {
+    width: 11px;
+    height: 11px;
+    background-color: #ffffff;
+    opacity: 0.8;
+    border: none;
+    text-indent: -9999px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    border-radius: 50px;
+    padding: 0;
+}
+
+.home-slider__section .slick-dots li.slick-active button,
+.home-slider__section .slick-dots li:focus button,
+.home-slider__section .slick-dots li:hover button {
+    opacity: 1;
+}
+
+.home-slider__item {
+    height: 220px;
+    overflow: hidden;
+}
+
+.home-slider__item-container {
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 30px;
+    padding-right: 30px;
+    width: auto;
+    position: relative;
+}
+
+.home-slider__bg-img {
+    position: absolute;
+    width: 120%;
+    height: auto;
+    top: -10px;
+    max-width: none;
+}
+
+.home-slider__text-box {
+    width: 100%;
+    overflow: hidden;
+    height: 220px;
+    position: relative;
+}
+
+.slick-slide .home-slider__img {
+    display: none;
+}
+
+.home-slider__text {
+    background-color: #ffffff;
+    border-bottom: 3px solid #063f5c;
+    position: absolute;
+    bottom: 30px;
+    padding: 15px 20px;
+    width: 100%;
+}
+
+.home-slider__text h2 {
+    padding: 0;
+    font-size: 1.33333em;
+    line-height: 1.5;
+    letter-spacing: -1px;
+}
+
+.home-slider__text p {
+    display: none;
+}
+
+.no-img .home-slider__text {
+    background-color: #ffffff;
+}
+
+.no-img .home-slider__text p {
+    width: 50%;
+}
+
+.blur {
+    filter: url(https://www.dpi.nsw.gov.au/__data/assets/file/0009/567324/blur.svg?v=0.0.2#blur);
+    filter: progid:DXImageTransform.Microsoft.Blur(PixelRadius='15');
+    filter: blur(15px);
+    -webkit-filter: blur(15px);
+    -moz-filter: blur(15px);
+    -o-filter: blur(15px);
+    -ms-filter: blur(15px);
+}
+
+.no-img .blur {
+    filter: none;
+    -webkit-filter: none;
+    -moz-filter: none;
+    -o-filter: none;
+    -ms-filter: none;
+}
+
+.play-pause__wrap {
+    position: absolute;
+    right: 27.2%;
+    bottom: -6px;
+    z-index: 1;
+    display: none;
+}
+
+.play-slider,
+.pause-slider {
+    background-image: url("https://www.dpi.nsw.gov.au/__data/assets/file/0011/567326/spritesheet.svg?v=0.0.13");
+    background-size: 400px 1000px;
+    background-position: -100px 0;
+    width: 20px;
+    height: 20px;
+    text-indent: -9999px;
+    float: left;
+    cursor: pointer;
+}
+
+.no-svg .play-slider,
+.no-svg .pause-slider {
+    background-image: url("https://www.dpi.nsw.gov.au/__data/assets/image/0003/567327/spritesheet.png?v=0.0.8");
+}
+
+.play-slider {
+    width: 10px;
+    height: 10px;
+    border-top: 5px solid transparent;
+    border-bottom: 5px solid transparent;
+    border-left: 10px solid #063f5c;
+    margin: -18px 0 0 -18px;
+}
+
+.home-slider-nav {
+    display: block;
+}
+
+.home-slider-nav .slick-list {
+    overflow: visible;
+    padding: 0 !important;
+}
+
+.home-slider-nav .slick-track {
+    width: 100% !important;
+    -ms-transform: none !important;
+    -webkit-transform: none !important;
+    transform: none !important;
+}
+
+.home-slider-nav-container {
+    display: block;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.home-slider-nav__item {
+    width: 100% !important;
+    position: absolute;
+    top: -1000px;
+    opacity: 0;
+}
+
+.home-slider-nav__item.slick-active {
+    top: 0;
+    height: 190px;
+    z-index: 1;
+    background: red;
+}
+
+.home-slider-nav__btn {
+    display: none;
+}
+
+.home-slider-link__area {
+    display: none;
+    position: absolute;
+    width: 100%;
+    overflow: hidden;
+    height: 190px;
+    position: absolute;
+    font-size: 0;
+    line-height: 0;
+    color: #427b98;
+}
+
+.home-slider-nav__item.slick-active .home-slider-link__area {
+    display: block;
+}
+
+.quick-links__container {
+    width: 100%;
+    padding: 0 15px;
+}
+
+.quick-links__box {
+    width: 100%;
+    padding: 0 15px;
+}
+
+.quick-links__title {
+    display: inline-block;
+    font-size: 1.33333em;
+    color: #2b2b2b;
+    padding-top: 7px;
+    padding-bottom: 6px;
+}
+
+.quick-links__item {
+    display: block;
+    background-color: #e9e9e9;
+    margin-top: 1px;
+}
+
+.quick-links__link {
+    display: block;
+    padding: 10px 35px 10px 15px;
+    text-decoration: none;
+    position: relative;
+}
+
+.quick-links__link:before {
+    content: "";
+    position: absolute;
+    background-image: url("https://www.dpi.nsw.gov.au/__data/assets/file/0011/567326/spritesheet.svg?v=0.0.13");
+    background-size: 400px 1000px;
+    background-position: -200px -100px;
+    -webkit-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+    width: 13px;
+    height: 9px;
+    right: 15px;
+    top: 50%;
+    margin-top: -3px;
+}
+
+.no-svg .quick-links__link:before {
+    background-image: url("https://www.dpi.nsw.gov.au/__data/assets/image/0003/567327/spritesheet.png?v=0.0.8");
+}
+
+.row-main {
+    display: flex;
+    flex-direction: column;
+    display: -webkit-flex;
+    -webkit-flex-direction: column;
+    /* Leave room for "Back to Top" link */
+    padding-bottom: 60px;
+}
+
+.col-nav-section {
+    order: 2;
+    -webkit-order: 2;
+}
+
+.col-content {
+    order: 1;
+    -webkit-order: 1;
+}
+
+@media print {
+    .col-content {
+        width: 100%;
+    }
+}
+
+.main {
+    position: relative;
+    z-index: 1;
+    padding-top: 19px;
+    border-top: 1px solid #d5d5d5;
+    /* Prevent cropping Typeahead autocomplete menu on Search page */
+    min-height: 20em;
+}
+
+.home .main {
+    border-top: none;
+}
+
+.flexbox__container {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+}
+
+.flexbox1 {
+    -webkit-order: 2;
+    -ms-flex-order: 2;
+    order: 2;
+}
+
+.flexbox2 {
+    -webkit-order: 1;
+    -ms-flex-order: 1;
+    order: 1;
+}
+
+.home-content h2 {
+    padding-top: 2px;
+    font-size: 1.6em;
+    color: #2b2b2b;
+    padding-bottom: 12px;
+    position: relative;
+    padding-left: 30px;
+    margin-bottom: 13px;
+}
+
+.home-content h2:before {
+    content: "";
+    position: absolute;
+    background-image: url("https://www.dpi.nsw.gov.au/__data/assets/file/0011/567326/spritesheet.svg?v=0.0.13");
+}
+
+.no-svg .home-content h2:before {
+    background-image: url("https://www.dpi.nsw.gov.au/__data/assets/image/0003/567327/spritesheet.png?v=0.0.8");
+}
+
+.home-content h2.twitter-icon {
+    border-bottom: 3px solid #68c7bb;
+}
+
+.home-content h2.twitter-icon:before {
+    background-size: 360px 900px;
+    background-position: -180px -45px;
+    width: 26px;
+    height: 18px;
+    left: 0;
+    top: 8px;
+}
+
+.home-content h2.research-icon {
+    border-bottom: 3px solid #087cc1;
+}
+
+.home-content h2.research-icon:before {
+    background-size: 292px 735px;
+    background-position: -143.5px -291.0px;
+    width: 21px;
+    height: 21px;
+    left: 0;
+    top: 5px;
+}
+
+.home-content h2.media-icon {
+    border-bottom: 3px solid #087cc1;
+}
+
+.home-content h2.media-icon:before {
+    background-size: 292px 730px;
+    background-position: -182.5px 0;
+    width: 21px;
+    height: 15px;
+    left: 0;
+    top: 9px;
+}
+
+.home-content h2.feedback-icon {
+    border-bottom: 3px solid #16c1f3;
+}
+
+.home-content h2.feedback-icon:before {
+    background-size: 240px 600px;
+    background-position: -180px 0;
+    width: 22px;
+    height: 17px;
+    left: 0;
+    top: 9px;
+}
+
+.home-content__social-link {
+    float: left;
+    text-indent: -9999px;
+    margin-left: 20px;
+    display: block;
+    background-image: url("https://www.dpi.nsw.gov.au/__data/assets/file/0011/567326/spritesheet.svg?v=0.0.13");
+    -webkit-transition: none 0.3s ease;
+    -moz-transition: none 0.3s ease;
+    transition: none 0.3s ease;
+}
+
+.no-svg .home-content__social-link {
+    background-image: url("https://www.dpi.nsw.gov.au/__data/assets/image/0003/567327/spritesheet.png?v=0.0.8");
+}
+
+.home-content__social-link.twitter {
+    background-size: 400px 1000px;
+    background-position: -200px -50px;
+    width: 27px;
+    height: 19px;
+}
+
+.home-content__social-link.facebook {
+    background-size: 400px 1000px;
+    background-position: -300px -50px;
+    width: 10px;
+    height: 20px;
+}
+
+.home-content__social-link.youtube {
+    background-size: 400px 1000px;
+    background-position: 0 -100px;
+    width: 20px;
+    height: 20px;
+}
+
+.twitter-feed__box {
+    display: none;
+}
+
+.media__box,
+.feedback__box {
+    margin-bottom: 28px;
+}
+
+.follow {
+    float: left;
+    width: 100%;
+    margin-top: 5px;
+}
+
+.follow h5 {
+    float: left;
+    padding: 0 0 20px;
+    margin-top: 0px;
+    width: auto;
+}
+
+.apps {
+    float: left;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    width: 100%;
+}
+
+.apps h5 {
+    float: left;
+    width: auto;
+    padding: 0 0 20px;
+}
+
+.apps .app-store,
+.apps .android {
+    position: relative;
+}
+
+.apps .app-store:before,
+.apps .android:before {
+    content: "";
+    position: absolute;
+    background-image: url("https://www.dpi.nsw.gov.au/__data/assets/file/0011/567326/spritesheet.svg?v=0.0.13");
+}
+
+.no-svg .apps .app-store:before,
+.no-svg .apps .android:before {
+    background-image: url("https://www.dpi.nsw.gov.au/__data/assets/image/0003/567327/spritesheet.png?v=0.0.8");
+}
+
+.apps .app-store {
+    padding: 0 0 0 25px;
+    display: inline;
+}
+
+.apps .app-store:before {
+    background-size: 400px 1000px;
+    background-position: -150px -352px;
+    left: 0;
+    top: 2px;
+    width: 17px;
+    height: 17px;
+}
+
+.apps .android {
+    padding: 0 0 0 25px;
+    display: inline;
+}
+
+.apps .android:before {
+    background-size: 400px 1000px;
+    background-position: -200px -350px;
+    left: 0;
+    top: 2px;
+    width: 18px;
+    height: 21px;
+}
+
+.col-lg-9 .lhs-nav {
+    padding-top: 10px;
+}
+
+.lhs-nav h2 {
+    background-color: #063f5c;
+    color: #ffffff;
+    font-size: 1.33333em;
+    padding: 15px 22px 13px;
+}
+
+.lhs-nav h2 a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.lhs-nav__list-sub2 li:before {
+    display: block;
+    top: 50%;
+    margin-top: -3px;
+    left: 50px;
+    z-index: 1;
+}
+
+.lhs-nav__item {
+    float: left;
+    width: 100%;
+}
+
+.lhs-nav__item-sub1 {
+    float: left;
+    width: 100%;
+}
+
+.lhs-nav__item-sub2 {
+    float: left;
+    width: 100%;
+    position: relative;
+}
+
+.lhs-nav__link {
+    padding: 15px 22px 13px 22px;
+    color: #2b2b2b;
+    float: left;
+    width: 100%;
+    border-bottom: 1px solid #efefef;
+    text-decoration: none;
+}
+
+.lhs-nav__item.parent .lhs-nav__link {
+    font-weight: bold;
+    position: relative;
+}
+
+.lhs-nav__item.selected .lhs-nav__link,
+.lhs-nav__item.current .lhs-nav__link {
+    background-color: #68c7bb;
+    font-weight: bold;
+    position: relative;
+}
+
+.lhs-nav__link-sub1 {
+    color: #2b2b2b;
+    float: left;
+    width: 100%;
+    padding: 15px 13px 13px 44px;
+    border-bottom: 1px solid #ebebeb;
+    text-decoration: none;
+}
+
+.lhs-nav__item-sub1.parent .lhs-nav__link-sub1,
+.lhs-nav__item-sub1.current .lhs-nav__link-sub1 {
+    font-weight: bold;
+    position: relative;
+}
+
+.lhs-nav__item-sub1.selected .lhs-nav__link-sub1 {
+    background-color: #68c7bb;
+    font-weight: bold;
+    position: relative;
+}
+
+.lhs-nav__link-sub2 {
+    color: #2b2b2b;
+    float: left;
+    width: 100%;
+    padding: 15px 22px 13px 70px;
+    border-bottom: 1px solid #ebebeb;
+    text-decoration: none;
+}
+
+.lhs-nav__item-sub2.parent .lhs-nav__link-sub2 {
+    background-color: #68c7bb;
+    font-weight: bold;
+    position: relative;
+}
+
+.lhs-nav__item-sub2.selected .lhs-nav__link-sub2,
+.lhs-nav__item-sub2.current .lhs-nav__link-sub2 {
+    background-color: #68c7bb;
+    font-weight: bold;
+    position: relative;
+}
+
+.breadcrumbs {
+    display: none;
+    padding-left: 20px;
+}
+
+.breadcrumbs__list {
+    width: 80%;
+    float: left;
+    margin-bottom: 24px;
+}
+
+.breadcrumbs__list .breadcrumbs__item {
+    float: left;
+    padding-right: 32px;
+    font-size: 0.93333em;
+    font-weight: 400;
+    color: #063f5c;
+}
+
+.breadcrumbs__list .breadcrumbs__item:first-of-type {
+    margin-left: -20px;
+}
+
+.breadcrumbs__link {
+    font-weight: 300;
+    color: #2b2b2b;
+    position: relative;
+}
+
+.breadcrumbs__link:before {
+    content: "";
+    position: absolute;
+    background-image: url("https://www.dpi.nsw.gov.au/__data/assets/file/0011/567326/spritesheet.svg?v=0.0.13");
+    background-size: 400px 1000px;
+    background-position: -250px -100px;
+    width: 7px;
+    height: 10px;
+    left: -20px;
+    top: 6px;
+}
+
+.no-svg .breadcrumbs__link:before {
+    background-image: url("https://www.dpi.nsw.gov.au/__data/assets/image/0003/567327/spritesheet.png?v=0.0.8");
+}
+
+.breadcrumbs__item:first-child .breadcrumbs__link:before {
+    display: none;
+}
+
+.addthis_button {
+    display: block;
+    float: right;
+    font-size: 0.8em;
+    height: 25px;
+    width: 63px;
+    padding: 0;
+    color: #ffffff;
+    background-color: #063f5c;
+    text-decoration: none;
+    padding: 3px 0 0 10px;
+    position: relative;
+    margin-bottom: 16px;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+    text-align: left;
+}
+
+.addthis_button:before {
+    content: "";
+    position: absolute;
+    background-image: url("https://www.dpi.nsw.gov.au/__data/assets/file/0011/567326/spritesheet.svg?v=0.0.13");
+    background-size: 400px 1000px;
+    background-position: 0 -200px;
+    width: 9px;
+    height: 6px;
+    top: 50%;
+    right: 8px;
+    margin-top: -3px;
+}
+
+.no-svg .addthis_button:before {
+    background-image: url("https://www.dpi.nsw.gov.au/__data/assets/image/0003/567327/spritesheet.png?v=0.0.8");
+}
+
+.desktop .addthis_button {
+    height: 29px;
+    width: 127px;
+    font-weight: 400;
+    font-size: 1.06667em;
+}
+
+#at3win {
+    left: 0 !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    right: 0 !important;
+    width: 95%;
+}
+
+.more-topics__anchor {
+    display: block;
+    background-color: #e9e9e9;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 10px 17px;
+    margin-bottom: 16px;
+    width: 100%;
+}
+
+.module img {
+    display: block;
+}
+
+.content-wrapper {
+    width: 100%;
+    padding-top: 16px;
+    padding-bottom: 16px;
+}
+
+.toc {
+    width: 100%;
+    padding-left: 30px;
+    padding: 0 22px 10px;
+    margin-left: 0%;
+    margin-bottom: 16px;
+    background-color: #f4f4f4;
+    border-bottom: 4px solid #68c7bb;
+}
+
+.factsheet__details {
+    display: table;
+    margin-bottom: 0.5em;
+    max-width: 330px;
+}
+
+.factsheet__field {
+    display: table-row;
+}
+
+.factsheet__field-name,
+.factsheet__field-value {
+    display: table-cell;
+}
+
+.factsheet__field-name {
+    font-weight: bold;
+    width: 5em;
+}
+
+.inside-slider {
+    margin-bottom: 5px;
+    position: relative;
+    z-index: 0;
+}
+
+.inside-slider img {
+    width: 100%;
+}
+
+.inside-slider .slick-prev,
+.inside-slider .slick-next {
+    position: absolute;
+    top: 50%;
+    z-index: 1;
+    background-color: #063f5c;
+    text-indent: -9999px;
+    margin-top: -22px;
+    border: 0px none;
+    width: 25px;
+    height: 45px;
+    color: #fff;
+    z-index: 10000000;
+    margin-left: 0;
+}
+
+.inside-slider .slick-prev:before,
+.inside-slider .slick-next:before {
+    content: "";
+    position: absolute;
+    background-image: url("https://www.dpi.nsw.gov.au/__data/assets/file/0011/567326/spritesheet.svg?v=0.0.13");
+    width: 9px;
+    height: 14px;
+}
+
+.no-svg .inside-slider .slick-prev:before,
+.no-svg .inside-slider .slick-next:before {
+    background-image: url("https://www.dpi.nsw.gov.au/__data/assets/image/0003/567327/spritesheet.png?v=0.0.8");
+}
+
+.lt-ie10 .inside-slider .slick-prev,
+.lt-ie10 .inside-slider .slick-next {
+    width: 40px;
+    height: 76px;
+}
+
+.inside-slider .slick-prev {
+    left: 0;
+}
+
+.inside-slider .slick-prev:before {
+    background-size: 400px 1000px;
+    background-position: -300px -100px;
+    -webkit-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    transform: rotate(180deg);
+    left: 7px;
+    margin-top: 5px;
+}
+
+.inside-slider .slick-next {
+    right: 0;
+}
+
+.inside-slider .slick-next:before {
+    background-size: 400px 1000px;
+    background-position: -300px -100px;
+    left: 10px;
+    margin-top: 4px;
+}
+
+.inside-slider-nav {
+    margin-left: -5px;
+}
+
+.inside-slider-nav__item {
+    margin-left: 5px;
+    position: relative;
+}
+
+.inside-slider-nav__item:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(6, 63, 92, 0.5);
+    cursor: pointer;
+}
+
+.inside-slider-nav__item.current:before {
+    display: none;
+}
+
+.rhs-column,
+.layout-sidebar {
+    margin-top: 56px;
+}
+
+.rhs-column ul li,
+.layout-sidebar ul li {
+    margin-bottom: 16px;
+}
+
+.rhs-column ul li:last-child,
+.layout-sidebar ul li:last-child {
+    margin-bottom: 0;
+}
+
+.rhs-column {
+    width: 100%;
+}
+
+.rhs-column h3.b-blue {
+    border-bottom: 4px solid #087cc1;
+}
+
+.rhs-column h3.b-bright-blue {
+    border-bottom: 4px solid #16c1f3;
+}
+
+.rhs-column dd {
+    margin-bottom: 30px;
+}
+
+.rhs-column dd:last-child {
+    margin-bottom: 0;
+}
+
+.rhs-column .module,
+.layout-sidebar-module {
+    margin-bottom: 56px;
+}
+
+.rhs-column h3,
+.layout-sidebar-module__heading {
+    font-size: 1.53333em;
+    padding-top: 0px;
+    padding-bottom: 14px;
+    margin-bottom: 18px;
+}
+
+.filters-topics .rhs-column h3,
+.filters-topics .layout-sidebar-module__heading {
+    margin-top: 0.5em;
+}
+
+.filters-topics .rhs-column h3:first-of-type,
+.filters-topics .layout-sidebar-module__heading:first-of-type {
+    margin-top: 0px;
+}
+
+.layout-sidebar-module__heading {
+    border-bottom: 4px solid #087cc1;
+}
+
+.module-alt-palette-01 .layout-sidebar-module__heading {
+    border-bottom-color: #68c7bb;
+}
+
+.module-alt-palette-02 .layout-sidebar-module__heading {
+    border-bottom-color: #16c1f3;
+}
+
+.page-top__modules {
+    width: 100%;
+}
+
+.page-top__modules img {
+    width: 100%;
+}
+
+.page-bottom__modules {
+    clear: left;
+    width: 100%;
+    padding-bottom: 50px;
+}
+
+.page-bottom__modules img {
+    width: 100%;
+}
+
+.page-bottom__modules a {
+    text-decoration: none;
+}
+
+.page-module-banner,
+.page-module-banner-cta {
+    clear: both;
+}
+
+.page-module-banner__item,
+.page-module-banner-cta__item {
+    display: block;
+    position: relative;
+    margin-bottom: 10px;
+}
+
+.page-module-banner__item:hover h2,
+.page-module-banner__item:focus h2,
+.page-module-banner-cta__item:hover h2,
+.page-module-banner-cta__item:focus h2 {
+    text-decoration: underline;
+}
+
+.page-module-banner-cta__caption {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 8px 8px 14px;
+    margin-bottom: 20px;
+    border-bottom: 4px solid #68c7bb;
+}
+
+.page-module-banner-cta__caption h2 {
+    padding: 0 0 6px;
+}
+
+.page-module-banner-cta__caption p {
+    line-height: 1.3;
+    padding: 0;
+}
+
+.page-module-banner-cta__caption.pull-left,
+.page-module-banner-cta__caption.pull-right {
+    float: none !important;
+}
+
+.page-module-banner-cta__caption.image-gallery {
+    top: auto;
+    bottom: 8px;
+    left: 12px;
+    right: auto;
+    border-bottom: 2px solid #68c7bb;
+    padding: 8px;
+    opacity: 0.9;
+    position: absolute;
+    min-width: 46%;
+    background-color: #ffffff;
+    margin-bottom: 0;
+    margin-right: 12px;
+}
+
+.page-bottom__modules .preview-media {
+    margin-top: 36px;
+}
+
+.preview-media__box {
+    margin-bottom: 56px;
+}
+
+.preview-media__box h4 {
+    font-size: 1.53333em;
+    padding: 0px 0px 11px;
+    margin-bottom: 11px;
+    color: #063f5c;
+}
+
+.preview-media__box.blue-border h4 {
+    border-bottom: 4px solid #087cc1;
+}
+
+.preview-media__box.bright-blue-border h4 {
+    border-bottom: 4px solid #16c1f3;
+}
+
+.preview-media__box.green-border h4 {
+    border-bottom: 4px solid #68c7bb;
+}
+
+.preview-media__box ul {
+    margin-bottom: 16px;
+}
+
+.preview-media__box ul li {
+    margin-bottom: 16px;
+}
+
+.preview-media__box ul li:last-child {
+    margin-bottom: 0;
+}
+
+.page-bottom__modules .preview-media__link {
+    text-decoration: underline;
+}
+
+.preview-media__link-all {
+    font-weight: bold;
+}
+
+.page-bottom__modules .preview-media__link-all {
+    text-decoration: underline;
+}
+
+.social-feed__box,
+.module__item.newsletter,
+.module__item.related-site {
+    margin-bottom: 46px;
+}
+
+.social-feed__box h4 {
+    font-size: 1.53333em;
+    padding: 0px 0px 11px;
+    margin-bottom: 11px;
+}
+
+.social-feed__box.green-border h4 {
+    border-bottom: 4px solid #68c7bb;
+}
+
+.social-feed__box.blue-border h4 {
+    border-bottom: 4px solid #087cc1;
+}
+
+.social-feed__fb-wrapper {
+    width: 100%;
+}
+
+.filters-topics ul {
+    text-indent: 0px;
+    padding-left: 0px;
+    margin-bottom: 1em;
+}
+
+.filters-topics input[type="submit"] {
+    display: block;
+    float: none;
+    margin-bottom: 0px;
+    margin-left: 0px;
+}
+
+.filters-topics__form {
+    margin-bottom: 0px;
+}
+
+.filters-topics__group {
+    padding: 0px;
+    margin: 0px;
+    border: 0px none;
+}
+
+.filters-topics__legend {
+    color: #757575;
+}
+
+.faq__link-all {
+    font-weight: bold;
+    padding-bottom: 0px;
+    margin-top: 1em;
+}
+
+.alternative.module h4,
+.module-3-col h4,
+.module-2-col h4 {
+    font-size: 1.53333em;
+    padding: 0px 0px 11px;
+    margin-bottom: 11px;
+    color: #063f5c;
+}
+
+.alternative.module .newsletter.blue-border h4,
+.module-3-col .newsletter.blue-border h4,
+.module-2-col .newsletter.blue-border h4 {
+    border-bottom: 4px solid #087cc1;
+}
+
+.alternative.module .newsletter.bright-blue-border h4,
+.module-3-col .newsletter.bright-blue-border h4,
+.module-2-col .newsletter.bright-blue-border h4 {
+    border-bottom: 4px solid #16c1f3;
+}
+
+.alternative.module .newsletter.green-border h4,
+.module-3-col .newsletter.green-border h4,
+.module-2-col .newsletter.green-border h4 {
+    border-bottom: 4px solid #68c7bb;
+}
+
+.alternative.module .newsletter form,
+.module-3-col .newsletter form,
+.module-2-col .newsletter form {
+    margin: 10px 0;
+}
+
+.alternative.module .newsletter input,
+.module-3-col .newsletter input,
+.module-2-col .newsletter input {
+    color: #2b2b2b;
+    font-weight: 300;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-bottom: 20px;
+    border: 1px solid #e8e8e8;
+    height: 40px;
+    /* Input placeholder opacity fix */
+}
+
+.alternative.module .newsletter input[type="text"],
+.alternative.module .newsletter input[type="email"],
+.module-3-col .newsletter input[type="text"],
+.module-3-col .newsletter input[type="email"],
+.module-2-col .newsletter input[type="text"],
+.module-2-col .newsletter input[type="email"] {
+    background-color: #ffffff;
+    width: 100%;
+}
+
+.alternative.module .newsletter input[type="submit"],
+.module-3-col .newsletter input[type="submit"],
+.module-2-col .newsletter input[type="submit"] {
+    background-color: #087cc1;
+    font-weight: 400;
+    color: #ffffff;
+    border: 1px solid #087cc1;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+.alternative.module .newsletter input:-webkit-input-placeholder,
+.module-3-col .newsletter input:-webkit-input-placeholder,
+.module-2-col .newsletter input:-webkit-input-placeholder {
+    color: #2b2b2b;
+    opacity: 1 !important;
+    /* for chrome */
+}
+
+.alternative.module .newsletter input::-webkit-input-placeholder,
+.module-3-col .newsletter input::-webkit-input-placeholder,
+.module-2-col .newsletter input::-webkit-input-placeholder {
+    color: #2b2b2b;
+    opacity: 1 !important;
+    /* for chrome */
+}
+
+.alternative.module .newsletter input:-moz-placeholder,
+.module-3-col .newsletter input:-moz-placeholder,
+.module-2-col .newsletter input:-moz-placeholder {
+    /* Firefox 18- */
+    color: #2b2b2b;
+    opacity: 1 !important;
+}
+
+.alternative.module .newsletter input::-moz-placeholder,
+.module-3-col .newsletter input::-moz-placeholder,
+.module-2-col .newsletter input::-moz-placeholder {
+    /* Firefox 19+ */
+    color: #2b2b2b;
+    opacity: 1 !important;
+}
+
+.alternative.module .newsletter input:-ms-input-placeholder,
+.module-3-col .newsletter input:-ms-input-placeholder,
+.module-2-col .newsletter input:-ms-input-placeholder {
+    color: #2b2b2b;
+    opacity: 1 !important;
+}
+
+.alternative.module .newsletter ul li,
+.module-3-col .newsletter ul li,
+.module-2-col .newsletter ul li {
+    margin-bottom: 16px;
+}
+
+.alternative.module .newsletter ul li:last-child,
+.module-3-col .newsletter ul li:last-child,
+.module-2-col .newsletter ul li:last-child {
+    margin-bottom: 0;
+}
+
+.alternative.module .related-site.blue-border h4,
+.module-3-col .related-site.blue-border h4,
+.module-2-col .related-site.blue-border h4 {
+    border-bottom: 4px solid #087cc1;
+}
+
+.alternative.module .related-site.bright-blue-border h4,
+.module-3-col .related-site.bright-blue-border h4,
+.module-2-col .related-site.bright-blue-border h4 {
+    border-bottom: 4px solid #16c1f3;
+}
+
+.alternative.module .related-site.green-border h4,
+.module-3-col .related-site.green-border h4,
+.module-2-col .related-site.green-border h4 {
+    border-bottom: 4px solid #68c7bb;
+}
+
+.alternative.module .related-site dt,
+.module-3-col .related-site dt,
+.module-2-col .related-site dt {
+    font-weight: bold;
+}
+
+.alternative.module .related-site dd,
+.module-3-col .related-site dd,
+.module-2-col .related-site dd {
+    margin-bottom: 30px;
+}
+
+.alternative.module .related-site dd:last-child,
+.module-3-col .related-site dd:last-child,
+.module-2-col .related-site dd:last-child {
+    margin-bottom: 0;
+}
+
+.related-site__desc {
+    display: block;
+}
+
+.related-site__link {
+    font-weight: bold;
+}
+
+.featured-link__box {
+    background-color: #f4f4f4;
+    padding: 15px;
+    margin-bottom: 8px;
+}
+
+.featured-link__title {
+    padding: 0 0 10px;
+    color: #063f5c;
+    font-weight: 400;
+    font-size: 1em;
+}
+
+.featured-link__list .featured-link__item {
+    margin-bottom: 10px;
+}
+
+.featured-link__list .featured-link__item:last-child {
+    margin-bottom: 0;
+}
+
+.bottom-strip {
+    background-image: url(https://www.dpi.nsw.gov.au/__data/assets/image/0010/567325/bottom-strip.jpg?v=0.0.2);
+    background-repeat: repeat-x;
+    height: 19px;
+}
+
+/* Footer */
+.footer {
+    background-color: #063f5c;
+}
+
+.footer-nav__list {
+    margin: 0 -15px;
+}
+
+.footer-nav__item {
+    height: 42px;
+    border-bottom: 1px solid #295a73;
+    padding: 10px 15px !important;
+    float: left;
+    width: 100%;
+}
+
+.footer-nav__link {
+    text-decoration: none;
+    color: #fff;
+    width: 100%;
+    float: left;
+    position: relative;
+}
+
+.footer-ext-links__list {
+    padding: 14px 0 30px 0;
+    background-color: #063f5c;
+}
+
+.footer-ext-links__list .footer-ext-links__item {
+    height: 30px;
+    padding: 10px 15px;
+}
+
+.footer-ext-links__link {
+    text-decoration: none;
+    color: #fff;
+    font-size: 0.8em;
+    position: relative;
+}
+
+.social-links {
+    height: 46px;
+    background-color: #002e45;
+    margin: 0 -15px;
+}
+
+.social-links__list {
+    float: right;
+    margin-top: 14px;
+    margin-right: 15px;
+}
+
+.social-links__item {
+    float: left;
+    margin-left: 20px;
+}
+
+.social-links__link-twitter,
+.social-links__link-facebook,
+.social-links__link-youtube {
+    float: left;
+    text-indent: -9999px;
+    width: 25px;
+    height: 25px;
+    background-image: url("https://www.dpi.nsw.gov.au/__data/assets/file/0011/567326/spritesheet.svg?v=0.0.13");
+    -webkit-transition: none 0.3s ease;
+    -moz-transition: none 0.3s ease;
+    transition: none 0.3s ease;
+}
+
+.no-svg .social-links__link-twitter,
+.no-svg .social-links__link-facebook,
+.no-svg .social-links__link-youtube {
+    background-image: url("https://www.dpi.nsw.gov.au/__data/assets/image/0003/567327/spritesheet.png?v=0.0.8");
+}
+
+.social-links__link-twitter {
+    background-size: 360px 900px;
+    background-position: -135px -44.1px;
+}
+
+.social-links__link-facebook {
+    background-size: 360px 900px;
+    background-position: -216.9px -45px;
+}
+
+.social-links__link-youtube {
+    background-size: 400px 1000px;
+    background-position: -350px -50px;
+}
+
+/* Twitter feed placeholder */
+.twitter-timeline {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    display: block;
+    background-color: #f4f4f4;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 1em;
+    margin-bottom: 10px;
+    width: 100%;
+    min-width: 180px;
+    max-width: 520px;
+    height: 600px;
+}
+
+.twitter-timeline:hover,
+.twitter-timeline:focus {
+    text-decoration: underline;
+}
+
+/* Facebook page placeholder */
+.fb-xfbml-parse-ignore blockquote {
+    position: static;
+    padding-left: 0px;
+    margin: 0px;
+}
+
+.fb-xfbml-parse-ignore blockquote:before {
+    content: none;
+}
+
+.fb-xfbml-parse-ignore a {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    display: block;
+    background-color: #f4f4f4;
+    font-weight: bold;
+    padding: 1em;
+    width: 100%;
+    max-width: 500px;
+    height: 500px;
+}
+
+.fb-xfbml-parse-ignore a:hover,
+.fb-xfbml-parse-ignore a:focus {
+    text-decoration: underline;
+}
+
+.canvascontainer {
+    display: none;
+    position: absolute;
+    width: 100%;
+    height: 543px;
+}
+
+.lt-ie10 .canvascontainer {
+    display: block;
+}
+
+.no-img .canvascontainer {
+    display: none;
+}
+
+@media all and (-ms-high-contrast: none),
+(-ms-high-contrast: active) {
+
+    /* IE10+ CSS here */
+    .canvascontainer {
+        display: block;
+    }
+}
+
+#canvas-blur1,
+#canvas-blur2,
+#canvas-blur3,
+#canvas-blur4,
+#canvas-blur5,
+#canvas-blur568049,
+#canvas-blur568050,
+#canvas-blur568051,
+#canvas-blur568052,
+#canvas-blur568053,
+#canvas-blur568054,
+#canvas-blur568055,
+#canvas-blur568056,
+#canvas-blur568057,
+#canvas-blur568058,
+#canvas-blur568059,
+#canvas-blur568060,
+#canvas-blur568061,
+#canvas-blur568062,
+#canvas-blur568063 {
+    display: block;
+    width: 2500px !important;
+    height: 1469px !important;
+    margin-top: -200px;
+}
+
+/* Date Last Updated */
+.date-last-updated {
+    clear: both;
+    float: left;
+    margin-top: 1em;
+}
+
+/* Search Page */
+.search-results__form {
+    padding: 0px 1em 1em;
+}
+
+.search-results__form-input {
+    margin-bottom: 0px;
+}
+
+.search-results__form-submit {
+    float: left;
+    margin-left: 0px;
+    width: 20%;
+    height: 42px;
+}
+
+.search-results__item {
+    margin-top: 1em;
+}
+
+.search-results__item:first-child {
+    margin-top: 0px;
+}
+
+.search-results__title-link {
+    display: inline-block;
+    font-size: 1.2em;
+    font-weight: bold;
+    line-height: 1.1;
+    padding: 25px 0 8px;
+}
+
+.search-results__summary {
+    padding-bottom: 0px;
+}
+
+.search-results-info__url {
+    color: #676767;
+}
+
+.search-results-info__url-link {
+    color: #087cc1;
+    text-decoration: none;
+}
+
+.search-results-info__url-link:hover,
+.search-results-info__url-link:focus {
+    color: #063f5c;
+}
+
+.search-results-info__url {
+    font-size: 0.9em;
+}
+
+.search-results-info__date {
+    color: #676767;
+    font-size: 0.85em;
+}
+
+/* Alphabetical Listing */
+.az-index__toc {
+    margin: 1.4em 0px;
+}
+
+.az-index__toc-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.az-index__toc-list li {
+    padding: 0;
+}
+
+.az-index__toc-list li:before {
+    display: none;
+}
+
+.content-wrapper .az-index__toc-list {
+    /* Override hanging punctuation on lists */
+    text-indent: 0px;
+    padding-left: 0px;
+    margin-bottom: 0px;
+}
+
+.az-index__toc-link,
+.az-index__toc-link-inactive {
+    float: left;
+    line-height: 1em;
+    text-decoration: none;
+    padding: 0.5em 0.8em;
+    margin-right: 10px;
+}
+
+.az-index__toc-link {
+    background-color: #002e45;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.az-index__title a {
+    text-decoration: none;
+}
+
+.az-index__item {
+    clear: both;
+}
+
+.az-index__thumb,
+.az-index__link {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    float: left;
+}
+
+.az-index__thumb {
+    display: none;
+}
+
+.az-index__link {
+    display: block;
+}
+
+.loggedin {
+    background-image: url(https://www.dpi.nsw.gov.au/__data/assets/image/0020/210764/preview-mode.jpg);
+    background-color: #5c1506;
+}
+
+/*
+--------------------
+Modules
+--------------------
+*/
+.tt-hint {
+    display: none;
+    position: relative;
+}
+
+.tt-menu {
+    background-color: #fff;
+    z-index: 10;
+    position: absolute;
+    width: 100%;
+    display: none;
+    padding: 0 1.26667rem 1rem;
+}
+
+.tt-suggestion {
+    margin: 0.66667rem 0;
+}
+
+.tt-category {
+    color: #063f5c;
+    padding: 1rem 0 0;
+}
+
+.tt-category--organic:before {
+    content: "";
+    height: 1.33333rem;
+    width: 1.33333rem;
+    background-image: url("https://www.dpi.nsw.gov.au/?a=1125470");
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-right: 0.73333rem;
+
+}
+
+.tt-category--researchers:before {
+    content: "";
+    height: 1.33333rem;
+    width: 1.33333rem;
+    background-image: url("https://www.dpi.nsw.gov.au/?a=1125468");
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-right: 0.73333rem;
+}
+
+.researchers__details a {
+    text-decoration: none;
+}
+
+.tt-suggestion:hover,
+.tt-suggestion:focus,
+.researchers__details:hover,
+.researchers__details :focus {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.researchers__details--dept:before {
+    content: "";
+    height: 1rem;
+    width: 1rem;
+    background-image: url("https://www.dpi.nsw.gov.au/?a=1125469");
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-right: 0.33333rem;
+}
+
+.researchers__details--dept:empty {
+    display: none;
+}
+
+.researchers__details--name {
+    color: #000;
+    padding-bottom: 0.33333rem;
+}
+
+.search .search-results__form .tt-menu {
+    top: 2.6rem !important;
+    border: 2px solid #077dc0;
+}
+
+.search .search-results__form .search-results__form-submit {
+    float: right;
+}
+
+.search .search-results__form .twitter-typeahead {
+    width: 80%;
+    display: block !important;
+}
+
+.search .search-results__form .tt-query {
+    width: 100%;
+}
+
+#search {
+    background-color: #f4f4f4 !important;
+}
+
+.search__btn.mobile {
+    z-index: 10;
+}
+
+#sitesearch #home-search__query {
+    padding: 0.2rem 0 0.2rem 0.66667rem;
+}
+
+#sitesearch .tt-menu {
+    top: 2.6rem;
+    background-color: #fff;
+}
+
+#sitesearch .twitter-typeahead {
+    width: 100%;
+    float: left;
+}
+
+/*-- module:squiz-module-accordion --*/
+/* Accordion */
+.panel-group,
+.inside-content .panel-group {
+    margin-bottom: 16px;
+    display: block;
+}
+
+.panel-group .panel,
+.inside-content .panel-group .panel {
+    box-shadow: none;
+    margin-bottom: 3px;
+}
+
+.panel-group .panel .panel-title,
+.inside-content .panel-group .panel .panel-title {
+    display: block;
+    margin: 0;
+    padding: 0;
+    font-size: 1em;
+}
+
+.panel-group .panel .panel-title a,
+.inside-content .panel-group .panel .panel-title a {
+    display: block;
+    position: relative;
+    background: #e9e9e9;
+    color: #063f5c;
+    font-size: 1.06667em;
+    font-weight: 400;
+    line-height: 1.1em;
+    text-decoration: none;
+    padding: 10px 50px 10px 15px;
+    cursor: pointer;
+    -webkit-transition: background 0.3s ease;
+    -moz-transition: background 0.3s ease;
+    transition: background 0.3s ease;
+}
+
+.panel-group .panel .panel-title a.active,
+.inside-content .panel-group .panel .panel-title a.active {
+    background: #063f5c;
+    color: #ffffff;
+}
+
+.panel-group .panel .panel-title a.active:after,
+.inside-content .panel-group .panel .panel-title a.active:after {
+    background-size: 400px 1000px;
+    background-position: -350px -200px;
+    margin-top: -3px;
+}
+
+.panel-group .panel .panel-title a:after,
+.inside-content .panel-group .panel .panel-title a:after {
+    content: '';
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    background-image: url("https://www.dpi.nsw.gov.au/__data/assets/file/0011/567326/spritesheet.svg?v=0.0.13");
+    background-size: 400px 1000px;
+    background-position: -300px -200px;
+    margin-top: -5px;
+    width: 11px;
+    height: 11px;
+}
+
+.no-svg .panel-group .panel .panel-title a:after,
+.no-svg .inside-content .panel-group .panel .panel-title a:after {
+    background-image: url("https://www.dpi.nsw.gov.au/__data/assets/image/0003/567327/spritesheet.png?v=0.0.8");
+}
+
+.panel-group .panel .panel-collapse,
+.inside-content .panel-group .panel .panel-collapse {
+    overflow: hidden;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -ms-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+    max-height: 0px;
+}
+
+.panel-group .panel .panel-collapse .panel-body,
+.inside-content .panel-group .panel .panel-collapse .panel-body {
+    padding: 4px 6px;
+    border: 1px solid #dae2e7;
+    border-top: none;
+}
+
+@media screen and (min-width: 60em) {
+
+    .panel-group .panel .panel-collapse .panel-body,
+    .inside-content .panel-group .panel .panel-collapse .panel-body {
+        padding: 8px 11px;
+    }
+}
+
+.panel-group .panel .panel-collapse .panel-body p,
+.inside-content .panel-group .panel .panel-collapse .panel-body p {
+    margin: 0 0 1.1em;
+}
+
+.panel-group .panel .panel-collapse.in,
+.inside-content .panel-group .panel .panel-collapse.in {
+    max-height: 20000px;
+}
+
+.no-js .panel-group .panel .panel-title a.active,
+.no-js .inside-content .panel-group .panel .panel-title a.active {
+    background: #e7eef2;
+    color: #2b2b2b;
+}
+
+.no-js .panel-group .panel-collapse,
+.no-js .inside-content .panel-group .panel-collapse {
+    max-height: 2000px;
+}
+
+.tabs__item {
+    display: inline-block;
+    *display: inline;
+    zoom: 1;
+}
+
+.tabs__link {
+    padding: .5em;
+    border: 1px solid;
+    border-bottom: 0;
+    background: #eee;
+}
+
+.tabs__link.uber-accordion__button-active {
+    background: #fff;
+}
+
+.js-enabled .tabs__target {
+    display: none;
+}
+
+.js-enabled .tabs__target.uber-accordion__target-active {
+    display: block;
+}
+
+.no-js .uber-accordion__target {
+    display: none;
+}
+
+.no-js .uber-accordion__target:target {
+    display: block;
+}
+
+/*-- module:squiz-module-typeahead --*/
+.tt-query {
+    color: #222;
+}
+
+.tt-hint {
+    color: #999;
+}
+
+.tt-dropdown-menu {
+    border: 1px solid #bbb;
+}
+
+.tt-suggestion.tt-is-under-cursor {
+    background-color: #ccc;
+}
+
+.tt-suggestion p {
+    margin: 0;
+}
+
+@media (min-width: 37.5em) {
+
+    /* ==== Content ==== */
+    /* Back to Top */
+    .js-back-to-top {
+        margin-right: 0;
+    }
+
+    /* ==== Layout ==== */
+    /* Alerts */
+    .alert-panel__box {
+        display: table;
+    }
+
+    .alert-panel__title {
+        display: table-cell;
+        margin-bottom: 0;
+    }
+
+    /* Home */
+    .home-slider__item-container {
+        padding-left: 165px;
+        padding-right: 165px;
+    }
+
+    .quick-links__box {
+        padding-left: 150px;
+        padding-right: 150px;
+    }
+
+    /* Footer */
+    .social-links {
+        margin: 0 -150px;
+    }
+
+    .social-links__list {
+        margin-right: 150px;
+    }
+}
+
+@media (min-width: 60em) {
+
+    /* ==== Content ==== */
+    /* Default Tags */
+    h1 {
+        font-size: 2.4em;
+    }
+
+    a:focus,
+    a:hover {
+        text-decoration: none;
+    }
+
+    .rhs-column a {
+        font-size: 1.06667em;
+    }
+
+    .rhs-column .newsletter a {
+        font-weight: 400;
+    }
+
+    img.align-left,
+    img.pull-left {
+        width: 50%;
+        float: left;
+        margin-right: 2%;
+    }
+
+    img.align-right,
+    img.pull-right {
+        width: 50%;
+        float: right;
+        margin-left: 2%;
+    }
+
+    img.align-left.auto-width,
+    img.pull-left.auto-width,
+    img.align-right.auto-width,
+    img.pull-right.auto-width {
+        width: auto;
+    }
+
+    .image-caption {
+        padding-top: 5px;
+    }
+
+    .image-caption.pull-left,
+    .image-caption.pull-right {
+        width: 50%;
+    }
+
+    .image-caption.pull-left {
+        float: left !important;
+        margin-right: 30px;
+    }
+
+    .image-caption.pull-right {
+        float: right !important;
+        margin-left: 30px;
+    }
+
+    .image-caption.quarter-width {
+        width: 25%;
+    }
+
+    .quarter-width {
+        width: 25%;
+    }
+
+    .quarter-width.pull-left {
+        float: left !important;
+        margin-right: 30px;
+    }
+
+    .quarter-width.pull-right {
+        float: right !important;
+        margin-left: 30px;
+    }
+
+    .quarter-width.centre {
+        margin: 0 auto;
+        position: absolute;
+        left: 0;
+        right: 0;
+        margin-bottom: 8px;
+        max-width: 24.2%;
+    }
+
+    .full-width.pull-left,
+    .full-width.pull-right {
+        width: 100%;
+    }
+
+    /* Captioned Media */
+    .p-caption {
+        clear: both;
+    }
+
+    .p-caption.for-video {
+        max-width: 570px;
+    }
+
+    /* Buttons */
+    .btn,
+    .button {
+        /*IE 7 AND 8 DO NOT SUPPORT BORDER RADIUS*/
+        width: auto;
+        font-size: 1.06667em;
+        padding: 8px 40px;
+    }
+
+    .btn:focus,
+    .btn:hover,
+    .button:focus,
+    .button:hover {
+        color: #ffffff;
+        background: #063f5c;
+    }
+
+    .cta__btn {
+        font-size: 1em;
+        padding: 8px 17px;
+        width: auto;
+    }
+
+    .cta__btn:focus,
+    .cta__btn:hover {
+        color: #ffffff;
+    }
+
+    .home-content .cta__btn {
+        margin: 10px 0;
+    }
+
+    .cta__wrap {
+        width: auto;
+        background: none;
+        padding: 0;
+    }
+
+    /* Tables */
+    .table-wrapper {
+        overflow-x: visible;
+        max-width: none;
+    }
+
+    .row-main {
+        display: block;
+    }
+
+    /* Tabs */
+    .three-nav-tabs>li {
+        width: 33%;
+    }
+
+    .four-nav-tabs>li {
+        width: 25%;
+    }
+
+    .five-nav-tabs>li {
+        width: 20%;
+    }
+
+    .six-nav-tabs>li {
+        width: 16.66%;
+    }
+
+    .seven-nav-tabs>li {
+        width: 14.2857%;
+    }
+
+    .content-wrapper .nav-tabs {
+        display: flex;
+        margin-bottom: 20px;
+    }
+
+    .content-wrapper .nav-tabs>li {
+        border: 1px solid white;
+    }
+
+    .nav-tabs>li>a,
+    .nav-tabs>li>a:hover,
+    .nav-tabs>li>a:focus,
+    .nav-tabs>li.active>a,
+    .nav-tabs>li.active>a:hover,
+    .nav-tabs>li.active>a:focus {
+        margin-bottom: 0px;
+        border-bottom: 0px none;
+    }
+
+    .nav-tabs>li>a {
+        /*IE 7 AND 8 DO NOT SUPPORT BORDER RADIUS*/
+        display: inline-block;
+        padding: 10px 20px;
+        margin-top: 0px;
+        margin-right: 0px;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+    }
+
+    .nav-tabs>li.active>a {
+        width: auto;
+        background: #f4f4f4;
+        color: #063f5c;
+        padding: 10px 20px;
+    }
+
+    .content-wrapper .nav-tabs>li:last-child>a {
+        margin-right: 0px;
+    }
+
+    .tab-content {
+        display: block;
+    }
+
+    /* Forms */
+    .standard__form {
+        width: 420px;
+    }
+
+    input {
+        font-size: 1.06667em;
+    }
+
+    input[type="reset"],
+    input[type="submit"],
+    button {
+        margin-left: 6px;
+        width: 133px;
+    }
+
+    input[type="reset"]:focus,
+    input[type="reset"]:hover,
+    button[type="reset"]:focus,
+    button[type="reset"]:hover {
+        background-color: #087cc1;
+        color: #ffffff;
+        border: 2px solid #087cc1;
+    }
+
+    input[type="submit"]:focus,
+    input[type="submit"]:hover,
+    button[type="submit"]:focus,
+    button[type="submit"]:hover,
+    button[type="button"]:focus,
+    button[type="button"]:hover {
+        background-color: #063f5c;
+    }
+
+    label,
+    legend {
+        font-size: 1.06667em;
+    }
+
+    /* Back to Top */
+    .js-back-to-top.mobile-only {
+        display: none;
+    }
+
+    .js-back-to-top.desktop-only {
+        display: block;
+    }
+
+    /* Landing */
+    .landing-toc__list {
+        background: none;
+        padding: 0;
+        margin: 1em -15px 0px;
+        border: none;
+    }
+
+    .landing-toc__sizer,
+    .landing-toc__grid {
+        width: 33.3333333%;
+    }
+
+    .landing-toc__grid {
+        padding: 0 15px 0 15px;
+    }
+
+    .landing-toc__item {
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        background-color: #fbfbfb;
+        padding: 24px 24px 28px 24px;
+        margin-bottom: 30px;
+        border-bottom: 6px solid #68c7bb;
+    }
+
+    .landing-toc__item-title {
+        font-size: 1.2em;
+        font-weight: bold;
+        line-height: 1.2em;
+    }
+
+    .landing-toc__item-link {
+        text-decoration: none;
+        color: #063f5c;
+    }
+
+    .landing-toc__item-link:hover,
+    .landing-toc__item-link:focus {
+        text-decoration: underline;
+    }
+
+    .landing-toc__list-lev2 {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        display: block;
+    }
+
+    .landing-toc__list-lev2 li {
+        padding: 0;
+    }
+
+    .landing-toc__list-lev2 li:before {
+        display: none;
+    }
+
+    .landing-toc__list-lev2 li {
+        padding-bottom: 14px;
+    }
+
+    .content-wrapper .landing-toc__list-lev2 {
+        padding-top: 22px;
+    }
+
+    /* Listings */
+    .summary__item.has-thumb .summary__item-title-wrapper {
+        float: left;
+        width: 69%;
+    }
+
+    .summary__item-thumb-link {
+        display: block;
+        float: right;
+        margin-left: 4%;
+        width: 27%;
+    }
+
+    .summary__item-thumb-link img {
+        display: block;
+    }
+
+    .summary__item-desc {
+        float: left;
+        width: 100%;
+    }
+
+    /* ==== Layout ==== */
+    /* Header */
+    .header {
+        height: 185px;
+    }
+
+    .site-logo {
+        background-size: 400px 1000px;
+        background-position: 0 -250px;
+        width: 272px;
+        height: 69px;
+        margin-top: 30px;
+        margin-bottom: 0;
+    }
+
+    .top-controls {
+        background-color: transparent;
+        padding-right: 15px;
+        padding-left: 15px;
+        border-top: none;
+    }
+
+    .search .top-controls {
+        height: 131px;
+    }
+
+    .top-controls__box {
+        display: none;
+    }
+
+    .top-nav {
+        margin-top: 20px;
+        float: right;
+        margin-bottom: 24px;
+    }
+
+    .top-nav__list {
+        padding: 0;
+        float: right;
+        margin-bottom: 13px;
+        width: auto;
+    }
+
+    .top-controls .top-nav__list {
+        display: block;
+    }
+
+    .main-nav__wrap .top-nav__list {
+        display: none;
+    }
+
+    .top-nav__item {
+        float: left;
+        margin-left: 30px;
+    }
+
+    .top-nav__link {
+        position: relative;
+        color: #ffffff;
+        font-size: 1.06667em;
+        text-decoration: none;
+        padding: 0;
+        margin-bottom: 0;
+    }
+
+    .top-nav__link:focus,
+    .top-nav__link:hover {
+        text-decoration: underline;
+    }
+
+    .top-nav__link:before {
+        content: "";
+        position: absolute;
+        right: -16px;
+        top: 4px;
+        background-color: #ffffff;
+        width: 1px;
+        height: 14px;
+    }
+
+    .top-nav__item:last-child .top-nav__link:before {
+        display: none;
+    }
+
+    .quick-search__box {
+        clear: right;
+        float: right;
+        position: relative;
+        width: auto;
+    }
+
+    .quick-search__input,
+    .tt-hint {
+        font-size: 1.33333em;
+        padding-right: 22px;
+    }
+
+    .quick-search__submit[type="submit"] {
+        clip: auto;
+        overflow: visible;
+        position: absolute;
+        background-image: url("https://www.dpi.nsw.gov.au/__data/assets/file/0011/567326/spritesheet.svg?v=0.0.13");
+        background-size: 488px 1220px;
+        background-position: 0 0;
+        right: 22px;
+        top: 50%;
+        background-color: white;
+        text-indent: -9999px;
+        text-transform: uppercase;
+        margin: -11px 0px 0px;
+        border: 0px none;
+        width: 22px;
+        height: 22px;
+    }
+
+    .no-svg .quick-search__submit[type="submit"] {
+        background-image: url("https://www.dpi.nsw.gov.au/__data/assets/image/0003/567327/spritesheet.png?v=0.0.8");
+    }
+
+    .quick-search__submit[type="submit"]:focus,
+    .quick-search__submit[type="submit"]:hover {
+        background-image: url("https://www.dpi.nsw.gov.au/__data/assets/file/0011/567326/spritesheet.svg?v=0.0.13");
+        background-size: 488px 1220px;
+        background-position: 0 0;
+        background-color: white;
+    }
+
+    .no-svg .quick-search__submit[type="submit"]:focus,
+    .no-svg .quick-search__submit[type="submit"]:hover {
+        background-image: url("https://www.dpi.nsw.gov.au/__data/assets/image/0003/567327/spritesheet.png?v=0.0.8");
+    }
+
+    /* Main Nav */
+    .main-nav__wrap {
+        max-height: 1000px;
+        overflow: visible;
+        margin: 0;
+    }
+
+    .main-nav__wrap .row {
+        background-color: transparent;
+    }
+
+    .main-nav__list {
+        margin: 0 -11px;
+        height: 53px;
+    }
+
+    .main-nav__list:after {
+        content: '';
+        display: inline-block;
+        width: 100%;
+    }
+
+    .main-nav__item {
+        float: none;
+        width: auto;
+        min-height: auto;
+        height: 54px;
+        display: inline-block;
+        border-bottom: none;
+    }
+
+    .main-nav__list .main-nav__item {
+        padding: 0;
+    }
+
+    .main-nav__link {
+        color: #ffffff;
+        font-size: 1em;
+        font-weight: 400;
+        padding: 13px 8px 12px;
+        height: 54px;
+        border-bottom: 6px solid #063f5c;
+        -webkit-transition: background 0.3s ease;
+        -moz-transition: background 0.3s ease;
+        transition: background 0.3s ease;
+    }
+
+    .main-nav__link:before {
+        content: "";
+        position: absolute;
+        width: 0;
+        height: 0;
+        bottom: 0;
+        left: 50%;
+        opacity: 0;
+        margin-left: -5px;
+        border-left: 5px solid transparent;
+        border-right: 5px solid transparent;
+        border-bottom: 5px solid #16c1f3;
+        -webkit-transition: none 0.3s ease;
+        -moz-transition: none 0.3s ease;
+        transition: none 0.3s ease;
+    }
+
+    .main-nav__link:after {
+        display: none;
+    }
+
+    .main-nav__link.home {
+        width: 42px;
+        height: 54px;
+        padding: 0;
+        text-indent: -9999px;
+        background-image: url("https://www.dpi.nsw.gov.au/__data/assets/file/0011/567326/spritesheet.svg?v=0.0.13");
+        background-size: 400px 1000px;
+        background-position: -41px 12px;
+    }
+
+    .no-svg .main-nav__link.home {
+        background-image: url("https://www.dpi.nsw.gov.au/__data/assets/image/0003/567327/spritesheet.png?v=0.0.8");
+    }
+
+    .main-nav__link.current {
+        border-bottom: 6px solid #68c7bb;
+    }
+
+    .main-nav__link.current:before {
+        border-bottom: 5px solid #68c7bb;
+        opacity: 1;
+    }
+
+    .main-nav__item:hover .main-nav__link.current:before {
+        border-bottom: 5px solid #16c1f3;
+    }
+
+    .main-nav__item:hover .main-nav__link {
+        background-color: #ffffff;
+        color: #063f5c;
+        border-bottom: 6px solid #16c1f3;
+    }
+
+    .main-nav__item:hover .main-nav__link.home {
+        background-image: url("https://www.dpi.nsw.gov.au/__data/assets/file/0011/567326/spritesheet.svg?v=0.0.13");
+        background-size: 400px 1000px;
+        background-position: -41px 12px;
+        background-color: #063f5c;
+    }
+
+    .no-svg .main-nav__item:hover .main-nav__link.home {
+        background-image: url("https://www.dpi.nsw.gov.au/__data/assets/image/0003/567327/spritesheet.png?v=0.0.8");
+    }
+
+    .main-nav__item:hover .main-nav__link:before {
+        opacity: 1;
+    }
+
+    .main-nav-lev2__list {
+        max-height: 0;
+        position: absolute;
+        opacity: 0;
+        top: 54px;
+        float: none;
+        width: auto;
+        border-left: 1px solid #dbdbdb;
+        border-right: 1px solid #dbdbdb;
+        left: -1px;
+    }
+
+    .main-nav__item:hover .main-nav-lev2__list {
+        opacity: 1;
+        max-height: 1000px;
+    }
+
+    .main-nav__item:last-child .main-nav-lev2__list {
+        left: auto;
+        right: 0;
+    }
+
+    .main-nav__list .main-nav-lev2__item {
+        white-space: nowrap;
+        min-height: 0;
+        border-bottom: none;
+        padding: 0 20px;
+        min-height: auto;
+    }
+
+    .main-nav__list .main-nav-lev2__item:last-child {
+        border-bottom: 5px solid #063f5c;
+        padding-bottom: 10px;
+        float: left;
+        width: 100%;
+    }
+
+    .main-nav-lev2__link {
+        padding: 8px 0;
+        border-bottom: 1px solid #dbdbdb;
+    }
+
+    .main-nav-lev2__link:hover {
+        text-decoration: underline;
+    }
+
+    .main-nav-lev2__item:last-child .main-nav-lev2__link {
+        border-bottom: none;
+        padding-bottom: 0;
+    }
+
+    /* Alerts */
+    .alert-panel__title {
+        white-space: nowrap;
+    }
+
+    /* Home */
+    .home-slider__section {
+        height: 543px;
+    }
+
+    .home-slider__section .slick-dots {
+        display: none !important;
+    }
+
+    .home-slider__item {
+        height: 543px;
+    }
+
+    .home-slider__item-container {
+        padding-left: 15px;
+        padding-right: 15px;
+        max-width: 100%;
+        min-width: 48em;
+        width: 79.6666667em;
+        margin-top: 58px;
+    }
+
+    .home-slider__bg-img {
+        max-width: 100%;
+        width: 100%;
+    }
+
+    .home-slider__text-box {
+        margin: 0 auto;
+        height: 452px;
+        width: 48.5%;
+    }
+
+    .no-img .home-slider__text-box {
+        background: url(https://www.dpi.nsw.gov.au/__data/assets/image/0011/573770/logo-bg.png?v=0.1.1) no-repeat right 100px #d4eef8;
+    }
+
+    .slick-slide .home-slider__img {
+        display: block;
+    }
+
+    .no-img .home-slider__img {
+        display: none;
+    }
+
+    .home-slider__text {
+        bottom: 0;
+        height: 165px;
+        border-bottom: 6px solid #063f5c;
+    }
+
+    .home-slider__text h2 {
+        padding: 0 0 11px;
+        font-size: 1.73333em;
+        line-height: 1.1;
+    }
+
+    .home-slider__text p {
+        display: block;
+    }
+
+    .no-img .home-slider__text {
+        background-color: transparent;
+        padding: 30px 40px;
+        height: 100%;
+    }
+
+    .play-pause__wrap {
+        display: block;
+    }
+
+    .home-slider-nav-container,
+    .quick-links__container {
+        margin-right: auto;
+        margin-left: auto;
+        position: absolute;
+        left: 0;
+        right: 0;
+        padding-left: 15px;
+        padding-right: 15px;
+        max-width: 100%;
+        min-width: 48em;
+        width: 79.6666667em;
+        top: 58px;
+        z-index: 2;
+    }
+
+    .home-slider-nav {
+        display: block;
+        width: 23.1759657%;
+        z-index: 1;
+        float: left;
+    }
+
+    .home-slider-nav__item {
+        position: static;
+        top: auto;
+        opacity: 1;
+    }
+
+    .home-slider-nav__item.slick-active {
+        top: auto;
+        height: auto;
+    }
+
+    .home-slider-nav__btn {
+        display: block;
+        width: 100%;
+        background-color: #ffffff;
+        border: none;
+        color: #2b2b2b;
+        font-size: 1.06667em;
+        text-align: left;
+        height: 64px;
+        font-weight: 300;
+        padding: 0 18px;
+        border-bottom: 1px solid #dedede;
+        line-height: 20px;
+        position: relative;
+    }
+
+    .home-slider-nav__btn:focus,
+    .home-slider-nav__btn:hover {
+        background-color: #E6EBEE;
+    }
+
+    .home-slider-nav__item:last-child .home-slider-nav__btn {
+        border: none;
+    }
+
+    .slick-active .home-slider-nav__btn {
+        background-color: #063f5c;
+        color: #ffffff;
+        overflow: visible;
+    }
+
+    .slick-active .home-slider-nav__btn:focus,
+    .slick-active .home-slider-nav__btn:hover {
+        background-color: #063f5c;
+    }
+
+    .slick-active .home-slider-nav__btn:before {
+        content: "";
+        position: absolute;
+        width: 0;
+        height: 0;
+        border-top: 32px solid transparent;
+        border-bottom: 32px solid transparent;
+        border-left: 13px solid #063f5c;
+        transform: scale(0.9999);
+        right: -13px;
+        top: 0;
+    }
+
+    .home-slider-link__area {
+        left: 26.176%;
+        top: 0;
+        width: 47.5%;
+        height: 452px;
+    }
+
+    .lt-ie10 .home-slider-link__area {
+        background: #fff;
+        filter: alpha(opacity=0);
+    }
+
+    .quick-links__container {
+        width: 79.6667em;
+    }
+
+    .quick-links__box {
+        float: right;
+        padding: 0;
+        width: 23.1759657%;
+    }
+
+    .quick-links__title {
+        background-color: #ffffff;
+        font-size: 1.6em;
+        line-height: 1;
+        padding: 5px 48px 5px 15px;
+    }
+
+    .quick-links__item {
+        background-color: #063f5c;
+        margin-top: 5px;
+    }
+
+    .quick-links__link {
+        padding: 6px 35px 6px 15px;
+        font-size: 1.06667em;
+        color: #ffffff;
+    }
+
+    .quick-links__link:before {
+        -webkit-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        transform: rotate(0deg);
+        background-image: url("https://www.dpi.nsw.gov.au/__data/assets/file/0011/567326/spritesheet.svg?v=0.0.13");
+        background-size: 400px 1000px;
+        background-position: -150px 0;
+        margin-top: -7px;
+        width: 9px;
+        height: 14px;
+    }
+
+    .no-svg .quick-links__link:before {
+        background-image: url("https://www.dpi.nsw.gov.au/__data/assets/image/0003/567327/spritesheet.png?v=0.0.8");
+    }
+
+    .quick-links__item:hover .quick-links__link {
+        background-color: #ffffff;
+        color: #063f5c;
+    }
+
+    .quick-links__item:hover .quick-links__link:before {
+        background-size: 400px 1000px;
+        background-position: -101px -201px;
+    }
+
+    /* Main Content */
+    .main {
+        padding-top: 35px;
+        border-top: none;
+    }
+
+    /* Flexbox */
+    .flexbox__container {
+        -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+        flex-direction: row;
+    }
+
+    .flexbox1 {
+        -webkit-order: 1;
+        -ms-flex-order: 1;
+        order: 1;
+    }
+
+    .flexbox2 {
+        -webkit-order: 2;
+        -ms-flex-order: 2;
+        order: 2;
+    }
+
+    /* Home Content */
+    .home-content h2 {
+        font-size: 2.4em;
+        padding-left: 48px;
+        padding-top: 8px;
+        padding-bottom: 22px;
+    }
+
+    .home-content h2.twitter-icon:before {
+        background-size: 440px 1100px;
+        background-position: -220px -55px;
+        top: 18px;
+        width: 30px;
+        height: 22px;
+    }
+
+    .home-content h2.research-icon:before {
+        background-size: 400px 1000px;
+        background-position: -200px -395px;
+        top: 14px;
+        width: 29px;
+        height: 28px;
+    }
+
+    .home-content h2.media-icon:before {
+        background-size: 400px 1000px;
+        background-position: -250px 0;
+        top: 18px;
+        width: 29px;
+        height: 21px;
+    }
+
+    .home-content h2.feedback-icon:before {
+        background-size: 400px 1000px;
+        background-position: -300px 0;
+        top: 16px;
+        height: 27px;
+        width: 34px;
+    }
+
+    .home-content__social-link.twitter:focus,
+    .home-content__social-link.twitter:hover {
+        background-size: 400px 1000px;
+        background-position: 0 -350px;
+    }
+
+    .home-content__social-link.facebook:focus,
+    .home-content__social-link.facebook:hover {
+        background-size: 400px 1000px;
+        background-position: -50px -350px;
+    }
+
+    .home-content__social-link.youtube:focus,
+    .home-content__social-link.youtube:hover {
+        background-size: 400px 1000px;
+        background-position: -100px -350px;
+    }
+
+    .twitter-feed__box {
+        display: block;
+    }
+
+    .follow {
+        margin-top: 16px;
+        width: auto;
+    }
+
+    .apps {
+        float: right;
+        margin-top: 16px;
+        margin-bottom: 0;
+        width: auto;
+    }
+
+    .apps .app-store {
+        display: block;
+        padding: 8px 17px 8px 35px;
+    }
+
+    .apps .app-store:focus:before,
+    .apps .app-store:hover:before {
+        background-size: 400px 1000px;
+        background-position: -50px -102px;
+    }
+
+    .apps .app-store:before {
+        left: 10px;
+        top: 11px;
+    }
+
+    .apps .android {
+        padding: 8px 17px 8px 38px;
+        display: block;
+    }
+
+    .apps .android:focus:before,
+    .apps .android:hover:before {
+        background-size: 400px 1000px;
+        background-position: -100px -100px;
+    }
+
+    .apps .android:before {
+        left: 10px;
+        top: 9px;
+    }
+
+    /* Section Nav */
+    .col-lg-3 .lhs-nav {
+        display: block;
+    }
+
+    .col-lg-9 .lhs-nav {
+        display: none;
+    }
+
+    /* Breadcrumbs */
+    .breadcrumbs {
+        display: block;
+    }
+
+    /* AddThis */
+    .addthis.mobile {
+        display: none;
+    }
+
+    .addthis_button {
+        padding: 3px 0px 0px 10px;
+    }
+
+    /* Page Title */
+    .content-has-sidebar .page-title {
+        width: 75%;
+    }
+
+    .content-has-sidebar.content-has-nav-section .page-title {
+        width: 65.8959538%;
+    }
+
+    /* More Topics */
+    .more-topics {
+        display: none;
+    }
+
+    /* Main Content Wrapper */
+    .content-wrapper {
+        float: left;
+        padding-top: 0px;
+        padding-bottom: 46px;
+    }
+
+    .content-has-sidebar .content-wrapper {
+        width: 75%;
+    }
+
+    .content-has-sidebar.content-has-nav-section .content-wrapper {
+        width: 65.8959538%;
+    }
+
+    /* Table of Contents */
+    .toc {
+        float: right;
+        margin-left: 2%;
+        width: 40%;
+    }
+
+    /* Fact Sheets */
+    .factsheet__field-name,
+    .factsheet__field-value {
+        padding-bottom: 10px;
+    }
+
+    /* Inside Page Carousels */
+    .inside-slider {
+        max-width: 570px;
+    }
+
+    .inside-slider .slick-prev,
+    .inside-slider .slick-next {
+        width: 40px;
+        height: 76px;
+        top: 46%;
+    }
+
+    .inside-slider .slick-prev:before {
+        left: 14px;
+    }
+
+    .inside-slider .slick-next:before {
+        left: 16px;
+    }
+
+    .inside-slider-nav {
+        max-width: 575px;
+    }
+
+    /* Sidebar */
+    .rhs-column,
+    .layout-sidebar {
+        margin-top: 0px;
+    }
+
+    .rhs-column {
+        clear: none;
+        float: left;
+        padding-left: 30px;
+        width: 25%;
+    }
+
+    .content-has-nav-section .rhs-column {
+        width: 34.1040462%;
+    }
+
+    .rhs-column .module,
+    .layout-sidebar-module {
+        margin-bottom: 46px;
+        *zoom: 1;
+    }
+
+    .rhs-column .module:before,
+    .rhs-column .module:after,
+    .layout-sidebar-module:before,
+    .layout-sidebar-module:after {
+        content: '';
+        display: table;
+        line-height: 0;
+    }
+
+    .rhs-column .module:after,
+    .layout-sidebar-module:after {
+        clear: both;
+    }
+
+    .rhs-column .module input[type="button"],
+    .rhs-column .module input[type="submit"],
+    .rhs-column .module button,
+    .layout-sidebar-module input[type="button"],
+    .layout-sidebar-module input[type="submit"],
+    .layout-sidebar-module button {
+        float: none;
+        margin-left: 0px;
+        width: 100%;
+    }
+
+    .rhs-column h3,
+    .layout-sidebar-module__heading {
+        font-size: 1.2em;
+    }
+
+    /* Modules for Page Top, Page Bottom and Sidebar */
+    .page-top__modules {
+        /*margin-bottom: 46px;*/
+    }
+
+    .page-module-banner__item,
+    .page-module-banner-cta__item {
+        margin-bottom: 32px;
+    }
+
+    .col-count-2 .page-module-banner__item,
+    .col-count-3 .page-module-banner__item,
+    .col-count-2 .page-module-banner-cta__item,
+    .col-count-3 .page-module-banner-cta__item {
+        float: left;
+    }
+
+    .col-count-2 .page-module-banner__item:first-child,
+    .col-count-3 .page-module-banner__item:first-child,
+    .col-count-2 .page-module-banner-cta__item:first-child,
+    .col-count-3 .page-module-banner-cta__item:first-child {
+        margin-left: 0px;
+    }
+
+    .col-count-2 .page-module-banner__item,
+    .col-count-2 .page-module-banner-cta__item {
+        margin-left: 2%;
+        width: 49%;
+    }
+
+    .col-count-3 .page-module-banner__item,
+    .col-count-3 .page-module-banner-cta__item {
+        margin-left: 2%;
+        width: 32%;
+    }
+
+    .page-module-banner-cta__caption {
+        position: absolute;
+        top: 12px;
+        right: 12px;
+        left: 12px;
+        background-color: #ffffff;
+        padding: 12px 17px 14px;
+        margin-bottom: 0;
+        border-bottom: 6px solid #68c7bb;
+        opacity: 0.8;
+    }
+
+    .page-module-banner-cta__caption h2 {
+        padding: 0 0 11px;
+    }
+
+    .col-count-1 .page-module-banner-cta__caption.caption-sm.pull-right,
+    .col-count-1 .page-module-banner-cta__caption.caption-lg.pull-right {
+        right: 12px;
+    }
+
+    .col-count-1 .page-module-banner-cta__caption.caption-sm {
+        right: 68%;
+    }
+
+    .col-count-1 .page-module-banner-cta__caption.caption-sm.pull-right {
+        left: 68%;
+    }
+
+    .col-count-1 .page-module-banner-cta__caption.caption-lg {
+        right: 34%;
+    }
+
+    .col-count-1 .page-module-banner-cta__caption.caption-lg.pull-right {
+        left: 34%;
+    }
+
+    .col-count-2 .page-module-banner-cta__caption,
+    .col-count-3 .page-module-banner-cta__caption {
+        top: auto;
+        bottom: 12px;
+    }
+
+    .col-count-2 .page-module-banner-cta__caption p,
+    .col-count-3 .page-module-banner-cta__caption p {
+        display: none;
+    }
+
+    .col-count-2 .page-module-banner-cta__caption.caption-sm,
+    .col-count-3 .page-module-banner-cta__caption.caption-sm {
+        font-size: 0.76em;
+    }
+
+    .preview-media {
+        margin-left: -15px;
+        margin-right: -15px;
+    }
+
+    .rhs-column .preview-media {
+        margin-right: 0px;
+        margin-bottom: 0px;
+        margin-left: 0px;
+    }
+
+    .page-bottom__modules .preview-media .preview-media {
+        margin-top: 0px;
+    }
+
+    .preview-media__box {
+        float: left;
+        width: 33.33333333%;
+        padding-left: 15px;
+        padding-right: 15px;
+        margin-bottom: 46px;
+    }
+
+    .preview-media__box h4 {
+        font-size: 1.2em;
+    }
+
+    .rhs-column .preview-media__box {
+        float: none;
+        width: 100%;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .page-bottom__modules .preview-media__link:focus,
+    .page-bottom__modules .preview-media__link:hover {
+        text-decoration: none;
+    }
+
+    .page-bottom__modules .preview-media__link-all:focus,
+    .page-bottom__modules .preview-media__link-all:hover {
+        text-decoration: none;
+    }
+
+    .social-feed {
+        margin-right: -36px;
+        margin-left: -36px;
+    }
+
+    .social-feed__box {
+        float: left;
+        padding-right: 36px;
+        padding-left: 36px;
+        margin-bottom: 46px;
+        width: 50%;
+    }
+
+    .social-feed__box h4 {
+        font-size: 1.2em;
+    }
+
+    .filters-topics__form {
+        width: auto;
+    }
+
+    .alternative.module,
+    .module-2-col {
+        margin-left: -36px;
+        margin-right: -36px;
+    }
+
+    .alternative.module h4,
+    .module-2-col h4 {
+        font-size: 1.2em;
+    }
+
+    .rhs-column .alternative.module,
+    .rhs-column .module-2-col {
+        margin-right: 0px;
+        margin-bottom: 0px;
+        margin-left: 0px;
+    }
+
+    .alternative.module .newsletter,
+    .module-2-col .newsletter {
+        float: left;
+        width: 50%;
+        padding-left: 36px;
+        padding-right: 36px;
+    }
+
+    .rhs-column .alternative.module .newsletter,
+    .rhs-column .module-2-col .newsletter {
+        float: none;
+        width: 100%;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .alternative.module .newsletter input[type="submit"]:focus,
+    .alternative.module .newsletter input[type="submit"]:hover,
+    .module-2-col .newsletter input[type="submit"]:focus,
+    .module-2-col .newsletter input[type="submit"]:hover {
+        background-color: #002e45;
+        border: 1px solid #002e45;
+    }
+
+    .alternative.module .related-site,
+    .module-2-col .related-site {
+        float: left;
+        width: 50%;
+        padding-left: 36px;
+        padding-right: 36px;
+    }
+
+    .rhs-column .alternative.module .related-site,
+    .rhs-column .module-2-col .related-site {
+        float: none;
+        width: 100%;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .alternative.module .related-site dt,
+    .module-2-col .related-site dt {
+        font-size: 1.06667em;
+    }
+
+    .module-3-col {
+        margin-left: -15px;
+        margin-right: -15px;
+    }
+
+    .module-3-col h4 {
+        font-size: 1.2em;
+    }
+
+    .rhs-column .module-3-col {
+        margin-right: 0px;
+        margin-bottom: 0px;
+        margin-left: 0px;
+    }
+
+    .module-3-col .newsletter {
+        float: left;
+        width: 50%;
+        padding-left: 36px;
+        padding-right: 36px;
+    }
+
+    .rhs-column .module-3-col .newsletter {
+        float: none;
+        width: 100%;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .module-3-col .newsletter input[type="submit"]:focus,
+    .module-3-col .newsletter input[type="submit"]:hover {
+        background-color: #002e45;
+        border: 1px solid #002e45;
+    }
+
+    .module-3-col .related-site {
+        float: left;
+        width: 50%;
+        padding-left: 36px;
+        padding-right: 36px;
+    }
+
+    .rhs-column .module-3-col .related-site {
+        float: none;
+        width: 100%;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .module-3-col .related-site dt {
+        font-size: 1.06667em;
+    }
+
+    .featured-link__box {
+        padding: 15px 22px;
+    }
+
+    .featured-link__title {
+        float: left;
+        font-size: 1.06667em;
+        width: 40%;
+    }
+
+    .featured-link__text {
+        float: left;
+        padding-left: 20px;
+        width: 60%;
+    }
+
+    .module-3-col .module__item {
+        float: left;
+        width: 33.33333333%;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .module-2-col .module__item {
+        float: left;
+        width: 50%;
+        padding-left: 36px;
+        padding-right: 36px;
+    }
+
+    .module__item.last-item {
+        clear: left;
+    }
+
+    /* Footer */
+    .footer-nav__list {
+        margin: 0;
+    }
+
+    .footer-nav__item {
+        padding: 24px 27px 0 0 !important;
+        border-bottom: none;
+        width: auto;
+    }
+
+    .footer-nav__link {
+        font-size: 1.06667em;
+    }
+
+    .footer-nav__link:before {
+        content: "";
+        position: absolute;
+        background-color: #ffffff;
+        width: 1px;
+        height: 14px;
+        right: -14px;
+        top: 5px;
+    }
+
+    .footer-nav__link:focus,
+    .footer-nav__link:hover {
+        text-decoration: underline;
+    }
+
+    .footer-nav__item:last-child .footer-nav__link:before {
+        display: none;
+    }
+
+    .footer-section1 {
+        height: 70px;
+    }
+
+    .footer-section2 {
+        background-color: #002e45;
+        height: 45px;
+    }
+
+    .footer-ext-links__list {
+        background-color: #002e45;
+        padding: 0 15px;
+    }
+
+    .footer-ext-links__list .footer-ext-links__item {
+        float: left;
+        padding: 10px 0 0 0;
+        height: auto;
+    }
+
+    .footer-ext-links__link {
+        font-size: 1.06667em;
+        padding-right: 28px;
+    }
+
+    .footer-ext-links__link:before {
+        content: "";
+        position: absolute;
+        background-color: #ffffff;
+        width: 1px;
+        height: 14px;
+        right: 11px;
+        top: 5px;
+    }
+
+    .footer-ext-links__link:focus,
+    .footer-ext-links__link:hover {
+        text-decoration: underline;
+    }
+
+    .footer-ext-links__item:last-child .footer-ext-links__link:before {
+        display: none;
+    }
+
+    .social-links {
+        background-color: #063f5c;
+        margin: 0;
+    }
+
+    .social-links__list {
+        margin-top: 24px;
+        margin-right: 0;
+    }
+
+    .social-links__link-twitter {
+        background-size: 400px 1000px;
+        background-position: -152px -49px;
+    }
+
+    .social-links__link-twitter:focus,
+    .social-links__link-twitter:hover {
+        background-size: 400px 1000px;
+        background-position: -2px -349px;
+    }
+
+    .social-links__link-facebook {
+        background-size: 400px 1000px;
+        background-position: -241px -50px;
+    }
+
+    .social-links__link-facebook:focus,
+    .social-links__link-facebook:hover {
+        background-size: 400px 1000px;
+        background-position: -41px -349px;
+    }
+
+    .social-links__link-youtube:focus,
+    .social-links__link-youtube:hover {
+        background-size: 400px 1000px;
+        background-position: -100px -350px;
+    }
+
+    /* Search */
+    .search-results__form {
+        padding-right: 0px;
+        padding-left: 0px;
+    }
+
+    .search-results__form-submit {
+        max-width: 60px;
+    }
+
+    /* A-Z Listing */
+    .az-index__toc-link,
+    .az-index__toc-link-inactive {
+        margin-bottom: 0.5em;
+    }
+
+    .az-index__thumb {
+        display: block;
+        overflow: hidden;
+        margin-right: 1em;
+        width: 60px;
+        min-height: 0.5em;
+        /* Prevent empty block from collapsing */
+        max-height: 60px;
+    }
+
+    .az-index__link {
+        line-height: 1em;
+        margin-bottom: 0.5em;
+    }
+
+    .search .search-results__form .search-results__form-submit {
+        float: none;
+    }
+
+    .search .search-results__form .tt-dataset {
+        display: inline-block;
+        width: 40%;
+    }
+
+    .search .search-results__form .tt-dataset-researchers {
+        vertical-align: top;
+        float: right;
+        text-align: left;
+    }
+
+    #sitesearch {
+        min-width: 24.4rem;
+        background-color: #fff;
+    }
+
+    #sitesearch .quick-search__input,
+    #sitesearch .tt-hint {
+        height: 3.13333rem;
+    }
+}
+
+@media (min-width: 69.375em) {
+
+    /* Main Nav */
+    .main-nav__link {
+        font-size: 1.13333em;
+        padding: 11px;
+    }
+}
+
+@media print {
+    * {
+        background: transparent !important;
+        color: #000 !important;
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    body {
+        overflow: visible !important;
+        height: auto;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " ("attr(href) ")";
+    }
+
+    a.alert-panel[href]:after {
+        display: none;
+    }
+
+    abbr[title]:after {
+        content: " ("attr(title) ")";
+    }
+
+    /* Don't show links for images, or javascript/internal links */
+    .ir a:after,
+    a[href^="javascript:"]:after,
+    a[href^="#"]:after,
+    .print-footer a:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    thead {
+        display: table-header-group;
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+        width: auto !important;
+        height: auto !important;
+    }
+
+    img.pull-left,
+    img.pull-right,
+    img.align-left,
+    img.align-right {
+        float: none !important;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+
+    #page-wrapper {
+        overflow: visible !important;
+    }
+
+    .print-only {
+        display: block;
+        visibility: visible;
+    }
+
+    .print-header {
+        margin: 0px;
+        width: 275px;
+    }
+
+    .print-footer {
+        margin: 0 auto;
+        width: 100%;
+    }
+
+    .print-footer a {
+        display: block;
+        color: #063f5c !important;
+        /* Something keeps overriding the link colour */
+        font-weight: bold;
+        text-decoration: none;
+        padding: 36px 15px 15px 15px;
+    }
+
+    .header,
+    .lhs-nav,
+    .rhs-column,
+    .footer,
+    .breadcrumbs,
+    .addthis,
+    .more-topics.mobile,
+    .toc__box,
+    .featured-link__box,
+    .video-container,
+    .video-container-inside,
+    .p-caption.for-video,
+    .slick-slider,
+    .pagination,
+    .cta-left.module,
+    .cta-right.module,
+    .spotlight.module,
+    .preview-media.module,
+    .social-feed.module,
+    .alternative.module,
+    .button,
+    .btn,
+    .responsive-tabs__list {
+        display: none !important;
+    }
+
+    .responsive-tabs__heading,
+    .responsive-tabs__panel {
+        display: block !important;
+    }
+
+    .responsive-tabs__heading:before,
+    .responsive-tabs__panel:before {
+        display: none !important;
+    }
+
+    .accordion__link,
+    .accordion__text,
+    .featured-link__box,
+    .responsive-tabs__heading,
+    .responsive-tabs__panel {
+        padding-left: 0;
+        padding-right: 0;
+        border: none;
+    }
+
+    .accordion__link:before,
+    .accordion__text:before,
+    .featured-link__box:before,
+    .responsive-tabs__heading:before,
+    .responsive-tabs__panel:before {
+        display: none !important;
+    }
+
+    .accordion__target {
+        max-height: 1000px !important;
+    }
+
+    .table-responsive {
+        overflow-x: visible;
+        overflow-y: visible;
+        margin-bottom: 0px;
+        border: 0px none;
+        width: 100%;
+    }
+
+    .table-responsive table,
+    .table-responsive tr,
+    .table-responsive th,
+    .table-responsive td {
+        border: 0px none;
+    }
+
+    .table-responsive>.table>thead>tr>th,
+    .table-responsive>.table>thead>tr>td,
+    .table-responsive>.table>tbody>tr>th,
+    .table-responsive>.table>tbody>tr>td,
+    .table-responsive>.table>tfoot>tr>th,
+    .table-responsive>.table>tfoot>tr>td {
+        white-space: normal;
+    }
+
+    .landing-toc__list {
+        height: auto !important;
+        border: none;
+    }
+
+    .landing-toc__grid {
+        position: relative !important;
+        left: 0 !important;
+        top: 0 !important;
+    }
+
+    .panel-group .panel.panel-default .panel-collapse.collapse,
+    .inside-content .panel-group .panel.panel-default .panel-collapse.collapse {
+        overflow: visible;
+        max-height: none;
+    }
+
+    .panel-body {
+        border: none !important;
+    }
+
+    .panel-group .panel {
+        border: 1px solid #dae2e7;
+    }
+
+    .panel-title a:after {
+        display: none;
+    }
+
+    .nav-tabs {
+        display: none;
+    }
+
+    .tab-content {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .tab-content>.tab-pane {
+        display: block;
+        margin-bottom: 10px;
+        padding: 5px;
+        border: 1px solid #dae2e7;
+    }
+
+    .tab-content .print-only {
+        background: #f4f4f4;
+        color: #063f5c;
+        font-size: 16px;
+    }
+
+    input,
+    .sq-form-question input,
+    textarea,
+    .sq-form-question textarea,
+    .sq-form-question select,
+    .rhs-column select,
+    .layout-sidebar select,
+    input[type="radio"]+label,
+    .sq-form-question input[type="radio"]+label,
+    input[type="checkbox"]+label,
+    .sq-form-question input[type="checkbox"]+label {
+        border: 1px solid black;
+    }
+
+
+    .modal {
+        position: relative;
+    }
+
+    .image-caption.print-img-float-right {
+        float: right !important;
+        width: 50%;
+    }
+
+    .print-img-float-right {
+        float: right;
+        width: 50%;
+    }
+
+    .image-caption.print-img-float-left {
+        float: left !important;
+        width: 50%;
+    }
+
+    .print-img-float-left {
+        float: left;
+        width: 50%;
+    }
+}
+
+
+/* Pie Chart */
+.pie {
+    position: relative;
+    width: 100px;
+    line-height: 100px;
+    border-radius: 50%;
+    background: yellowgreen;
+    background-image:
+        linear-gradient(to right, transparent 50%, #655 0);
+    color: transparent;
+    text-align: center;
+}
+
+@keyframes spin {
+    to {
+        transform: rotate(.5turn);
+    }
+}
+
+@keyframes bg {
+    50% {
+        background: #655;
+    }
+}
+
+/* R&D gradient */
+.gradient-bluemauve {
+    background: linear-gradient(to bottom right, #CFECFA, #E3D5F0);
+    margin-top: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+/* Image Hover Effects */
+.grid {
+    position: relative;
+    margin: 0 auto;
+    padding: 1em 0 4em;
+    max-width: 1000px;
+    list-style: none;
+    text-align: center;
+}
+
+/* Common style */
+.grid figure {
+    position: relative;
+    float: left;
+    overflow: hidden;
+    margin: 20px 5%;
+    min-width: 320px;
+    max-width: 480px;
+    max-height: 360px;
+    width: 48%;
+    background: #297e52;
+    text-align: center;
+    cursor: pointer;
+}
+
+.grid figure img {
+    position: relative;
+    display: block;
+    min-height: 100%;
+    max-width: 100%;
+    opacity: 1;
+}
+
+.grid figure figcaption {
+    padding: 2em;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 1.25em;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.grid figure figcaption::before,
+.grid figure figcaption::after {
+    pointer-events: none;
+}
+
+.grid figure figcaption,
+.grid figure figcaption>a {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* Anchor will cover the whole item by default */
+/* For some effects it will show as a button */
+.grid figure figcaption>a {
+    z-index: 1000;
+    text-indent: 200%;
+    white-space: nowrap;
+    font-size: 0;
+    opacity: 0;
+}
+
+.grid figure h2 {
+    word-spacing: -0.15em;
+    font-weight: 300;
+}
+
+.grid figure h2 span {
+    font-weight: 800;
+}
+
+.grid figure h2,
+.grid figure p {
+    margin: 0;
+}
+
+.grid figure p {
+    letter-spacing: 1px;
+    font-size: 80%;
+}
+
+.circle-container {
+    border-radius: 50px;
+    /* Prevent background color leak outs */
+    -webkit-background-clip: padding-box;
+    -moz-background-clip: padding;
+    background-clip: padding-box;
+}
+
+@media screen and (min-width: 62.125em) {}
+

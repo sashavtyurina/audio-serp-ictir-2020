@@ -1,0 +1,419 @@
+@charset "UTF-8";
+/**
+ * "Yet Another Multicolumn Layout" for Drupal
+ *
+ * (en) Vertical list navigation "vlist"
+ * (de) Vertikale Navigationsliste "vlist"
+ *
+ * @copyright       Copyright 2006-2009, Alexander Hass
+ * @license         http://www.yaml-fuer-drupal.de/en/terms-of-use
+ * @link            http://www.yaml-for-drupal.com
+ * @package         yaml-for-drupal
+ * @version         6.x-3.1.0.12
+ * @lastmodified    2009-06-07
+ */
+
+@media screen, projection
+{
+#megamenu .container {
+    background-color:#151515;	
+}
+#megamenu ul#topnav {
+	background-image:url(../../images/navigation_bottom.jpg);
+	background-position:0 100%;
+	background-repeat:no-repeat;
+	font-family:Helvetica,Arial;
+	font-size:13px;
+	height:65px;
+	line-height:13px;
+	text-align:center;
+	text-transform:uppercase;
+	width:980px;
+	margin:0;
+}
+#megamenu ul#topnav li {
+	float: left;
+	position: relative;
+	list-style:none;
+	display: inline;
+
+
+}
+#megamenu ul#topnav .level1 a {
+	float:left;
+	padding:18px 20px 25px;	
+}
+
+
+#megamenu ul#topnav li.level1 a {
+	float: left;
+/*	height: 82px;*/
+	width:auto;
+	color:#D9D9D9;
+    font-size:1em;
+	font-variant:small-caps;
+}
+#megamenu ul#topnav li:hover a, #megamenu ul#topnav li a:hover {
+	background-position: left bottom;
+
+}
+
+
+
+#megamenu ul#topnav li .sub {
+	position: absolute;
+	top:59px;
+	left: 0;
+	background-color: #fff;
+	padding:20px;
+	float: left;
+	display: none;
+	border-left:5px solid #BEBEBE;
+	border-right:5px solid #BEBEBE;
+    border-bottom:5px solid #BEBEBE;
+	-moz-box-shadow:5px 5px 5px #666;
+	z-index:9999;
+}
+
+
+
+#megamenu ul#topnav li #about {left:0; width:200px !important;}
+#megamenu ul#topnav li #protocole {left:-146px; width:400px !important;}
+#megamenu ul#topnav li #programs {left:-310px; width:800px !important;}
+#megamenu ul#topnav li #infoon {width:200px !important;}
+
+/******** Frensh *******/
+
+#fr #megamenu ul#topnav li #protocole, #frontbody-fr #megamenu ul#topnav li #protocole {left:-193px; width:400px !important;}
+#fr #megamenu ul#topnav li #programs, #frontbody-fr #megamenu ul#topnav li #programs{left:-366px; width:800px !important;}
+
+/******** Frensh *******/
+
+
+
+#megamenu ul#topnav li .row {
+	clear: both;
+	float: left;
+	width: 100%;
+	margin-bottom: 10px;
+}
+#megamenu ul#topnav li .sub ul, #megamenu ul#topnav li .sub #megablock {
+	float:left;
+	list-style:none;
+	width:200px;
+    margin:0;
+    padding:0;
+}
+#megamenu ul#topnav .sub ul li {
+	width: 90%;
+	color: #fff;
+    margin:0;
+    padding:0 10px;
+    text-align: left;
+	background-image:url(../../images/puce_nav_left.png);
+	background-position:0 8px;
+	background-repeat:no-repeat;
+}
+#megamenu ul#topnav .sub ul li#head { background-image:none; margin:0 0 10px 0; padding:0; height:40px;}
+#megamenu ul#topnav .sub ul li h2 {
+	padding: 0;
+	margin: 0;
+	font-size: 1.3em;
+	font-weight: normal;
+}
+
+#megamenu ul#topnav .sub #megablock h3{
+	background-image:none;
+	color:#334584;
+	font-family:helvetica;
+	font-size:1em;
+	font-variant:inherit;
+	font-weight:bold;
+	padding:5px 10px 5px 0;
+	text-align:left;
+	text-transform:none;
+}
+#megamenu ul#topnav .sub ul li h2 a:hover {
+	color: #2E3D75;
+}
+
+#megamenu ul#topnav .sub ul li a {
+	float: none;
+	text-indent: 0; /*--Reset text indent--*/
+	height: auto;
+	padding:2px;
+	display: block;
+	text-decoration: none;
+	color: #444444;
+	font-size:9pt;
+	margin:0;
+  	font-variant:normal;
+    text-transform: none;
+}
+#megamenu ul#topnav .sub ul li a:hover {
+	background:none;
+    color:#969696;
+}
+  
+/******************************/
+
+#sitename {
+	background-image:url(../../images/site_name_en.png);
+	background-repeat:no-repeat;
+	background-position:0 0;
+	height:75px;
+}
+
+#sitename a{padding:30px 190px; position:relative; top:25px;}
+
+
+
+#footer #sitename {
+	background-image:url(../../images/site_name_bot_en.png);
+	background-repeat:no-repeat;
+	background-position:63% 100%;
+	height:75px;
+}
+#footer #sitename a{padding:30px 190px; position:relative; top:25px; left:100px}
+
+/************* French ***************/
+#fr #sitename, #frontbody-fr #sitename, .fr #sitename{
+	background-image:url(../../images/site_name_fr.png);
+	background-repeat:no-repeat;
+	background-position:0 0;
+	height:75px;
+}
+
+#fr #sitename a, #frontbody-fr #sitename a{padding:30px 190px; position:relative; top:25px;}
+
+#fr #footer #sitename, #frontbody-fr #footer #sitename {
+	background-image:url(../../images/site_name_bot_fr.png);
+	background-repeat:no-repeat;
+	background-position:63% 100%;
+	height:75px;
+}
+#fr #footer #sitename a, #frontbody-fr #footer #sitename a{padding:30px 190px; position:relative; top:25px; left:100px}
+/************* French ***************/
+
+#footer #bottommenu { padding-bottom:0;}
+#footer .menu {
+	font-size:12px;
+	text-transform:uppercase;
+	margin:0;
+	padding:0 ;
+	text-align:left;
+}
+
+#footer #bottommenu .menu {
+	font-size:12px;
+	text-transform:uppercase;
+	margin:0;
+	padding:0 320px 0 0;
+	text-align:right;
+}
+
+#footer .menu li {
+	display:inline;
+	margin:0;
+}
+#footer .menu li a{
+	color:#9F9F9F;
+	padding-right:14px;
+}
+#footer .menu li a:hover, #footer .menu li .active:hover{
+	color:#F2F2F2;
+
+}
+/****************************/
+
+#banner .view-content .views-row-1{ width:33%; float:left;}
+/***************************/
+
+#block-views-cloud_tags-block_2{
+  margin: 10px;
+}
+
+/******************************/
+#sitemap1 { margin-bottom:10px;}
+
+#sitemap1 h3 ,#sitemap2 h3 {
+	color:#FFFFFF;
+	font-family:helvetica;
+	font-size:0.9em;
+	text-transform:uppercase;
+}
+#sitemap1 .block-menu ,#sitemap2 .block-menu {
+	padding-left:10px;border-left:1px dotted #fff;
+}
+
+#block-menu-menu-toolsdb { margin-top:10px;}
+
+h3.infoonh3{ margin-top:10px;}
+
+#sitemap1 .menu ,#sitemap2 .menu {
+	font-size:0.7em;
+	text-transform:normal;
+	margin:0;
+	padding:0;
+}
+#sitemap1 .menu li,#sitemap2 .menu li{
+	margin:0;
+	float:left;
+	clear:left;
+	text-transform:none;
+	font-size:8pt;
+}
+#footer .menu li a{
+	color:#9F9F9F;
+	padding-right:14px;
+}
+#footer .menu li a:hover, #footer .menu li .active:hover{
+	color:#F2F2F2;
+
+}
+.home, .about, .protocol, .program, .infoon, .documents { width:auto; margin:0; padding:0;}
+.home .menu-492,
+.home .menu-515,
+.home .menu-1230,
+.home .menu-1232,
+.home .menu-1260,
+/***FR****/
+.home .menu-3702 ,
+.home .menu-3703 ,
+.home .menu-3704 ,
+.home .menu-3705 ,
+.home .menu-3706 
+{ display:none !important;}
+
+.about .menu-1231,
+.about .menu-515,
+.about .menu-1230,
+.about .menu-1232,
+.about .menu-1260,
+/***** FR *****/
+.about .menu-3703 ,
+.about .menu-3704 ,
+.about .menu-3705 ,
+.about .menu-3706,
+.about .menu-3707 
+{display:none !important;}
+
+.protocol .menu-1231,
+.protocol .menu-492,
+.protocol .menu-1230,
+.protocol .menu-1232,
+.protocol .menu-1260,
+/**** FR ***/
+.protocol .menu-3702 ,
+.protocol .menu-3704 ,
+.protocol .menu-3705 ,
+.protocol .menu-3706,
+.protocol .menu-3707
+{display:none !important;}
+
+.program .menu-1231,
+.program .menu-492,
+.program .menu-515,
+.program .menu-1232,
+.program .menu-1260,
+/**** FR ***/
+.program .menu-3702 ,
+.program .menu-3703 ,
+.program .menu-3705 ,
+.program .menu-3706 ,
+.program .menu-3707
+{display:none !important;}
+
+.infoon .menu-1231,
+.infoon .menu-492,
+.infoon .menu-515,
+.infoon .menu-1230,
+.infoon .menu-1260,
+/**** FR ***/
+.infoon .menu-3702 ,
+.infoon .menu-3703 ,
+.infoon .menu-3704 ,
+.infoon .menu-3706,
+.infoon .menu-3707
+{display:none !important;}
+
+.documents .menu-1231,
+.documents .menu-492,
+.documents .menu-515,
+.documents .menu-1230,
+.documents .menu-1232,
+/**** FR ***/
+.documents .menu-3702 ,
+.documents .menu-3703 ,
+.documents .menu-3704 ,
+.documents .menu-3705,
+.documents .menu-3707
+{display:none !important;}
+
+#topnav .primary-links { margin:0; padding:0;}
+
+
+#megamenu ul#topnav .primary-links .menu-1231 a:hover,
+#megamenu ul#topnav .primary-links .menu-1231 a.active,
+#megamenu ul#topnav .primary-links .menu-3707 a:hover,
+#megamenu ul#topnav .primary-links .menu-3707 a.active{
+ 	background: url(../../images/bg_hover_nav.png) no-repeat 50% 100%;
+}
+
+#megamenu ul#topnav .primary-links .menu-492 a:hover,
+#megamenu ul#topnav .primary-links .menu-492 a.active,
+#megamenu ul#topnav .primary-links .menu-3702 a:hover,
+#megamenu ul#topnav .primary-links .menu-3702 a.active{
+ 	background: url(../../images/bg_aboutracspa.png) no-repeat 50% 100%;
+}
+
+#megamenu ul#topnav .primary-links .menu-515 a:hover,
+#megamenu ul#topnav .primary-links .menu-515 a.active,
+#megamenu ul#topnav .primary-links .menu-3703 a:hover,
+#megamenu ul#topnav .primary-links .menu-3703 a.active{
+ 	background: url(../../images/bg_spabd_protocol.png) no-repeat 50% 100%;
+	color:#333;
+}
+
+#megamenu ul#topnav .primary-links .menu-1230 a:hover,
+#megamenu ul#topnav .primary-links .menu-1230 a.active,
+#megamenu ul#topnav .primary-links .menu-3704 a:hover,
+#megamenu ul#topnav .primary-links .menu-3704 a.active{
+ 	background: url(../../images/bg_program.png) no-repeat 50% 100%;
+}
+
+#megamenu ul#topnav .primary-links .menu-1232 a:hover,
+#megamenu ul#topnav .primary-links .menu-1232 a.active,
+#megamenu ul#topnav .primary-links .menu-3705 a:hover,
+#megamenu ul#topnav .primary-links .menu-3705 a.active{
+ 	background: url(../../images/bg_info_on.png) no-repeat 50% 100%;
+	color:#333;
+}
+
+#megamenu ul#topnav .primary-links .menu-1260 a:hover,
+#megamenu ul#topnav .primary-links .menu-1260 a.active,
+#megamenu ul#topnav .primary-links .menu-3706 a:hover,
+#megamenu ul#topnav .primary-links .menu-3706 a.active{
+ 	background: url(../../images/bg_documents.png) no-repeat 50% 100%;
+}
+
+
+#block-menu-menu-turtles .content{ margin:10px;}
+#block-menu-menu-turtles {
+	background-image:url(../../images/modules_separator.gif);
+	background-position:100% 100%;
+	background-repeat:repeat-x;
+	padding:10px 10px 20px;
+}
+#block-menu-menu-turtles h3 {
+	font-family:Helvetica,Arial;
+	font-size:1.1em;
+	font-weight:bold;
+	text-transform:uppercase;
+}
+#block-menu-menu-turtles .menu { margin:0; padding:0;}
+#block-menu-menu-turtles .menu li a{ font-size:0.9em;}
+
+#block-cumulus-0 #tags {padding: 0 10px;}
+#block-cumulus-0 .more-link {padding-right:10px;}
+}

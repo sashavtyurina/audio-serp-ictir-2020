@@ -1,0 +1,35 @@
+{
+  "taskID": "IN14.007",
+  "snippets": [
+    {
+      "organicRank":1,
+      "title":"NASA - Hubble Accomplishments.",
+      "tlDomain":"nasa.gov",
+      "summary":"Hubble Accomplishments. Age of the Universe. Thanks in part to the Hubble Space Telescope, we know the universe is 13.7 billion years old. At Galaxies' Cores. Nearly all galaxies may harbor supermassive black holes. How Planets Form. Extrasolar Organic Matter. Dark Energy"
+    },
+    {
+      "organicRank":5,
+      "title":"Hubble's top five scientific achievements | plus.maths.org.",
+      "tlDomain":"plus.maths.org",
+      "summary":"The Hubble Constant. The astronomer Edwin Hubble, after whom the Hubble Space Telescope is named, determined in the 1920s that our Universe is expanding. The fabric of space between any two distant galaxies is stretching, just like the rubber of an inflating balloon."
+    },
+    {
+      "organicRank":10,
+      "title":"Hubble on Twitter: \"28 years ago today, Hubble was launched into ... ",
+      "tlDomain":"twitter.com",
+      "summary":"The official Twitter account for the NASA Hubble Space Telescope, .... Here are  just a few of ..."
+    },
+    {
+      "organicRank":50,
+      "title":"25 yrs of Hubble: How to celebrate its amazing achievements.",
+      "tlDomain":"theweathernetwork.com",
+      "summary":"The Hubble Space Telescope took up residence in Earth orbit on April 24, 1990,  and has revolutionized our view of the universe since."
+    },
+    {
+      "organicRank":100,
+      "title":"The Scientific Achievements of the Hubble Space Telescope.",
+      "tlDomain":"meetings.aps.org",
+      "summary":"Session B6: Triumphs of 20th Century Astrophysics I: Observatories and  Telescopes. 10:45 AM–12:33 PM, Saturday, April 12, 2008. Hyatt Regency St.  Louis ..."
+    }
+  ]
+}

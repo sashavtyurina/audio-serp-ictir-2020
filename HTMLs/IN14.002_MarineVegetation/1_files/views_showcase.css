@@ -1,0 +1,100 @@
+/* $Id: views_showcase.css,v 1.1 2010/04/29 16:40:36 khaledzaidan Exp $ */ 
+.views-showcase {
+  width: 735px;
+  height: 280px;
+  padding:0 !important;
+}
+
+.views-showcase div.views-showcase-big-panel {
+
+}
+
+.views-showcase .views-showcase-big-panel li, .views-showcase .views-showcase-big-panel div {
+width:436px !important;
+}
+
+.views-showcase-item { height:270px !important;}
+
+.views-showcase-mini-list {
+
+}
+
+.views-showcase-big-panel {
+
+}
+
+.views-showcase-pager-item {
+  opacity: 0.7;
+  filter: alpha(opacity=70);
+  padding: 0 5px;
+  border-bottom: 1px dashed #FFF;
+}
+
+.views-showcase-mini-list .activeItem, .views-showcase-pager-item:hover {
+  color: #333;
+  opacity: 0.7;
+  filter: alpha(opacity=70);
+  background-color:#E3E3F3;
+}
+
+
+ul.views-showcase-pager-item-sublist, ul.views-showcase-mini-list {
+  list-style: none;
+  padding:0;
+  margin:0;
+  width:285px;
+}
+
+.views-showcase-mini-list li.views-showcase-pager-item , .views-showcase-mini-list li.views-showcase-pager-subitem {
+  list-style:none;
+  border-bottom:1px dotted #D3D3D3;
+  padding:8px 5px;
+  margin:0;
+  line-height:1.5em;
+
+}
+
+.views-showcase-subitem label, .views-showcase-content-title, .views-showcase-naviation-title {
+  display:none;
+}
+
+/*'right' skin*/
+
+.skin-right .views-showcase-navigation-container {
+  float: right;
+}
+
+.skin-right .views-showcase-content-container {
+  float: left;
+}
+
+/*'left' skin*/
+
+.skin-left .views-showcase-navigation-container {
+  float: left;
+  width:265px;
+}
+
+.skin-left .views-showcase-content-container {
+  float: right;
+  width:468px;  
+}
+
+.skin-left .views-showcase-navigation-container h2{ display:none}
+
+.views-showcase-big-box-teaser {
+	background-color:#333333;
+	color:#FFFFFF;
+	height:75px;
+	opacity:0.8;
+	padding:5px;
+	position:relative;
+	top:190px;
+	width:436px;
+	z-index:999;
+	font-size:0.8em;
+}
+.views-showcase-big-box-teaser a{ color:#fff !important; font-size:1em; font-weight:bold;}
+.views-showcase-big-box-teaser a:hover{ color:#fff;}
+.views-showcase-big-box-image_attach_images {position:relative; top:-85px;}
+.views-showcase-big-box-image_attach_images img{ width:446px; height:275px;}

@@ -1,0 +1,36 @@
+{
+  "taskID": "IN14.018",
+  "query": "Antarctica exploration",
+  "snippets": [
+    {
+      "trueRank":1,
+      "title":"Heroic Age of Antarctic Exploration - Wikipedia",
+      "url":"https://en.wikipedia.org/wiki/Heroic_Age_of_Antarctic_Exploration",
+      "summary":"Erebus. These explorers, despite their impressive contributions to South Polar exploration, were unable to penetrate the interior of the continent and, rather, formed a broken line of discovered lands along the coastline of Antarctica. The known Antarctic region after the 1819–1843 period of intensive exploration."
+    },
+    {
+      "trueRank":5,
+      "title":"A Brief History Of Antarctic Exploration | Antarctica Travel Info",
+      "url":"https://www.savacations.com/destinations/antarctica-tours-cruises/antarctica-travel-info/brief-history-antarctic-exploration/",
+      "summary":"Antarctica is earth's last true frontier and its icy expanses have inspired scores of  acts of human fortitude, not least the heroic exploits of Scott, Shackleton and ..."
+    },
+    {
+      "trueRank":10,
+      "title":"Antarctic Exploration | AMNH - American Museum of Natural History",
+      "url":"https://www.amnh.org/learn-teach/curriculum-collections/antarctica/exploration/antarctic-exploration",
+      "summary":"While its existence had been predicted for thousands of years, Antarctica was the  very last continent discovered. Learn about its first explorers—and the ..."
+    },
+    {
+      "trueRank":50,
+      "title":"The Most Terrible Polar Exploration Ever: Douglas Mawson's ...",
+      "url":"https://www.smithsonianmag.com/history/the-most-terrible-polar-exploration-ever-douglas-mawsons-antarctic-journey-82192685/",
+      "summary":"But even his Antarctic trek—made in total darkness in the depths of ... Mawson's  journey has gone down in the annals of polar exploration as ..."
+    },
+    {
+      "trueRank":100,
+      "title":"Jobs - British Antarctic Survey",
+      "url":"https://www.bas.ac.uk/jobs/",
+      "summary":"We employ a wide range of people at British Antarctic Survey from top-flight  scientists to chefs. We want to attract the best no matter what the job. The rewards  ..."
+    }
+  ]
+}

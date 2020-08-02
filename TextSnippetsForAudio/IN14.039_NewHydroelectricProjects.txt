@@ -1,0 +1,35 @@
+{
+  "taskID": "IN14.039",
+  "snippets": [
+    {
+      "trueRank":1,
+      "title":"New Hydro Development Project and Hydropower Construction...",
+      "tlDomain":"hydroworld.com",
+      "summary":"Read the hot hydroelectric plant news and upgrade information for hydro  development projects."
+    },
+    {
+      "trueRank":5,
+      "title":"Keeyask Generating Station - Manitoba Hydro.",
+      "tlDomain":"hydro.mb.ca",
+      "summary":"For more information on the Keeyask project, visit the Keeyask Hydropower  Limited ... New sources of electricity are needed to maintain the reliable supply  our ..."
+    },
+    {
+      "trueRank":10,
+      "title":"Site C Clean Energy Project - BC Hydro.",
+      "tlDomain":"bchydro.com",
+      "summary":"The Site C Clean Energy Project (Site C) will be a third dam and ... Careers. We  look for exceptional people to bring new ideas and fresh thinking to BC Hydro."
+    },
+    {
+      "trueRank":50,
+      "title":"Zimbabwe promises new hydroelectric power project on the ...",
+      "tlDomain":"businesslive.co.za",
+      "summary":"Harare — Zimbabwe President Emmerson Mnangagwa has vowed to push  ahead with a hydroelectric power project on the Zambezi River as ..."
+    },
+    {
+      "trueRank":100,
+      "title":"New life for the dammed? Philly issues call for hydro-energy projects.",
+      "tlDomain":"philly.com",
+      "summary":"The city is looking for ideas to harness the potential energy flowing through  Philadelphia's waterways."
+    }
+  ]
+}

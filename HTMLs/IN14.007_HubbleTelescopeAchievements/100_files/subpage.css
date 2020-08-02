@@ -1,0 +1,147 @@
+#leftNav a:hover img { position: relative;	left: 0; }
+#content h2 a { color: #069; text-decoration: none; }
+#content { overflow: hidden; }
+
+# { background-color: #933; border-bottom: 20px #fff solid; }
+# img { border-bottom: 1px #fff solid; }
+#leftHolder { width: 202px; float: left; padding-bottom: 20px; }
+#rightHolder { width: 202px; float: right; padding-bottom: 20px; }
+
+#leftNav { margin-bottom: 5px; }
+#pagesfor { display:none; }
+#content { float: left; width: 630px; padding: 0 20px; }
+#story { float: left; width: 840px; padding: 0 10px 20px 20px; }
+#story td { padding-right: 0; vertical-align: top; }
+
+#story .title {float: left;}
+#story .emailprint {float: right; }
+#story .left{  float: left;  padding: 10px; }
+#story .right {float: right;   padding: 10px; }
+#story .storyContent { display: block; clear: left; margin-top: 20px; margin-left: 0; }
+
+#rightHolder # ul { color: #fff; list-style: disc; }
+#rightHolder # ul a { color: #fff; text-decoration:none; padding:2px; }
+#rightHolder # ul a:hover { text-decoration:underline; color:#ccc; }
+#rightHolder # ul a:visited { color:#fff;  }
+#breadcrumbs, 
+#breadcrumbs a { color: #069; line-height: 2em; font-weight: normal; }
+#breadcrumbs { font-weight: bold; padding: 5px 0; border-bottom: 1px #999 solid; margin-bottom: 10px; }
+#breadcrumbs a:hover { color: #933; }
+#breadcrumbs a:visited { color:#636; }
+#content .split-r { width: 285px; float: left; padding-left: 25px;}
+#content .split-l { width: 285px; float: left; padding-right: 25px;}
+#content .split-r { border-left: 1px #999 solid; }
+#content .split-r h2,
+#content .split-l h2 {  }
+
+.landing-r { width: 390px; float: left; padding-left: 0px; margin-left:55px;}
+.landing-l { width: 390px; float: left; padding-right: 0px;}
+
+#subContent .split-r li,
+#subContent .split-l li { margin-left:-15px;  }
+#rightHolder { padding-bottom:10px;}
+#rightHolder h3 {  }
+#rightHolder h3 br { display: none; }
+#rightHolder #abstract,
+#rightHolder #rh-container,
+#rightHolder #unitsmorelinks { clear: both; width: 182px; padding: 10px; background-color: #ebebeb; }
+#rightHolder #abstract,
+#rightHolder #rh-container,
+#rightHolderBottom #abstract,
+#rightHolderBottom #rh-container { width: 245px; background: #ebebeb url(http://www.aps.org/images/abstract-top-sub.gif) top left no-repeat; padding-bottom: 35px; padding-left: 10px; padding-top: 10px;  height: auto; }
+#rightHolderBottom #rh-container h3 { color: #555; }
+#rightHolder ul.rightnav-list,
+#rightHolder ul.upcoming-meeting { background-color: #ececec; padding-top: 0; padding-bottom:0; margin-top: 0; margin-bottom: 0; }
+#rightHolder #CS_CCF_1981_20631 { background-color: #ececec; }
+#rightHolder div.supportAPS { font-size: 1.0em; color: #555; background-color: #ececec; margin: 0; }
+#rightHolder h3 { font-size: 1.0em; color: #555; background-color: #ececec; margin: 0; padding: 10px 10px; }
+#rightHolder div.CS_Textblock_Text { font-size: 1.0em; color: #555; background-color: #ececec;margin: 0; }
+#rightHolder div.CS_Textblock_Text p { font-size: 1.0em; color: #555; background-color: #ececec; padding: 5px 10px; margin: 0; }
+/* end edit */
+
+#rightHolder p.postmeetinglist-link { margin-top: 10px; margin-left: -10px; padding-right: 5px; background-color: #ececec; }
+#rightHolder #unitsmorelinks h3 { font-size: 1.0em; color: #555; background-color: #ececec;  }
+
+.audience-holder {width: 940px;  float: left; }
+* html .audience-holder {width: 940px;  float: left;}
+
+/* recipient page */
+#prizerecipient { float: right; border-style: none;}
+
+/* Events */
+div.navBar { margin: 10px 0; font-weight: bold; }
+div.meetingblock { /*margin-top: 20px; padding-top: 10px; border-top: 1px #000 solid;*/ }
+div.meetingblock span,
+div.meetingblock span img { vertical-align: middle; }
+div.meetingblock table { clear: both; width: 100%; margin: 5px 0 20px 0; /*border-top: 1px #000 solid;*/ }
+div.meetingblock table td { padding-top: 10px; }
+div.meetingblock table td a { font-weight: bold; }
+
+/*New Meeting Calendar*/
+div.meetingblockbymonth { }
+div.meetingblockbymonth h2 { /*margin-top:0; padding-top: 10px;*/ padding-bottom: 10px; /*border-top: 1px #000 solid; border-bottom: 1px #000 solid;*/ }
+div.meetingblockbymonth span,
+div.meetingblockbymonth span img { vertical-align: middle; }
+div.meetingblockbymonth table { clear: both; width: 100%; margin: 0 0 20px 0;  }
+div.meetingblockbymonth table td { padding-top: 7px; padding-bottom:5px; }
+div.meetingblockbymonth table td a { font-weight: bold; }
+
+/*  Prizes */
+img#prizerecipient { margin-left: 10px; }
+
+td.CS_PgIndex_Item a,
+td.CS_PgIndex_Item img,
+td.CS_PgIndex_Item_Alternate a,
+td.CS_PgIndex_Item_Alternate img { vertical-align: middle; margin: 0 !important; padding: 0 !important; }
+td.CS_PgIndex_Item,
+td.CS_PgIndex_Item_Alternate { padding: 5px 0 !important; }
+.CS_PgIndex_Item_Title { margin: 0 !important; }
+.CS_PgIndex_Item_SpacingHeight { display: none; }
+
+/* Academic Year list (right column) */
+.academic-year-list { margin: 0; padding: 0; width: 100%; }
+.academic-year-list ul,
+.academic-year-list li { list-style-type: none; margin: 0; padding: 0; width: 100%; }
+.academic-year-list li { font-size: 0.9em; margin-bottom: 5px; }
+
+/* Site Map */
+.CS_PgIndex_Primary_Category { font-weight: bold; }
+
+div#editorial { border-top: 1px #666 solid; margin-top: 20px; padding-top: 10px; }
+
+#rightHolder td.CS_Layout_TD { font-size: 12px }
+
+/*Meeting Announcement*/
+#meeting-menu {padding:5px 0px 0px 5px; margin:0px 0px 0px 10px; width:200px; background-color:#eee;}
+#meeting-menu ul { margin:0px; padding:0px;}
+#meeting-menu li {list-style-type: none; padding:5px 0px 5px 0px;}
+#meeting-menu h2 {padding:0px 0px 5px 0px; margin:0px;}
+
+/*Right Styles*/
+.right-menu {padding:5px 0px 0px 5px; margin:0px 0px 0px 10px; width:200px; background-color:#eee; float:right;}
+
+.right-slideshow {padding:5px 0px 0px 5px; margin:0px 0px 0px 10px; width:250px; float:right;}
+
+.right-pageindex {
+	background:#ebebeb; 
+	border-style: solid;
+	border-color:#ccc;
+	border-width: 1px;
+	margin: 0pt 0pt 1em 1em;
+	padding: 1.2em .6em .3em .6em;
+	float: right;
+	width: 206px;
+}
+
+/*Upgrade*/
+
+#cs_control_565 {
+	display:inline;
+}
+
+
+.floatRight {
+	float:right;
+	margin-left:5px;
+}
+

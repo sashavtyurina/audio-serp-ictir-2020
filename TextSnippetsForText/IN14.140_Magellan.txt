@@ -1,0 +1,36 @@
+{
+  "taskID": "IN14.140",
+  "query": "Which planet did the spacecraft Magellan enable scientists to research extensively?",
+  "snippets": [
+    {
+      "trueRank":1,
+      "title":"In Depth | Magellan – NASA Solar System Exploration",
+      "url":"https://solarsystem.nasa.gov/missions/magellan/in-depth/",
+      "summary":"NASA's real-time science encyclopedia of deep space exploration. ... Magellan was the first planetary spacecraft launched from the Space Shuttle. ... manifest into the 1990s, which included a number of planetary missions. ... A new study reveals asteroid impacts on ancient Mars could have produced key ..."
+    },
+    {
+      "trueRank":5,
+      "title":"What planet did the spacecraft Magellan enable scientists to ...",
+      "url":"https://www.answers.com/Q/What_planet_did_the_spacecraft_Magellan_enable_scientists_to_research_extensively",
+      "summary":"Venus was the planet that the spacecraft Magellan enabled scientists to research extensively."
+    },
+    {
+      "trueRank":10,
+      "title":"magellan radar mapping: Topics by Science.gov",
+      "url":"https://www.science.gov/topicpages/m/magellan+radar+mapping",
+      "summary":"An artist's concept of the Magellan spacecraft making a radar map of Venus. .... the Planetary Data System (PDS) and the National Space Science Data Center ..... The obtained soil moisture maps of the territories of research, as well as the ...... Products enabled by this new system include topographic mapping through radar ..."
+    },
+    {
+      "trueRank":50,
+      "title":"Space Invaders: How Robotic Spacecraft Explore the Solar System ...",
+      "url":"https://epdf.tips/space-invaders-how-robotic-spacecraft-explore-the-solar-system.html",
+      "summary":"T he Spacecraft Garage Keep it Clean Planetary Protection Shake, Rattle 'n' Roll ... True, we have set foot on the Moon, but the last time we did that was well over 30 ...... Scientists may want to study the composition of those beautiful rings of ...... Apart from enabling missions to the dark outer reaches of the Solar System, ..."
+    },
+    {
+      "trueRank":100,
+      "title":"Mapping the deep, and the real story behind the \"95% unexplored ...",
+      "url":"http://moocs.southampton.ac.uk/oceans/2014/10/04/mapping-the-deep-and-the-real-story-behind-the-95-unexplored-oceans/",
+      "summary":"NASA's Magellan spacecraft mapped 98 percent of the surface of Venus ... 60 percent of that planet has now been mapped at ~20 m resolution."
+    }
+  ]
+}

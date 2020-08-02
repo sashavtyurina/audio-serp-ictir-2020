@@ -1,0 +1,36 @@
+{
+  "taskID": "IN14.091",
+  "query": "Ireland Peace Talks",
+  "snippets": [
+    {
+      "trueRank":1,
+      "title":"Northern Ireland peace process - Wikipedia ",
+      "url":"https://en.wikipedia.org/wiki/Northern_Ireland_peace_process",
+      "summary":"The Northern Ireland peace process is often considered to cover the events leading up to the 1994 Provisional Irish Republican Army (IRA) ceasefire, the end of most of the violence of the Troubles, the Good Friday (or Belfast) Agreement of 1998, and subsequent political developments."
+    },
+    {
+      "trueRank":5,
+      "title":"Northern Ireland Peace Process - Politics.co.uk ",
+      "url":"http://www.politics.co.uk/reference/northern-ireland-peace-process",
+      "summary":"What is the Northern Ireland Peace Process? The sectarian division of Northern  Ireland into unionists and nationalists has been a source of strife ever since the ..."
+    },
+    {
+      "trueRank":10,
+      "title":"What was the Good Friday Agreement? - CBBC Newsround ",
+      "url":"https://www.bbc.co.uk/newsround/14118775",
+      "summary":"The conflict in Northern Ireland dates back to when it became separated from the  .... Some people opposed to this peace process also continued to be violent."
+    },
+    {
+      "trueRank":50,
+      "title":"Women's participation in peace negotiations in Northern Ireland ... ",
+      "url":"https://thehill.com/opinion/",
+      "summary":"Here are five ways in which Northern Irish women influenced the success of the  1998 peace accord."
+    },
+    {
+      "trueRank":100,
+      "title":"Mandela helped bring peace to Northern Ireland - The Boston Globe ",
+      "url":"In the coming days, there will be thousands of tributes from every corner of the globe in memory of Nelson Mandela, who seemingly touched all of our lives in one way or another.  I was among the fortunate few who had the opportunity to work with “Madiba,’’ as he was known ...",
+      "summary":"https://www.bostonglobe.com/opinion/2013/12/07/mandela-helped-bring-peace-northern-ireland/"
+    }
+  ]
+}

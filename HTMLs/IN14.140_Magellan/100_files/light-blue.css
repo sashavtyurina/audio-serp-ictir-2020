@@ -1,0 +1,50 @@
+/* header color */
+#header {
+    background-color: #3674A0 !important;
+}
+
+/* Buttons */
+
+#container input[type=submit] {
+    background:#3674A0 !important;
+}
+
+
+/* Navigation - background */
+#access {
+    background: #78ABD1!important;
+}
+
+/* Navigation - current and active item */
+#access a:hover, 
+#access li.current_page_item > a, 
+#access li.current-menu-item > a,
+#access li li {
+    background: #2C5C81 !important;
+}
+
+/* Links at content pages */
+#posts-nav a,
+#posts-nav a:hover,
+#posts-nav a:visited,
+#content a.page-numbers,
+#content a.page-numbers:hover,
+#content a.page-numbers:visited,
+table a,
+table a.visited,
+.breadcrumb a,
+.breadcrumb a.visited,
+#comments .comment-author a,
+.comment-meta a,
+#respond a,
+.widget-area a,
+.entry-title a:hover,
+#footer a,
+.entry-summary a,
+.entry-meta a,
+section#content > article > .entry a,
+section#content > article > .entry a.active,
+section#content > article > .entry a.hover,
+section#content > article > .entry a.visited {
+    color: #3674A0 !important;
+}

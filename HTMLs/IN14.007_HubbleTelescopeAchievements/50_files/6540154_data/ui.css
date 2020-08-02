@@ -1,0 +1,2777 @@
+/* button colors */
+/* report dialog colors */
+/* spinner colors */
+/* thanks dialog colors */
+/* popover colors */
+/* list colors */
+/* media querys */
+@-webkit-keyframes loading {
+  100% {
+    transform: translateX(20px); } }
+
+@keyframes loading {
+  100% {
+    transform: translateX(20px); } }
+
+@-webkit-keyframes pulse {
+  0% {
+    opacity: 0.3; }
+  50% {
+    opacity: 1; }
+  100% {
+    opacity: 0.3; } }
+
+@keyframes pulse {
+  0% {
+    opacity: 0.3; }
+  50% {
+    opacity: 1; }
+  100% {
+    opacity: 0.3; } }
+
+#PlayerOne.ui-enabled {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  color: #fff;
+  font-size: 10px;
+  -webkit-font-smoothing: antialiased;
+  /* DEFAULT COMPONENT */
+  /* COMPONENT SPECIAL TYPES */
+  /*! Cookie overlay for embeds - 1.4.6 */ }
+  #PlayerOne.ui-enabled h1, #PlayerOne.ui-enabled h2, #PlayerOne.ui-enabled h3, #PlayerOne.ui-enabled p {
+    color: #fff; }
+  #PlayerOne.ui-enabled.fullscreen-mode {
+    font-size: 14px; }
+  #PlayerOne.ui-enabled .component {
+    display: inline-block;
+    vertical-align: middle;
+    user-select: none;
+    -webkit-user-select: none;
+    min-width: 24px;
+    height: 24px;
+    padding: 4px;
+    cursor: pointer; }
+    #PlayerOne.ui-enabled .component svg {
+      vertical-align: middle;
+      min-width: 24px;
+      min-height: 24px;
+      opacity: .7;
+      cursor: pointer;
+      transition: opacity 0.2s ease-out; }
+    #PlayerOne.ui-enabled .component:not(.container):not(.no-hover):not(.disabled).trigger:hover svg,
+    #PlayerOne.ui-enabled .component:not(.container):not(.no-hover):not(.disabled) .trigger:hover svg,
+    #PlayerOne.ui-enabled .component:not(.container):not(.no-hover):not(.disabled).enabled svg,
+    #PlayerOne.ui-enabled .component:not(.container):not(.no-hover):not(.disabled).opened svg {
+      opacity: 1; }
+    #PlayerOne.ui-enabled .component:not(.container):not(.no-hover):not(.disabled).trigger:hover svg,
+    #PlayerOne.ui-enabled .component:not(.container):not(.no-hover):not(.disabled) .trigger:hover svg {
+      filter: drop-shadow(0 0 5px rgba(255, 255, 255, 0.5));
+      -webkit-filter: drop-shadow(0 0 5px rgba(255, 255, 255, 0.5)); }
+    #PlayerOne.ui-enabled .component.hidden {
+      display: none; }
+    #PlayerOne.ui-enabled .component.shown {
+      display: inline-block; }
+    #PlayerOne.ui-enabled .component.disabled {
+      opacity: .6; }
+  #PlayerOne.ui-enabled .container {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    cursor: default;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    transition: opacity 0.2s ease-out; }
+    #PlayerOne.ui-enabled .container.inline {
+      width: auto; }
+  #PlayerOne.ui-enabled .panel {
+    background: rgba(23, 23, 23, 0.9);
+    border-radius: 2px; }
+  #PlayerOne.ui-enabled.fullscreen-mode .component:not(.container) {
+    width: 33.6px;
+    height: 33.6px;
+    padding: 5.6px; }
+  #PlayerOne.ui-enabled.fullscreen-mode svg {
+    min-width: 33.6px;
+    min-height: 33.6px; }
+  #PlayerOne.ui-enabled.fullscreen-mode .close {
+    width: 33.6px;
+    height: 33.6px; }
+  #PlayerOne.ui-enabled .scrollable-y {
+    overflow-y: auto;
+    overflow-x: hidden; }
+  #PlayerOne.ui-enabled .close {
+    position: absolute;
+    top: 8px;
+    right: 12px;
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+    opacity: .8;
+    background: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiBwcmVzZXJ2ZUFzcGVjdFJhdGlvPSJ4TWlkWU1pZCIgd2lkdGg9IjI0IiBoZWlnaHQ9IjI0IiB2aWV3Qm94PSIwIDAgMjQgMjQiPgogIDxnIGlkPSJjbG9zZSI+CiAgICA8cGF0aCBkPSJNMTMuNDI1LDEyLjAxMyBDMTMuNDI1LDEyLjAxMyAxNi43MjksMTUuMzE3IDE2LjcyOSwxNS4zMTcgQzE3LjEyMCwxNS43MDcgMTcuMTIwLDE2LjM0MCAxNi43MjksMTYuNzMxIEMxNi4zMzksMTcuMTIyIDE1LjcwNSwxNy4xMjIgMTUuMzE1LDE2LjczMSBDMTUuMzE1LDE2LjczMSAxMi4wMDAsMTMuNDE2IDEyLjAwMCwxMy40MTYgQzEyLjAwMCwxMy40MTYgOC42ODUsMTYuNzMxIDguNjg1LDE2LjczMSBDOC4yOTUsMTcuMTIyIDcuNjYxLDE3LjEyMiA3LjI3MSwxNi43MzEgQzYuODgwLDE2LjM0MCA2Ljg4MCwxNS43MDcgNy4yNzEsMTUuMzE3IEM3LjI3MSwxNS4zMTcgMTAuNTc1LDEyLjAxMyAxMC41NzUsMTIuMDEzIEMxMC41NzUsMTIuMDEzIDcuMjcxLDguNjgzIDcuMjcxLDguNjgzIEM2Ljg4MCw4LjI5MyA2Ljg4MCw3LjY2MCA3LjI3MSw3LjI2OSBDNy42NjEsNi44NzkgOC4yOTUsNi44NzkgOC42ODUsNy4yNjkgQzguNjg1LDcuMjY5IDEyLjAwMCwxMC42MTAgMTIuMDAwLDEwLjYxMCBDMTIuMDAwLDEwLjYxMCAxNS4zMTUsNy4yNjkgMTUuMzE1LDcuMjY5IEMxNS43MDUsNi44NzkgMTYuMzM5LDYuODc5IDE2LjcyOSw3LjI2OSBDMTcuMTIwLDcuNjYwIDE3LjEyMCw4LjI5MyAxNi43MjksOC42ODMgQzE2LjcyOSw4LjY4MyAxMy40MjUsMTIuMDEzIDEzLjQyNSwxMi4wMTMgWiIgZmlsbD0iI2ZmZmZmZiIgZmlsbC1ydWxlPSJldmVub2RkIi8+CiAgPC9nPgo8L3N2Zz4K);
+    background-size: 100%;
+    z-index: 11; }
+    #PlayerOne.ui-enabled .close:hover {
+      opacity: 1; }
+  #PlayerOne.ui-enabled .in-progress .trigger {
+    -webkit-animation: pulse 1.2s infinite ease-in-out;
+    animation: pulse 1.2s infinite ease-in-out; }
+  #PlayerOne.ui-enabled .trigger {
+    position: relative;
+    background: none;
+    text-shadow: none;
+    box-shadow: none;
+    padding: 0;
+    margin: 0;
+    border: none;
+    border-radius: 0; }
+  #PlayerOne.ui-enabled .fleft, #PlayerOne.ui-enabled.fullscreen-mode .fleft {
+    width: auto;
+    float: left; }
+  #PlayerOne.ui-enabled .fright, #PlayerOne.ui-enabled.fullscreen-mode .fright {
+    width: auto;
+    float: right; }
+  #PlayerOne.ui-enabled .text-left, #PlayerOne.ui-enabled.fullscreen-mode .text-left {
+    text-align: left; }
+  #PlayerOne.ui-enabled .text-right, #PlayerOne.ui-enabled.fullscreen-mode .text-right {
+    text-align: right; }
+  #PlayerOne.ui-enabled .text-center, #PlayerOne.ui-enabled.fullscreen-mode .text-center {
+    text-align: center; }
+  #PlayerOne.ui-enabled .half-width, #PlayerOne.ui-enabled.fullscreen-mode .half-width {
+    width: 50%; }
+  #PlayerOne.ui-enabled .full-width, #PlayerOne.ui-enabled.fullscreen-mode .full-width {
+    width: 100%; }
+  #PlayerOne.ui-enabled .clr, #PlayerOne.ui-enabled.fullscreen-mode .clr {
+    zoom: 1; }
+    #PlayerOne.ui-enabled .clr:before, #PlayerOne.ui-enabled .clr:after, #PlayerOne.ui-enabled.fullscreen-mode .clr:before, #PlayerOne.ui-enabled.fullscreen-mode .clr:after {
+      content: "";
+      display: table; }
+    #PlayerOne.ui-enabled .clr:after, #PlayerOne.ui-enabled.fullscreen-mode .clr:after {
+      clear: both; }
+  #PlayerOne.ui-enabled h1 {
+    font-size: 2em; }
+  #PlayerOne.ui-enabled h2 {
+    color: #fff;
+    font-size: 1.8em; }
+  #PlayerOne.ui-enabled h3 {
+    color: #F3F3F3;
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 22px;
+    margin: 0;
+    padding: 0; }
+  #PlayerOne.ui-enabled h4 {
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 19px;
+    margin: 2px 0 0 0;
+    padding: 0;
+    text-transform: uppercase; }
+  #PlayerOne.ui-enabled h3 + p {
+    margin-top: 2px; }
+  #PlayerOne.ui-enabled p {
+    clear: both;
+    font-weight: 400;
+    font-size: 13px;
+    color: #BEBEBE;
+    line-height: 20px;
+    margin: 0 0 15px 0;
+    padding: 0; }
+  #PlayerOne.ui-enabled.fullscreen-mode p {
+    font-size: 18.2px;
+    line-height: 28px; }
+  #PlayerOne.ui-enabled.fullscreen-mode h3 {
+    font-size: 21px;
+    line-height: 30.8px; }
+  #PlayerOne.ui-enabled.fullscreen-mode h4 {
+    font-size: 18.2px;
+    line-height: 26.6px; }
+  #PlayerOne.ui-enabled input, #PlayerOne.ui-enabled input[type="text"]:not(#share_control_link_input), #PlayerOne.ui-enabled input[type="search"], #PlayerOne.ui-enabled input[type="number"], #PlayerOne.ui-enabled input[type="password"], #PlayerOne.ui-enabled input[type="email"], #PlayerOne.ui-enabled input[type="tel"], #PlayerOne.ui-enabled input[type="url"], #PlayerOne.ui-enabled textarea, #PlayerOne.ui-enabled select {
+    width: 100%;
+    box-sizing: border-box;
+    background: #3d3d3d;
+    min-height: 32px;
+    padding: 0 10px;
+    font-size: 13px;
+    line-height: 22px;
+    font-weight: 400;
+    color: #f3f3f3;
+    border: none;
+    border-bottom: 1px #6f6f6f solid;
+    border-radius: 0; }
+  #PlayerOne.ui-enabled select {
+    -webkit-appearance: none;
+    font-size: 13px; }
+  #PlayerOne.ui-enabled .link {
+    color: #0062ff;
+    font-weight: 400; }
+  #PlayerOne.ui-enabled textarea {
+    display: block;
+    height: 86px;
+    line-height: 18px;
+    padding: 7px 10px;
+    resize: none; }
+  #PlayerOne.ui-enabled .bttn, #PlayerOne.ui-enabled button {
+    font-size: 13px;
+    font-family: inherit; }
+    #PlayerOne.ui-enabled .bttn:not(.trigger), #PlayerOne.ui-enabled button:not(.trigger) {
+      box-sizing: border-box;
+      background-color: #0062ff;
+      font-weight: 700;
+      line-height: 24px;
+      text-transform: uppercase;
+      height: 32px;
+      padding: 0 16px;
+      border: none;
+      display: inline-block;
+      position: relative;
+      margin: 12px 0;
+      border: 0;
+      color: #f3f3f3;
+      text-shadow: none;
+      text-decoration: none;
+      border-radius: 0;
+      box-shadow: none;
+      background-image: none; }
+      #PlayerOne.ui-enabled .bttn:not(.trigger):hover, #PlayerOne.ui-enabled button:not(.trigger):hover {
+        background: #0353e9; }
+    #PlayerOne.ui-enabled .bttn:hover, #PlayerOne.ui-enabled button:hover {
+      cursor: pointer; }
+    #PlayerOne.ui-enabled .bttn object, #PlayerOne.ui-enabled button object {
+      cursor: pointer;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      opacity: 0; }
+  #PlayerOne.ui-enabled a[href], #PlayerOne.ui-enabled button.bttn-link {
+    background-color: transparent;
+    text-transform: none;
+    font-size: 13px;
+    font-weight: 500;
+    color: #6ea6ff;
+    border-radius: 0;
+    text-decoration: underline; }
+    #PlayerOne.ui-enabled a[href]:hover, #PlayerOne.ui-enabled a[href]:active, #PlayerOne.ui-enabled a[href]:focus, #PlayerOne.ui-enabled button.bttn-link:hover, #PlayerOne.ui-enabled button.bttn-link:active, #PlayerOne.ui-enabled button.bttn-link:focus {
+      background-color: transparent; }
+  @media screen and (max-width: 320px) {
+    #PlayerOne.ui-enabled .btn, #PlayerOne.ui-enabled button {
+      font-size: 11px; } }
+  #PlayerOne.ui-enabled.size-medium .btn, #PlayerOne.ui-enabled.size-medium button, #PlayerOne.ui-enabled.size-small .btn, #PlayerOne.ui-enabled.size-small button {
+    font-size: 11px; }
+  #PlayerOne.ui-enabled:not(.user-is-tabbing) * {
+    outline: none; }
+  #PlayerOne.ui-enabled input + p, #PlayerOne.ui-enabled textarea + p, #PlayerOne.ui-enabled select + p {
+    margin-top: 8px; }
+  #PlayerOne.ui-enabled select:focus, #PlayerOne.ui-enabled input:focus, #PlayerOne.ui-enabled textarea:focus {
+    box-shadow: inset 0 0 0 1px #ffffff; }
+  #PlayerOne.ui-enabled input, #PlayerOne.ui-enabled textarea, #PlayerOne.ui-enabled select {
+    margin-top: 12px; }
+  #PlayerOne.ui-enabled ::-webkit-input-placeholder {
+    color: #AAAAAA; }
+  #PlayerOne.ui-enabled ::-moz-placeholder {
+    color: #AAAAAA; }
+  #PlayerOne.ui-enabled :-ms-input-placeholder {
+    color: #AAAAAA; }
+  #PlayerOne.ui-enabled.fullscreen-mode a, #PlayerOne.ui-enabled.fullscreen-mode button {
+    font-size: 18.2px;
+    line-height: 33.6px; }
+  #PlayerOne.ui-enabled.fullscreen-mode input[type="text"]:not(#share_control_link_input),
+  #PlayerOne.ui-enabled.fullscreen-mode input[type="email"],
+  #PlayerOne.ui-enabled.fullscreen-mode input[type="password"],
+  #PlayerOne.ui-enabled.fullscreen-mode textarea {
+    font-size: 18.2px;
+    line-height: 30.8px; }
+  #PlayerOne.ui-enabled.fullscreen-mode select {
+    font-size: 18.2px; }
+  #PlayerOne.ui-enabled.fullscreen-mode .bttn:not(.trigger), #PlayerOne.ui-enabled.fullscreen-mode button:not(.trigger), #PlayerOne.ui-enabled.fullscreen-mode input, #PlayerOne.ui-enabled.fullscreen-mode input[type="text"]:not(#share_control_link_input), #PlayerOne.ui-enabled.fullscreen-mode input[type="search"], #PlayerOne.ui-enabled.fullscreen-mode input[type="number"], #PlayerOne.ui-enabled.fullscreen-mode input[type="password"], #PlayerOne.ui-enabled.fullscreen-mode input[type="email"], #PlayerOne.ui-enabled.fullscreen-mode input[type="tel"], #PlayerOne.ui-enabled.fullscreen-mode input[type="url"], #PlayerOne.ui-enabled.fullscreen-mode textarea, #PlayerOne.ui-enabled.fullscreen-mode select {
+    min-height: 44.8px; }
+  #PlayerOne.ui-enabled.fullscreen-mode textarea {
+    min-height: 120.4px;
+    line-height: 25.2px; }
+  #PlayerOne.ui-enabled #ComponentsContainer:after {
+    display: block;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: 0 -20px;
+    content: ' ';
+    opacity: 0;
+    background: rgba(44, 44, 44, 0.9076) url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiBwcmVzZXJ2ZUFzcGVjdFJhdGlvPSJ4TWlkWU1pZCIgd2lkdGg9IjIwIiBoZWlnaHQ9IjIwIiB2aWV3Qm94PSIwIDAgMjAgMjAiPgogICAgPHBvbHlnb24gcG9pbnRzPSItMjAsMCAtMTIsMCAxMiwyNCA0LDI0IiBmaWxsPSIjMDAwIiBmaWxsLW9wYWNpdHk9IjAuNSIvPgogICAgPHBvbHlnb24gcG9pbnRzPSIwLDAgOCwwIDMyLDI0IDI0LDI0IiBmaWxsPSIjMDAwIiBmaWxsLW9wYWNpdHk9IjAuNSIvPgo8L3N2Zz4K);
+    -webkit-animation: loading 0.3s infinite linear;
+    animation: loading 0.3s infinite linear;
+    height: 0;
+    transition: opacity 0s, height 0.2s cubic-bezier(0.075, 0.82, 0.165, 1);
+    transition-delay: 0s; }
+  #PlayerOne.ui-enabled #ComponentsContainer.buffering:after, #PlayerOne.ui-enabled #ComponentsContainer.loading:after {
+    height: 8px;
+    opacity: 1;
+    transition: opacity 0s, height 0.2s cubic-bezier(0.075, 0.82, 0.165, 1);
+    transition-delay: 3s; }
+  #PlayerOne.ui-enabled #ComponentsContainer.loading:after {
+    transition: opacity 0s, height 0.2s cubic-bezier(0.075, 0.82, 0.165, 1);
+    transition-delay: 0s; }
+  #PlayerOne.ui-enabled #ComponentsContainer.hovered:after {
+    display: none; }
+  #PlayerOne.ui-enabled #ComponentsContainer.hovered #bottomContainer {
+    opacity: 1; }
+  #PlayerOne.ui-enabled #ComponentsContainer.hovered #topContainer {
+    background: -webkit-linear-gradient(rgba(0, 0, 0, 0.4), transparent);
+    background: -moz-linear-gradient(rgba(0, 0, 0, 0.4), transparent);
+    background: linear-gradient(rgba(0, 0, 0, 0.4), transparent); }
+  #PlayerOne.ui-enabled #ComponentsContainer.hovered .viewerInfo.shown, #PlayerOne.ui-enabled #ComponentsContainer.hovered .title {
+    opacity: 1;
+    display: inline-block; }
+  #PlayerOne.ui-enabled #topContainer {
+    display: flex;
+    position: absolute;
+    padding: 8px 10px 10px 10px;
+    top: 0;
+    left: 0;
+    z-index: 1; }
+  #PlayerOne.ui-enabled #topControls {
+    display: inline-block; }
+  #PlayerOne.ui-enabled.autoplay-false #topContainer {
+    background: none; }
+  #PlayerOne.ui-enabled #ComponentsContainer:not(.hovered) #topPanelRight .component:not(.logo) {
+    display: none; }
+  #PlayerOne.ui-enabled.ios.ui-native #topContainer {
+    display: none; }
+  #PlayerOne.ui-enabled #topPanelLeft {
+    margin-top: 4px;
+    width: 62%; }
+  #PlayerOne.ui-enabled #topPanelRight {
+    vertical-align: top; }
+  #PlayerOne.ui-enabled #bottomContainer {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    border-radius: 0;
+    z-index: 2;
+    opacity: 0;
+    -webkit-transform: translateZ(0); }
+  #PlayerOne.ui-enabled #controlsContainer {
+    display: flex;
+    white-space: nowrap; }
+    #PlayerOne.ui-enabled #controlsContainer .flex-fit {
+      flex: 1 auto; }
+    #PlayerOne.ui-enabled #controlsContainer .flex-full {
+      flex: 1 1 100%; }
+  #PlayerOne.ui-enabled #controlPanelLeft {
+    flex: initial;
+    width: auto; }
+  #PlayerOne.ui-enabled #controlPanelRight {
+    flex: initial;
+    width: auto;
+    padding: 0 4px; }
+    #PlayerOne.ui-enabled #controlPanelRight .component {
+      transition: all .15s ease-in-out;
+      transition-delay: 0.1s; }
+  #PlayerOne.ui-enabled.autoplay-false #bottomContainer {
+    display: none; }
+  #PlayerOne.ui-enabled #middleContainer {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%); }
+  #PlayerOne.ui-enabled #middleOverlay {
+    display: none;
+    opacity: 0; }
+  #PlayerOne.ui-enabled.autoplay-false video::-webkit-media-controls {
+    display: none !important;
+    -webkit-appearance: none; }
+  #PlayerOne.ui-enabled.autoplay-false video::-webkit-media-controls-start-playback-button {
+    display: none !important;
+    -webkit-appearance: none; }
+  #PlayerOne.ui-enabled.autoplay-false #bottomContainer,
+  #PlayerOne.ui-enabled.autoplay-false #middleOverlay {
+    opacity: 0 !important; }
+  #PlayerOne.ui-enabled.autoplay-false #topContainer .title, #PlayerOne.ui-enabled.autoplay-false #topContainer .viewerInfo {
+    opacity: 0 !important; }
+  #PlayerOne.ui-enabled.autoplay-false #topPanelRight .component:not(.logo) {
+    display: none; }
+  #PlayerOne.ui-enabled.screen-shown #topContainer, #PlayerOne.ui-enabled.slideshow #topContainer {
+    opacity: 1;
+    z-index: 100; }
+    #PlayerOne.ui-enabled.screen-shown #topContainer .title, #PlayerOne.ui-enabled.slideshow #topContainer .title {
+      opacity: 1 !important; }
+    #PlayerOne.ui-enabled.screen-shown #topContainer .viewerInfo, #PlayerOne.ui-enabled.slideshow #topContainer .viewerInfo {
+      display: none; }
+  #PlayerOne.ui-enabled.ui-controls-hidden #bottomContainer,
+  #PlayerOne.ui-enabled.ui-controls-hidden #middleOverlay,
+  #PlayerOne.ui-enabled.ui-controls-hidden #StatusAnimation,
+  #PlayerOne.ui-enabled.ui-controls-hidden #LiveBadge,
+  #PlayerOne.ui-enabled.ui-controls-hidden #topControls,
+  #PlayerOne.ui-enabled.ui-controls-hidden #NotificationContainer, #PlayerOne.ui-enabled.ui-controls-hidden.size-small #bottomContainer,
+  #PlayerOne.ui-enabled.ui-controls-hidden.size-small #middleOverlay,
+  #PlayerOne.ui-enabled.ui-controls-hidden.size-small #StatusAnimation,
+  #PlayerOne.ui-enabled.ui-controls-hidden.size-small #LiveBadge,
+  #PlayerOne.ui-enabled.ui-controls-hidden.size-small #topControls,
+  #PlayerOne.ui-enabled.ui-controls-hidden.size-small #NotificationContainer, #PlayerOne.ui-enabled.ui-controls-hidden.size-medium #bottomContainer,
+  #PlayerOne.ui-enabled.ui-controls-hidden.size-medium #middleOverlay,
+  #PlayerOne.ui-enabled.ui-controls-hidden.size-medium #StatusAnimation,
+  #PlayerOne.ui-enabled.ui-controls-hidden.size-medium #LiveBadge,
+  #PlayerOne.ui-enabled.ui-controls-hidden.size-medium #topControls,
+  #PlayerOne.ui-enabled.ui-controls-hidden.size-medium #NotificationContainer, #PlayerOne.ui-enabled.ui-controls-hidden.size-big #bottomContainer,
+  #PlayerOne.ui-enabled.ui-controls-hidden.size-big #middleOverlay,
+  #PlayerOne.ui-enabled.ui-controls-hidden.size-big #StatusAnimation,
+  #PlayerOne.ui-enabled.ui-controls-hidden.size-big #LiveBadge,
+  #PlayerOne.ui-enabled.ui-controls-hidden.size-big #topControls,
+  #PlayerOne.ui-enabled.ui-controls-hidden.size-big #NotificationContainer {
+    display: none; }
+  #PlayerOne.ui-enabled.ui-enabled:not(.content-available) #topContainer,
+  #PlayerOne.ui-enabled.ui-enabled:not(.content-available) #bottomContainer,
+  #PlayerOne.ui-enabled.ui-enabled:not(.content-available) #middleOverlay {
+    display: none; }
+  #PlayerOne.ui-enabled.ui-hidden, #PlayerOne.ui-enabled.ui-enabled.ui-hidden, #PlayerOne.ui-enabled.ui-enabled.ui-hidden.site-mode, #PlayerOne.ui-enabled.ui-enabled.ui-hidden.site-mode.size-small, #PlayerOne.ui-enabled.ui-enabled.ui-hidden.site-mode.size-medium, #PlayerOne.ui-enabled.ui-enabled.ui-hidden.site-mode.size-big {
+    /**
+   * flash cover to capture mouse and keyboard events (and not the flash)
+   * if the flash is throttled the `ui-hidden` class will be added, so the
+   * cover must be hidden too
+   */ }
+    #PlayerOne.ui-enabled.ui-hidden #EmbedViewer .cover,
+    #PlayerOne.ui-enabled.ui-hidden #ComponentsContainer .component, #PlayerOne.ui-enabled.ui-enabled.ui-hidden #EmbedViewer .cover,
+    #PlayerOne.ui-enabled.ui-enabled.ui-hidden #ComponentsContainer .component, #PlayerOne.ui-enabled.ui-enabled.ui-hidden.site-mode #EmbedViewer .cover,
+    #PlayerOne.ui-enabled.ui-enabled.ui-hidden.site-mode #ComponentsContainer .component, #PlayerOne.ui-enabled.ui-enabled.ui-hidden.site-mode.size-small #EmbedViewer .cover,
+    #PlayerOne.ui-enabled.ui-enabled.ui-hidden.site-mode.size-small #ComponentsContainer .component, #PlayerOne.ui-enabled.ui-enabled.ui-hidden.site-mode.size-medium #EmbedViewer .cover,
+    #PlayerOne.ui-enabled.ui-enabled.ui-hidden.site-mode.size-medium #ComponentsContainer .component, #PlayerOne.ui-enabled.ui-enabled.ui-hidden.site-mode.size-big #EmbedViewer .cover,
+    #PlayerOne.ui-enabled.ui-enabled.ui-hidden.site-mode.size-big #ComponentsContainer .component {
+      display: none; }
+  @media screen and (max-width: 240px) {
+    #PlayerOne.ui-enabled #ComponentsContainer.hovered:after {
+      display: block; } }
+  #PlayerOne.ui-enabled.size-small #ComponentsContainer.hovered:after {
+    display: block; }
+  @media screen and (max-width: 480px) {
+    #PlayerOne.ui-enabled #topPanelLeft {
+      width: auto; }
+    #PlayerOne.ui-enabled #topPanelRight {
+      flex: 1;
+      width: auto; } }
+  #PlayerOne.ui-enabled.size-big #topPanelLeft, #PlayerOne.ui-enabled.size-medium #topPanelLeft, #PlayerOne.ui-enabled.size-small #topPanelLeft {
+    width: auto; }
+  #PlayerOne.ui-enabled.size-big #topPanelRight, #PlayerOne.ui-enabled.size-medium #topPanelRight, #PlayerOne.ui-enabled.size-small #topPanelRight {
+    flex: 1;
+    width: auto; }
+  #PlayerOne.ui-enabled .flex {
+    display: flex; }
+  #PlayerOne.ui-enabled .component label {
+    display: none; }
+  #PlayerOne.ui-enabled .overflow-popover label {
+    display: inline-block; }
+  #PlayerOne.ui-enabled .off-screen {
+    border: 0;
+    clip: rect(0 0 0 0);
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    width: 1px;
+    position: absolute; }
+  #PlayerOne.ui-enabled.fullscreen-mode #topPanelLeft {
+    margin-top: 5.6px; }
+  #PlayerOne.ui-enabled .seekbar.component {
+    overflow: hidden;
+    position: relative;
+    box-sizing: border-box;
+    width: 100%;
+    height: 32px;
+    margin: 0;
+    cursor: default;
+    background: rgba(255, 255, 255, 0);
+    font-size: 1.1em;
+    color: #fff;
+    line-height: 32px;
+    transition: all .10s ease-in-out;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none; }
+    #PlayerOne.ui-enabled .seekbar.component .videoComponent {
+      display: none; }
+    #PlayerOne.ui-enabled .seekbar.component.video {
+      cursor: pointer;
+      background: rgba(255, 255, 255, 0.2);
+      padding: 0; }
+      #PlayerOne.ui-enabled .seekbar.component.video .videoComponent {
+        display: block; }
+    #PlayerOne.ui-enabled .seekbar.component .loadingBar {
+      display: block;
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      overflow: hidden;
+      height: 100%; }
+      #PlayerOne.ui-enabled .seekbar.component .loadingBar:after {
+        display: block;
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        margin: 0 -20px;
+        content: ' ';
+        opacity: 0;
+        background: rgba(44, 44, 44, 0.9076) url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiBwcmVzZXJ2ZUFzcGVjdFJhdGlvPSJ4TWlkWU1pZCIgd2lkdGg9IjIwIiBoZWlnaHQ9IjIwIiB2aWV3Qm94PSIwIDAgMjAgMjAiPgogICAgPHBvbHlnb24gcG9pbnRzPSItMjAsMCAtMTIsMCAxMiwyNCA0LDI0IiBmaWxsPSIjMDAwIiBmaWxsLW9wYWNpdHk9IjAuNSIvPgogICAgPHBvbHlnb24gcG9pbnRzPSIwLDAgOCwwIDMyLDI0IDI0LDI0IiBmaWxsPSIjMDAwIiBmaWxsLW9wYWNpdHk9IjAuNSIvPgo8L3N2Zz4K);
+        -webkit-animation: loading 0.3s infinite linear;
+        animation: loading 0.3s infinite linear;
+        height: 100%;
+        transition: opacity 0s;
+        transition-delay: 0s; }
+    #PlayerOne.ui-enabled .seekbar.component .progress {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      background: rgba(255, 255, 255, 0.2);
+      width: 0;
+      -webkit-transform: translate3d(0, 0, 0); }
+    #PlayerOne.ui-enabled .seekbar.component .seekProgress {
+      background: none;
+      width: 0; }
+      #PlayerOne.ui-enabled .seekbar.component .seekProgress .knob {
+        position: absolute;
+        right: 0;
+        width: 2px;
+        height: 100%;
+        background: #fff; }
+    #PlayerOne.ui-enabled .seekbar.component .length, #PlayerOne.ui-enabled .seekbar.component .seekLength {
+      position: absolute;
+      top: 0;
+      right: 0;
+      text-align: right;
+      margin: 0 10px;
+      text-shadow: 0 0 3px rgba(0, 0, 0, 0.4);
+      opacity: 1; }
+      #PlayerOne.ui-enabled .seekbar.component .length.firstProgressText, #PlayerOne.ui-enabled .seekbar.component .seekLength.firstProgressText {
+        left: 0;
+        right: auto; }
+      #PlayerOne.ui-enabled .seekbar.component .length.covered, #PlayerOne.ui-enabled .seekbar.component .seekLength.covered {
+        opacity: 0; }
+    #PlayerOne.ui-enabled .seekbar.component .videoProgressLength.firstProgressText {
+      left: 0;
+      right: auto; }
+  #PlayerOne.ui-enabled #ComponentsContainer.buffering .seekbar.component .loadingBar:after,
+  #PlayerOne.ui-enabled #ComponentsContainer.loading .seekbar.component .loadingBar:after {
+    opacity: 1;
+    transition: opacity 0s;
+    transition-delay: 3s; }
+  #PlayerOne.ui-enabled #ComponentsContainer.loading .seekbar.component .loadingBar:after {
+    transition: opacity 0s;
+    transition-delay: 0s; }
+  #PlayerOne.ui-enabled.fullscreen-mode .seekbar.component {
+    width: 100%;
+    height: 44.8px;
+    line-height: 44.8px; }
+    #PlayerOne.ui-enabled.fullscreen-mode .seekbar.component .loading:after {
+      margin-left: -28px;
+      background-size: contain; }
+  @media screen and (max-width: 480px) {
+    #PlayerOne.ui-enabled .seekbar.component {
+      display: none;
+      position: relative;
+      width: 100%;
+      height: 32px; }
+    #PlayerOne.ui-enabled.fullscreen-mode .seekbar.component {
+      height: 44.8px;
+      padding: 0; }
+    #PlayerOne.ui-enabled:not(.advert-shown) #ComponentsContainer.hovered .seekbar.component.video,
+    #PlayerOne.ui-enabled:not(.advert-shown) #ComponentsContainer.hovered.buffering .seekbar.component,
+    #PlayerOne.ui-enabled:not(.advert-shown) #ComponentsContainer.hovered.loading .seekbar.component {
+      display: block; } }
+  #PlayerOne.ui-enabled.size-big .seekbar.component, #PlayerOne.ui-enabled.size-medium .seekbar.component, #PlayerOne.ui-enabled.size-small .seekbar.component {
+    display: none;
+    position: relative;
+    width: 100%;
+    height: 32px; }
+  #PlayerOne.ui-enabled.size-big.fullscreen-mode .seekbar.component, #PlayerOne.ui-enabled.size-medium.fullscreen-mode .seekbar.component, #PlayerOne.ui-enabled.size-small.fullscreen-mode .seekbar.component {
+    height: 44.8px;
+    padding: 0; }
+  #PlayerOne.ui-enabled.size-big:not(.advert-shown) #ComponentsContainer.hovered .seekbar.component.video,
+  #PlayerOne.ui-enabled.size-big:not(.advert-shown) #ComponentsContainer.hovered.buffering .seekbar.component,
+  #PlayerOne.ui-enabled.size-big:not(.advert-shown) #ComponentsContainer.hovered.loading .seekbar.component, #PlayerOne.ui-enabled.size-medium:not(.advert-shown) #ComponentsContainer.hovered .seekbar.component.video,
+  #PlayerOne.ui-enabled.size-medium:not(.advert-shown) #ComponentsContainer.hovered.buffering .seekbar.component,
+  #PlayerOne.ui-enabled.size-medium:not(.advert-shown) #ComponentsContainer.hovered.loading .seekbar.component, #PlayerOne.ui-enabled.size-small:not(.advert-shown) #ComponentsContainer.hovered .seekbar.component.video,
+  #PlayerOne.ui-enabled.size-small:not(.advert-shown) #ComponentsContainer.hovered.buffering .seekbar.component,
+  #PlayerOne.ui-enabled.size-small:not(.advert-shown) #ComponentsContainer.hovered.loading .seekbar.component {
+    display: block; }
+  @media screen and (max-width: 240px) {
+    #PlayerOne.ui-enabled .seekbar.component {
+      display: none; } }
+  #PlayerOne.ui-enabled.size-small .seekbar.component {
+    display: none; }
+  #PlayerOne.ui-enabled.caption-search-enabled.caption-search-panel-open .captionSearchMarkerContainer {
+    display: block;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0; }
+  #PlayerOne.ui-enabled.caption-search-enabled.caption-search-panel-open .caption-search-marker {
+    background-color: #539EEC;
+    width: 1px;
+    height: 100%;
+    position: absolute; }
+    #PlayerOne.ui-enabled.caption-search-enabled.caption-search-panel-open .caption-search-marker.active-marker {
+      width: 2px;
+      background-color: #FFB400; }
+  #PlayerOne.ui-enabled .screen-container {
+    display: flex;
+    background-color: #171717;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    z-index: 1; }
+    #PlayerOne.ui-enabled .screen-container.screen-container.inline {
+      z-index: 0; }
+    #PlayerOne.ui-enabled .screen-container::after {
+      content: "";
+      background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDE4LjEuMSwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPgo8c3ZnIHZlcnNpb249IjEuMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgeD0iMHB4IiB5PSIwcHgiIHdpZHRoPSI2NDBweCIKCSBoZWlnaHQ9IjM2MHB4IiB2aWV3Qm94PSIwIDAgNjQwIDM2MCIgZW5hYmxlLWJhY2tncm91bmQ9Im5ldyAwIDAgNjQwIDM2MCIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+CjxnIGlkPSJMYXllcl8yIiBkaXNwbGF5PSJub25lIj4KCTxnIGRpc3BsYXk9ImlubGluZSIgb3BhY2l0eT0iMC4zNiI+CgkJPHBvbHlnb24gZmlsbD0ibm9uZSIgc3Ryb2tlPSIjRkZGRkZGIiBzdHJva2UtbWl0ZXJsaW1pdD0iMTAiIHBvaW50cz0iMTA2MS4yLDI4NzEuNiAxMjY1LjMsNDAxMC41IDE1NDAuMSwyNzQxLjUgCQkiLz4KCQk8cG9seWdvbiBmaWxsPSJub25lIiBzdHJva2U9IiNGRkZGRkYiIHN0cm9rZS1taXRlcmxpbWl0PSIxMCIgcG9pbnRzPSIxMDYxLjIsMjg3MS42IDE1NDAuMSwyNzQxLjUgMTMzOS4yLDI2MzQuNiAJCSIvPgoJCTxwb2x5Z29uIGZpbGw9Im5vbmUiIHN0cm9rZT0iI0ZGRkZGRiIgc3Ryb2tlLW1pdGVybGltaXQ9IjEwIiBwb2ludHM9IjEwNjEuMiwyODcxLjYgMTI2NS4zLDQwMTAuNSA1NDEuNCw0MzkwLjIgCQkiLz4KCQk8cG9seWdvbiBmaWxsPSJub25lIiBzdHJva2U9IiNGRkZGRkYiIHN0cm9rZS1taXRlcmxpbWl0PSIxMCIgcG9pbnRzPSIxMDYxLjIsMjg3MS42IDQzOS45LDI3MTkuOCA5NzMsMjM3OC44IAkJIi8+CgkJPHBvbHlnb24gZmlsbD0ibm9uZSIgc3Ryb2tlPSIjRkZGRkZGIiBzdHJva2UtbWl0ZXJsaW1pdD0iMTAiIHBvaW50cz0iOTczLDIzNzguOCA0MzkuOSwyNzE5LjggMzMwLjEsMjAzOC44IAkJIi8+CgkJPHBvbHlnb24gZmlsbD0ibm9uZSIgc3Ryb2tlPSIjRkZGRkZGIiBzdHJva2UtbWl0ZXJsaW1pdD0iMTAiIHBvaW50cz0iODc4LjksMzQwNC4yIDEwNjEuMiwyODcxLjYgNDM5LjksMjcxOS44IAkJIi8+CgkJPHBvbHlnb24gZmlsbD0ibm9uZSIgc3Ryb2tlPSIjRkZGRkZGIiBzdHJva2UtbWl0ZXJsaW1pdD0iMTAiIHBvaW50cz0iMTQyNi4zLDMyNjYuOSAxODM4LjksNDIyMiAxMjY1LjMsNDAxMC41IAkJIi8+CgkJPHBvbHlnb24gZmlsbD0ibm9uZSIgc3Ryb2tlPSIjRkZGRkZGIiBzdHJva2UtbWl0ZXJsaW1pdD0iMTAiIHBvaW50cz0iMTgzOC45LDQyMjIgMTc0MC43LDM5OTQuNiAxMjY1LjMsNDAxMC41IAkJIi8+CgkJPHBvbHlnb24gZmlsbD0ibm9uZSIgc3Ryb2tlPSIjRkZGRkZGIiBzdHJva2UtbWl0ZXJsaW1pdD0iMTAiIHBvaW50cz0iMTc0MC43LDM5OTQuNiAxOTU2LjYsMzU4MCAxNDI2LjMsMzI2Ni45IAkJIi8+CgkJPHBvbHlnb24gZmlsbD0ibm9uZSIgc3Ryb2tlPSIjRkZGRkZGIiBzdHJva2UtbWl0ZXJsaW1pdD0iMTAiIHBvaW50cz0iMTk1Ni42LDM1ODAgMTU0MC4xLDI3NDEuNSAxNDI2LjMsMzI2Ni45IAkJIi8+CgkJPHBvbHlnb24gZmlsbD0ibm9uZSIgc3Ryb2tlPSIjRkZGRkZGIiBzdHJva2UtbWl0ZXJsaW1pdD0iMTAiIHBvaW50cz0iMTU0MC4xLDI3NDEuNSAyMjY3LjIsMjg4MC43IDE5NTYuNiwzNTgwIAkJIi8+CgkJPHBvbHlnb24gZmlsbD0ibm9uZSIgc3Ryb2tlPSIjRkZGRkZGIiBzdHJva2UtbWl0ZXJsaW1pdD0iMTAiIHBvaW50cz0iMjI3LjcsMzM1Mi4zIDE4Mi42LDM5ODIuNiA3MzAuNCwzODM4LjEgCQkiLz4KCQk8cG9seWdvbiBmaWxsPSJub25lIiBzdHJva2U9IiNGRkZGRkYiIHN0cm9rZS1taXRlcmxpbWl0PSIxMCIgcG9pbnRzPSIyMjcuNywzMzUyLjMgNzMwLjQsMzgzOC4xIDg3OC45LDM0MDQuMiAJCSIvPgoJCTxwb2x5Z29uIGZpbGw9Im5vbmUiIHN0cm9rZT0iI0ZGRkZGRiIgc3Ryb2tlLW1pdGVybGltaXQ9IjEwIiBwb2ludHM9IjE4Mi42LDM5ODIuNiA3MzAuNCwzODM4LjEgNTQxLjQsNDM5MC4yIAkJIi8+CgkJPHBvbHlnb24gZmlsbD0ibm9uZSIgc3Ryb2tlPSIjRkZGRkZGIiBzdHJva2UtbWl0ZXJsaW1pdD0iMTAiIHBvaW50cz0iNDM5LjksMjcxOS44IDE2Mi45LDMwNDAuNyA3NTIuNCwzMjA3LjEgCQkiLz4KCQk8cG9seWdvbiBmaWxsPSJub25lIiBzdHJva2U9IiNGRkZGRkYiIHN0cm9rZS1taXRlcmxpbWl0PSIxMCIgcG9pbnRzPSI3NTIuNCwzMjA3LjEgMjI3LjcsMzM1Mi4zIDg3OC45LDM0MDQuMiAJCSIvPgoJCTxwb2x5Z29uIGZpbGw9Im5vbmUiIHN0cm9rZT0iI0ZGRkZGRiIgc3Ryb2tlLW1pdGVybGltaXQ9IjEwIiBwb2ludHM9IjQzOS45LDI3MTkuOCAtMjcuOCwyNjQ0LjQgMzMwLjEsMjAzOC44IAkJIi8+CgkJPHBvbHlnb24gZmlsbD0ibm9uZSIgc3Ryb2tlPSIjRkZGRkZGIiBzdHJva2UtbWl0ZXJsaW1pdD0iMTAiIHBvaW50cz0iLTI3LjgsMjY0NC40IC04MjAuNCwyNTcxIC01NTIuNSwyNDE2IAkJIi8+CgkJPHBvbHlnb24gZmlsbD0ibm9uZSIgc3Ryb2tlPSIjRkZGRkZGIiBzdHJva2UtbWl0ZXJsaW1pdD0iMTAiIHBvaW50cz0iLTI3LjgsMjY0NC40IC04MjAuNCwyNTcxIC01NDQuNCwzMjA2LjcgCQkiLz4KCQk8cG9seWdvbiBmaWxsPSJub25lIiBzdHJva2U9IiNGRkZGRkYiIHN0cm9rZS1taXRlcmxpbWl0PSIxMCIgcG9pbnRzPSI3LjYsMTg0NyAtMTQyLjIsMjI3Ni45IDMzMC4xLDIwMzguOCAJCSIvPgoJCTxwb2x5Z29uIGZpbGw9Im5vbmUiIHN0cm9rZT0iI0ZGRkZGRiIgc3Ryb2tlLW1pdGVybGltaXQ9IjEwIiBwb2ludHM9IjcuNiwxODQ3IC0zOTQuNCwxODE1IC0xNDIuMiwyMjc2LjkgCQkiLz4KCQk8cG9seWdvbiBmaWxsPSJub25lIiBzdHJva2U9IiNGRkZGRkYiIHN0cm9rZS1taXRlcmxpbWl0PSIxMCIgcG9pbnRzPSItMTQyLjIsMjI3Ni45IC01NTIuNSwyNDE2IC0yNy44LDI2NDQuNCAJCSIvPgoJCTxwb2x5Z29uIGZpbGw9Im5vbmUiIHN0cm9rZT0iI0ZGRkZGRiIgc3Ryb2tlLW1pdGVybGltaXQ9IjEwIiBwb2ludHM9Ii0zOTQuNCwxODE1IC0xMjc0LjYsMjQxNiAtNTUyLjUsMjQxNiAJCSIvPgoJCTxwb2x5Z29uIGZpbGw9Im5vbmUiIHN0cm9rZT0iI0ZGRkZGRiIgc3Ryb2tlLW1pdGVybGltaXQ9IjEwIiBwb2ludHM9Ii0zOTQuNCwxODE1IC01NTIuNSwyNDE2IC0xNDIuMiwyMjc2LjkgCQkiLz4KCQk8cG9seWdvbiBmaWxsPSJub25lIiBzdHJva2U9IiNGRkZGRkYiIHN0cm9rZS1taXRlcmxpbWl0PSIxMCIgcG9pbnRzPSItNTUyLjUsMjQxNiAtMTI3NC42LDI0MTYgLTgyMC40LDI1NzEgCQkiLz4KCQk8cG9seWdvbiBmaWxsPSJub25lIiBzdHJva2U9IiNGRkZGRkYiIHN0cm9rZS1taXRlcmxpbWl0PSIxMCIgcG9pbnRzPSItMzk0LjQsMTgxNSAtMTE4NS44LDE5ODMgLTEyNzQuNiwyNDE2IAkJIi8+CgkJPHBvbHlnb24gZmlsbD0ibm9uZSIgc3Ryb2tlPSIjRkZGRkZGIiBzdHJva2UtbWl0ZXJsaW1pdD0iMTAiIHBvaW50cz0iLTE0Mi4yLDIyNzYuOSAtMjcuOCwyNjQ0LjQgOTAuNiwyNDQ0LjEgMzMwLjEsMjAzOC44IAkJIi8+CgkJPHBvbHlnb24gZmlsbD0ibm9uZSIgc3Ryb2tlPSIjRkZGRkZGIiBzdHJva2UtbWl0ZXJsaW1pdD0iMTAiIHBvaW50cz0iNy42LDE4NDcgLTM5NC40LDE4MTUgLTY0OC4xLDE0NTcgCQkiLz4KCQk8cG9seWdvbiBmaWxsPSJub25lIiBzdHJva2U9IiNGRkZGRkYiIHN0cm9rZS1taXRlcmxpbWl0PSIxMCIgcG9pbnRzPSItMzk0LjQsMTgxNSAtMTE4NS44LDE5ODMgLTg2Mi4zLDE1ODcgCQkiLz4KCQk8cG9seWdvbiBmaWxsPSJub25lIiBzdHJva2U9IiNGRkZGRkYiIHN0cm9rZS1taXRlcmxpbWl0PSIxMCIgcG9pbnRzPSItODYyLjMsMTU4NyAtMTE4NS44LDE5ODMgLTEwODkuNSwxMTY1IAkJIi8+CgkJPHBvbHlnb24gZmlsbD0ibm9uZSIgc3Ryb2tlPSIjRkZGRkZGIiBzdHJva2UtbWl0ZXJsaW1pdD0iMTAiIHBvaW50cz0iLTY0OC4xLDE0NTcgLTg2Mi4zLDE1ODcgLTEwODkuNSwxMTY1IAkJIi8+CgkJPHBvbHlnb24gZmlsbD0ibm9uZSIgc3Ryb2tlPSIjRkZGRkZGIiBzdHJva2UtbWl0ZXJsaW1pdD0iMTAiIHBvaW50cz0iLTY0OC4xLDE0NTcgLTM5NC40LDE4MTUgLTg2Mi4zLDE1ODcgCQkiLz4KCQk8cG9seWdvbiBmaWxsPSJub25lIiBzdHJva2U9IiNGRkZGRkYiIHN0cm9rZS1taXRlcmxpbWl0PSIxMCIgcG9pbnRzPSIxNjIuOSwzMDQwLjcgLTU0NC40LDMyMDYuNyAtMjcuOCwyNjQ0LjQgCQkiLz4KCQk8cG9seWdvbiBmaWxsPSJub25lIiBzdHJva2U9IiNGRkZGRkYiIHN0cm9rZS1taXRlcmxpbWl0PSIxMCIgcG9pbnRzPSItNDM2LjQsMzgxOC42IC04NzQuMywzNDI4LjcgLTU0NC40LDMyMDYuNyAJCSIvPgoJCTxwb2x5Z29uIGZpbGw9Im5vbmUiIHN0cm9rZT0iI0ZGRkZGRiIgc3Ryb2tlLW1pdGVybGltaXQ9IjEwIiBwb2ludHM9Ii02NTIuMyw0MjA4LjUgLTExMjMuNSwzNTIyLjEgLTg3NC4zLDM0MjguNyAJCSIvPgoJCTxwb2x5Z29uIGZpbGw9Im5vbmUiIHN0cm9rZT0iI0ZGRkZGRiIgc3Ryb2tlLW1pdGVybGltaXQ9IjEwIiBwb2ludHM9Ii02NTIuMyw0MjA4LjUgLTEzNDIuNSw0MTE5LjIgLTExMjMuNSwzNTIyLjEgCQkiLz4KCQk8cG9seWdvbiBmaWxsPSJub25lIiBzdHJva2U9IiNGRkZGRkYiIHN0cm9rZS1taXRlcmxpbWl0PSIxMCIgcG9pbnRzPSItODc0LjMsMzQyOC43IC0xMTIzLjUsMzUyMi4xIC0xNDY1LjUsMzMzMy4xIAkJIi8+CgkJPHBvbHlnb24gZmlsbD0ibm9uZSIgc3Ryb2tlPSIjRkZGRkZGIiBzdHJva2UtbWl0ZXJsaW1pdD0iMTAiIHBvaW50cz0iLTQzNi40LDM4MTguNiAtNjUyLjMsNDIwOC41IC04NzQuMywzNDI4LjcgCQkiLz4KCQk8cG9seWdvbiBmaWxsPSJub25lIiBzdHJva2U9IiNGRkZGRkYiIHN0cm9rZS1taXRlcmxpbWl0PSIxMCIgcG9pbnRzPSItNTQ0LjQsMzIwNi43IC0xMDcyLDI3OTIuOCAtODIwLjQsMjU3MSAJCSIvPgoJCTxwb2x5Z29uIGZpbGw9Im5vbmUiIHN0cm9rZT0iI0ZGRkZGRiIgc3Ryb2tlLW1pdGVybGltaXQ9IjEwIiBwb2ludHM9Ii04MjAuNCwyNTcxIC0xMDcyLDI3OTIuOCAtMTI3NC42LDI0MTYgCQkiLz4KCQk8cG9seWdvbiBmaWxsPSJub25lIiBzdHJva2U9IiNGRkZGRkYiIHN0cm9rZS1taXRlcmxpbWl0PSIxMCIgcG9pbnRzPSItODc0LjMsMzQyOC43IC0xNDY1LjUsMzMzMy4xIC0xMDcyLDI3OTIuOCAJCSIvPgoJCTxwb2x5Z29uIGZpbGw9Im5vbmUiIHN0cm9rZT0iI0ZGRkZGRiIgc3Ryb2tlLW1pdGVybGltaXQ9IjEwIiBwb2ludHM9Ii01NDQuNCwzMjA2LjcgLTg3NC4zLDM0MjguNyAtMTA3MiwyNzkyLjggCQkiLz4KCQk8cG9seWdvbiBmaWxsPSJub25lIiBzdHJva2U9IiNGRkZGRkYiIHN0cm9rZS1taXRlcmxpbWl0PSIxMCIgcG9pbnRzPSIyMDIuOSwzNjk5LjMgLTQzNi40LDM4MTguNiA3OS4yLDMyNTguMiAJCSIvPgoJCTxwb2x5Z29uIGZpbGw9Im5vbmUiIHN0cm9rZT0iI0ZGRkZGRiIgc3Ryb2tlLW1pdGVybGltaXQ9IjEwIiBwb2ludHM9IjIyNy43LDMzNTIuMyAyMDIuOSwzNjk5LjMgNzkuMiwzMjU4LjIgCQkiLz4KCQk8cG9seWdvbiBmaWxsPSJub25lIiBzdHJva2U9IiNGRkZGRkYiIHN0cm9rZS1taXRlcmxpbWl0PSIxMCIgcG9pbnRzPSIxODIuNiwzOTgyLjYgLTY1Mi4zLDQyMDguNSAtNDM2LjQsMzgxOC42IAkJIi8+CgkJPHBvbHlnb24gZmlsbD0ibm9uZSIgc3Ryb2tlPSIjRkZGRkZGIiBzdHJva2UtbWl0ZXJsaW1pdD0iMTAiIHBvaW50cz0iMjAyLjksMzY5OS4zIDE4Mi42LDM5ODIuNiAtNDM2LjQsMzgxOC42IAkJIi8+CgkJPHBvbHlnb24gZmlsbD0ibm9uZSIgc3Ryb2tlPSIjRkZGRkZGIiBzdHJva2UtbWl0ZXJsaW1pdD0iMTAiIHBvaW50cz0iNzUyLjQsMzIwNy4xIDIyNy43LDMzNTIuMyAxNjIuOSwzMDQwLjcgCQkiLz4KCQk8cG9seWdvbiBmaWxsPSJub25lIiBzdHJva2U9IiNGRkZGRkYiIHN0cm9rZS1taXRlcmxpbWl0PSIxMCIgcG9pbnRzPSIxNjIuOSwzMDQwLjcgMjI3LjcsMzM1Mi4zIDc5LjIsMzI1OC4yIAkJIi8+CgkJPHBvbHlnb24gZmlsbD0ibm9uZSIgc3Ryb2tlPSIjRkZGRkZGIiBzdHJva2UtbWl0ZXJsaW1pdD0iMTAiIHBvaW50cz0iLTU0NC40LDMyMDYuNyA3OS4yLDMyNTguMiAtNDM2LjQsMzgxOC42IAkJIi8+CgkJPHBvbHlnb24gZmlsbD0ibm9uZSIgc3Ryb2tlPSIjRkZGRkZGIiBzdHJva2UtbWl0ZXJsaW1pdD0iMTAiIHBvaW50cz0iLTU0NC40LDMyMDYuNyAxNjIuOSwzMDQwLjcgNzkuMiwzMjU4LjIgCQkiLz4KCQk8cG9seWdvbiBmaWxsPSJub25lIiBzdHJva2U9IiNGRkZGRkYiIHN0cm9rZS1taXRlcmxpbWl0PSIxMCIgcG9pbnRzPSI0MzkuOSwyNzE5LjggMTYyLjksMzA0MC43IC0yNy44LDI2NDQuNCAJCSIvPgoJCTxwb2x5Z29uIGZpbGw9Im5vbmUiIHN0cm9rZT0iI0ZGRkZGRiIgc3Ryb2tlLW1pdGVybGltaXQ9IjEwIiBwb2ludHM9IjEzMzkuMiwyNjM0LjYgMTA2MS4yLDI4NzEuNiA5NzMsMjM3OC44IAkJIi8+CgkJPHBvbHlnb24gZmlsbD0ibm9uZSIgc3Ryb2tlPSIjRkZGRkZGIiBzdHJva2UtbWl0ZXJsaW1pdD0iMTAiIHBvaW50cz0iMTA1OS42LDE5MjkgMTMzOS4yLDI2MzQuNiA5NzMsMjM3OC44IAkJIi8+CgkJPHBvbHlnb24gZmlsbD0ibm9uZSIgc3Ryb2tlPSIjRkZGRkZGIiBzdHJva2UtbWl0ZXJsaW1pdD0iMTAiIHBvaW50cz0iMzMwLjEsMjAzOC44IDk3MywyMzc4LjggMTA1OS42LDE5MjkgCQkiLz4KCQk8cG9seWdvbiBmaWxsPSJub25lIiBzdHJva2U9IiNGRkZGRkYiIHN0cm9rZS1taXRlcmxpbWl0PSIxMCIgcG9pbnRzPSIzMzAuMSwyMDM4LjggMTA1OS42LDE5MjkgNzc2LjQsMTc3My4zIAkJIi8+CgkJPHBvbHlnb24gZmlsbD0ibm9uZSIgc3Ryb2tlPSIjRkZGRkZGIiBzdHJva2UtbWl0ZXJsaW1pdD0iMTAiIHBvaW50cz0iNzc2LjQsMTc3My4zIDEwNTkuNiwxOTI5IDE0NjUuMSwxMzYzLjcgCQkiLz4KCQk8cG9seWdvbiBmaWxsPSJub25lIiBzdHJva2U9IiNGRkZGRkYiIHN0cm9rZS1taXRlcmxpbWl0PSIxMCIgcG9pbnRzPSI3MzAuNCwzODM4LjEgMTI2NS4zLDQwMTAuNSA1NDEuNCw0MzkwLjIgCQkiLz4KCQk8cG9seWdvbiBmaWxsPSJub25lIiBzdHJva2U9IiNGRkZGRkYiIHN0cm9rZS1taXRlcmxpbWl0PSIxMCIgcG9pbnRzPSIxNzQwLjcsMzk5NC42IDE4MzguOSw0MjIyIDIwOTEuNiw0MDEyLjcgCQkiLz4KCQk8cG9seWdvbiBmaWxsPSJub25lIiBzdHJva2U9IiNGRkZGRkYiIHN0cm9rZS1taXRlcmxpbWl0PSIxMCIgcG9pbnRzPSIxOTU2LjYsMzU4MCAyMDkxLjYsNDAxMi43IDIxODkuNywzMDU1LjMgCQkiLz4KCQk8cG9seWdvbiBmaWxsPSJub25lIiBzdHJva2U9IiNGRkZGRkYiIHN0cm9rZS1taXRlcmxpbWl0PSIxMCIgcG9pbnRzPSIxNTQwLjEsMjc0MS41IDEzMzkuMiwyNjM0LjYgMTYzMy4yLDI0NDQuMiAJCSIvPgoJCTxwb2x5Z29uIGZpbGw9Im5vbmUiIHN0cm9rZT0iI0ZGRkZGRiIgc3Ryb2tlLW1pdGVybGltaXQ9IjEwIiBwb2ludHM9IjE2MzMuMiwyNDQ0LjIgMTUwMy42LDIxMTMgMjA4Ny42LDIxNzcgCQkiLz4KCQk8cG9seWdvbiBmaWxsPSJub25lIiBzdHJva2U9IiNGRkZGRkYiIHN0cm9rZS1taXRlcmxpbWl0PSIxMCIgcG9pbnRzPSIxNTQwLjEsMjc0MS41IDE2MzMuMiwyNDQ0LjIgMjI2Ny4yLDI4ODAuNyAJCSIvPgoJCTxwb2x5Z29uIGZpbGw9Im5vbmUiIHN0cm9rZT0iI0ZGRkZGRiIgc3Ryb2tlLW1pdGVybGltaXQ9IjEwIiBwb2ludHM9IjIyNjcuMiwyODgwLjcgMTYzMy4yLDI0NDQuMiAyMDg3LjYsMjE3NyAJCSIvPgoJCTxwb2x5Z29uIGZpbGw9Im5vbmUiIHN0cm9rZT0iI0ZGRkZGRiIgc3Ryb2tlLW1pdGVybGltaXQ9IjEwIiBwb2ludHM9IjE1MDMuNiwyMTEzIDE5MzUuNiwxNjMzIDIwODcuNiwyMTc3IAkJIi8+CgkJPHBvbHlnb24gZmlsbD0ibm9uZSIgc3Ryb2tlPSIjRkZGRkZGIiBzdHJva2UtbWl0ZXJsaW1pdD0iMTAiIHBvaW50cz0iMTUwMy42LDIxMTMgMTQ2NS4xLDEzNjMuNyAxOTM1LjYsMTYzMyAJCSIvPgoJCTxwb2x5Z29uIGZpbGw9Im5vbmUiIHN0cm9rZT0iI0ZGRkZGRiIgc3Ryb2tlLW1pdGVybGltaXQ9IjEwIiBwb2ludHM9IjE5MzUuNiwxNjMzIDE0NjUuMSwxMzYzLjcgMTczNS44LDExNDUuOSAJCSIvPgoJCTxwb2x5Z29uIGZpbGw9Im5vbmUiIHN0cm9rZT0iI0ZGRkZGRiIgc3Ryb2tlLW1pdGVybGltaXQ9IjEwIiBwb2ludHM9IjEzMzkuMiwyNjM0LjYgMTUwMy42LDIxMTMgMTA1OS42LDE5MjkgCQkiLz4KCQk8cG9seWdvbiBmaWxsPSJub25lIiBzdHJva2U9IiNGRkZGRkYiIHN0cm9rZS1taXRlcmxpbWl0PSIxMCIgcG9pbnRzPSIxMzM5LjIsMjYzNC42IDE2MzMuMiwyNDQ0LjIgMTUwMy42LDIxMTMgCQkiLz4KCQk8cG9seWdvbiBmaWxsPSJub25lIiBzdHJva2U9IiNGRkZGRkYiIHN0cm9rZS1taXRlcmxpbWl0PSIxMCIgcG9pbnRzPSIxNTAzLjYsMjExMyAxMDU5LjYsMTkyOSAxNDY1LjEsMTM2My43IAkJIi8+Cgk8L2c+CjwvZz4KPGcgaWQ9IkxheWVyXzEiPgoJPHJlY3QgeD0iMCIgeT0iMCIgZmlsbD0iIzE2MTYxNiIgd2lkdGg9IjY0MCIgaGVpZ2h0PSIzNjAiLz4KCTxnIG9wYWNpdHk9IjAuMyI+CgkJPHBvbHlnb24gb3BhY2l0eT0iMC4yIiBmaWxsPSIjRkZGRkZGIiBwb2ludHM9IjQ0Ny44LDE0OC44IDUxMS41LDUwNC4yIDU5Ny4zLDEwOC4yIAkJIi8+CgkJPHBvbHlnb24gb3BhY2l0eT0iMC4xIiBmaWxsPSIjRkZGRkZGIiBwb2ludHM9IjQ0Ny44LDE0OC44IDU5Ny4zLDEwOC4yIDUzNC42LDc0LjggCQkiLz4KCQk8cG9seWdvbiBvcGFjaXR5PSIwLjEiIGZpbGw9IiNGRkZGRkYiIHBvaW50cz0iNDQ3LjgsMTQ4LjggNTExLjUsNTA0LjIgMjg1LjYsNjIyLjcgCQkiLz4KCQk8cG9seWdvbiBvcGFjaXR5PSIwIiBmaWxsPSIjRkZGRkZGIiBwb2ludHM9IjQ0Ny44LDE0OC44IDI1My45LDEwMS40IDQyMC4zLC01IAkJIi8+CgkJPHBvbHlnb24gb3BhY2l0eT0iMC4xIiBmaWxsPSIjRkZGRkZGIiBwb2ludHM9IjQyMC4zLC01IDI1My45LDEwMS40IDIxOS42LC0xMTEuMSAJCSIvPgoJCTxwb2x5Z29uIG9wYWNpdHk9IjAuMiIgZmlsbD0iI0ZGRkZGRiIgcG9pbnRzPSIzOTAuOSwzMTUgNDQ3LjgsMTQ4LjggMjUzLjksMTAxLjQgCQkiLz4KCQk8cG9seWdvbiBvcGFjaXR5PSIwLjEiIGZpbGw9IiNGRkZGRkYiIHBvaW50cz0iNTYxLjgsMjcyLjEgNjkwLjUsNTcwLjIgNTExLjUsNTA0LjIgCQkiLz4KCQk8cG9seWdvbiBvcGFjaXR5PSIwLjEiIGZpbGw9IiNGRkZGRkYiIHBvaW50cz0iNjkwLjUsNTcwLjIgNjU5LjksNDk5LjIgNTExLjUsNTA0LjIgCQkiLz4KCQk8cG9seWdvbiBvcGFjaXR5PSIwLjIiIGZpbGw9IiNGRkZGRkYiIHBvaW50cz0iNjU5LjksNDk5LjIgNzI3LjMsMzY5LjkgNTYxLjgsMjcyLjEgCQkiLz4KCQk8cG9seWdvbiBvcGFjaXR5PSIwLjEiIGZpbGw9IiNGRkZGRkYiIHBvaW50cz0iNzI3LjMsMzY5LjkgNTk3LjMsMTA4LjIgNTYxLjgsMjcyLjEgCQkiLz4KCQk8cG9seWdvbiBvcGFjaXR5PSIwLjIiIGZpbGw9IiNGRkZGRkYiIHBvaW50cz0iNTk3LjMsMTA4LjIgODI0LjIsMTUxLjYgNzI3LjMsMzY5LjkgCQkiLz4KCQk8cG9seWdvbiBvcGFjaXR5PSIwLjIiIGZpbGw9IiNGRkZGRkYiIHBvaW50cz0iMTg3LjcsMjk4LjggMTczLjYsNDk1LjUgMzQ0LjYsNDUwLjQgCQkiLz4KCQk8cG9seWdvbiBvcGFjaXR5PSIwIiBmaWxsPSIjRkZGRkZGIiBwb2ludHM9IjE4Ny43LDI5OC44IDM0NC42LDQ1MC40IDM5MC45LDMxNSAJCSIvPgoJCTxwb2x5Z29uIG9wYWNpdHk9IjAuMSIgZmlsbD0iI0ZGRkZGRiIgcG9pbnRzPSIxNzMuNiw0OTUuNSAzNDQuNiw0NTAuNCAyODUuNiw2MjIuNyAJCSIvPgoJCTxwb2x5Z29uIG9wYWNpdHk9IjAuMSIgZmlsbD0iI0ZGRkZGRiIgcG9pbnRzPSIyNTMuOSwxMDEuNCAxNjcuNSwyMDEuNSAzNTEuNCwyNTMuNSAJCSIvPgoJCTxwb2x5Z29uIG9wYWNpdHk9IjAuMSIgZmlsbD0iI0ZGRkZGRiIgcG9pbnRzPSIzNTEuNCwyNTMuNSAxODcuNywyOTguOCAzOTAuOSwzMTUgCQkiLz4KCQk8cG9seWdvbiBvcGFjaXR5PSIwLjIiIGZpbGw9IiNGRkZGRkYiIHBvaW50cz0iMjUzLjksMTAxLjQgMTA3LjksNzcuOSAyMTkuNiwtMTExLjEgCQkiLz4KCQk8cG9seWdvbiBvcGFjaXR5PSIwLjIiIGZpbGw9IiNGRkZGRkYiIHBvaW50cz0iMTA3LjksNzcuOSAtMTM5LjUsNTUgLTU1LjgsNi42IAkJIi8+CgkJPHBvbHlnb24gb3BhY2l0eT0iMC4xIiBmaWxsPSIjRkZGRkZGIiBwb2ludHM9IjEwNy45LDc3LjkgLTEzOS41LDU1IC01My4zLDI1My40IAkJIi8+CgkJPHBvbHlnb24gb3BhY2l0eT0iMCIgZmlsbD0iI0ZGRkZGRiIgcG9pbnRzPSIxMTksLTE3MSA3Mi4yLC0zNi44IDIxOS42LC0xMTEuMSAJCSIvPgoJCTxwb2x5Z29uIG9wYWNpdHk9IjAuMSIgZmlsbD0iI0ZGRkZGRiIgcG9pbnRzPSIxMTksLTE3MSAtNi41LC0xODEgNzIuMiwtMzYuOCAJCSIvPgoJCTxwb2x5Z29uIG9wYWNpdHk9IjAuMSIgZmlsbD0iI0ZGRkZGRiIgcG9pbnRzPSI3Mi4yLC0zNi44IC01NS44LDYuNiAxMDcuOSw3Ny45IAkJIi8+CgkJPHBvbHlnb24gb3BhY2l0eT0iMC4xIiBmaWxsPSIjRkZGRkZGIiBwb2ludHM9Ii02LjUsLTE4MSAtMjgxLjIsNi42IC01NS44LDYuNiAJCSIvPgoJCTxwb2x5Z29uIG9wYWNpdHk9IjAuMiIgZmlsbD0iI0ZGRkZGRiIgcG9pbnRzPSItNi41LC0xODEgLTU1LjgsNi42IDcyLjIsLTM2LjggCQkiLz4KCQk8cG9seWdvbiBvcGFjaXR5PSIwIiBmaWxsPSIjRkZGRkZGIiBwb2ludHM9Ii01NS44LDYuNiAtMjgxLjIsNi42IC0xMzkuNSw1NSAJCSIvPgoJCTxwb2x5Z29uIG9wYWNpdHk9IjAuMiIgZmlsbD0iI0ZGRkZGRiIgcG9pbnRzPSItNi41LC0xODEgLTI1My41LC0xMjguNiAtMjgxLjIsNi42IAkJIi8+CgkJPHBvbHlnb24gb3BhY2l0eT0iMC4xIiBmaWxsPSIjRkZGRkZGIiBwb2ludHM9IjcyLjIsLTM2LjggMTA3LjksNzcuOSAxNDQuOSwxNS40IDIxOS42LC0xMTEuMSAJCSIvPgoJCTxwb2x5Z29uIG9wYWNpdHk9IjAiIGZpbGw9IiNGRkZGRkYiIHBvaW50cz0iMTE5LC0xNzEgLTYuNSwtMTgxIC04NS43LC0yOTIuNyAJCSIvPgoJCTxwb2x5Z29uIG9wYWNpdHk9IjAuMiIgZmlsbD0iI0ZGRkZGRiIgcG9pbnRzPSItNi41LC0xODEgLTI1My41LC0xMjguNiAtMTUyLjUsLTI1Mi4xIAkJIi8+CgkJPHBvbHlnb24gb3BhY2l0eT0iMC4xIiBmaWxsPSIjRkZGRkZGIiBwb2ludHM9Ii0xNTIuNSwtMjUyLjEgLTI1My41LC0xMjguNiAtMjIzLjQsLTM4My45IAkJIi8+CgkJPHBvbHlnb24gb3BhY2l0eT0iMCIgZmlsbD0iI0ZGRkZGRiIgcG9pbnRzPSItODUuNywtMjkyLjcgLTE1Mi41LC0yNTIuMSAtMjIzLjQsLTM4My45IAkJIi8+CgkJPHBvbHlnb24gb3BhY2l0eT0iMC4xIiBmaWxsPSIjRkZGRkZGIiBwb2ludHM9Ii04NS43LC0yOTIuNyAtNi41LC0xODEgLTE1Mi41LC0yNTIuMSAJCSIvPgoJCTxwb2x5Z29uIG9wYWNpdHk9IjAuMiIgZmlsbD0iI0ZGRkZGRiIgcG9pbnRzPSIxNjcuNSwyMDEuNSAtNTMuMywyNTMuNCAxMDcuOSw3Ny45IAkJIi8+CgkJPHBvbHlnb24gb3BhY2l0eT0iMC4yIiBmaWxsPSIjRkZGRkZGIiBwb2ludHM9Ii0xOS42LDQ0NC4zIC0xNTYuMywzMjIuNiAtNTMuMywyNTMuNCAJCSIvPgoJCTxwb2x5Z29uIG9wYWNpdHk9IjAuMiIgZmlsbD0iI0ZGRkZGRiIgcG9pbnRzPSItODcsNTY2IC0yMzQsMzUxLjggLTE1Ni4zLDMyMi42IAkJIi8+CgkJPHBvbHlnb24gb3BhY2l0eT0iMC4xIiBmaWxsPSIjRkZGRkZGIiBwb2ludHM9Ii04Nyw1NjYgLTMwMi40LDUzOC4xIC0yMzQsMzUxLjggCQkiLz4KCQk8cG9seWdvbiBvcGFjaXR5PSIwIiBmaWxsPSIjRkZGRkZGIiBwb2ludHM9Ii0xNTYuMywzMjIuNiAtMjM0LDM1MS44IC0zNDAuOCwyOTIuOCAJCSIvPgoJCTxwb2x5Z29uIG9wYWNpdHk9IjAuMSIgZmlsbD0iI0ZGRkZGRiIgcG9pbnRzPSItMTkuNiw0NDQuMyAtODcsNTY2IC0xNTYuMywzMjIuNiAJCSIvPgoJCTxwb2x5Z29uIG9wYWNpdHk9IjAiIGZpbGw9IiNGRkZGRkYiIHBvaW50cz0iLTUzLjMsMjUzLjQgLTIxOCwxMjQuMiAtMTM5LjUsNTUgCQkiLz4KCQk8cG9seWdvbiBvcGFjaXR5PSIwLjEiIGZpbGw9IiNGRkZGRkYiIHBvaW50cz0iLTEzOS41LDU1IC0yMTgsMTI0LjIgLTI4MS4yLDYuNiAJCSIvPgoJCTxwb2x5Z29uIG9wYWNpdHk9IjAuMiIgZmlsbD0iI0ZGRkZGRiIgcG9pbnRzPSItMTU2LjMsMzIyLjYgLTM0MC44LDI5Mi44IC0yMTgsMTI0LjIgCQkiLz4KCQk8cG9seWdvbiBvcGFjaXR5PSIwLjEiIGZpbGw9IiNGRkZGRkYiIHBvaW50cz0iLTUzLjMsMjUzLjQgLTE1Ni4zLDMyMi42IC0yMTgsMTI0LjIgCQkiLz4KCQk8cG9seWdvbiBvcGFjaXR5PSIwLjIiIGZpbGw9IiNGRkZGRkYiIHBvaW50cz0iMTc5LjksNDA3LjEgLTE5LjYsNDQ0LjMgMTQxLjMsMjY5LjQgCQkiLz4KCQk8cG9seWdvbiBvcGFjaXR5PSIwIiBmaWxsPSIjRkZGRkZGIiBwb2ludHM9IjE4Ny43LDI5OC44IDE3OS45LDQwNy4xIDE0MS4zLDI2OS40IAkJIi8+CgkJPHBvbHlnb24gb3BhY2l0eT0iMC4yIiBmaWxsPSIjRkZGRkZGIiBwb2ludHM9IjE3My42LDQ5NS41IC04Nyw1NjYgLTE5LjYsNDQ0LjMgCQkiLz4KCQk8cG9seWdvbiBvcGFjaXR5PSIwLjEiIGZpbGw9IiNGRkZGRkYiIHBvaW50cz0iMTc5LjksNDA3LjEgMTczLjYsNDk1LjUgLTE5LjYsNDQ0LjMgCQkiLz4KCQk8cG9seWdvbiBvcGFjaXR5PSIwLjIiIGZpbGw9IiNGRkZGRkYiIHBvaW50cz0iMzUxLjQsMjUzLjUgMTg3LjcsMjk4LjggMTY3LjUsMjAxLjUgCQkiLz4KCQk8cG9seWdvbiBvcGFjaXR5PSIwLjEiIGZpbGw9IiNGRkZGRkYiIHBvaW50cz0iMTY3LjUsMjAxLjUgMTg3LjcsMjk4LjggMTQxLjMsMjY5LjQgCQkiLz4KCQk8cG9seWdvbiBvcGFjaXR5PSIwLjEiIGZpbGw9IiNGRkZGRkYiIHBvaW50cz0iLTUzLjMsMjUzLjQgMTQxLjMsMjY5LjQgLTE5LjYsNDQ0LjMgCQkiLz4KCQk8cG9seWdvbiBvcGFjaXR5PSIwIiBmaWxsPSIjRkZGRkZGIiBwb2ludHM9Ii01My4zLDI1My40IDE2Ny41LDIwMS41IDE0MS4zLDI2OS40IAkJIi8+CgkJPHBvbHlnb24gb3BhY2l0eT0iMC4xIiBmaWxsPSIjRkZGRkZGIiBwb2ludHM9IjI1My45LDEwMS40IDE2Ny41LDIwMS41IDEwNy45LDc3LjkgCQkiLz4KCQk8cG9seWdvbiBvcGFjaXR5PSIwLjIiIGZpbGw9IiNGRkZGRkYiIHBvaW50cz0iNTM0LjYsNzQuOCA0NDcuOCwxNDguOCA0MjAuMywtNSAJCSIvPgoJCTxwb2x5Z29uIG9wYWNpdHk9IjAuMSIgZmlsbD0iI0ZGRkZGRiIgcG9pbnRzPSI0NDcuMywtMTQ1LjQgNTM0LjYsNzQuOCA0MjAuMywtNSAJCSIvPgoJCTxwb2x5Z29uIG9wYWNpdHk9IjAuMiIgZmlsbD0iI0ZGRkZGRiIgcG9pbnRzPSIyMTkuNiwtMTExLjEgNDIwLjMsLTUgNDQ3LjMsLTE0NS40IAkJIi8+CgkJPHBvbHlnb24gb3BhY2l0eT0iMC4xIiBmaWxsPSIjRkZGRkZGIiBwb2ludHM9IjIxOS42LC0xMTEuMSA0NDcuMywtMTQ1LjQgMzU4LjksLTE5NCAJCSIvPgoJCTxwb2x5Z29uIG9wYWNpdHk9IjAiIGZpbGw9IiNGRkZGRkYiIHBvaW50cz0iMzU4LjksLTE5NCA0NDcuMywtMTQ1LjQgNTczLjksLTMyMS44IAkJIi8+CgkJPHBvbHlnb24gb3BhY2l0eT0iMC4xIiBmaWxsPSIjRkZGRkZGIiBwb2ludHM9IjM0NC42LDQ1MC40IDUxMS41LDUwNC4yIDI4NS42LDYyMi43IAkJIi8+CgkJPHBvbHlnb24gb3BhY2l0eT0iMC4xIiBmaWxsPSIjRkZGRkZGIiBwb2ludHM9IjY1OS45LDQ5OS4yIDY5MC41LDU3MC4yIDc2OS40LDUwNC45IAkJIi8+CgkJPHBvbHlnb24gb3BhY2l0eT0iMC4xIiBmaWxsPSIjRkZGRkZGIiBwb2ludHM9IjcyNy4zLDM2OS45IDc2OS40LDUwNC45IDgwMCwyMDYuMSAJCSIvPgoJCTxwb2x5Z29uIG9wYWNpdHk9IjAiIGZpbGw9IiNGRkZGRkYiIHBvaW50cz0iNTk3LjMsMTA4LjIgNTM0LjYsNzQuOCA2MjYuMywxNS40IAkJIi8+CgkJPHBvbHlnb24gb3BhY2l0eT0iMC4yIiBmaWxsPSIjRkZGRkZGIiBwb2ludHM9IjYyNi4zLDE1LjQgNTg1LjksLTg4IDc2OC4xLC02OCAJCSIvPgoJCTxwb2x5Z29uIG9wYWNpdHk9IjAuMSIgZmlsbD0iI0ZGRkZGRiIgcG9pbnRzPSI1OTcuMywxMDguMiA2MjYuMywxNS40IDgyNC4yLDE1MS42IAkJIi8+CgkJPHBvbHlnb24gb3BhY2l0eT0iMCIgZmlsbD0iI0ZGRkZGRiIgcG9pbnRzPSI4MjQuMiwxNTEuNiA2MjYuMywxNS40IDc2OC4xLC02OCAJCSIvPgoJCTxwb2x5Z29uIG9wYWNpdHk9IjAuMSIgZmlsbD0iI0ZGRkZGRiIgcG9pbnRzPSI1ODUuOSwtODggNzIwLjcsLTIzNy44IDc2OC4xLC02OCAJCSIvPgoJCTxwb2x5Z29uIG9wYWNpdHk9IjAuMiIgZmlsbD0iI0ZGRkZGRiIgcG9pbnRzPSI1ODUuOSwtODggNTczLjksLTMyMS44IDcyMC43LC0yMzcuOCAJCSIvPgoJCTxwb2x5Z29uIG9wYWNpdHk9IjAiIGZpbGw9IiNGRkZGRkYiIHBvaW50cz0iNzIwLjcsLTIzNy44IDU3My45LC0zMjEuOCA2NTguNCwtMzg5LjggCQkiLz4KCQk8cG9seWdvbiBvcGFjaXR5PSIwLjIiIGZpbGw9IiNGRkZGRkYiIHBvaW50cz0iNTM0LjYsNzQuOCA1ODUuOSwtODggNDQ3LjMsLTE0NS40IAkJIi8+CgkJPHBvbHlnb24gb3BhY2l0eT0iMC4xIiBmaWxsPSIjRkZGRkZGIiBwb2ludHM9IjUzNC42LDc0LjggNjI2LjMsMTUuNCA1ODUuOSwtODggCQkiLz4KCQk8cG9seWdvbiBvcGFjaXR5PSIwLjEiIGZpbGw9IiNGRkZGRkYiIHBvaW50cz0iNTg1LjksLTg4IDQ0Ny4zLC0xNDUuNCA1NzMuOSwtMzIxLjggCQkiLz4KCTwvZz4KPC9nPgo8L3N2Zz4K) no-repeat;
+      background-size: cover;
+      opacity: 0.6;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      position: absolute;
+      z-index: -1; }
+    #PlayerOne.ui-enabled .screen-container .main-icon {
+      width: 64px;
+      height: 64px;
+      margin-bottom: 4px;
+      margin-left: auto;
+      margin-right: auto; }
+    #PlayerOne.ui-enabled .screen-container .screen-content {
+      width: 360px; }
+      #PlayerOne.ui-enabled .screen-container .screen-content.center {
+        text-align: center; }
+      #PlayerOne.ui-enabled .screen-container .screen-content:before {
+        display: none; }
+  #PlayerOne.ui-enabled.fullscreen-mode #ScreensContainer .screen-container .screen-content > p {
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 100%; }
+  #PlayerOne.ui-enabled #Password .pw-label {
+    display: none;
+    text-align: center; }
+  #PlayerOne.ui-enabled #Password .pwfield-and-button {
+    display: inline-flex;
+    width: 100%; }
+    #PlayerOne.ui-enabled #Password .pwfield-and-button .input-bg {
+      flex-grow: 1;
+      margin-right: 8px; }
+  @media screen and (max-width: 320px) {
+    #PlayerOne.ui-enabled #Password .pwfield-and-button {
+      display: block; }
+      #PlayerOne.ui-enabled #Password .pwfield-and-button .input-bg {
+        margin: 5px 0; }
+    #PlayerOne.ui-enabled #ScreensContainer .screen-container .screen-content > p {
+      font-weight: 300;
+      font-size: 14px; } }
+  #PlayerOne.ui-enabled.size-medium #Password .pwfield-and-button, #PlayerOne.ui-enabled.size-small #Password .pwfield-and-button {
+    display: block; }
+    #PlayerOne.ui-enabled.size-medium #Password .pwfield-and-button .input-bg, #PlayerOne.ui-enabled.size-small #Password .pwfield-and-button .input-bg {
+      margin: 5px 0; }
+  #PlayerOne.ui-enabled.size-medium #ScreensContainer .screen-container .screen-content > p, #PlayerOne.ui-enabled.size-small #ScreensContainer .screen-container .screen-content > p {
+    font-weight: 300;
+    font-size: 14px; }
+  @media screen and (max-width: 240px) {
+    #PlayerOne.ui-enabled #Password > p {
+      display: none; }
+    #PlayerOne.ui-enabled #Password .pwfield-and-button {
+      display: none; }
+    #PlayerOne.ui-enabled #Password .pw-label {
+      display: block; } }
+  #PlayerOne.ui-enabled.size-small #Password > p {
+    display: none; }
+  #PlayerOne.ui-enabled.size-small #Password .pwfield-and-button {
+    display: none; }
+  #PlayerOne.ui-enabled.size-small #Password .pw-label {
+    display: block; }
+  #PlayerOne.ui-enabled .overlay-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    background: rgba(23, 23, 23, 0.9);
+    z-index: 20;
+    display: none;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    align-items: center;
+    overflow-y: auto; }
+    #PlayerOne.ui-enabled .overlay-container .close {
+      position: absolute; }
+    #PlayerOne.ui-enabled .overlay-container.shown {
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex; }
+    #PlayerOne.ui-enabled .overlay-container .cancel {
+      color: #0062ff;
+      cursor: pointer;
+      margin-left: 10px; }
+    #PlayerOne.ui-enabled .overlay-container .overlay-content {
+      max-width: 90%;
+      max-height: 100%;
+      width: 360px;
+      margin: 0 auto; }
+      #PlayerOne.ui-enabled .overlay-container .overlay-content.wide {
+        width: 480px; }
+      #PlayerOne.ui-enabled .overlay-container .overlay-content p {
+        margin-bottom: 8px; }
+  #PlayerOne.ui-enabled.fullscreen-mode .overlay-container .close {
+    top: 16px;
+    right: 16px;
+    width: 33.6px;
+    height: 33.6px; }
+  #PlayerOne.ui-enabled.fullscreen-mode .overlay-container .overlay-content {
+    width: 480px; }
+  @media screen and (max-width: 480px) {
+    #PlayerOne.ui-enabled .overlay-content {
+      margin-top: 15px; } }
+  #PlayerOne.ui-enabled.size-big .overlay-content, #PlayerOne.ui-enabled.size-medium .overlay-content, #PlayerOne.ui-enabled.size-small .overlay-content {
+    margin-top: 15px; }
+  #PlayerOne.ui-enabled .list {
+    margin: 4px 0;
+    padding: 0;
+    list-style: none;
+    text-align: left;
+    color: #fff; }
+    #PlayerOne.ui-enabled .list.triggerList > div.component {
+      display: block;
+      width: auto;
+      min-width: 24px; }
+    #PlayerOne.ui-enabled .list.triggerList button {
+      padding: 0; }
+    #PlayerOne.ui-enabled .list.triggerList label {
+      cursor: pointer;
+      vertical-align: middle; }
+    #PlayerOne.ui-enabled .list button {
+      display: block;
+      min-height: 28px;
+      line-height: 28px;
+      cursor: pointer;
+      padding: 0 18px 0 34px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      width: 100%;
+      text-align: left;
+      color: rgba(255, 255, 255, 0.8); }
+      #PlayerOne.ui-enabled .list button:hover {
+        background: rgba(255, 255, 255, 0.2);
+        color: #fff; }
+        #PlayerOne.ui-enabled .list button:hover button {
+          color: #fff; }
+      #PlayerOne.ui-enabled .list button.active {
+        position: relative;
+        background: #0062ff;
+        font-weight: bold; }
+      #PlayerOne.ui-enabled .list button button {
+        color: rgba(255, 255, 255, 0.8);
+        text-decoration: none; }
+      #PlayerOne.ui-enabled .list button label {
+        line-height: 28px;
+        color: #fff; }
+    #PlayerOne.ui-enabled .list.select button {
+      white-space: nowrap; }
+      #PlayerOne.ui-enabled .list.select button.active {
+        position: relative;
+        background: #0062ff;
+        font-weight: bold; }
+        #PlayerOne.ui-enabled .list.select button.active:after {
+          display: block;
+          position: absolute;
+          content: "";
+          background: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiBwcmVzZXJ2ZUFzcGVjdFJhdGlvPSJ4TWlkWU1pZCIgd2lkdGg9IjI0IiBoZWlnaHQ9IjI0IiB2aWV3Qm94PSIwIDAgMjQgMjQiPgogIDxnIGlkPSJjaGVja21hcmsiPgogICAgPHBhdGggZD0iTTE2LjcwOCwxMC42ODMgQzE2LjcwOCwxMC42ODMgMTEuODAyLDE1LjU4OSAxMS44MDIsMTUuNTg5IEMxMS43NjksMTUuNjM2IDExLjc1MCwxNS42ODkgMTEuNzA4LDE1LjczMSBDMTEuMzE3LDE2LjEyMiAxMC42ODQsMTYuMTIyIDEwLjI5NCwxNS43MzEgQzEwLjI5NCwxNS43MzEgMTAuMjcwLDE1LjcwNyAxMC4yNzAsMTUuNzA3IEMxMC4yNzAsMTUuNzA3IDEwLjI3MCwxNS43MDcgMTAuMjcwLDE1LjcwNyBDMTAuMjcwLDE1LjcwNyAxMC4yNjksMTUuNzA3IDEwLjI2OSwxNS43MDcgQzEwLjI2OSwxNS43MDcgOC4yNzAsMTMuNzA3IDguMjcwLDEzLjcwNyBDNy44NzksMTMuMzE3IDcuODc5LDEyLjY4MyA4LjI3MCwxMi4yOTMgQzguNjYwLDExLjkwMiA5LjI5MywxMS45MDIgOS42ODQsMTIuMjkzIEM5LjY4NCwxMi4yOTMgMTAuOTc3LDEzLjU4NiAxMC45NzcsMTMuNTg2IEMxMC45NzcsMTMuNTg2IDE1LjI5NCw5LjI2OSAxNS4yOTQsOS4yNjkgQzE1LjY4NCw4Ljg3OSAxNi4zMTcsOC44NzkgMTYuNzA4LDkuMjY5IEMxNy4wOTgsOS42NjAgMTcuMDk4LDEwLjI5MyAxNi43MDgsMTAuNjgzIFoiIGlkPSJwYXRoLTEiIGNsYXNzPSJjbHMtNCIgZmlsbC1ydWxlPSJldmVub2RkIiBmaWxsPSIjZmZmIi8+CiAgPC9nPgo8L3N2Zz4K);
+          background-size: contain;
+          background-repeat: no-repeat; }
+    #PlayerOne.ui-enabled .list.select button.active:after, #PlayerOne.ui-enabled .list i {
+      top: 2px;
+      left: 4px;
+      width: 24px;
+      height: 24px; }
+  #PlayerOne.ui-enabled.fullscreen-mode .list.select button.active:after, #PlayerOne.ui-enabled.fullscreen-mode .list i {
+    top: 2.8px;
+    left: 5.6px;
+    width: 33.6px;
+    height: 33.6px; }
+  #PlayerOne.ui-enabled.fullscreen-mode .list button {
+    min-height: 39.2px;
+    line-height: 39.2px; }
+  #PlayerOne.ui-enabled.fullscreen-mode .list:not(.triggerList) button {
+    padding: 0 25.2px 0 47.6px; }
+  @media screen and (max-width: 320px) {
+    #PlayerOne.ui-enabled .list {
+      max-width: 182px;
+      margin-top: 10px; } }
+  #PlayerOne.ui-enabled.size-medium .list, #PlayerOne.ui-enabled.size-small .list {
+    max-width: 182px;
+    margin-top: 10px; }
+  #PlayerOne.ui-enabled .popover-container {
+    font-size: 13px;
+    position: absolute;
+    z-index: auto;
+    text-overflow: ellipsis;
+    white-space: nowrap; }
+    #PlayerOne.ui-enabled .popover-container .close {
+      display: none; }
+    #PlayerOne.ui-enabled .popover-container.close-visible .close {
+      top: 0;
+      right: 0;
+      width: 20px;
+      height: 20px;
+      display: block; }
+    #PlayerOne.ui-enabled .popover-container.opened .popover {
+      display: block;
+      transition: transform .2s ease-in-out, opacity .1s ease-in-out;
+      -webkit-transition: -webkit-transform .2s ease-in-out, opacity .1s ease-in-out; }
+    #PlayerOne.ui-enabled .popover-container.animated .popover {
+      opacity: 1;
+      visibility: visible;
+      transform: translateY(0); }
+    #PlayerOne.ui-enabled .popover-container .popover {
+      z-index: 15;
+      padding: 0;
+      background: rgba(22, 22, 22, 0.8);
+      position: absolute;
+      display: none;
+      left: 50%;
+      min-width: 0;
+      border: 0;
+      border-radius: 0;
+      margin: 0;
+      opacity: 0;
+      visibility: hidden;
+      transform: translateY(10%);
+      -webkit-transform: translateY(10%);
+      transition: transform .1s ease-in-out, opacity .2s ease-in-out;
+      -webkit-transition: -webkit-transform .1s ease-in-out, opacity .2s ease-in-out; }
+      #PlayerOne.ui-enabled .popover-container .popover .popover-content {
+        padding: 0;
+        overflow-y: auto; }
+      #PlayerOne.ui-enabled .popover-container .popover .popover-arrow {
+        position: absolute;
+        left: 0;
+        margin-left: -4px;
+        width: 0;
+        height: 0;
+        display: block;
+        border-left: 4px solid transparent;
+        border-right: 4px solid transparent; }
+      #PlayerOne.ui-enabled .popover-container .popover > label {
+        color: white;
+        padding-left: 20px;
+        padding-right: 20px;
+        height: 28px;
+        line-height: 28px;
+        margin: 4px 0;
+        display: block; }
+    #PlayerOne.ui-enabled .popover-container.bottom .popover-arrow {
+      border-bottom: 4px solid rgba(23, 23, 23, 0.9);
+      top: -4px; }
+    #PlayerOne.ui-enabled .popover-container.top .popover-arrow {
+      border-top: 4px solid rgba(23, 23, 23, 0.9); }
+  @media screen and (max-width: 480px) {
+    #PlayerOne.ui-enabled .popover-container.opened {
+      width: 100%;
+      height: 100%;
+      overflow-y: auto; }
+      #PlayerOne.ui-enabled .popover-container.opened .close {
+        display: block; }
+      #PlayerOne.ui-enabled .popover-container.opened .popover {
+        box-shadow: none;
+        background: transparent !important;
+        top: 50%;
+        left: 50% !important;
+        transform: translateX(-50%) translateY(-50%) !important;
+        max-height: 100%; }
+    #PlayerOne.ui-enabled.popover-opened:before {
+      content: '';
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(22, 22, 22, 0.9);
+      z-index: 11; } }
+  #PlayerOne.ui-enabled.size-big .popover-container.opened, #PlayerOne.ui-enabled.size-medium .popover-container.opened, #PlayerOne.ui-enabled.size-small .popover-container.opened {
+    width: 100%;
+    height: 100%;
+    overflow-y: auto; }
+    #PlayerOne.ui-enabled.size-big .popover-container.opened .close, #PlayerOne.ui-enabled.size-medium .popover-container.opened .close, #PlayerOne.ui-enabled.size-small .popover-container.opened .close {
+      display: block; }
+    #PlayerOne.ui-enabled.size-big .popover-container.opened .popover, #PlayerOne.ui-enabled.size-medium .popover-container.opened .popover, #PlayerOne.ui-enabled.size-small .popover-container.opened .popover {
+      box-shadow: none;
+      background: transparent !important;
+      top: 50%;
+      left: 50% !important;
+      transform: translateX(-50%) translateY(-50%) !important;
+      max-height: 100%; }
+  #PlayerOne.ui-enabled.size-big.popover-opened:before, #PlayerOne.ui-enabled.size-medium.popover-opened:before, #PlayerOne.ui-enabled.size-small.popover-opened:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(22, 22, 22, 0.9);
+    z-index: 11; }
+  #PlayerOne.ui-enabled.fullscreen-mode .popover-container, #PlayerOne.ui-enabled.fullscreen-mode .popover-container label, #PlayerOne.ui-enabled.fullscreen-mode .popover-container button {
+    font-size: 18.2px; }
+  #PlayerOne.ui-enabled.fullscreen-mode .popover-container .popover > label {
+    padding: 0 28px;
+    height: 39.2px;
+    line-height: 39.2px;
+    margin: 5.6px 0;
+    font-size: 18.2px; }
+  #PlayerOne.ui-enabled.fullscreen-mode .popover-container.close-visible .close {
+    width: 28px;
+    height: 28px; }
+  #PlayerOne.ui-enabled .clickContainer {
+    background: black;
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 1; }
+  #PlayerOne.ui-enabled .adHolder.component {
+    position: absolute;
+    display: none;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    z-index: 2;
+    background-color: black; }
+    #PlayerOne.ui-enabled .adHolder.component.shown {
+      display: block;
+      background-color: transparent; }
+  #PlayerOne.ui-enabled.html-playback.advert-shown .adHolder.component {
+    display: block !important; }
+  #PlayerOne.ui-enabled.fullscreen-mode .adHolder.component {
+    width: 100%;
+    height: 100%; }
+  #PlayerOne.ui-enabled #AudioOnly {
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    background-size: 100%;
+    background-size: cover;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    cursor: inherit;
+    -webkit-user-select: none;
+    user-select: none; }
+    #PlayerOne.ui-enabled #AudioOnly .icon {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%); }
+      #PlayerOne.ui-enabled #AudioOnly .icon svg {
+        display: block;
+        width: 50px;
+        height: 50px;
+        margin: 0 auto;
+        opacity: 1;
+        -webkit-filter: none !important;
+        filter: none !important; }
+      #PlayerOne.ui-enabled #AudioOnly .icon span {
+        display: block;
+        font-size: 15px;
+        font-weight: bold;
+        margin-top: 10px;
+        cursor: default; }
+  #PlayerOne.ui-enabled .play.component {
+    background: #0062ff;
+    padding: 4px 10px; }
+    #PlayerOne.ui-enabled .play.component svg {
+      opacity: 1; }
+  #PlayerOne.ui-enabled.fullscreen-mode .play.component {
+    padding: 5.6px 14px; }
+  @media screen and (max-width: 480px) {
+    #PlayerOne.ui-enabled .play.component {
+      background: none; } }
+  #PlayerOne.ui-enabled.size-big .play.component, #PlayerOne.ui-enabled.size-medium .play.component, #PlayerOne.ui-enabled.size-small .play.component {
+    background: none; }
+  #PlayerOne.ui-enabled .playScreen.component {
+    position: absolute;
+    z-index: 10;
+    padding: 0;
+    display: block;
+    opacity: .8;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: -webkit-linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6));
+    background: -moz-linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6));
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6)); }
+    #PlayerOne.ui-enabled .playScreen.component svg {
+      width: 94px;
+      height: 94px;
+      -webkit-filter: none !important;
+      filter: none !important; }
+    #PlayerOne.ui-enabled .playScreen.component:hover, #PlayerOne.ui-enabled .playScreen.component .play-icon svg {
+      opacity: 1; }
+    #PlayerOne.ui-enabled .playScreen.component .play-icon {
+      width: 94px;
+      height: 94px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      margin-top: -47px;
+      margin-left: -47px; }
+    #PlayerOne.ui-enabled .playScreen.component .title {
+      opacity: 1;
+      display: block;
+      position: absolute;
+      left: 0;
+      bottom: 40px;
+      font-size: 18px;
+      line-height: 22px;
+      font-weight: bold;
+      padding: 0 20px;
+      width: 100%;
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box; }
+  @media screen and (max-width: 480px) {
+    #PlayerOne.ui-enabled .playScreen.component .title {
+      font-size: 14px;
+      bottom: 20px; } }
+  #PlayerOne.ui-enabled.size-big .playScreen.component .title, #PlayerOne.ui-enabled.size-medium .playScreen.component .title, #PlayerOne.ui-enabled.size-small .playScreen.component .title {
+    font-size: 14px;
+    bottom: 20px; }
+  @media screen and (max-width: 320px) {
+    #PlayerOne.ui-enabled .playScreen.component .title, #PlayerOne.ui-enabled .playScreen.component .viewerInfo {
+      display: none !important; }
+    #PlayerOne.ui-enabled .playScreen.component .play-icon, #PlayerOne.ui-enabled .playScreen.component .play-icon svg {
+      width: 64px;
+      height: 64px; }
+    #PlayerOne.ui-enabled .playScreen.component .play-icon {
+      margin-top: -32px;
+      margin-left: -32px; } }
+  #PlayerOne.ui-enabled.size-medium .playScreen.component .title, #PlayerOne.ui-enabled.size-medium .playScreen.component .viewerInfo, #PlayerOne.ui-enabled.size-small .playScreen.component .title, #PlayerOne.ui-enabled.size-small .playScreen.component .viewerInfo {
+    display: none !important; }
+  #PlayerOne.ui-enabled.size-medium .playScreen.component .play-icon, #PlayerOne.ui-enabled.size-medium .playScreen.component .play-icon svg, #PlayerOne.ui-enabled.size-small .playScreen.component .play-icon, #PlayerOne.ui-enabled.size-small .playScreen.component .play-icon svg {
+    width: 64px;
+    height: 64px; }
+  #PlayerOne.ui-enabled.size-medium .playScreen.component .play-icon, #PlayerOne.ui-enabled.size-small .playScreen.component .play-icon {
+    margin-top: -32px;
+    margin-left: -32px; }
+  #PlayerOne.ui-enabled .messageScreen {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0; }
+    #PlayerOne.ui-enabled .messageScreen .messageScreen__text {
+      padding: 20px;
+      background: rgba(23, 23, 23, 0.9);
+      font-size: 1.2em;
+      border-radius: 3px;
+      font-weight: bold;
+      color: #fff;
+      text-align: center; }
+  #PlayerOne.ui-enabled .messageScreen--success .messageScreen__text {
+    padding-left: 47px;
+    background-repeat: no-repeat;
+    background-position: 8px center;
+    background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyB3aWR0aD0iMzJweCIgaGVpZ2h0PSIzMnB4IiB2aWV3Qm94PSIwIDAgMzIgMzIiIHZlcnNpb249IjEuMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayI+CiAgICA8IS0tIEdlbmVyYXRvcjogU2tldGNoIDQ0LjEgKDQxNDU1KSAtIGh0dHA6Ly93d3cuYm9oZW1pYW5jb2RpbmcuY29tL3NrZXRjaCAtLT4KICAgIDx0aXRsZT5EZXNrdG9wPC90aXRsZT4KICAgIDxkZXNjPkNyZWF0ZWQgd2l0aCBTa2V0Y2guPC9kZXNjPgogICAgPGcgaWQ9IkFzc2V0cyIgc3Ryb2tlPSJub25lIiBzdHJva2Utd2lkdGg9IjEiIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0iZXZlbm9kZCI+CiAgICAgICAgPGcgaWQ9IkRlc2t0b3AiIHRyYW5zZm9ybT0idHJhbnNsYXRlKC0xMDQuMDAwMDAwLCAtNTAuMDAwMDAwKSI+CiAgICAgICAgICAgIDxnIGlkPSJHcm91cC0yIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgxMDQuMDAwMDAwLCA1MC4wMDAwMDApIj4KICAgICAgICAgICAgICAgIDxnIGlkPSJpY29uLWVkaXQtLy1jaGVjay0vLSNzdWNjZXNzIj4KICAgICAgICAgICAgICAgICAgICA8ZyBpZD0iaWNvbi9jaGVjayI+CiAgICAgICAgICAgICAgICAgICAgICAgIDxnIGlkPSJjaGVjayI+CiAgICAgICAgICAgICAgICAgICAgICAgICAgICA8ZyBpZD0iX2JvdW5kcyI+PC9nPgogICAgICAgICAgICAgICAgICAgICAgICAgICAgPHBhdGggZD0iTTEzLjM3MTY3MjYsMTcuOTA0MTIyNiBMMTAuNTczMzMzMywxNS4xMTYgQzkuOTgwMDc0MDIsMTQuNTI0MzU5IDkuMDE5OTI1OTgsMTQuNTI0MzU5IDguNDI2NjY2NjcsMTUuMTE2IEM4LjE0MTI2NTA5LDE1LjM5OTM3ODEgNy45ODA2NDYyNCwxNS43ODQ4NjU2IDcuOTgwMzk1OTYsMTYuMTg3MDU2IEM3Ljk4MDE0NTY5LDE2LjU4OTI0NjUgOC4xNDAyODQ2NSwxNi45NzQ5MzM2IDguNDI1MzMzMzMsMTcuMjU4NjY2NyBMMTIuMDc3MzMzMywyMC44OTYgQzEyLjQxNzI3NzEsMjEuMjM3MDAyMSAxMi44NzkxNDAyLDIxLjM4MjQ1NjUgMTMuMzIzMDkwNSwyMS4zMzIxNDU5IEMxMy43NjMwNTg4LDIxLjM4MTI2MjIgMTQuMjA2NzMzMSwyMS4yMjkyNjcgMTQuNTI1MzMzMywyMC45MTA2NjY3IEwyMy41NDUzMzMzLDExLjg2NCBDMjMuODIyNTgxMywxMS41ODg2NjExIDIzLjk3ODQ5OTIsMTEuMjE0MDczNyAyMy45Nzg0OTkyLDEwLjgyMzMzMzMgQzIzLjk3ODQ5OTIsMTAuNDMyNTkzIDIzLjgyMjU4MTMsMTAuMDU4MDA1NiAyMy41NDUzMzMzLDkuNzgyNjY2NjcgTDIzLjU0NTMzMzMsOS43NzYgQzIzLjI2OTAzNzIsOS41MDA2MjgyNSAyMi44OTQ0MjM4LDkuMzQ2NjY5MiAyMi41MDQzMzgxLDkuMzQ4MTcwNSBDMjIuMTE0MjUyMyw5LjM0OTY3MTc5IDIxLjc0MDgzNTEsOS41MDY1MDk3MiAyMS40NjY2NjY3LDkuNzg0IEwxMy4zNzE2NzI2LDE3LjkwNDEyMjYgWiIgaWQ9ImNoZWNrLTIiIGZpbGw9IiM2NkI1NDMiLz4KICAgICAgICAgICAgICAgICAgICAgICAgPC9nPgogICAgICAgICAgICAgICAgICAgIDwvZz4KICAgICAgICAgICAgICAgIDwvZz4KICAgICAgICAgICAgPC9nPgogICAgICAgIDwvZz4KICAgIDwvZz4KPC9zdmc+Cg==); }
+  #PlayerOne.ui-enabled.fullscreen-mode .messageScreen.component {
+    padding: 40px;
+    width: auto;
+    height: auto; }
+  #PlayerOne.ui-enabled.fullscreen-mode .messageScreen--success.component {
+    padding-left: 60px;
+    background-size: 48px; }
+  #PlayerOne.ui-enabled .statusAnimation {
+    display: inline-block;
+    cursor: default;
+    visibility: hidden;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    padding: 0;
+    margin: 0;
+    width: 94px;
+    height: 94px;
+    margin-top: -47px;
+    margin-left: -47px; }
+    #PlayerOne.ui-enabled .statusAnimation.shown {
+      visibility: visible; }
+    #PlayerOne.ui-enabled .statusAnimation .icon {
+      position: absolute;
+      top: 0;
+      left: 0;
+      visibility: hidden;
+      -webkit-transform: scale(1) translateZ(0);
+      transform: scale(1);
+      opacity: .6;
+      transition: opacity 0.3s ease-in, transform 0.4s cubic-bezier(0.075, 0.82, 0.165, 1);
+      -webkit-transition: opacity 0.3s ease-in, -webkit-transform 0.4s cubic-bezier(0.075, 0.82, 0.165, 1); }
+      #PlayerOne.ui-enabled .statusAnimation .icon.shown {
+        -webkit-transform: scale(2) translateZ(0);
+        transform: scale(2);
+        opacity: 0; }
+      #PlayerOne.ui-enabled .statusAnimation .icon.active {
+        visibility: visible; }
+    #PlayerOne.ui-enabled .statusAnimation .playAnim {
+      width: 100%;
+      height: 100%;
+      background: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiBwcmVzZXJ2ZUFzcGVjdFJhdGlvPSJ4TWlkWU1pZCIgd2lkdGg9IjM2IiBoZWlnaHQ9IjM2IiB2aWV3Qm94PSIwIDAgMzYgMzYiPgogIDxnIGlkPSJwbGF5LWxhcmdlIj4KICAgIDxwYXRoIGQ9Ik0yNC44MzksMTYuMjM4IEMyNC44MzksMTYuMjM4IDExLjc5Myw4LjQwOSAxMS43OTMsOC40MDkgQzEwLjI2NCw3LjQ5MSA5LjAxMSw4LjE4MyA5LjAxMCw5Ljk0NiBDOS4wMTAsOS45NDYgOC45OTYsMjYuMDcxIDguOTk2LDI2LjA3MSBDOC45OTUsMjcuODM2IDEwLjI0MCwyOC41MTggMTEuNzYyLDI3LjU4OSBDMTEuNzYyLDI3LjU4OSAyNC44NTIsMTkuNTk3IDI0Ljg1MiwxOS41OTcgQzI2LjM3NSwxOC42NjggMjYuMzY5LDE3LjE1NiAyNC44MzksMTYuMjM4IFoiIGlkPSJwYXRoLTEiIGNsYXNzPSJjbHMtNCIgZmlsbC1ydWxlPSJldmVub2RkIiBmaWxsPSIjZmZmIi8+CiAgPC9nPgo8L3N2Zz4K);
+      background-size: 100%; }
+    #PlayerOne.ui-enabled .statusAnimation .pauseAnim {
+      width: 100%;
+      height: 100%;
+      background: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiBwcmVzZXJ2ZUFzcGVjdFJhdGlvPSJ4TWlkWU1pZCIgd2lkdGg9IjM2IiBoZWlnaHQ9IjM2IiB2aWV3Qm94PSIwIDAgMzYgMzYiPgogIDxnIGlkPSJwYXVzZS1sYXJnZSI+CiAgICA8cGF0aCBkPSJNMjUuNTA3LDI4LjAwMCBDMjUuNTA3LDI4LjAwMCAyMi41MTAsMjguMDAwIDIyLjUxMCwyOC4wMDAgQzIxLjY4MywyOC4wMDAgMjEuMDEyLDI3LjMyOCAyMS4wMTIsMjYuNTAwIEMyMS4wMTIsMjYuNTAwIDIxLjAxMiw5LjUwMCAyMS4wMTIsOS41MDAgQzIxLjAxMiw4LjY3MiAyMS42ODMsOC4wMDAgMjIuNTEwLDguMDAwIEMyMi41MTAsOC4wMDAgMjUuNTA3LDguMDAwIDI1LjUwNyw4LjAwMCBDMjYuMzM0LDguMDAwIDI3LjAwNSw4LjY3MiAyNy4wMDUsOS41MDAgQzI3LjAwNSw5LjUwMCAyNy4wMDUsMjYuNTAwIDI3LjAwNSwyNi41MDAgQzI3LjAwNSwyNy4zMjggMjYuMzM0LDI4LjAwMCAyNS41MDcsMjguMDAwIFpNMTMuNDkxLDI4LjAwMCBDMTMuNDkxLDI4LjAwMCAxMC40OTUsMjguMDAwIDEwLjQ5NSwyOC4wMDAgQzkuNjY4LDI4LjAwMCA4Ljk5NywyNy4zMjggOC45OTcsMjYuNTAwIEM4Ljk5NywyNi41MDAgOC45OTcsOS41MDAgOC45OTcsOS41MDAgQzguOTk3LDguNjcyIDkuNjY4LDguMDAwIDEwLjQ5NSw4LjAwMCBDMTAuNDk1LDguMDAwIDEzLjQ5MSw4LjAwMCAxMy40OTEsOC4wMDAgQzE0LjMxOCw4LjAwMCAxNC45ODksOC42NzIgMTQuOTg5LDkuNTAwIEMxNC45ODksOS41MDAgMTQuOTg5LDI2LjUwMCAxNC45ODksMjYuNTAwIEMxNC45ODksMjcuMzI4IDE0LjMxOCwyOC4wMDAgMTMuNDkxLDI4LjAwMCBaIiBpZD0icGF0aC0xIiBjbGFzcz0iY2xzLTQiIGZpbGwtcnVsZT0iZXZlbm9kZCIgZmlsbD0iI2ZmZiIvPgogIDwvZz4KPC9zdmc+Cg==);
+      background-size: 100%; }
+  #PlayerOne.ui-enabled.fullscreen-mode .statusAnimation.component {
+    width: 131.6px;
+    height: 131.6px;
+    margin-top: -65.8px;
+    margin-left: -65.8px; }
+  #PlayerOne.ui-enabled .volume.component {
+    position: relative;
+    padding: 4px 10px; }
+    #PlayerOne.ui-enabled .volume.component .lvl {
+      display: none; }
+    #PlayerOne.ui-enabled .volume.component.muted .lvl-0 {
+      display: block; }
+    #PlayerOne.ui-enabled .volume.component.volume-1 .lvl-1,
+    #PlayerOne.ui-enabled .volume.component.volume-2 .lvl-1,
+    #PlayerOne.ui-enabled .volume.component.volume-3 .lvl-1 {
+      display: block; }
+    #PlayerOne.ui-enabled .volume.component.volume-2 .lvl-2,
+    #PlayerOne.ui-enabled .volume.component.volume-3 .lvl-2 {
+      display: block; }
+    #PlayerOne.ui-enabled .volume.component.volume-3 .lvl-3 {
+      display: block; }
+  #PlayerOne.ui-enabled .toggle {
+    display: none; }
+  #PlayerOne.ui-enabled .smallTrigger {
+    display: none; }
+  #PlayerOne.ui-enabled .volume-container {
+    padding: 4px;
+    width: 16px;
+    height: 100px; }
+    #PlayerOne.ui-enabled .volume-container .volumeBar {
+      position: relative;
+      height: 100%;
+      cursor: pointer;
+      background: rgba(255, 255, 255, 0.2); }
+      #PlayerOne.ui-enabled .volume-container .volumeBar .value {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        height: 30%;
+        background: #0062ff; }
+      #PlayerOne.ui-enabled .volume-container .volumeBar .hoverIndicator {
+        position: absolute;
+        bottom: 0;
+        overflow: hidden;
+        width: 100%;
+        height: 0; }
+        #PlayerOne.ui-enabled .volume-container .volumeBar .hoverIndicator .knob {
+          position: absolute;
+          top: 0;
+          width: 100%;
+          height: 2px;
+          background: #fff; }
+  #PlayerOne.ui-enabled .volume-container.horizontal {
+    width: 112px;
+    padding: 10px 44px;
+    height: 24px; }
+    #PlayerOne.ui-enabled .volume-container.horizontal .toggle {
+      position: absolute;
+      left: 10px;
+      top: 10px;
+      display: inline-block;
+      width: 24px;
+      height: 24px;
+      background-size: 24px;
+      background: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiBwcmVzZXJ2ZUFzcGVjdFJhdGlvPSJ4TWlkWU1pZCIgd2lkdGg9IjI0IiBoZWlnaHQ9IjI0IiB2aWV3Qm94PSIwIDAgMjQgMjQiPgogIDxnIGlkPSJ2b2x1bWUiPgogICAgPHBhdGggZD0iTTExLjk5Nyw2Ljc4MiBDMTEuOTk3LDYuMzM4IDExLjk4NSw1Ljk3OSAxMS4xOTQsNS45NzkgQzEwLjc0Myw1Ljk3OSAxMC4yMDEsNi41MDggOC4wNzAsOC45MzkgQzcuODM3LDguOTM5IDUuMDY3LDguOTM5IDQuNzQ2LDguOTM5IEMzLjcxNiw4LjkzOSAzLjczMCwxNS4wMTEgNC43NDYsMTUuMDExIEM1LjA2NywxNS4wMTEgNy44MzcsMTUuMDExIDguMDcwLDE1LjAxMSBDMTAuMTE3LDE3LjQxNiAxMC43MTcsMTcuOTcxIDExLjE5NCwxNy45NzEgQzExLjk4NSwxNy45NzEgMTEuOTk3LDE3LjYxMSAxMS45OTcsMTcuMTY4IEMxMS45OTcsMTcuMTY4IDExLjk5Nyw2Ljc4MiAxMS45OTcsNi43ODIgWiIgaWQ9InBhdGgtMSIgY2xhc3M9ImNscy00IiBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGZpbGw9IiNmZmYiLz4KICAgIDxwYXRoIGQ9Ik0yMC4yMDcsMTMuNzkzIEMyMC4yMDcsMTMuNzkzIDE4Ljc5MywxNS4yMDcgMTguNzkzLDE1LjIwNyBDMTguNzkzLDE1LjIwNyAxNy4wMDAsMTMuNDE0IDE3LjAwMCwxMy40MTQgQzE3LjAwMCwxMy40MTQgMTUuMjA3LDE1LjIwNyAxNS4yMDcsMTUuMjA3IEMxNS4yMDcsMTUuMjA3IDEzLjc5MywxMy43OTMgMTMuNzkzLDEzLjc5MyBDMTMuNzkzLDEzLjc5MyAxNS41ODYsMTIuMDAwIDE1LjU4NiwxMi4wMDAgQzE1LjU4NiwxMi4wMDAgMTMuNzkzLDEwLjIwNyAxMy43OTMsMTAuMjA3IEMxMy43OTMsMTAuMjA3IDE1LjIwNyw4Ljc5MyAxNS4yMDcsOC43OTMgQzE1LjIwNyw4Ljc5MyAxNy4wMDAsMTAuNTg2IDE3LjAwMCwxMC41ODYgQzE3LjAwMCwxMC41ODYgMTguNzkzLDguNzkzIDE4Ljc5Myw4Ljc5MyBDMTguNzkzLDguNzkzIDIwLjIwNywxMC4yMDcgMjAuMjA3LDEwLjIwNyBDMjAuMjA3LDEwLjIwNyAxOC40MTQsMTIuMDAwIDE4LjQxNCwxMi4wMDAgQzE4LjQxNCwxMi4wMDAgMjAuMjA3LDEzLjc5MyAyMC4yMDcsMTMuNzkzIFoiIGlkPSJtdXRlZCIgY2xhc3M9ImNscy00IiBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGZpbGw9IiNmZmYiLz4KICA8L2c+Cjwvc3ZnPgo=); }
+      #PlayerOne.ui-enabled .volume-container.horizontal .toggle.icon-full {
+        right: 10px;
+        left: auto;
+        background: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiBwcmVzZXJ2ZUFzcGVjdFJhdGlvPSJ4TWlkWU1pZCIgd2lkdGg9IjI0IiBoZWlnaHQ9IjI0IiB2aWV3Qm94PSIwIDAgMjQgMjQiPgogIDxnIGlkPSJ2b2x1bWUiPgogICAgPHBhdGggZD0iTTExLjk5Nyw2Ljc4MiBDMTEuOTk3LDYuMzM4IDExLjk4NSw1Ljk3OSAxMS4xOTQsNS45NzkgQzEwLjc0Myw1Ljk3OSAxMC4yMDEsNi41MDggOC4wNzAsOC45MzkgQzcuODM3LDguOTM5IDUuMDY3LDguOTM5IDQuNzQ2LDguOTM5IEMzLjcxNiw4LjkzOSAzLjczMCwxNS4wMTEgNC43NDYsMTUuMDExIEM1LjA2NywxNS4wMTEgNy44MzcsMTUuMDExIDguMDcwLDE1LjAxMSBDMTAuMTE3LDE3LjQxNiAxMC43MTcsMTcuOTcxIDExLjE5NCwxNy45NzEgQzExLjk4NSwxNy45NzEgMTEuOTk3LDE3LjYxMSAxMS45OTcsMTcuMTY4IEMxMS45OTcsMTcuMTY4IDExLjk5Nyw2Ljc4MiAxMS45OTcsNi43ODIgWiIgaWQ9InBhdGgtMSIgY2xhc3M9ImNscy00IiBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGZpbGw9IiNmZmYiLz4KICAgIDxwYXRoIGQ9Ik0xNi41MjMsMTguMDE2IEMxNi4zNjUsMTcuNzQ5IDE2LjE5NSwxNy40NjEgMTYuMDExLDE3LjE1MyBDMTcuNzkwLDE2LjExMiAxOC45OTgsMTQuMjAyIDE4Ljk5OCwxMS45OTIgQzE4Ljk5OCw5Ljc3NiAxNy43ODMsNy44NjMgMTUuOTk3LDYuODIzIEMxNi4xODgsNi41MDYgMTYuMzY1LDYuMjEwIDE2LjUyOSw1LjkzNiBDMTguNjAwLDcuMTUzIDE5Ljk5NCw5LjM5OCAxOS45OTQsMTEuOTc0IEMxOS45OTQsMTQuNTUyIDE4LjU5NywxNi43OTkgMTYuNTIzLDE4LjAxNiBaIiBpZD0icGF0aC0yIiBjbGFzcz0iY2xzLTQiIGZpbGwtcnVsZT0iZXZlbm9kZCIgZmlsbD0iI2ZmZiIvPgogICAgPHBhdGggZD0iTTE3Ljk5MSwxMi4wMDYgQzE3Ljk5MSwxMy44NDcgMTYuOTg3LDE1LjQzNyAxNS41MDcsMTYuMzA2IEMxNS4zMzksMTYuMDI1IDE1LjE2OSwxNS43NDAgMTQuOTk5LDE1LjQ1NiBDMTYuMTk1LDE0Ljc2NSAxNy4wMDksMTMuNDg3IDE3LjAwOSwxMi4wMDcgQzE3LjAwOSwxMC41MTEgMTYuMTc5LDkuMjI0IDE0Ljk2Myw4LjUzOCBDMTUuMTM1LDguMjU1IDE1LjMwNiw3Ljk3MSAxNS40NzYsNy42ODkgQzE2Ljk3Myw4LjU1NCAxNy45OTEsMTAuMTUzIDE3Ljk5MSwxMi4wMDYgWiIgaWQ9InBhdGgtMyIgY2xhc3M9ImNscy00IiBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGZpbGw9IiNmZmYiLz4KICAgIDxwYXRoIGQ9Ik0xNS45ODcsMTIuMDA3IEMxNS45ODcsMTMuMTE4IDE1LjM3NywxNC4wNzUgMTQuNDgwLDE0LjU5NCBDMTQuMzA0LDE0LjMwMSAxNC4xMzMsMTQuMDIwIDEzLjk3MiwxMy43NTUgQzE0LjU3NywxMy40MTMgMTQuOTkxLDEyLjc2NiAxNC45OTEsMTIuMDE0IEMxNC45OTEsMTEuMjQyIDE0LjU1NCwxMC41ODAgMTMuOTIxLDEwLjI0NyBDMTQuMDg1LDkuOTgxIDE0LjI2MCw5LjY5NSAxNC40NDAsOS4zOTkgQzE1LjM1OSw5LjkxMiAxNS45ODcsMTAuODgxIDE1Ljk4NywxMi4wMDcgWiIgaWQ9InBhdGgtNCIgY2xhc3M9ImNscy00IiBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGZpbGw9IiNmZmYiLz4KICA8L2c+Cjwvc3ZnPgo=); }
+    #PlayerOne.ui-enabled .volume-container.horizontal .value {
+      width: 0;
+      height: 100%; }
+    #PlayerOne.ui-enabled .volume-container.horizontal .hoverIndicator {
+      position: absolute;
+      left: 0;
+      overflow: hidden;
+      width: 0;
+      height: 100%; }
+      #PlayerOne.ui-enabled .volume-container.horizontal .hoverIndicator .knob {
+        position: absolute;
+        right: 0;
+        height: 100%;
+        width: 2px;
+        background: #fff; }
+  #PlayerOne.ui-enabled.fullscreen-mode .volume.component {
+    padding: 5.6px 14px; }
+  #PlayerOne.ui-enabled.fullscreen-mode .popover .volume-container:not(.horizontal) {
+    padding: 8px;
+    width: 32px;
+    height: 200px; }
+  #PlayerOne.ui-enabled .quality {
+    display: none; }
+    #PlayerOne.ui-enabled .quality.hd .trigger svg {
+      opacity: 1; }
+  #PlayerOne.ui-enabled .cc .popover {
+    overflow-y: auto; }
+    #PlayerOne.ui-enabled .cc .popover::-webkit-scrollbar {
+      width: 8px; }
+    #PlayerOne.ui-enabled .cc .popover::-webkit-scrollbar-track {
+      background: transparent;
+      border-radius: 20px; }
+    #PlayerOne.ui-enabled .cc .popover::-webkit-scrollbar-thumb {
+      background: #7F7F7F;
+      border-radius: 20px; }
+    #PlayerOne.ui-enabled .cc .popover li {
+      text-align: left; }
+  #PlayerOne.ui-enabled ::cue {
+    line-height: 1.6em; }
+  #PlayerOne.ui-enabled .audio {
+    display: none; }
+    #PlayerOne.ui-enabled .audio .list.select li {
+      text-align: left;
+      padding-left: 25px; }
+  #PlayerOne.ui-enabled .fullscreen {
+    display: inline-block; }
+  #PlayerOne.ui-enabled #middleContainer .fullscreen {
+    padding: 4px 10px; }
+  #PlayerOne.ui-enabled .badge.component {
+    display: inline-block;
+    padding: 0;
+    transition: opacity 0.2s ease-out; }
+    #PlayerOne.ui-enabled .badge.component svg {
+      opacity: 1;
+      cursor: default; }
+    #PlayerOne.ui-enabled .badge.component.live {
+      margin: 0 4px;
+      min-width: 28px; }
+      #PlayerOne.ui-enabled .badge.component.live svg {
+        width: 28px; }
+    #PlayerOne.ui-enabled .badge.component.replay {
+      margin: 0 4px;
+      min-width: 48px; }
+      #PlayerOne.ui-enabled .badge.component.replay svg {
+        width: 48px; }
+    #PlayerOne.ui-enabled .badge.component g {
+      transition: opacity 0.2s ease-out; }
+    #PlayerOne.ui-enabled .badge.component .inactive {
+      opacity: 0.5; }
+    #PlayerOne.ui-enabled .badge.component .active {
+      opacity: 0; }
+  #PlayerOne.ui-enabled.autoplay-false .badge.component .inactive,
+  #PlayerOne.ui-enabled #ComponentsContainer.hovered .badge.component .inactive {
+    opacity: 0; }
+  #PlayerOne.ui-enabled.autoplay-false .badge.component .active,
+  #PlayerOne.ui-enabled #ComponentsContainer.hovered .badge.component .active {
+    opacity: 1; }
+  #PlayerOne.ui-enabled.fullscreen-mode .badge.component {
+    padding: 0; }
+    #PlayerOne.ui-enabled.fullscreen-mode .badge.component.live {
+      margin: 0 5.6px;
+      min-width: 39.2px; }
+      #PlayerOne.ui-enabled.fullscreen-mode .badge.component.live svg {
+        width: 39.2px; }
+    #PlayerOne.ui-enabled.fullscreen-mode .badge.component.replay {
+      margin: 0 5.6px;
+      min-width: 67.2px; }
+      #PlayerOne.ui-enabled.fullscreen-mode .badge.component.replay svg {
+        width: 67.2px; }
+  @media screen and (max-width: 240px) {
+    #PlayerOne.ui-enabled .badge.component {
+      display: none !important; } }
+  #PlayerOne.ui-enabled.size-small .badge.component {
+    display: none !important; }
+  #PlayerOne.ui-enabled .logo {
+    display: none;
+    opacity: 0;
+    width: 35px;
+    padding: 0 2px;
+    transition: opacity 0.2s ease-out; }
+    #PlayerOne.ui-enabled .logo svg {
+      width: 35px; }
+    #PlayerOne.ui-enabled .logo.shown {
+      opacity: 1; }
+      #PlayerOne.ui-enabled .logo.shown svg {
+        opacity: .6; }
+  #PlayerOne.ui-enabled.site-mode:not(.fullscreen-mode) .logo.component.shown {
+    display: none;
+    pointer-events: none; }
+  #PlayerOne.ui-enabled.fullscreen-mode .logo.component {
+    width: 49px;
+    padding: 0 2.8px; }
+    #PlayerOne.ui-enabled.fullscreen-mode .logo.component svg {
+      width: 49px; }
+  @media screen and (max-width: 320px) {
+    #PlayerOne.ui-enabled .logo.component {
+      display: none !important; } }
+  #PlayerOne.ui-enabled.size-medium .logo.component, #PlayerOne.ui-enabled.size-small .logo.component {
+    display: none !important; }
+  #PlayerOne.ui-enabled .share-popover button {
+    white-space: nowrap; }
+    #PlayerOne.ui-enabled .share-popover button > i {
+      opacity: .7;
+      content: "";
+      display: block;
+      position: absolute;
+      background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiBwcmVzZXJ2ZUFzcGVjdFJhdGlvPSJ4TWlkWU1pZCIgd2lkdGg9IjI0IiBoZWlnaHQ9IjI0IiB2aWV3Qm94PSIwIDAgMjQgMjQiPgogIDxnIGlkPSJmYWNlYm9vayI+CiAgICA8cGF0aCBkPSJNMTUuMTEzLDcuNDUyIEMxNC41MzEsNy40NTIgMTMuOTAzLDcuNDUyIDEzLjYwNiw3LjQ1MiBDMTMuMzA4LDcuNDUyIDEzLjAwNiw3Ljc3NiAxMy4wMDYsOC4wMTYgQzEzLjAwNiw4LjI1NiAxMy4wMDYsOS42MjYgMTMuMDA2LDkuNjI2IEMxMy4wMDYsOS42MjYgMTQuODY4LDkuNjI2IDE1LjExMCw5LjYyNiBDMTUuMDI2LDEwLjg2MSAxNC44NTIsMTEuOTkxIDE0Ljg1MiwxMS45OTEgQzE0Ljg1MiwxMS45OTEgMTIuOTk1LDExLjk5MSAxMi45OTUsMTEuOTkxIEMxMi45OTUsMTEuOTkxIDEyLjk5NSwxOC45ODkgMTIuOTk1LDE4Ljk4OSBDMTIuOTk1LDE4Ljk4OSAxMC4yMjksMTguOTg5IDEwLjIyOSwxOC45ODkgQzEwLjIyOSwxOC45ODkgMTAuMjI5LDExLjk5MSAxMC4yMjksMTEuOTkxIEMxMC4yMjksMTEuOTkxIDguODgyLDExLjk5MSA4Ljg4MiwxMS45OTEgQzguODgyLDExLjk5MSA4Ljg4Miw5LjYzNSA4Ljg4Miw5LjYzNSBDOC44ODIsOS42MzUgMTAuMjI5LDkuNjM1IDEwLjIyOSw5LjYzNSBDMTAuMjI5LDkuNjM1IDEwLjIyOSw4LjA2MiAxMC4yMjksNy43MTAgQzEwLjIyOSw3LjM1NyAxMC4xNjEsNS4wMDAgMTMuMDY0LDUuMDAwIEMxMy40NTMsNS4wMDAgMTQuMzM3LDUuMDAwIDE1LjExMyw1LjAwMCBDMTUuMTEzLDYuMDI0IDE1LjExMyw3LjEzMSAxNS4xMTMsNy40NTIgWiIgaWQ9InBhdGgtMSIgY2xhc3M9ImNscy00IiBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGZpbGw9IiNmZmYiLz4KICA8L2c+Cjwvc3ZnPgo=);
+      background-size: 100%; }
+    #PlayerOne.ui-enabled .share-popover button.twitter > i {
+      background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiBwcmVzZXJ2ZUFzcGVjdFJhdGlvPSJ4TWlkWU1pZCIgd2lkdGg9IjI0IiBoZWlnaHQ9IjI0IiB2aWV3Qm94PSIwIDAgMjQgMjQiPgogIDxnIGlkPSJ0d2l0dGVyIj4KICAgIDxwYXRoIGQ9Ik0xOC44NDUsNy45MzQgQzE4LjM3NCw4LjE0OCAxNy44NjksOC4yOTMgMTcuMzM5LDguMzU4IEMxNy44ODAsOC4wMjUgMTguMjk2LDcuNDk4IDE4LjQ5Miw2Ljg2OSBDMTcuOTg1LDcuMTc4IDE3LjQyMyw3LjQwMiAxNi44MjYsNy41MjIgQzE2LjM0OCw2Ljk5OSAxNS42NjYsNi42NzMgMTQuOTEyLDYuNjczIEMxMy40NjQsNi42NzMgMTIuMjkwLDcuODc3IDEyLjI5MCw5LjM2MyBDMTIuMjkwLDkuNTc0IDEyLjMxMyw5Ljc3OSAxMi4zNTgsOS45NzYgQzEwLjE3OCw5Ljg2NCA4LjI0Niw4Ljc5MyA2Ljk1Miw3LjE2NSBDNi43MjcsNy41NjIgNi41OTcsOC4wMjUgNi41OTcsOC41MTggQzYuNTk3LDkuNDUxIDcuMDYwLDEwLjI3NCA3Ljc2NCwxMC43NTcgQzcuMzM0LDEwLjc0MyA2LjkzMCwxMC42MjIgNi41NzYsMTAuNDIwIEM2LjU3NiwxMC40MzIgNi41NzYsMTAuNDQzIDYuNTc2LDEwLjQ1NCBDNi41NzYsMTEuNzU4IDcuNDgwLDEyLjg0NSA4LjY3OSwxMy4wOTIgQzguNDU5LDEzLjE1NCA4LjIyOCwxMy4xODcgNy45ODksMTMuMTg3IEM3LjgxOSwxMy4xODcgNy42NTUsMTMuMTcwIDcuNDk1LDEzLjEzOSBDNy44MjksMTQuMjA3IDguNzk3LDE0Ljk4NSA5Ljk0NSwxNS4wMDcgQzkuMDQ3LDE1LjcyOCA3LjkxNywxNi4xNTkgNi42ODgsMTYuMTU5IEM2LjQ3NiwxNi4xNTkgNi4yNjgsMTYuMTQ2IDYuMDYyLDE2LjEyMSBDNy4yMjMsMTYuODg0IDguNjAxLDE3LjMzMCAxMC4wODIsMTcuMzMwIEMxNC45MDYsMTcuMzMwIDE3LjU0NCwxMy4yMzAgMTcuNTQ0LDkuNjc1IEMxNy41NDQsOS41NTggMTcuNTQxLDkuNDQyIDE3LjUzNiw5LjMyNyBDMTguMDQ4LDguOTQ4IDE4LjQ5Myw4LjQ3NCAxOC44NDUsNy45MzQgWiIgaWQ9InBhdGgtMSIgY2xhc3M9ImNscy00IiBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGZpbGw9IiNmZmYiLz4KICA8L2c+Cjwvc3ZnPgo=); }
+    #PlayerOne.ui-enabled .share-popover button.mixi > i {
+      background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiBwcmVzZXJ2ZUFzcGVjdFJhdGlvPSJ4TWlkWU1pZCIgd2lkdGg9IjI0IiBoZWlnaHQ9IjI0IiB2aWV3Qm94PSIwIDAgMjQgMjQiPgogICAgPHBhdGggZD0iTTEyLjUxNiwyMC4wMDggTDEyLjUxNiwxOC4zMDEgQzguNzYwLDE4LjgwMyA1LjE0NiwxNi45NDUgNC4yMDIsMTMuNTgxIEMzLjE2Miw5LjgzOSA1LjgzMiw1LjQ3MCAxMC4xMDcsNC4zMTUgQzEzLjEzMCwzLjUxMiAxNi4wMzYsNC4yNjUgMTcuOTAyLDYuMDk4IEMyMS43OTksOS45MTUgMjAuNDI5LDE3LjEyMSAxMi41MTYsMjAuMDA4IFpNMTYuMzQzLDEwLjUxNyBDMTYuMzQzLDkuMTYyIDE1LjcyOCw4LjI1OCAxNC40NTMsOC4yNTggQzEzLjU3OSw4LjI1OCAxMi43NzYsOC43ODUgMTIuMzc0LDkuNDYzIEMxMi4wOTEsOC43MTAgMTEuNTI0LDguMjU4IDEwLjYwMyw4LjI1OCBDOS43MjksOC4yNTggOS4wNjgsOC43NjAgOC42NjYsOS40MzggTDguNjY2LDguNDA5IEM4LjY2Niw4LjM4MyA4LjY0Miw4LjM1OCA4LjYxOSw4LjM1OCBMNy42NzQsOC4zNTggQzcuNjUwLDguMzU4IDcuNjI3LDguMzgzIDcuNjI3LDguNDA5IEw3LjYyNywxNC40MzQgQzcuNjI3LDE0LjQ1OSA3LjY1MCwxNC40ODQgNy42NzQsMTQuNDg0IEw4LjU5NSwxNC40ODQgQzguNjE5LDE0LjQ4NCA4LjY0MiwxNC40NTkgOC42NDIsMTQuNDM0IEw4LjY0MiwxMS4yNDUgQzguNjQyLDEwLjA0MCA5LjM5OCw5LjI2MiAxMC4yMjUsOS4yNjIgQzExLjA3NSw5LjI2MiAxMS40MzAsOS43MzkgMTEuNDMwLDEwLjY0MyBMMTEuNDMwLDE0LjQ1OSBDMTEuNDMwLDE0LjQ4NCAxMS40NTMsMTQuNTEwIDExLjQ3NywxNC41MTAgTDEyLjQ0NSwxNC41MTAgQzEyLjQ2OSwxNC41MTAgMTIuNDkzLDE0LjQ4NCAxMi40OTMsMTQuNDU5IEwxMi40OTMsMTEuMjQ1IEMxMi40OTMsMTAuMDE1IDEzLjI3Miw5LjI2MiAxNC4wOTksOS4yNjIgQzE0Ljk0OSw5LjI2MiAxNS4yODAsOS43MzkgMTUuMjgwLDEwLjY0MyBMMTUuMjgwLDE0LjQ1OSBDMTUuMjgwLDE0LjQ4NCAxNS4zMDMsMTQuNTEwIDE1LjMyNywxNC41MTAgTDE2LjI5NSwxNC41MTAgQzE2LjMxOSwxNC41MTAgMTYuMzQzLDE0LjQ4NCAxNi4zNDMsMTQuNDU5IEwxNi4zNDMsMTAuNTE3IFoiIGZpbGw9IiNmZmYiLz4KPC9zdmc+Cg==); }
+    #PlayerOne.ui-enabled .share-popover button.copyLink > i {
+      background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiBwcmVzZXJ2ZUFzcGVjdFJhdGlvPSJ4TWlkWU1pZCIgd2lkdGg9IjI0IiBoZWlnaHQ9IjI0IiB2aWV3Qm94PSIwIDAgMjQgMjQiPgogIDxnIGlkPSJsaW5rIj4KICAgIDxwYXRoIGQ9Ik0xNy45MjEsMTEuMjYwIEMxNy45MjEsMTEuMjYwIDE0Ljk2MSwxNC4yMjAgMTQuOTYxLDE0LjIyMCBDMTMuNTMwLDE1LjY1MSAxMS4yMTAsMTUuNjUxIDkuNzgwLDE0LjIyMCBDOS42NTMsMTQuMDk0IDkuNTUxLDEzLjk1MyA5LjQ0NywxMy44MTMgQzkuNDQ3LDEzLjgxMyAxMC45NTgsMTIuMzAyIDEwLjk1OCwxMi4zMDIgQzExLjAzMywxMi40NjAgMTEuMTMwLDEyLjYxMCAxMS4yNjAsMTIuNzQwIEMxMS44NzMsMTMuMzUzIDEyLjg2NywxMy4zNTMgMTMuNDgwLDEyLjc0MCBDMTMuNDgwLDEyLjc0MCAxNi40NDEsOS43ODAgMTYuNDQxLDkuNzgwIEMxNy4wNTQsOS4xNjcgMTcuMDU0LDguMTcyIDE2LjQ0MSw3LjU1OSBDMTUuODI4LDYuOTQ2IDE0LjgzNCw2Ljk0NiAxNC4yMjAsNy41NTkgQzE0LjIyMCw3LjU1OSAxMy42NDYsOC4xMzMgMTMuNjQ2LDguMTMzIEMxMi44NDcsNy43NTMgMTEuOTcyLDcuNjE0IDExLjEwOSw3LjcxMCBDMTEuMTA5LDcuNzEwIDEyLjc0MCw2LjA3OSAxMi43NDAsNi4wNzkgQzE0LjE3MSw0LjY0OCAxNi40OTAsNC42NDggMTcuOTIxLDYuMDc5IEMxOS4zNTIsNy41MTAgMTkuMzUyLDkuODI5IDE3LjkyMSwxMS4yNjAgWk0xNC4yMjAsOS43ODAgQzE0LjM0Nyw5LjkwNiAxNC40NDksMTAuMDQ4IDE0LjU1MywxMC4xODcgQzE0LjU1MywxMC4xODcgMTMuMDQyLDExLjY5OCAxMy4wNDIsMTEuNjk4IEMxMi45NjcsMTEuNTQwIDEyLjg3MSwxMS4zOTAgMTIuNzQwLDExLjI2MCBDMTIuMTI3LDEwLjY0NyAxMS4xMzMsMTAuNjQ3IDEwLjUyMCwxMS4yNjAgQzEwLjUyMCwxMS4yNjAgNy41NTksMTQuMjIwIDcuNTU5LDE0LjIyMCBDNi45NDYsMTQuODM0IDYuOTQ2LDE1LjgyOCA3LjU1OSwxNi40NDEgQzguMTcyLDE3LjA1NCA5LjE2NywxNy4wNTQgOS43ODAsMTYuNDQxIEM5Ljc4MCwxNi40NDEgMTAuMzU0LDE1Ljg2NyAxMC4zNTQsMTUuODY3IEMxMS4xNTMsMTYuMjQ3IDEyLjAyOCwxNi4zODYgMTIuODkxLDE2LjI5MCBDMTIuODkxLDE2LjI5MCAxMS4yNjAsMTcuOTIxIDExLjI2MCwxNy45MjEgQzkuODI5LDE5LjM1MiA3LjUxMCwxOS4zNTIgNi4wNzksMTcuOTIxIEM0LjY0OCwxNi40OTAgNC42NDgsMTQuMTcxIDYuMDc5LDEyLjc0MCBDNi4wNzksMTIuNzQwIDkuMDQwLDkuNzgwIDkuMDQwLDkuNzgwIEMxMC40NzAsOC4zNDkgMTIuNzkwLDguMzQ5IDE0LjIyMCw5Ljc4MCBaIiBpZD0icGF0aC0xIiBjbGFzcz0iY2xzLTQiIGZpbGwtcnVsZT0iZXZlbm9kZCIgZmlsbD0iI2ZmZiIvPgogIDwvZz4KPC9zdmc+Cg==); }
+    #PlayerOne.ui-enabled .share-popover button.embedCode > i {
+      background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiBwcmVzZXJ2ZUFzcGVjdFJhdGlvPSJ4TWlkWU1pZCIgd2lkdGg9IjI0IiBoZWlnaHQ9IjI0IiB2aWV3Qm94PSIwIDAgMjQgMjQiPgogIDxnIGlkPSJlbWJlZCI+CiAgICA8cGF0aCBkPSJNMTkuNzA5LDEyLjcwNyBDMTkuNzA5LDEyLjcwNyAxNS42ODUsMTYuNzMxIDE1LjY4NSwxNi43MzEgQzE1LjI5NSwxNy4xMjIgMTQuNjYxLDE3LjEyMiAxNC4yNzEsMTYuNzMxIEMxMy44ODAsMTYuMzQwIDEzLjg4MCwxNS43MDcgMTQuMjcxLDE1LjMxNyBDMTQuMjcxLDE1LjMxNyAxNy41NzUsMTIuMDEzIDE3LjU3NSwxMi4wMTMgQzE3LjU3NSwxMi4wMTMgMTQuMjcxLDguNjgzIDE0LjI3MSw4LjY4MyBDMTMuODgwLDguMjkzIDEzLjg4MCw3LjY2MCAxNC4yNzEsNy4yNjkgQzE0LjY2MSw2Ljg3OSAxNS4yOTUsNi44NzkgMTUuNjg1LDcuMjY5IEMxNS42ODUsNy4yNjkgMTkuNjE3LDExLjIzMiAxOS42MTcsMTEuMjMyIEMxOS42NDcsMTEuMjU1IDE5LjY4MiwxMS4yNjYgMTkuNzA5LDExLjI5MyBDMjAuMDk5LDExLjY4MyAyMC4wOTksMTIuMzE3IDE5LjcwOSwxMi43MDcgWk05LjcwOCwxNi43MzEgQzkuMzE3LDE3LjEyMiA4LjY4NCwxNy4xMjIgOC4yOTQsMTYuNzMxIEM4LjI5NCwxNi43MzEgNC4yNzAsMTIuNzA3IDQuMjcwLDEyLjcwNyBDMy44NzksMTIuMzE3IDMuODc5LDExLjY4MyA0LjI3MCwxMS4yOTMgQzQuMjcwLDExLjI5MyA4LjI5NCw3LjI2OSA4LjI5NCw3LjI2OSBDOC42ODQsNi44NzkgOS4zMTcsNi44NzkgOS43MDgsNy4yNjkgQzEwLjA5OCw3LjY2MCAxMC4wOTgsOC4yOTMgOS43MDgsOC42ODMgQzkuNzA4LDguNjgzIDYuMzkxLDEyLjAwMCA2LjM5MSwxMi4wMDAgQzYuMzkxLDEyLjAwMCA5LjcwOCwxNS4zMTcgOS43MDgsMTUuMzE3IEMxMC4wOTgsMTUuNzA3IDEwLjA5OCwxNi4zNDAgOS43MDgsMTYuNzMxIFoiIGlkPSJwYXRoLTEiIGNsYXNzPSJjbHMtNCIgZmlsbC1ydWxlPSJldmVub2RkIiBmaWxsPSIjZmZmIi8+CiAgPC9nPgo8L3N2Zz4K); }
+    #PlayerOne.ui-enabled .share-popover button:hover > i {
+      opacity: 1; }
+  #PlayerOne.ui-enabled #EmbedOverlay .overlay-content > div, #PlayerOne.ui-enabled #LinkOverlay .overlay-content > div {
+    margin: 5px 0;
+    border: 0;
+    border-radius: 3px; }
+    #PlayerOne.ui-enabled #EmbedOverlay .overlay-content > div textarea, #PlayerOne.ui-enabled #EmbedOverlay .overlay-content > div input[type="text"], #PlayerOne.ui-enabled #LinkOverlay .overlay-content > div textarea, #PlayerOne.ui-enabled #LinkOverlay .overlay-content > div input[type="text"] {
+      padding: 4px 8px;
+      margin: 0; }
+  #PlayerOne.ui-enabled .title {
+    display: none;
+    padding: 0;
+    margin-left: 4px;
+    width: 100%;
+    height: auto;
+    line-height: 22px;
+    font-weight: bold;
+    text-shadow: 0 0 3px rgba(0, 0, 0, 0.4);
+    cursor: default;
+    opacity: 0;
+    transition: opacity 0.1s ease-out; }
+    #PlayerOne.ui-enabled .title h3 {
+      display: none;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      margin: 0;
+      text-shadow: none;
+      -webkit-text-shadow: none;
+      -moz-text-shadow: none; }
+    #PlayerOne.ui-enabled .title span {
+      font-weight: normal;
+      opacity: 0;
+      text-transform: uppercase;
+      transition: opacity 0.1s ease-out; }
+    #PlayerOne.ui-enabled .title.title-shown h3 {
+      display: block; }
+  #PlayerOne.ui-enabled.site-mode:not(.viewingexperience) .viewerInfo, #PlayerOne.ui-enabled.site-mode:not(.viewingexperience) .title {
+    display: none !important; }
+  #PlayerOne.ui-enabled.fullscreen-mode .viewerInfo, #PlayerOne.ui-enabled.fullscreen-mode .title {
+    display: inline-block !important;
+    width: 100%; }
+  #PlayerOne.ui-enabled.fullscreen-mode .title {
+    line-height: 30.8px;
+    margin-left: 5.6px; }
+  #PlayerOne.ui-enabled.fullscreen-mode .viewerInfo {
+    line-height: 22.4px;
+    font-size: 15.4px; }
+  @media screen and (max-width: 480px) {
+    #PlayerOne.ui-enabled .title, #PlayerOne.ui-enabled .viewerInfo {
+      display: none !important; } }
+  #PlayerOne.ui-enabled.size-big .title, #PlayerOne.ui-enabled.size-big .viewerInfo, #PlayerOne.ui-enabled.size-medium .title, #PlayerOne.ui-enabled.size-medium .viewerInfo, #PlayerOne.ui-enabled.size-small .title, #PlayerOne.ui-enabled.size-small .viewerInfo {
+    display: none !important; }
+  #PlayerOne.ui-enabled .viewerInfo {
+    display: block;
+    margin: 0 0 0 4px;
+    padding: 0;
+    opacity: 0;
+    color: #FFFFFF;
+    font-size: 11px;
+    font-weight: 500;
+    line-height: 16px;
+    letter-spacing: -0.15px;
+    text-shadow: 0 0 3px rgba(0, 0, 0, 0.4);
+    width: 100%; }
+  #PlayerOne.ui-enabled .customlogo {
+    padding: 0;
+    position: absolute;
+    right: 8px;
+    bottom: 8px;
+    width: auto;
+    height: auto;
+    opacity: 1;
+    display: none;
+    transition: all 0.2s ease-out; }
+    #PlayerOne.ui-enabled .customlogo img {
+      max-height: 48px;
+      max-width: 144px; }
+  #PlayerOne.ui-enabled .hovered .customlogo {
+    bottom: 40px; }
+  #PlayerOne.ui-enabled.ui-hidden .customlogo {
+    opacity: 0; }
+  #PlayerOne.ui-enabled.fullscreen-mode .customlogo.component {
+    right: 11.2px;
+    bottom: 11.2px;
+    width: auto;
+    height: auto; }
+  #PlayerOne.ui-enabled.fullscreen-mode .hovered .customlogo {
+    bottom: 56px; }
+  @media screen and (max-width: 480px) {
+    #PlayerOne.ui-enabled .customlogo {
+      display: none !important; } }
+  #PlayerOne.ui-enabled.size-big .customlogo, #PlayerOne.ui-enabled.size-medium .customlogo, #PlayerOne.ui-enabled.size-small .customlogo {
+    display: none !important; }
+  #PlayerOne.ui-enabled .theater {
+    display: none; }
+    #PlayerOne.ui-enabled .theater .disabled {
+      display: none; }
+    #PlayerOne.ui-enabled .theater.opened .enabled {
+      display: none; }
+    #PlayerOne.ui-enabled .theater.opened .disabled {
+      display: block; }
+  #PlayerOne.ui-enabled .thumbnail.component {
+    position: absolute;
+    cursor: default;
+    opacity: 1;
+    transform: scale(1);
+    -webkit-transform: scale(1);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    transition: opacity .1s ease-in;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center; }
+    #PlayerOne.ui-enabled .thumbnail.component img {
+      height: 1080px;
+      max-width: 100%;
+      max-height: 100%;
+      margin: auto;
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0; }
+  #PlayerOne.ui-enabled .slideshow.component {
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    cursor: default;
+    z-index: 101;
+    transition: opacity 0.8s; }
+    #PlayerOne.ui-enabled .slideshow.component > div {
+      max-width: 100%;
+      max-height: 100%;
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      opacity: 0;
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: center;
+      background-color: #000;
+      transition: opacity 0.8s ease-out;
+      transition-delay: 2s; }
+      #PlayerOne.ui-enabled .slideshow.component > div.active {
+        opacity: 1; }
+  #PlayerOne.ui-enabled #StatsOverlay {
+    z-index: 2;
+    height: -moz-calc(100% - 32px);
+    height: -webkit-calc(100% - 32px);
+    height: calc(100% - 32px); }
+    #PlayerOne.ui-enabled #StatsOverlay section h3 {
+      margin-bottom: 6px; }
+    #PlayerOne.ui-enabled #StatsOverlay section > p {
+      min-height: 20px;
+      margin-bottom: 8px;
+      display: flex; }
+      #PlayerOne.ui-enabled #StatsOverlay section > p .stats-row-value {
+        color: #fff;
+        min-height: 20px;
+        display: block;
+        max-width: 100%;
+        word-wrap: break-word; }
+    #PlayerOne.ui-enabled #StatsOverlay .overlay-content section:first-child {
+      margin-top: 40px; }
+    #PlayerOne.ui-enabled #StatsOverlay span:not(.stats-row-value) {
+      color: #CCCCCC;
+      min-width: 100px; }
+    #PlayerOne.ui-enabled #StatsOverlay .storage-graph-container {
+      height: 20px;
+      width: 290px;
+      display: block; }
+      #PlayerOne.ui-enabled #StatsOverlay .storage-graph-container .storage-graph-background {
+        height: 12px;
+        border-radius: 1px;
+        background-color: rgba(255, 255, 255, 0.15);
+        margin-top: 4px;
+        position: relative; }
+        #PlayerOne.ui-enabled #StatsOverlay .storage-graph-container .storage-graph-background canvas {
+          position: absolute;
+          top: 3px; }
+        #PlayerOne.ui-enabled #StatsOverlay .storage-graph-container .storage-graph-background:after {
+          content: '';
+          position: absolute;
+          left: 50%;
+          width: 1px;
+          background-color: #FF604C;
+          height: 12px;
+          opacity: 0.8;
+          top: 0; }
+    #PlayerOne.ui-enabled #StatsOverlay .providerTable {
+      -webkit-flex-direction: column;
+      flex-direction: column; }
+      #PlayerOne.ui-enabled #StatsOverlay .providerTable .providerData {
+        margin-left: 20px; }
+        #PlayerOne.ui-enabled #StatsOverlay .providerTable .providerData span {
+          color: white; }
+  #PlayerOne.ui-enabled.fullscreen-mode #StatsOverlay {
+    height: -moz-calc(100% - 44.8px);
+    height: -webkit-calc(100% - 44.8px);
+    height: calc(100% - 44.8px); }
+    #PlayerOne.ui-enabled.fullscreen-mode #StatsOverlay span:not(.stats-row-value) {
+      min-width: 150px; }
+  @media screen and (max-width: 480px) {
+    #PlayerOne.ui-enabled #StatsOverlay.live {
+      height: 100%; } }
+  #PlayerOne.ui-enabled.size-big #StatsOverlay.live, #PlayerOne.ui-enabled.size-medium #StatsOverlay.live, #PlayerOne.ui-enabled.size-small #StatsOverlay.live {
+    height: 100%; }
+  #PlayerOne.ui-enabled #DebugOverlay {
+    z-index: 2; }
+    #PlayerOne.ui-enabled #DebugOverlay .debug-overlay {
+      padding: 100px 0; }
+      #PlayerOne.ui-enabled #DebugOverlay .debug-overlay__category {
+        margin-bottom: 40px; }
+      #PlayerOne.ui-enabled #DebugOverlay .debug-overlay__category-item-wrapper {
+        margin-bottom: 10px; }
+      #PlayerOne.ui-enabled #DebugOverlay .debug-overlay__category-item {
+        display: flex;
+        align-items: center; }
+      #PlayerOne.ui-enabled #DebugOverlay .debug-overlay__category-item, #PlayerOne.ui-enabled #DebugOverlay .debug-overlay__data {
+        font-weight: 400;
+        font-size: 13px;
+        color: #bebebe;
+        line-height: 20px;
+        margin: 0 0 15px 0; }
+      #PlayerOne.ui-enabled #DebugOverlay .debug-overlay__ecdn {
+        margin-left: 10px; }
+      #PlayerOne.ui-enabled #DebugOverlay .debug-overlay__label {
+        padding: 0 4px;
+        margin-right: 2px;
+        border-radius: 2px;
+        font-size: 11px;
+        font-weight: 600;
+        color: white; }
+        #PlayerOne.ui-enabled #DebugOverlay .debug-overlay__label--info {
+          background: cadetblue; }
+        #PlayerOne.ui-enabled #DebugOverlay .debug-overlay__label--default {
+          background: #444; }
+        #PlayerOne.ui-enabled #DebugOverlay .debug-overlay__label--success {
+          background: #00a14b; }
+        #PlayerOne.ui-enabled #DebugOverlay .debug-overlay__label--warning {
+          color: black;
+          background: #ffe000; }
+        #PlayerOne.ui-enabled #DebugOverlay .debug-overlay__label--error {
+          background: #ed1b23; }
+      #PlayerOne.ui-enabled #DebugOverlay .debug-overlay__log-wrapper {
+        margin-bottom: 2px;
+        padding-left: 34px; }
+      #PlayerOne.ui-enabled #DebugOverlay .debug-overlay__log {
+        display: flex;
+        align-items: baseline; }
+      #PlayerOne.ui-enabled #DebugOverlay .debug-overlay__log-reason {
+        display: flex;
+        align-items: baseline;
+        margin-left: 10px;
+        font-size: 12px; }
+      #PlayerOne.ui-enabled #DebugOverlay .debug-overlay__log-count {
+        margin-left: 10px; }
+      #PlayerOne.ui-enabled #DebugOverlay .debug-overlay__chart-wrapper {
+        width: 100%;
+        padding-left: 34px;
+        box-sizing: border-box; }
+      #PlayerOne.ui-enabled #DebugOverlay .debug-overlay__chart {
+        height: 4px;
+        margin: 5px 0 10px;
+        display: flex; }
+      #PlayerOne.ui-enabled #DebugOverlay .debug-overlay__chart-request {
+        background: #ed1b23;
+        color: white;
+        height: 100%; }
+      #PlayerOne.ui-enabled #DebugOverlay .debug-overlay__chart-response {
+        background: #ffe000;
+        color: white;
+        height: 100%; }
+      #PlayerOne.ui-enabled #DebugOverlay .debug-overlay__icon {
+        width: 14px;
+        height: 14px;
+        padding: 0 10px; }
+      #PlayerOne.ui-enabled #DebugOverlay .debug-overlay__data {
+        margin-top: 10px; }
+      #PlayerOne.ui-enabled #DebugOverlay .debug-overlay__frame-data {
+        margin-bottom: 40px; }
+      #PlayerOne.ui-enabled #DebugOverlay .debug-overlay__frame-data-group {
+        display: flex; }
+      #PlayerOne.ui-enabled #DebugOverlay .debug-overlay__frame-data-group-item {
+        flex: 1; }
+        #PlayerOne.ui-enabled #DebugOverlay .debug-overlay__frame-data-group-item--error {
+          color: #ed1b23; }
+        #PlayerOne.ui-enabled #DebugOverlay .debug-overlay__frame-data-group-item--warning {
+          color: #ffe000; }
+        #PlayerOne.ui-enabled #DebugOverlay .debug-overlay__frame-data-group-item--success {
+          color: #00a14b; }
+      #PlayerOne.ui-enabled #DebugOverlay .debug-overlay h3 {
+        text-transform: uppercase;
+        border-bottom: 1px solid #454545;
+        padding-bottom: 10px;
+        margin-bottom: 10px; }
+  #PlayerOne.ui-enabled.fullscreen-mode #DebugOverlay .debug-overlay__icon {
+    width: 33px;
+    height: 33px; }
+  #PlayerOne.ui-enabled .context-menu button {
+    padding: 0 20px; }
+  #PlayerOne.ui-enabled.fullscreen-mode .context-menu button {
+    padding: 0 28px; }
+  #PlayerOne.ui-enabled #FlagOverlay .bttn-link {
+    margin-left: 4px; }
+  #PlayerOne.ui-enabled #FlagOverlay select {
+    margin: 10px 0; }
+  #PlayerOne.ui-enabled .flag.component {
+    display: inline-block; }
+  #PlayerOne.ui-enabled #LogSendingOverlay div.container {
+    margin-left: auto;
+    margin-right: auto; }
+  #PlayerOne.ui-enabled #LogSendingOverlay select {
+    margin-top: 12px; }
+  #PlayerOne.ui-enabled #LogSendingOverlay .hidden {
+    display: none; }
+  @media screen and (max-width: 480px) {
+    #PlayerOne.ui-enabled #ReportIssueOverlay div.container, #PlayerOne.ui-enabled #ReportIssueOverlay select, #PlayerOne.ui-enabled #ReportIssueOverlay textarea, #PlayerOne.ui-enabled #ReportIssueOverlay input {
+      width: 100%; } }
+  #PlayerOne.ui-enabled.size-big #ReportIssueOverlay div.container, #PlayerOne.ui-enabled.size-big #ReportIssueOverlay select, #PlayerOne.ui-enabled.size-big #ReportIssueOverlay textarea, #PlayerOne.ui-enabled.size-big #ReportIssueOverlay input, #PlayerOne.ui-enabled.size-medium #ReportIssueOverlay div.container, #PlayerOne.ui-enabled.size-medium #ReportIssueOverlay select, #PlayerOne.ui-enabled.size-medium #ReportIssueOverlay textarea, #PlayerOne.ui-enabled.size-medium #ReportIssueOverlay input, #PlayerOne.ui-enabled.size-small #ReportIssueOverlay div.container, #PlayerOne.ui-enabled.size-small #ReportIssueOverlay select, #PlayerOne.ui-enabled.size-small #ReportIssueOverlay textarea, #PlayerOne.ui-enabled.size-small #ReportIssueOverlay input {
+    width: 100%; }
+  #PlayerOne.ui-enabled .spinner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0; }
+    #PlayerOne.ui-enabled .spinner .spinnerAnimation {
+      width: 36px;
+      height: 36px;
+      display: inline-block;
+      box-sizing: border-box;
+      position: relative;
+      z-index: 100;
+      -webkit-animation: round-animation 0.4s linear infinite;
+      animation: round-animation 0.4s linear infinite; }
+    #PlayerOne.ui-enabled .spinner .spinnerAnimation:before {
+      border-radius: 50%;
+      content: " ";
+      width: 36px;
+      height: 36px;
+      display: inline-block;
+      box-sizing: border-box;
+      border-width: 4px;
+      border-style: solid;
+      border-color: #DAE1E6 #DAE1E6 #DAE1E6 #DAE1E6;
+      position: absolute;
+      top: 0;
+      left: 0; }
+    #PlayerOne.ui-enabled .spinner .spinnerAnimation:after {
+      border-radius: 50%;
+      content: " ";
+      width: 36px;
+      height: 36px;
+      display: inline-block;
+      box-sizing: border-box;
+      border-width: 4px;
+      border-style: solid;
+      border-color: #0062ff transparent #0062ff transparent;
+      position: absolute;
+      top: 0;
+      left: 0; }
+
+@-webkit-keyframes round-animation {
+  0% {
+    transform: rotate(0deg); }
+  100% {
+    transform: rotate(360deg); } }
+
+@keyframes round-animation {
+  0% {
+    transform: rotate(0deg); }
+  100% {
+    transform: rotate(360deg); } }
+  #PlayerOne.ui-enabled #LogSendingThanksOverlay div.container {
+    margin-left: auto;
+    margin-right: auto; }
+  #PlayerOne.ui-enabled #LogSendingThanksOverlay #logId {
+    width: 263px;
+    float: left;
+    padding: 0 5px 0 5px;
+    margin-right: 10px; }
+  #PlayerOne.ui-enabled .poll.component {
+    width: auto;
+    height: auto;
+    cursor: default; }
+  #PlayerOne.ui-enabled .poll__notification {
+    position: absolute;
+    bottom: 40px;
+    left: 0;
+    height: 36px;
+    padding: 8px 14px 8px 40px;
+    max-width: 30%;
+    background-color: rgba(22, 22, 22, 0.8);
+    cursor: pointer;
+    z-index: 2; }
+  #PlayerOne.ui-enabled .poll__notification__icon {
+    position: absolute;
+    top: 14px;
+    left: 8px;
+    fill: #fff;
+    opacity: 1 !important; }
+  #PlayerOne.ui-enabled .poll__notification__title {
+    margin: 0;
+    font-size: 13px;
+    line-height: 18px; }
+  #PlayerOne.ui-enabled .poll__notification__question {
+    margin: 0;
+    overflow: hidden;
+    font-size: 12px;
+    line-height: 18px;
+    color: #ccc;
+    white-space: nowrap;
+    text-overflow: ellipsis; }
+  #PlayerOne.ui-enabled .poll__notification--minimal {
+    width: 40px;
+    height: 32px;
+    padding: 0; }
+    #PlayerOne.ui-enabled .poll__notification--minimal .poll__notification__title,
+    #PlayerOne.ui-enabled .poll__notification--minimal .poll__notification__question {
+      display: none; }
+    #PlayerOne.ui-enabled .poll__notification--minimal .poll__notification__icon {
+      top: 5px;
+      left: 8px; }
+  #PlayerOne.ui-enabled .poll__overlay__title {
+    margin: 0 0 15px; }
+  #PlayerOne.ui-enabled .poll__overlay__answer-item {
+    display: block;
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 6px;
+    padding: 8px 22px 8px 40px;
+    font-size: 14px;
+    line-height: 17px;
+    color: #ccc;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    background-color: #161616;
+    border-radius: 17px;
+    cursor: pointer; }
+  #PlayerOne.ui-enabled .poll__overlay__answer-item::before {
+    content: '';
+    position: absolute;
+    top: 11px;
+    left: 14px;
+    width: 5px;
+    height: 5px;
+    border: 3px solid #0062ff;
+    border-radius: 50%; }
+  #PlayerOne.ui-enabled .poll__overlay__answer-item:hover {
+    background-color: rgba(255, 255, 255, 0.1); }
+  #PlayerOne.ui-enabled .poll__overlay__answer-item:last-child {
+    margin-bottom: 0; }
+  @media screen and (max-width: 480px) {
+    #PlayerOne.ui-enabled .poll__notification {
+      height: 24px; }
+    #PlayerOne.ui-enabled .poll__notification__question {
+      display: none; }
+    #PlayerOne.ui-enabled .poll__notification__icon {
+      top: 5px; } }
+  #PlayerOne.ui-enabled.size-big .poll__notification, #PlayerOne.ui-enabled.size-medium .poll__notification, #PlayerOne.ui-enabled.size-small .poll__notification {
+    height: 24px; }
+  #PlayerOne.ui-enabled.size-big .poll__notification__question, #PlayerOne.ui-enabled.size-medium .poll__notification__question, #PlayerOne.ui-enabled.size-small .poll__notification__question {
+    display: none; }
+  #PlayerOne.ui-enabled.size-big .poll__notification__icon, #PlayerOne.ui-enabled.size-medium .poll__notification__icon, #PlayerOne.ui-enabled.size-small .poll__notification__icon {
+    top: 5px; }
+  #PlayerOne.ui-enabled.fullscreen-mode .poll__notification {
+    bottom: 60px; }
+  #PlayerOne.ui-enabled.fullscreen-mode .poll__notification__title {
+    font-size: 18.2px;
+    line-height: 25.2px; }
+  #PlayerOne.ui-enabled.fullscreen-mode .poll__notification__question {
+    font-size: 16.8px;
+    line-height: 25.2px; }
+  #PlayerOne.ui-enabled.fullscreen-mode .poll__overlay__answer-item {
+    font-size: 19.6px;
+    line-height: 23.8px; }
+  #PlayerOne.ui-enabled.fullscreen-mode .poll__notification {
+    height: 50.4px; }
+  #PlayerOne.ui-enabled.fullscreen-mode .poll__notification--minimal {
+    height: 44.8px;
+    width: 56px; }
+  #PlayerOne.ui-enabled.fullscreen-mode .poll__overlay__answer-item::before {
+    top: 15px;
+    width: 7px;
+    height: 7px; }
+  #PlayerOne.ui-enabled .liveCta,
+  #PlayerOne.ui-enabled .liveCta * {
+    transition: all 0.2s ease-out; }
+  #PlayerOne.ui-enabled .liveCta.component {
+    position: absolute;
+    z-index: 1;
+    left: 6px;
+    right: 6px;
+    bottom: 6px;
+    padding: 0 !important;
+    cursor: default;
+    width: auto !important;
+    height: auto !important; }
+  #PlayerOne.ui-enabled .liveCta__container {
+    display: block;
+    max-width: 750px;
+    margin: 0 auto;
+    position: relative; }
+  #PlayerOne.ui-enabled .liveCta a.liveCta__minimize-button {
+    text-decoration: none; }
+  #PlayerOne.ui-enabled .liveCta div.liveCta__link {
+    padding: 9px 20px 5px 5px;
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 2px;
+    box-shadow: inset 0 4px 0 0 #0064ff; }
+    #PlayerOne.ui-enabled .liveCta div.liveCta__link:hover {
+      background-color: #ebeff3; }
+      #PlayerOne.ui-enabled .liveCta div.liveCta__link:hover .liveCta__image {
+        transform: scale(1.05); }
+  #PlayerOne.ui-enabled .liveCta a.liveCta__minimize-button {
+    position: absolute;
+    top: -4px;
+    right: -4px;
+    width: 26px;
+    height: 26px;
+    background: #17232e url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiBwcmVzZXJ2ZUFzcGVjdFJhdGlvPSJ4TWlkWU1pZCIgd2lkdGg9IjI0IiBoZWlnaHQ9IjI0IiB2aWV3Qm94PSIwIDAgMjQgMjQiPgogIDxnIGlkPSJjbG9zZSI+CiAgICA8cGF0aCBkPSJNMTMuNDI1LDEyLjAxMyBDMTMuNDI1LDEyLjAxMyAxNi43MjksMTUuMzE3IDE2LjcyOSwxNS4zMTcgQzE3LjEyMCwxNS43MDcgMTcuMTIwLDE2LjM0MCAxNi43MjksMTYuNzMxIEMxNi4zMzksMTcuMTIyIDE1LjcwNSwxNy4xMjIgMTUuMzE1LDE2LjczMSBDMTUuMzE1LDE2LjczMSAxMi4wMDAsMTMuNDE2IDEyLjAwMCwxMy40MTYgQzEyLjAwMCwxMy40MTYgOC42ODUsMTYuNzMxIDguNjg1LDE2LjczMSBDOC4yOTUsMTcuMTIyIDcuNjYxLDE3LjEyMiA3LjI3MSwxNi43MzEgQzYuODgwLDE2LjM0MCA2Ljg4MCwxNS43MDcgNy4yNzEsMTUuMzE3IEM3LjI3MSwxNS4zMTcgMTAuNTc1LDEyLjAxMyAxMC41NzUsMTIuMDEzIEMxMC41NzUsMTIuMDEzIDcuMjcxLDguNjgzIDcuMjcxLDguNjgzIEM2Ljg4MCw4LjI5MyA2Ljg4MCw3LjY2MCA3LjI3MSw3LjI2OSBDNy42NjEsNi44NzkgOC4yOTUsNi44NzkgOC42ODUsNy4yNjkgQzguNjg1LDcuMjY5IDEyLjAwMCwxMC42MTAgMTIuMDAwLDEwLjYxMCBDMTIuMDAwLDEwLjYxMCAxNS4zMTUsNy4yNjkgMTUuMzE1LDcuMjY5IEMxNS43MDUsNi44NzkgMTYuMzM5LDYuODc5IDE2LjcyOSw3LjI2OSBDMTcuMTIwLDcuNjYwIDE3LjEyMCw4LjI5MyAxNi43MjksOC42ODMgQzE2LjcyOSw4LjY4MyAxMy40MjUsMTIuMDEzIDEzLjQyNSwxMi4wMTMgWiIgZmlsbD0iI2ZmZmZmZiIgZmlsbC1ydWxlPSJldmVub2RkIi8+CiAgPC9nPgo8L3N2Zz4K) center no-repeat;
+    background-size: 80%;
+    border-radius: 2px; }
+  #PlayerOne.ui-enabled .liveCta__image {
+    width: 90px;
+    flex-shrink: 0;
+    height: 90px;
+    margin-right: 15px; }
+  #PlayerOne.ui-enabled .liveCta__text-container {
+    padding: 5px; }
+  #PlayerOne.ui-enabled .liveCta__title, #PlayerOne.ui-enabled .liveCta__description {
+    color: #17232e; }
+  #PlayerOne.ui-enabled .liveCta__title {
+    margin: 0 0 4px;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 22px; }
+  #PlayerOne.ui-enabled .liveCta__description {
+    margin: 0;
+    font-size: 13px;
+    line-height: 19px;
+    letter-spacing: -0.15px; }
+  #PlayerOne.ui-enabled .liveCta__inline-button {
+    display: none; }
+  #PlayerOne.ui-enabled .liveCta button.liveCta__button {
+    height: auto;
+    margin-left: auto;
+    padding: 16px 20px;
+    line-height: 20px;
+    font-weight: 500;
+    text-transform: uppercase;
+    white-space: nowrap;
+    color: #fff;
+    background-color: #0064ff;
+    border-radius: 2px; }
+  #PlayerOne.ui-enabled .liveCta--minimized.component {
+    right: auto; }
+  #PlayerOne.ui-enabled .liveCta--minimized .liveCta__link {
+    padding: 4px 30px 0 0 !important;
+    background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNSIgaGVpZ2h0PSI4IiB2aWV3Qm94PSIwIDAgNSA4IiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIj48ZGVmcz48cGF0aCBkPSJNMTQuNTQ5IDExLjE2NmEuOTk3Ljk5NyAwIDAgMSAuMTYgMS41NGwtMy4wMTggMy4wMTRhLjk5OC45OTggMCAwIDEtMS40MS0xLjQxbDIuMjk5LTIuMjk4LTIuMy0yLjMyMmEuOTk3Ljk5NyAwIDAgMSAxLjQxLTEuNDFsMi44NTkgMi44ODZ6IiBpZD0iYSIvPjwvZGVmcz48dXNlIGZpbGw9IiMxNzIzMkUiIHhsaW5rOmhyZWY9IiNhIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtMTAgLTgpIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiLz48L3N2Zz4=);
+    background-position: calc(100% - 15px) calc(50% + 2px);
+    background-repeat: no-repeat; }
+    #PlayerOne.ui-enabled .liveCta--minimized .liveCta__link:hover {
+      background-color: #ebeff3; }
+      #PlayerOne.ui-enabled .liveCta--minimized .liveCta__link:hover .liveCta__image {
+        transform: none; }
+  #PlayerOne.ui-enabled .liveCta--minimized .liveCta__description,
+  #PlayerOne.ui-enabled .liveCta--minimized .liveCta__button,
+  #PlayerOne.ui-enabled .liveCta--minimized .liveCta__minimize-button {
+    display: none; }
+  #PlayerOne.ui-enabled .liveCta--minimized .liveCta__image {
+    width: 40px;
+    height: 40px;
+    margin-right: 5px; }
+  #PlayerOne.ui-enabled .liveCta--minimized .liveCta__title {
+    margin: 0;
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 18px; }
+  #PlayerOne.ui-enabled #ComponentsContainer.hovered .liveCta {
+    transform: translateY(-32px); }
+  @media screen and (max-width: 640px) {
+    #PlayerOne.ui-enabled .liveCta__link {
+      padding-right: 44px; }
+    #PlayerOne.ui-enabled .liveCta__image {
+      width: 70px;
+      height: 70px;
+      margin-right: 10px; }
+    #PlayerOne.ui-enabled .liveCta__title {
+      font-size: 14px;
+      line-height: 22px; }
+    #PlayerOne.ui-enabled .liveCta__description {
+      font-size: 13px;
+      line-height: 19px; }
+    #PlayerOne.ui-enabled .liveCta__button {
+      display: none; }
+    #PlayerOne.ui-enabled .liveCta a.liveCta__minimize-button {
+      top: 7px;
+      right: 3px;
+      width: 36px;
+      height: 36px;
+      background-size: 55%; }
+    #PlayerOne.ui-enabled .liveCta--minimized .liveCta__image {
+      width: 40px;
+      height: 40px;
+      margin-right: 5px; }
+    #PlayerOne.ui-enabled .liveCta--minimized .liveCta__title {
+      font-size: 13px;
+      line-height: 18px; } }
+  #PlayerOne.ui-enabled.size-large .liveCta__link, #PlayerOne.ui-enabled.size-big .liveCta__link, #PlayerOne.ui-enabled.size-medium .liveCta__link, #PlayerOne.ui-enabled.size-small .liveCta__link {
+    padding-right: 44px; }
+  #PlayerOne.ui-enabled.size-large .liveCta__image, #PlayerOne.ui-enabled.size-big .liveCta__image, #PlayerOne.ui-enabled.size-medium .liveCta__image, #PlayerOne.ui-enabled.size-small .liveCta__image {
+    width: 70px;
+    height: 70px;
+    margin-right: 10px; }
+  #PlayerOne.ui-enabled.size-large .liveCta__title, #PlayerOne.ui-enabled.size-big .liveCta__title, #PlayerOne.ui-enabled.size-medium .liveCta__title, #PlayerOne.ui-enabled.size-small .liveCta__title {
+    font-size: 14px;
+    line-height: 22px; }
+  #PlayerOne.ui-enabled.size-large .liveCta__description, #PlayerOne.ui-enabled.size-big .liveCta__description, #PlayerOne.ui-enabled.size-medium .liveCta__description, #PlayerOne.ui-enabled.size-small .liveCta__description {
+    font-size: 13px;
+    line-height: 19px; }
+  #PlayerOne.ui-enabled.size-large .liveCta__button, #PlayerOne.ui-enabled.size-big .liveCta__button, #PlayerOne.ui-enabled.size-medium .liveCta__button, #PlayerOne.ui-enabled.size-small .liveCta__button {
+    display: none; }
+  #PlayerOne.ui-enabled.size-large .liveCta a.liveCta__minimize-button, #PlayerOne.ui-enabled.size-big .liveCta a.liveCta__minimize-button, #PlayerOne.ui-enabled.size-medium .liveCta a.liveCta__minimize-button, #PlayerOne.ui-enabled.size-small .liveCta a.liveCta__minimize-button {
+    top: 7px;
+    right: 3px;
+    width: 36px;
+    height: 36px;
+    background-size: 55%; }
+  #PlayerOne.ui-enabled.size-large .liveCta--minimized .liveCta__image, #PlayerOne.ui-enabled.size-big .liveCta--minimized .liveCta__image, #PlayerOne.ui-enabled.size-medium .liveCta--minimized .liveCta__image, #PlayerOne.ui-enabled.size-small .liveCta--minimized .liveCta__image {
+    width: 40px;
+    height: 40px;
+    margin-right: 5px; }
+  #PlayerOne.ui-enabled.size-large .liveCta--minimized .liveCta__title, #PlayerOne.ui-enabled.size-big .liveCta--minimized .liveCta__title, #PlayerOne.ui-enabled.size-medium .liveCta--minimized .liveCta__title, #PlayerOne.ui-enabled.size-small .liveCta--minimized .liveCta__title {
+    font-size: 13px;
+    line-height: 18px; }
+  @media screen and (max-width: 480px) {
+    #PlayerOne.ui-enabled #ComponentsContainer.hovered .liveCta {
+      transform: none; }
+    #PlayerOne.ui-enabled .liveCta__title {
+      font-size: 14px;
+      line-height: 18px; }
+    #PlayerOne.ui-enabled .liveCta__description, #PlayerOne.ui-enabled .liveCta__button {
+      display: none; }
+    #PlayerOne.ui-enabled .liveCta__inline-button {
+      display: block;
+      font-size: 12px;
+      line-height: 20px;
+      font-weight: 500;
+      color: #0064ff;
+      text-transform: uppercase; }
+    #PlayerOne.ui-enabled .liveCta--minimized .liveCta__image,
+    #PlayerOne.ui-enabled .liveCta--minimized .liveCta__inline-button {
+      display: none; }
+    #PlayerOne.ui-enabled .liveCta--minimized .liveCta__title {
+      font-size: 12px; } }
+  #PlayerOne.ui-enabled.size-big #ComponentsContainer.hovered .liveCta, #PlayerOne.ui-enabled.size-medium #ComponentsContainer.hovered .liveCta, #PlayerOne.ui-enabled.size-small #ComponentsContainer.hovered .liveCta {
+    transform: none; }
+  #PlayerOne.ui-enabled.size-big .liveCta__title, #PlayerOne.ui-enabled.size-medium .liveCta__title, #PlayerOne.ui-enabled.size-small .liveCta__title {
+    font-size: 14px;
+    line-height: 18px; }
+  #PlayerOne.ui-enabled.size-big .liveCta__description, #PlayerOne.ui-enabled.size-big .liveCta__button, #PlayerOne.ui-enabled.size-medium .liveCta__description, #PlayerOne.ui-enabled.size-medium .liveCta__button, #PlayerOne.ui-enabled.size-small .liveCta__description, #PlayerOne.ui-enabled.size-small .liveCta__button {
+    display: none; }
+  #PlayerOne.ui-enabled.size-big .liveCta__inline-button, #PlayerOne.ui-enabled.size-medium .liveCta__inline-button, #PlayerOne.ui-enabled.size-small .liveCta__inline-button {
+    display: block;
+    font-size: 12px;
+    line-height: 20px;
+    font-weight: 500;
+    color: #0064ff;
+    text-transform: uppercase; }
+  #PlayerOne.ui-enabled.size-big .liveCta--minimized .liveCta__image,
+  #PlayerOne.ui-enabled.size-big .liveCta--minimized .liveCta__inline-button, #PlayerOne.ui-enabled.size-medium .liveCta--minimized .liveCta__image,
+  #PlayerOne.ui-enabled.size-medium .liveCta--minimized .liveCta__inline-button, #PlayerOne.ui-enabled.size-small .liveCta--minimized .liveCta__image,
+  #PlayerOne.ui-enabled.size-small .liveCta--minimized .liveCta__inline-button {
+    display: none; }
+  #PlayerOne.ui-enabled.size-big .liveCta--minimized .liveCta__title, #PlayerOne.ui-enabled.size-medium .liveCta--minimized .liveCta__title, #PlayerOne.ui-enabled.size-small .liveCta--minimized .liveCta__title {
+    font-size: 12px; }
+  #PlayerOne.ui-enabled.fullscreen-mode #ComponentsContainer.hovered .liveCta {
+    transform: translateY(-44.8px); }
+  #PlayerOne.ui-enabled .captionSearchOpener.component {
+    display: none;
+    position: relative; }
+    #PlayerOne.ui-enabled .captionSearchOpener.component .trigger svg path {
+      fill: #fff; }
+    #PlayerOne.ui-enabled .captionSearchOpener.component .trigger:hover svg path {
+      opacity: 1; }
+  #PlayerOne.ui-enabled.caption-search-enabled.caption-search-panel-open #controlPanelRight .component:not(.fullscreen) {
+    display: none;
+    opacity: 0; }
+  #PlayerOne.ui-enabled.caption-search-enabled:not(.caption-search-panel-open):not(.autoplay-false) .captionSearchOpener {
+    display: inline-block; }
+  #PlayerOne.ui-enabled.caption-search-has-result .captionSearchOpener.component .trigger svg path {
+    fill: #fff;
+    opacity: 1; }
+  #PlayerOne.ui-enabled .captionSearchPanel.component {
+    visibility: hidden;
+    transform: translateX(100%);
+    width: 320px;
+    opacity: 0;
+    position: absolute;
+    top: 6px;
+    right: 6px;
+    padding-right: 4px;
+    border-radius: 2px;
+    background-color: rgba(23, 23, 23, 0.9);
+    height: -moz-calc(100% - 44px);
+    height: -webkit-calc(100% - 44px);
+    height: calc(100% - 44px); }
+    #PlayerOne.ui-enabled .captionSearchPanel.component p, #PlayerOne.ui-enabled .captionSearchPanel.component span, #PlayerOne.ui-enabled .captionSearchPanel.component input {
+      font-size: 13px; }
+    #PlayerOne.ui-enabled .captionSearchPanel.component input {
+      display: none; }
+    #PlayerOne.ui-enabled .captionSearchPanel.component .close-icon {
+      position: absolute;
+      cursor: pointer;
+      top: 8px;
+      right: 8px;
+      width: 24px;
+      height: 24px;
+      margin: 4px; }
+      #PlayerOne.ui-enabled .captionSearchPanel.component .close-icon path {
+        fill: #C0C0C0; }
+      #PlayerOne.ui-enabled .captionSearchPanel.component .close-icon:hover {
+        opacity: 1; }
+  #PlayerOne.ui-enabled.autoplay-false .captionSearchPanel.component {
+    display: none; }
+  #PlayerOne.ui-enabled .captionSearchPanel.component.animated {
+    transition: all .15s ease-in-out; }
+  #PlayerOne.ui-enabled.caption-search-enabled.caption-search-panel-open .captionSearchPanel.component {
+    visibility: visible;
+    width: 320px;
+    opacity: 1;
+    transform: translateX(0);
+    z-index: 20; }
+    #PlayerOne.ui-enabled.caption-search-enabled.caption-search-panel-open .captionSearchPanel.component input {
+      display: block; }
+  #PlayerOne.ui-enabled.caption-search-enabled.caption-search-panel-open.fullscreen-mode .captionSearchPanel.component {
+    height: -moz-calc(100% - 56.8px);
+    height: -webkit-calc(100% - 56.8px);
+    height: calc(100% - 56.8px);
+    width: 448px; }
+    #PlayerOne.ui-enabled.caption-search-enabled.caption-search-panel-open.fullscreen-mode .captionSearchPanel.component p, #PlayerOne.ui-enabled.caption-search-enabled.caption-search-panel-open.fullscreen-mode .captionSearchPanel.component span, #PlayerOne.ui-enabled.caption-search-enabled.caption-search-panel-open.fullscreen-mode .captionSearchPanel.component input {
+      font-size: 18.2px; }
+    #PlayerOne.ui-enabled.caption-search-enabled.caption-search-panel-open.fullscreen-mode .captionSearchPanel.component .close-icon {
+      top: 11.2px;
+      right: 11.2px;
+      width: 33.6px;
+      height: 33.6px;
+      margin: 5.6px; }
+  @media screen and (max-width: 480px) {
+    #PlayerOne.ui-enabled.caption-search-enabled.caption-search-panel-open .captionSearchPanel.component {
+      right: 0;
+      top: 0;
+      height: -moz-calc(100% - 32px);
+      height: -webkit-calc(100% - 32px);
+      height: calc(100% - 32px);
+      border-radius: 0;
+      width: 100%; }
+    #PlayerOne.ui-enabled.caption-search-enabled.caption-search-panel-open.fullscreen-mode .captionSearchPanel.component {
+      top: 0;
+      left: 0;
+      height: -moz-calc(100% - 44.8px);
+      height: -webkit-calc(100% - 44.8px);
+      height: calc(100% - 44.8px); } }
+  #PlayerOne.ui-enabled.caption-search-enabled.caption-search-panel-open.size-big .captionSearchPanel.component, #PlayerOne.ui-enabled.caption-search-enabled.caption-search-panel-open.size-medium .captionSearchPanel.component, #PlayerOne.ui-enabled.caption-search-enabled.caption-search-panel-open.size-small .captionSearchPanel.component {
+    right: 0;
+    top: 0;
+    height: -moz-calc(100% - 32px);
+    height: -webkit-calc(100% - 32px);
+    height: calc(100% - 32px);
+    border-radius: 0;
+    width: 100%; }
+  #PlayerOne.ui-enabled.caption-search-enabled.caption-search-panel-open.size-big.fullscreen-mode .captionSearchPanel.component, #PlayerOne.ui-enabled.caption-search-enabled.caption-search-panel-open.size-medium.fullscreen-mode .captionSearchPanel.component, #PlayerOne.ui-enabled.caption-search-enabled.caption-search-panel-open.size-small.fullscreen-mode .captionSearchPanel.component {
+    top: 0;
+    left: 0;
+    height: -moz-calc(100% - 44.8px);
+    height: -webkit-calc(100% - 44.8px);
+    height: calc(100% - 44.8px); }
+  #PlayerOne.ui-enabled.caption-search-enabled.caption-search-panel-open #middleOverlay.container, #PlayerOne.ui-enabled.caption-search-enabled.caption-search-panel-open #topOverlay.container, #PlayerOne.ui-enabled.caption-search-enabled.caption-search-panel-open #topPanelRight {
+    display: none; }
+  #PlayerOne.ui-enabled #captionSearchInput {
+    padding: 8px;
+    height: 50px;
+    width: 100%; }
+    #PlayerOne.ui-enabled #captionSearchInput .search-icon {
+      position: absolute;
+      display: block;
+      top: 8px;
+      height: 24px;
+      width: 24px;
+      margin: 4px; }
+      #PlayerOne.ui-enabled #captionSearchInput .search-icon path {
+        fill: #C0C0C0; }
+    #PlayerOne.ui-enabled #captionSearchInput input {
+      margin: 0;
+      border-radius: 2px;
+      background-color: #FFFFFF;
+      padding: 0;
+      color: #303030;
+      line-height: 32px;
+      border: none;
+      padding-left: 30px;
+      width: 266px;
+      height: 32px;
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box; }
+  #PlayerOne.ui-enabled.fullscreen-mode #captionSearchInput {
+    height: 70px;
+    padding: 11.2px; }
+    #PlayerOne.ui-enabled.fullscreen-mode #captionSearchInput input {
+      width: 372.4px;
+      height: 44.8px;
+      padding-left: 42px; }
+    #PlayerOne.ui-enabled.fullscreen-mode #captionSearchInput .search-icon {
+      top: 11.2px;
+      height: 33.6px;
+      width: 33.6px;
+      margin: 5.6px; }
+  @media screen and (max-width: 480px) {
+    #PlayerOne.ui-enabled.fullscreen-mode #captionSearchInput input {
+      width: 266px; } }
+  #PlayerOne.ui-enabled.size-big.fullscreen-mode #captionSearchInput input, #PlayerOne.ui-enabled.size-medium.fullscreen-mode #captionSearchInput input, #PlayerOne.ui-enabled.size-small.fullscreen-mode #captionSearchInput input {
+    width: 266px; }
+  #PlayerOne.ui-enabled #captionSearchResultPanel {
+    overflow-y: scroll;
+    scrollbar-face-color: #a8a8a8;
+    scrollbar-track-color: #121212;
+    scrollbar-arrow-color: #a8a8a8;
+    scrollbar-shadow-color: #121212;
+    height: -moz-calc(100% - 56px);
+    height: -webkit-calc(100% - 56px);
+    height: calc(100% - 56px); }
+    #PlayerOne.ui-enabled #captionSearchResultPanel::-webkit-scrollbar {
+      width: 6px;
+      height: 6px; }
+    #PlayerOne.ui-enabled #captionSearchResultPanel::-webkit-scrollbar-thumb {
+      border-radius: 3px;
+      width: 6px;
+      background-color: rgba(255, 255, 255, 0.3); }
+    #PlayerOne.ui-enabled #captionSearchResultPanel .summary {
+      color: #ccc;
+      padding-left: 20px;
+      padding-right: 20px; }
+      #PlayerOne.ui-enabled #captionSearchResultPanel .summary mark {
+        background: none;
+        color: #94C512;
+        font-weight: 600; }
+    #PlayerOne.ui-enabled #captionSearchResultPanel p {
+      line-height: 18px; }
+    #PlayerOne.ui-enabled #captionSearchResultPanel .results {
+      padding-top: 8px; }
+      #PlayerOne.ui-enabled #captionSearchResultPanel .results ul li {
+        padding-right: 20px;
+        padding-left: 20px; }
+        #PlayerOne.ui-enabled #captionSearchResultPanel .results ul li:hover {
+          background-color: rgba(255, 255, 255, 0.1);
+          cursor: pointer; }
+        #PlayerOne.ui-enabled #captionSearchResultPanel .results ul li div {
+          display: block;
+          border-top: 1px solid rgba(255, 255, 255, 0.15);
+          padding-top: 8px;
+          padding-bottom: 8px; }
+          #PlayerOne.ui-enabled #captionSearchResultPanel .results ul li div p.caption-time {
+            display: table-cell;
+            font-weight: bold; }
+          #PlayerOne.ui-enabled #captionSearchResultPanel .results ul li div p.caption-text {
+            display: table-cell;
+            padding-left: 8px; }
+            #PlayerOne.ui-enabled #captionSearchResultPanel .results ul li div p.caption-text mark {
+              background-color: transparent;
+              position: relative;
+              color: inherit; }
+              #PlayerOne.ui-enabled #captionSearchResultPanel .results ul li div p.caption-text mark:after {
+                content: '';
+                position: absolute;
+                bottom: -2px;
+                height: 2px;
+                width: 100%;
+                border-radius: 1px;
+                left: 0;
+                background-color: #539EEC; }
+  #PlayerOne.ui-enabled.fullscreen-mode #captionSearchResultPanel {
+    height: -moz-calc(100% - 78.4px);
+    height: -webkit-calc(100% - 78.4px);
+    height: calc(100% - 78.4px); }
+    #PlayerOne.ui-enabled.fullscreen-mode #captionSearchResultPanel p {
+      line-height: 25.2px; }
+    #PlayerOne.ui-enabled.fullscreen-mode #captionSearchResultPanel .summary {
+      padding-left: 28px;
+      padding-right: 28px; }
+    #PlayerOne.ui-enabled.fullscreen-mode #captionSearchResultPanel .results {
+      padding-top: 11.2px; }
+      #PlayerOne.ui-enabled.fullscreen-mode #captionSearchResultPanel .results ul li {
+        padding-right: 28px;
+        padding-left: 28px; }
+        #PlayerOne.ui-enabled.fullscreen-mode #captionSearchResultPanel .results ul li div {
+          padding-top: 11.2px;
+          padding-bottom: 11.2px; }
+          #PlayerOne.ui-enabled.fullscreen-mode #captionSearchResultPanel .results ul li div p.caption-text {
+            padding-left: 11.2px; }
+  #PlayerOne.ui-enabled:not(.slide-deck-mobile-active) .slide-deck-mobile {
+    display: none; }
+  #PlayerOne.ui-enabled.slide-deck-mobile-active.slide-deck-visible .slide-deck-mobile.full-screen-landscape, #PlayerOne.ui-enabled.slide-deck-mobile-active.slide-deck-visible .slide-deck-mobile.full-screen-portrait {
+    width: 100%;
+    height: 100%;
+    background: black;
+    display: block;
+    position: absolute;
+    top: 0; }
+  #PlayerOne.ui-enabled.slide-deck-mobile-active.slide-deck-visible .slide-deck-mobile.full-screen-landscape .slide-deck-mobile-thumbnail {
+    height: 100%;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding-top: 0; }
+  #PlayerOne.ui-enabled.slide-deck-mobile-active.slide-deck-visible .slide-deck-mobile.full-screen-portrait .slide-deck-mobile-thumbnail {
+    top: 50%;
+    transform: translateY(-50%);
+    padding-top: 56.25%;
+    width: 100%;
+    right: 0; }
+  #PlayerOne.ui-enabled.slide-deck-mobile-active.slide-deck-visible .slide-deck-mobile .slide-deck-mobile-thumbnail {
+    z-index: 2;
+    position: absolute;
+    bottom: 20%;
+    width: 30%;
+    right: 10px;
+    padding-top: 16.875%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center; }
+  #PlayerOne.ui-enabled.slide-deck-mobile-active.slide-deck-visible .slide-deck-mobile .slide-deck-mobile-minify {
+    z-index: 2;
+    position: absolute;
+    bottom: 6px;
+    right: 6px;
+    border-radius: 2px;
+    width: 36px;
+    height: 36px;
+    opacity: 0.9;
+    background: rgba(22, 22, 22, 0.9);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    cursor: pointer; }
+    #PlayerOne.ui-enabled.slide-deck-mobile-active.slide-deck-visible .slide-deck-mobile .slide-deck-mobile-minify svg {
+      height: 24px;
+      width: 23.93px;
+      margin: 6px; }
+  #PlayerOne.ui-enabled.slide-deck-mobile-active.slide-deck-visible #ComponentsContainer.hovered .slide-deck-mobile .slide-deck-mobile-minify {
+    bottom: 35px; }
+  #PlayerOne.ui-enabled:not(.slide-deck-desktop-active) .slide-deck-desktop {
+    display: none; }
+
+@media screen and (min-width: 480px) and (max-width: 320px) {
+  #PlayerOne.ui-enabled.slide-deck-visible.slide-deck-desktop-active .slide-deck-desktop {
+    display: none; } }
+  @media screen and (min-width: 480px) {
+    #PlayerOne.ui-enabled.slide-deck-visible.slide-deck-desktop-active #ViewerContainer, #PlayerOne.ui-enabled.slide-deck-visible.slide-deck-desktop-active .slide-deck-desktop-thumbnail-container {
+      transition: all .15s linear; }
+    #PlayerOne.ui-enabled.slide-deck-visible.slide-deck-desktop-active .slide-deck-desktop-thumbnail-container {
+      position: absolute;
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: center center;
+      top: 50%;
+      transform: translateY(-50%);
+      height: 100%;
+      text-align: center; }
+      #PlayerOne.ui-enabled.slide-deck-visible.slide-deck-desktop-active .slide-deck-desktop-thumbnail-container img {
+        max-height: 100%;
+        max-width: 100%;
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%); }
+    #PlayerOne.ui-enabled.slide-deck-visible.slide-deck-desktop-active .slide-deck-desktop .slide-deck-desktop-controls {
+      position: absolute;
+      cursor: pointer;
+      top: 50%;
+      z-index: 10;
+      transform: translateY(-50%);
+      right: 10px;
+      left: auto;
+      width: -moz-calc(25%);
+      width: -webkit-calc(25%);
+      width: calc(25%);
+      height: -moz-calc(25%);
+      height: -webkit-calc(25%);
+      height: calc(25%);
+      transition: background 0.15s ease-in-out; }
+      #PlayerOne.ui-enabled.slide-deck-visible.slide-deck-desktop-active .slide-deck-desktop .slide-deck-desktop-controls button {
+        opacity: 0; }
+      #PlayerOne.ui-enabled.slide-deck-visible.slide-deck-desktop-active .slide-deck-desktop .slide-deck-desktop-controls:hover {
+        background-color: rgba(22, 22, 22, 0.8); }
+        #PlayerOne.ui-enabled.slide-deck-visible.slide-deck-desktop-active .slide-deck-desktop .slide-deck-desktop-controls:hover button {
+          opacity: 1; }
+      #PlayerOne.ui-enabled.slide-deck-visible.slide-deck-desktop-active .slide-deck-desktop .slide-deck-desktop-controls .slide-deck-desktop-close {
+        position: absolute;
+        right: 4px;
+        top: 4px; }
+      #PlayerOne.ui-enabled.slide-deck-visible.slide-deck-desktop-active .slide-deck-desktop .slide-deck-desktop-controls .slide-deck-desktop-switch {
+        position: absolute;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        left: 50%; } }
+
+@media screen and (min-width: 480px) and (min-width: 480px) {
+  #PlayerOne.ui-enabled.slide-deck-visible.slide-deck-desktop-active.slide-deck-slide-active #ViewerContainer {
+    position: absolute;
+    height: auto;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 10px;
+    left: auto;
+    width: -moz-calc(25%);
+    width: -webkit-calc(25%);
+    width: calc(25%); }
+    #PlayerOne.ui-enabled.slide-deck-visible.slide-deck-desktop-active.slide-deck-slide-active #ViewerContainer object {
+      height: auto; }
+  #PlayerOne.ui-enabled.slide-deck-visible.slide-deck-desktop-active.slide-deck-slide-active .slide-deck-desktop-thumbnail-container {
+    left: 0;
+    width: -moz-calc(75% - 20px);
+    width: -webkit-calc(75% - 20px);
+    width: calc(75% - 20px); } }
+  @media screen and (min-width: 480px) {
+    #PlayerOne.ui-enabled.slide-deck-visible.slide-deck-desktop-active.slide-deck-video-active #ViewerContainer {
+      width: -moz-calc(75% - 20px);
+      width: -webkit-calc(75% - 20px);
+      width: calc(75% - 20px); }
+    #PlayerOne.ui-enabled.slide-deck-visible.slide-deck-desktop-active.slide-deck-video-active .slide-deck-desktop-thumbnail-container {
+      right: 10px;
+      max-width: -moz-calc(25%);
+      max-width: -webkit-calc(25%);
+      max-width: calc(25%); } }
+
+@media screen and (min-width: 480px) and (min-width: 480px) {
+  #PlayerOne.ui-enabled.slide-deck-visible.slide-deck-desktop-active.slide-deck-video-active .slide-deck-desktop-thumbnail-container {
+    top: 50%;
+    transform: translateY(-50%); } }
+  @media screen and (min-width: 480px) {
+    #PlayerOne.ui-enabled.slide-deck-visible.slide-deck-desktop-active.slide-deck-full .slide-deck-desktop-controls {
+      opacity: 0;
+      visibility: hidden; }
+    #PlayerOne.ui-enabled.slide-deck-visible.slide-deck-desktop-active.slide-deck-full.slide-deck-slide-active #ViewerContainer {
+      opacity: 0;
+      visibility: hidden; }
+    #PlayerOne.ui-enabled.slide-deck-visible.slide-deck-desktop-active.slide-deck-full.slide-deck-slide-active .slide-deck-desktop-thumbnail-container {
+      width: 100%; }
+    #PlayerOne.ui-enabled.slide-deck-visible.slide-deck-desktop-active.slide-deck-full.slide-deck-full.slide-deck-video-active .slide-deck-desktop > * {
+      opacity: 0;
+      visibility: hidden; }
+    #PlayerOne.ui-enabled.slide-deck-visible.slide-deck-desktop-active.slide-deck-full.slide-deck-full.slide-deck-video-active #ViewerContainer {
+      width: 100%; }
+    #PlayerOne.ui-enabled.slide-deck-visible.slide-deck-desktop-active.fade-out-slides #ViewerContainer, #PlayerOne.ui-enabled.slide-deck-visible.slide-deck-desktop-active.fade-out-slides .slide-deck-desktop-thumbnail-container, #PlayerOne.ui-enabled.slide-deck-visible.slide-deck-desktop-active.fade-out-slides .slide-deck-desktop-controls {
+      opacity: 0;
+      transition-property: opacity; } }
+  #PlayerOne.ui-enabled .side-panel.component {
+    display: none;
+    position: absolute;
+    top: 6px;
+    right: 6px;
+    width: 240px;
+    z-index: 20;
+    border-radius: 2px;
+    background-color: rgba(23, 23, 23, 0.9); }
+    #PlayerOne.ui-enabled .side-panel.component p, #PlayerOne.ui-enabled .side-panel.component span, #PlayerOne.ui-enabled .side-panel.component input {
+      font-size: 13px; }
+  #PlayerOne.ui-enabled.slide-index-panel-visible .side-panel.component {
+    display: block;
+    height: -moz-calc(100% - 44px);
+    height: -webkit-calc(100% - 44px);
+    height: calc(100% - 44px); }
+    #PlayerOne.ui-enabled.slide-index-panel-visible .side-panel.component .close-icon {
+      position: absolute;
+      cursor: pointer;
+      top: 8px;
+      right: 8px;
+      width: 24px;
+      height: 24px;
+      margin: 0; }
+      #PlayerOne.ui-enabled.slide-index-panel-visible .side-panel.component .close-icon path {
+        fill: #C0C0C0; }
+      #PlayerOne.ui-enabled.slide-index-panel-visible .side-panel.component .close-icon:hover {
+        opacity: 1; }
+  #PlayerOne.ui-enabled.slide-index-panel-visible.fullscreen-mode .side-panel.component {
+    height: -moz-calc(100% - 56.8px);
+    height: -webkit-calc(100% - 56.8px);
+    height: calc(100% - 56.8px);
+    width: 336px; }
+    #PlayerOne.ui-enabled.slide-index-panel-visible.fullscreen-mode .side-panel.component p, #PlayerOne.ui-enabled.slide-index-panel-visible.fullscreen-mode .side-panel.component span, #PlayerOne.ui-enabled.slide-index-panel-visible.fullscreen-mode .side-panel.component input {
+      font-size: 18.2px; }
+    #PlayerOne.ui-enabled.slide-index-panel-visible.fullscreen-mode .side-panel.component .close-icon {
+      top: 11.2px;
+      right: 11.2px;
+      width: 33.6px;
+      height: 33.6px;
+      margin: 5.6px; }
+  #PlayerOne.ui-enabled.slide-index-panel-visible #middleOverlay.container, #PlayerOne.ui-enabled.slide-index-panel-visible #topOverlay.container {
+    display: none; }
+  #PlayerOne.ui-enabled .slideIndexOpener.component {
+    display: none;
+    position: relative; }
+    #PlayerOne.ui-enabled .slideIndexOpener.component .trigger svg path {
+      fill: #fff; }
+    #PlayerOne.ui-enabled .slideIndexOpener.component .trigger:hover svg path {
+      opacity: 1; }
+  #PlayerOne.ui-enabled:not(.slide-deck-index-panel-open) .slideIndexOpener {
+    display: inline-block; }
+  #PlayerOne.ui-enabled .slideIndexPanel > div {
+    height: 100%;
+    overflow: auto; }
+    #PlayerOne.ui-enabled .slideIndexPanel > div::-webkit-scrollbar {
+      width: 6px;
+      background: none; }
+    #PlayerOne.ui-enabled .slideIndexPanel > div::-webkit-scrollbar-thumb {
+      -webkit-border-radius: 10px;
+      border-radius: 10px;
+      background: rgba(255, 255, 255, 0.3); }
+    #PlayerOne.ui-enabled .slideIndexPanel > div::-webkit-scrollbar-track {
+      -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+      -webkit-border-radius: 10px;
+      border-radius: 10px; }
+  #PlayerOne.ui-enabled .slideIndexPanel ul {
+    margin: 0;
+    padding-top: 8px;
+    display: block; }
+  #PlayerOne.ui-enabled .slideIndexPanel li {
+    padding-bottom: 8px;
+    display: inline-block;
+    float: left; }
+    #PlayerOne.ui-enabled .slideIndexPanel li p {
+      width: 32px;
+      padding-right: 8px;
+      text-align: right;
+      line-height: 90px;
+      margin: 0;
+      float: left;
+      color: #ccc; }
+    #PlayerOne.ui-enabled .slideIndexPanel li .slide {
+      position: relative;
+      margin: 0;
+      padding: 0;
+      float: left;
+      width: 160px;
+      height: 90px;
+      background-color: #161616;
+      background-size: 160px 90px;
+      cursor: pointer;
+      transition: background 0.15s linear, opacity 0.15s linear; }
+      #PlayerOne.ui-enabled .slideIndexPanel li .slide span {
+        border-radius: 1px;
+        background-color: rgba(22, 22, 22, 0.8);
+        height: 18px;
+        color: #FFFFFF;
+        font-size: 11px;
+        font-weight: 500;
+        line-height: 18px;
+        text-align: right;
+        padding: 4px;
+        right: 4px;
+        position: absolute;
+        bottom: 4px; }
+      #PlayerOne.ui-enabled .slideIndexPanel li .slide:hover {
+        outline: 2px solid #539EEC; }
+  #PlayerOne.ui-enabled.fullscreen-mode .slideIndexPanel ul {
+    padding-top: 11.2px; }
+  #PlayerOne.ui-enabled.fullscreen-mode .slideIndexPanel li {
+    padding-bottom: 11.2px; }
+    #PlayerOne.ui-enabled.fullscreen-mode .slideIndexPanel li p {
+      width: 44.8px;
+      padding-right: 11.2px;
+      line-height: 126px; }
+    #PlayerOne.ui-enabled.fullscreen-mode .slideIndexPanel li .slide {
+      width: 224px;
+      height: 126px;
+      background-size: 224px 126px; }
+      #PlayerOne.ui-enabled.fullscreen-mode .slideIndexPanel li .slide span {
+        padding: 5.6px;
+        right: 5.6px;
+        bottom: 5.6px; }
+  #PlayerOne.ui-enabled .slide-deck-toggle-popover {
+    min-width: 105px; }
+    #PlayerOne.ui-enabled .slide-deck-toggle-popover li {
+      text-align: center; }
+  #PlayerOne.ui-enabled.fullscreen-mode .slide-deck-toggle-popover {
+    min-width: 147px; }
+  #PlayerOne.ui-enabled #cookieOverlay {
+    position: absolute;
+    z-index: 10000;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0; }
+  #PlayerOne.ui-enabled .ibm-cookieOverlay {
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    background-color: rgba(0, 0, 0, 0.8);
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
+    justify-content: center;
+    left: 0;
+    padding: 10px;
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 1234567; }
+  #PlayerOne.ui-enabled .ibm-cookieOverlay--insideElement {
+    position: absolute; }
+  #PlayerOne.ui-enabled .ibm-cookieOverlay__window {
+    background: #fff;
+    margin: 0 auto;
+    max-width: 560px;
+    padding: 20px;
+    text-align: center;
+    width: 100%; }
+  #PlayerOne.ui-enabled .ibm-cookieOverlay__window--transparent {
+    background: transparent;
+    padding: 10px; }
+  #PlayerOne.ui-enabled .ibm-cookieOverlay__text {
+    color: #343334;
+    font-size: 14px;
+    line-height: 1.3;
+    margin: 0 0 10px; }
+  #PlayerOne.ui-enabled .ibm-cookieOverlay__window--transparent .ibm-cookieOverlay__text {
+    color: #fff;
+    font-weight: 400; }
+  #PlayerOne.ui-enabled .ibm-cookieOverlay__text a {
+    color: #2669bb;
+    text-decoration: none; }
+  #PlayerOne.ui-enabled .ibm-cookieOverlay__button {
+    background: #2669bb;
+    border: 0;
+    border-radius: 3px;
+    color: #fff;
+    cursor: pointer;
+    font: inherit;
+    font-size: 13px;
+    font-weight: 600;
+    line-height: 14px;
+    padding: 8px 14px; }
+  #PlayerOne.ui-enabled .notification {
+    position: absolute;
+    bottom: 38px;
+    background-color: rgba(23, 23, 23, 0.9);
+    min-height: 50px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0 14px;
+    z-index: 2; }
+    #PlayerOne.ui-enabled .notification-close {
+      display: block;
+      min-height: 20px;
+      margin-left: 18px; }
+    #PlayerOne.ui-enabled .notification h4 {
+      margin: 0;
+      text-transform: none;
+      font-weight: 600;
+      letter-spacing: 0.2px;
+      text-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.4);
+      line-height: 18px; }
+    #PlayerOne.ui-enabled .notification p {
+      letter-spacing: 0.2px;
+      color: white;
+      text-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.4);
+      margin: 0;
+      line-height: 18px; }
+    #PlayerOne.ui-enabled .notification .icon {
+      padding-right: 14px; }
+      #PlayerOne.ui-enabled .notification .icon path {
+        fill: #fad239; }
+    #PlayerOne.ui-enabled .notification .content {
+      justify-content: center;
+      display: flex;
+      flex-direction: column; }
+    #PlayerOne.ui-enabled .notification .close {
+      display: flex;
+      position: unset; }
+    #PlayerOne.ui-enabled .notification a[href] {
+      color: white; }
+  #PlayerOne.ui-enabled.fullscreen-mode .notification {
+    bottom: 53.2px;
+    padding: 10px 14px; }
+    #PlayerOne.ui-enabled.fullscreen-mode .notification p {
+      font-size: 18.2px;
+      line-height: 25.2px; }
+    #PlayerOne.ui-enabled.fullscreen-mode .notification h4 {
+      font-size: 18.2px;
+      line-height: 25.2px; }
+  @media screen and (max-width: 480px) {
+    #PlayerOne.ui-enabled #bottomContainer #controlPanelLeft, #PlayerOne.ui-enabled #bottomContainer #controlPanelRight {
+      display: none; }
+    #PlayerOne.ui-enabled #StatusAnimation {
+      display: none !important; }
+    #PlayerOne.ui-enabled #middleOverlay {
+      position: absolute;
+      display: block;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.5);
+      transition: opacity 0.2s ease-out; }
+    #PlayerOne.ui-enabled #middleContainer {
+      display: block;
+      z-index: 1; }
+      #PlayerOne.ui-enabled #middleContainer .trigger svg {
+        transition: opacity 0.2s ease-out;
+        opacity: .8; }
+      #PlayerOne.ui-enabled #middleContainer .trigger:hover svg {
+        opacity: 1;
+        filter: drop-shadow(0 0 8px rgba(255, 255, 255, 0.4)); }
+      #PlayerOne.ui-enabled #middleContainer .component, #PlayerOne.ui-enabled #middleContainer .component svg {
+        width: 36px;
+        height: 36px;
+        -webkit-filter: none;
+        filter: none; }
+        #PlayerOne.ui-enabled #middleContainer .component .popover, #PlayerOne.ui-enabled #middleContainer .component svg .popover {
+          display: none;
+          transition: none; }
+      #PlayerOne.ui-enabled #middleContainer.popover-opened .component {
+        display: none !important; }
+      #PlayerOne.ui-enabled #middleContainer.popover-opened .popover-container.opened.animated {
+        display: inline-block !important; }
+        #PlayerOne.ui-enabled #middleContainer.popover-opened .popover-container.opened.animated .trigger {
+          display: none; }
+        #PlayerOne.ui-enabled #middleContainer.popover-opened .popover-container.opened.animated .popover {
+          display: block;
+          position: absolute;
+          top: 50% !important;
+          left: 50% !important;
+          transform: translateY(-50%) translateX(-50%);
+          -webkit-transform: translateY(-50%) translateX(-50%);
+          transition: none;
+          -webkit-transition: none; }
+          #PlayerOne.ui-enabled #middleContainer.popover-opened .popover-container.opened.animated .popover:after {
+            display: none; }
+    #PlayerOne.ui-enabled #ComponentsContainer.hovered #middleOverlay {
+      opacity: 1; } }
+  #PlayerOne.ui-enabled.size-big #bottomContainer #controlPanelLeft, #PlayerOne.ui-enabled.size-big #bottomContainer #controlPanelRight, #PlayerOne.ui-enabled.size-medium #bottomContainer #controlPanelLeft, #PlayerOne.ui-enabled.size-medium #bottomContainer #controlPanelRight, #PlayerOne.ui-enabled.size-small #bottomContainer #controlPanelLeft, #PlayerOne.ui-enabled.size-small #bottomContainer #controlPanelRight {
+    display: none; }
+  #PlayerOne.ui-enabled.size-big #StatusAnimation, #PlayerOne.ui-enabled.size-medium #StatusAnimation, #PlayerOne.ui-enabled.size-small #StatusAnimation {
+    display: none !important; }
+  #PlayerOne.ui-enabled.size-big #middleOverlay, #PlayerOne.ui-enabled.size-medium #middleOverlay, #PlayerOne.ui-enabled.size-small #middleOverlay {
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    transition: opacity 0.2s ease-out; }
+  #PlayerOne.ui-enabled.size-big #middleContainer, #PlayerOne.ui-enabled.size-medium #middleContainer, #PlayerOne.ui-enabled.size-small #middleContainer {
+    display: block;
+    z-index: 1; }
+    #PlayerOne.ui-enabled.size-big #middleContainer .trigger svg, #PlayerOne.ui-enabled.size-medium #middleContainer .trigger svg, #PlayerOne.ui-enabled.size-small #middleContainer .trigger svg {
+      transition: opacity 0.2s ease-out;
+      opacity: .8; }
+    #PlayerOne.ui-enabled.size-big #middleContainer .trigger:hover svg, #PlayerOne.ui-enabled.size-medium #middleContainer .trigger:hover svg, #PlayerOne.ui-enabled.size-small #middleContainer .trigger:hover svg {
+      opacity: 1;
+      filter: drop-shadow(0 0 8px rgba(255, 255, 255, 0.4)); }
+    #PlayerOne.ui-enabled.size-big #middleContainer .component, #PlayerOne.ui-enabled.size-big #middleContainer .component svg, #PlayerOne.ui-enabled.size-medium #middleContainer .component, #PlayerOne.ui-enabled.size-medium #middleContainer .component svg, #PlayerOne.ui-enabled.size-small #middleContainer .component, #PlayerOne.ui-enabled.size-small #middleContainer .component svg {
+      width: 36px;
+      height: 36px;
+      -webkit-filter: none;
+      filter: none; }
+      #PlayerOne.ui-enabled.size-big #middleContainer .component .popover, #PlayerOne.ui-enabled.size-big #middleContainer .component svg .popover, #PlayerOne.ui-enabled.size-medium #middleContainer .component .popover, #PlayerOne.ui-enabled.size-medium #middleContainer .component svg .popover, #PlayerOne.ui-enabled.size-small #middleContainer .component .popover, #PlayerOne.ui-enabled.size-small #middleContainer .component svg .popover {
+        display: none;
+        transition: none; }
+    #PlayerOne.ui-enabled.size-big #middleContainer.popover-opened .component, #PlayerOne.ui-enabled.size-medium #middleContainer.popover-opened .component, #PlayerOne.ui-enabled.size-small #middleContainer.popover-opened .component {
+      display: none !important; }
+    #PlayerOne.ui-enabled.size-big #middleContainer.popover-opened .popover-container.opened.animated, #PlayerOne.ui-enabled.size-medium #middleContainer.popover-opened .popover-container.opened.animated, #PlayerOne.ui-enabled.size-small #middleContainer.popover-opened .popover-container.opened.animated {
+      display: inline-block !important; }
+      #PlayerOne.ui-enabled.size-big #middleContainer.popover-opened .popover-container.opened.animated .trigger, #PlayerOne.ui-enabled.size-medium #middleContainer.popover-opened .popover-container.opened.animated .trigger, #PlayerOne.ui-enabled.size-small #middleContainer.popover-opened .popover-container.opened.animated .trigger {
+        display: none; }
+      #PlayerOne.ui-enabled.size-big #middleContainer.popover-opened .popover-container.opened.animated .popover, #PlayerOne.ui-enabled.size-medium #middleContainer.popover-opened .popover-container.opened.animated .popover, #PlayerOne.ui-enabled.size-small #middleContainer.popover-opened .popover-container.opened.animated .popover {
+        display: block;
+        position: absolute;
+        top: 50% !important;
+        left: 50% !important;
+        transform: translateY(-50%) translateX(-50%);
+        -webkit-transform: translateY(-50%) translateX(-50%);
+        transition: none;
+        -webkit-transition: none; }
+        #PlayerOne.ui-enabled.size-big #middleContainer.popover-opened .popover-container.opened.animated .popover:after, #PlayerOne.ui-enabled.size-medium #middleContainer.popover-opened .popover-container.opened.animated .popover:after, #PlayerOne.ui-enabled.size-small #middleContainer.popover-opened .popover-container.opened.animated .popover:after {
+          display: none; }
+  #PlayerOne.ui-enabled.size-big #ComponentsContainer.hovered #middleOverlay, #PlayerOne.ui-enabled.size-medium #ComponentsContainer.hovered #middleOverlay, #PlayerOne.ui-enabled.size-small #ComponentsContainer.hovered #middleOverlay {
+    opacity: 1; }
+  @media screen and (max-width: 240px) {
+    #PlayerOne.ui-enabled #bottomContainer {
+      display: none; } }
+  #PlayerOne.ui-enabled.size-small #bottomContainer {
+    display: none; }

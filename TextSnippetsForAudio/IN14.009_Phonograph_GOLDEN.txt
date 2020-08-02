@@ -1,0 +1,17 @@
+{
+  "taskID": "IN14.009",
+  "snippets": [
+    {
+      "trueRank":1,
+      "title":"Phonograph - Wikipedia.",
+      "tlDomain":"en.wikipedia.org",
+      "summary":"The phonograph was invented in 1877 by Thomas Edison. While other inventors had produced devices that could record sounds, Edison's phonograph was the first to be able to reproduce the recorded sound."
+    },
+    {
+      "trueRank":5,
+      "title":"History of the Cylinder Phonograph | History of Edison Sound...",
+      "tlDomain":"loc.gov",
+      "summary":"When one would speak into a mouthpiece, the sound vibrations would be indented ... Collection Inventing Entertainment: The Early Motion Pictures and Sound ..."
+    }
+  ]
+}

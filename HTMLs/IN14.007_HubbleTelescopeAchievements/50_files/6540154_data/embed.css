@@ -1,0 +1,393 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent; }
+
+td, th {
+  vertical-align: top; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+ins {
+  text-decoration: none; }
+
+del {
+  text-decoration: line-through; }
+
+a {
+  cursor: pointer; }
+
+body, html {
+  overflow: hidden;
+  height: 100%;
+  max-height: 100%;
+  width: 100%;
+  font-size: 100%;
+  background: #000; }
+
+#PlayerOne {
+  overflow: hidden;
+  height: 100%;
+  max-height: 100%;
+  width: 100%;
+  font-size: 100%;
+  background: #000; }
+
+#PlayerOne {
+  position: relative;
+  overflow: hidden;
+  height: 100%;
+  max-height: 100%;
+  width: 100%;
+  background: #000;
+  font-family: Arial,Helvetica,FreeSans,"Liberation Sans","Nimbus Sans L",sans-serif;
+  font-size: 12px;
+  line-height: 15px;
+  color: #303030; }
+  #PlayerOne .din,
+  #PlayerOne .hidden {
+    display: none; }
+  #PlayerOne.html-playback:not(.ui-controls-hidden) #ComponentsContainer {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0; }
+  #PlayerOne #EmbedViewer {
+    height: 100%;
+    width: 100%;
+    background: #000;
+    position: relative;
+    z-index: 0; }
+    #PlayerOne #EmbedViewer .viewer,
+    #PlayerOne #EmbedViewer .cover,
+    #PlayerOne #EmbedViewer .loading {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0; }
+    #PlayerOne #EmbedViewer .screen-content,
+    #PlayerOne #EmbedViewer .loading {
+      font-size: 1.3em; }
+    #PlayerOne #EmbedViewer .loading {
+      z-index: 4; }
+    #PlayerOne #EmbedViewer .brand {
+      z-index: 3; }
+    #PlayerOne #EmbedViewer .cover {
+      display: none;
+      z-index: 2; }
+    #PlayerOne #EmbedViewer .viewer {
+      z-index: 1; }
+
+body.lang-ko-KR #PlayerOne {
+  font-family: Malgun Gothic, Nanum Gothic, sans-serif; }
+
+#PlayerOne .watermark {
+  background: none;
+  background-position: 0 0 !important;
+  background-size: 100% 100%;
+  width: auto;
+  height: auto;
+  position: absolute;
+  z-index: 29; }
+
+#PlayerOne .watermark.ustream {
+  background: url(/v3/images/watermarks.png) no-repeat;
+  background-size: 103px 104px;
+  width: 103px;
+  height: 22px; }
+
+#PlayerOne .live .watermark.ustream {
+  height: 35px;
+  background-position: 0 0; }
+
+#PlayerOne .watermark.ustream.mobile {
+  background-position: 0 -35px;
+  height: 35px; }
+
+#PlayerOne .watermark.ustream.recorded {
+  background-position: 0 -70px;
+  height: 35px; }
+
+#PlayerOne .watermark.ustream.offline {
+  background-position: 0 0; }
+
+#PlayerOne .hideWatermark .watermark {
+  display: none !important; }
+
+#PlayerOne .watermark.align-0,
+#PlayerOne .watermark.align-1,
+#PlayerOne .watermark.align-2 {
+  top: 0; }
+
+#PlayerOne .watermark.align-6,
+#PlayerOne .watermark.align-7,
+#PlayerOne .watermark.align-8 {
+  bottom: 0; }
+
+#PlayerOne .watermark.align-0,
+#PlayerOne .watermark.align-3,
+#PlayerOne .watermark.align-6 {
+  left: 0; }
+
+#PlayerOne .watermark.align-2,
+#PlayerOne .watermark.align-5,
+#PlayerOne .watermark.align-8 {
+  right: 0; }
+
+#PlayerOne .watermark.align-3,
+#PlayerOne .watermark.align-5 {
+  top: 50%; }
+
+#PlayerOne .watermark.align-1,
+#PlayerOne .watermark.align-7 {
+  left: 50%; }
+
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min--moz-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) {
+  #PlayerOne .watermark.ustream {
+    background-image: url(/v3/images/watermarks_2x.png); }
+  #PlayerOne .is-retina {
+    height: 1px; } }
+
+#PlayerOne body.hidelayers .watermark {
+  display: none; }
+
+#PlayerOne #ViewInApp,
+#PlayerOne #ViewInChrome {
+  font-size: 1em; }
+
+#PlayerOne #EmbedViewer .loading {
+  text-align: center; }
+
+#PlayerOne #EmbedViewer .loading:before,
+#PlayerOne .screen-container:before {
+  content: '';
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle; }
+
+#PlayerOne .viewer .screen-content {
+  color: #fff;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
+  font-size: 1em;
+  line-height: 1.2em;
+  width: 70%;
+  box-sizing: border-box;
+  display: inline-block;
+  vertical-align: middle; }
+
+#PlayerOne .viewer .screen-content.screen-full {
+  width: 100%;
+  height: 100%; }
+
+#PlayerOne #EmbedViewer .loading {
+  background: rgba(0, 0, 0, 0.7); }
+
+#PlayerOne #EmbedViewer .loading div {
+  background: rgba(0, 0, 0, 0.3) url(/v5/images/site-loader-dark.gif) no-repeat center center;
+  background-size: 40px 40px;
+  display: inline-block;
+  vertical-align: middle;
+  width: 40px;
+  height: 40px;
+  box-shadow: 0 0 60px black;
+  border-radius: 20px; }
+
+#PlayerOne .screen-content h2 {
+  margin-bottom: 1.4em;
+  font-size: 1.6em; }
+
+#PlayerOne .screen-content p {
+  font-size: 1.2em; }
+
+#PlayerOne .screen-content form {
+  color: #fff;
+  font-size: 1.1em; }
+
+#PlayerOne .screen-content form input {
+  height: 1.5em;
+  font-size: 1em;
+  margin-bottom: .6em; }
+
+#PlayerOne #ViewInApp,
+#PlayerOne #ViewInChrome {
+  display: inline-block;
+  color: white;
+  -webkit-text-shadow: 0 1px 0 rgba(0, 0, 0, 0.3);
+  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.3);
+  background-color: #499AFF;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#499AFF), to(#2A7AFF));
+  background-image: -webkit-linear-gradient(top, #499AFF, #2A7AFF);
+  background-image: linear-gradient(to bottom, #499AFF, #2A7AFF);
+  font-family: "Helvetica Neue","Arial Narrow",Helvetica,Arial,sans-serif;
+  text-decoration: none;
+  white-space: nowrap;
+  padding: .5em 1em;
+  margin: 0 2px;
+  margin-top: 20px;
+  -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15);
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  display: inline-block;
+  cursor: pointer;
+  position: relative;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+#PlayerOne #ViewInChrome {
+  color: black;
+  background-color: #eeeeee;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(white), to(rgba(255, 255, 255, 0)));
+  background-image: -webkit-linear-gradient(top, white, rgba(255, 255, 255, 0));
+  background-image: -moz-linear-gradient(top, white, rgba(255, 255, 255, 0));
+  background-image: -o-linear-gradient(top, white, rgba(255, 255, 255, 0));
+  background-image: linear-gradient(to bottom, white, rgba(255, 255, 255, 0)); }
+
+@media all and (min-width: 600px) {
+  #PlayerOne .screen-content {
+    font-size: 1.1em; }
+  #PlayerOne #EmbedViewer .loading {
+    font-size: 1.1em; }
+  #PlayerOne #ViewInApp,
+  #PlayerOne #ViewInChrome {
+    font-size: .9em; } }
+
+@media all and (min-width: 480px) and (max-width: 600px) {
+  #PlayerOne .screen-content {
+    font-size: .9em; }
+  #PlayerOne #EmbedViewer .loading {
+    font-size: 1em; }
+  #PlayerOne #ViewInApp,
+  #PlayerOne #ViewInChrome {
+    font-size: .8em; } }
+
+@media all and (min-width: 320px) and (max-width: 479px) {
+  #PlayerOne .screen-content {
+    font-size: .8em; }
+  #PlayerOne #EmbedViewer .loading {
+    font-size: 1em; }
+  #PlayerOne #ViewInApp,
+  #PlayerOne #ViewInChrome {
+    font-size: .9em; } }
+
+@media all and (max-width: 319px) {
+  #PlayerOne .screen-content {
+    font-size: .7em; }
+  #PlayerOne #EmbedViewer .loading {
+    font-size: 1em; }
+  #PlayerOne #ViewInApp,
+  #PlayerOne #ViewInChrome {
+    font-size: 1.2em; } }
+
+#PlayerOne #EmbedViewer .viewer video {
+  background: #000;
+  display: block;
+  -webkit-transform-style: preserve-3d;
+  width: 100%;
+  height: 100%;
+  position: relative; }
+
+#PlayerOne #ViewerContainer.hidden {
+  visibility: hidden; }
+
+#PlayerOne #Loader {
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: auto 100%;
+  background-color: #000; }
+  #PlayerOne #Loader .play {
+    width: 130px;
+    height: 130px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -65px 0 0 -65px;
+    border: 1px solid rgba(255, 255, 255, 0.6);
+    background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, rgba(0, 0, 0, 0.3)), color-stop(1, rgba(255, 255, 255, 0.3)));
+    -webkit-border-radius: 2px;
+    border-radius: 2px;
+    box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.6);
+    -webkit-box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.6);
+    cursor: pointer; }
+  #PlayerOne #Loader .play:hover {
+    border: 1px solid white;
+    background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, rgba(0, 0, 0, 0.6)), color-stop(1, rgba(255, 255, 255, 0.6))); }
+
+#PlayerOne .redirect-container {
+  display: block;
+  height: 100%;
+  width: 100%;
+  background-position: center top;
+  background-size: auto 100%;
+  background-repeat: no-repeat; }
+
+#PlayerOne .large-play-cover {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  /*background: rgba(0,0,0,0.5); */ }
+
+#PlayerOne .large-play-button {
+  display: block;
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  top: 50%;
+  left: 50%;
+  margin: -30px 0 0 -30px;
+  cursor: pointer;
+  text-align: center;
+  line-height: 100px; }
+
+#PlayerOne iframe#Hashlock {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  border: none transparent; }
+
+#PlayerOne .screen-container.external-hashlock {
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch; }
+
+#PlayerOne .referrer-icon-container {
+  text-align: center; }
+
+#PlayerOne .debugger-button {
+  position: absolute;
+  z-index: 1000;
+  top: 0;
+  left: 0;
+  margin: 0; }

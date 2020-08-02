@@ -1,0 +1,151 @@
+.notifications {
+  margin-bottom: 0;
+}
+/* R3 */
+.notification {
+  display: block;
+  padding: 11px 15px 6px 15px;
+  margin-bottom: 10px;
+  line-height: 1em;
+  border-bottom: none;
+}
+/* R4 */
+.page .notification {
+  display: block;
+  padding: 12px 15px 12px 15px;
+  margin-bottom: 10px;
+  line-height: 1em;
+  border-bottom: none;
+}
+.notification + script + .notification {
+  margin-top: -10px;
+}
+.notification.browserSupport {
+  display: none;
+}
+.notification:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.notification a {
+  cursor: pointer;
+  text-decoration: underline;
+}
+.notification #general-message,
+.notification #emergency-message,
+.notification #browser-message {
+  float: left;
+  line-height: 1.4em;
+  font-size: 13px;
+}
+.notification #browser-message-close,
+.notification #general-message-close,
+.notification #emergency-message-close {
+  float: right;
+  line-height: 1.4em;
+}
+/* Warning */
+.notification.alert-warning {
+  color: #555 !important;
+  background-color: #fcd299;
+  /*border-bottom:2px solid #ffeda4;*/
+}
+.notification.alert-warning #browser-detection-message,
+.notification.alert-warning a,
+.notification.alert-warning h1,
+.notification.alert-warning h2,
+.notification.alert-warning h3,
+.notification.alert-warning h4,
+.notification.alert-warning p {
+  color: #000;
+}
+/* Emergency */
+.alert-emergency {
+  color: #FFF  !important;
+  background-color: #fa4616;
+  /*border-bottom:2px solid #ca4b53;*/
+}
+/* Warning */
+.alert-warning {
+  color: #000  !important;
+  background-color: #fcd299;
+}
+/* Information */
+.alert-info {
+  color: #FFF  !important;
+  background-color: #10a3c8;
+}
+/* OVERRIDES for Notifications */
+/* Emergency */
+.override-arbutus {
+  color: #FFF  !important;
+  background-color: #fa4616;
+  /*border-bottom:2px solid #ca4b53;*/
+}
+/* Warning */
+.override-quartz {
+  color: #000  !important;
+  background-color: #fcd299;
+}
+/* Information */
+.override-sea {
+  color: #FFF  !important;
+  background-color: #10a3c8;
+}
+.notification,
+.notification a,
+.notification h1,
+.notification h2,
+.notification h3,
+.notification h4,
+.notification p {
+  font-family: brand-font-bold;
+  font-size: 14px;
+}
+.notification.alert-emergency #browser-detection-message,
+.notification.alert-emergency a,
+.notification.alert-emergency h1,
+.notification.alert-emergency h2,
+.notification.alert-emergency h3,
+.notification.alert-emergency h4,
+.notification.alert-emergency p {
+  color: #FFF;
+}
+/* Success */
+.notification.alert-success {
+  color: #FFF  !important;
+  background-color: #5ab848;
+  /*border-bottom:2px solid #5ab848;*/
+}
+.notification.alert-success #browser-detection-message,
+.notification.alert-success a,
+.notification.alert-success h1,
+.notification.alert-success h2,
+.notification.alert-success h3,
+.notification.alert-success h4,
+.notification.alert-success p {
+  color: #FFF;
+}
+.notification.alert-info #browser-detection-message,
+.notification.alert-info a,
+.notification.alert-info h1,
+.notification.alert-info h2,
+.notification.alert-info h3,
+.notification.alert-info h4,
+.notification.alert-info p {
+  color: #FFF;
+}
+#browser-message p,
+#general-message p,
+#emergency-message p {
+  margin: 0;
+  padding: 0;
+  float: left;
+}
+.notification i {
+  float: left;
+  padding-right: 8px;
+  padding-top: 3px;
+  color: #fff;
+}

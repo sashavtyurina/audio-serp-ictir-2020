@@ -1,0 +1,35 @@
+{
+  "taskID": "IN14.140",
+  "snippets": [
+    {
+      "trueRank":1,
+      "title":"In Depth | Magellan – NASA Solar System Exploration.",
+      "tlDomain":"solarsystem.nasa.gov",
+      "summary":"NASA's real-time science encyclopedia of deep space exploration. ... Magellan was the first planetary spacecraft launched from the Space Shuttle. ... manifest into the 1990s, which included a number of planetary missions. ... A new study reveals asteroid impacts on ancient Mars could have produced key ..."
+    },
+    {
+      "trueRank":5,
+      "title":"What planet did the spacecraft Magellan enable scientists to ...",
+      "tlDomain":"answers.com",
+      "summary":"Venus was the planet that the spacecraft Magellan enabled scientists to research extensively."
+    },
+    {
+      "trueRank":10,
+      "title":"magellan radar mapping: Topics by Science.gov.",
+      "tlDomain":"science.gov.",
+      "summary":"An artist's concept of the Magellan spacecraft making a radar map of Venus. .... the Planetary Data System (PDS) and the National Space Science Data Center ..... The obtained soil moisture maps of the territories of research, as well as the ...... Products enabled by this new system include topographic mapping through radar ..."
+    },
+    {
+      "trueRank":50,
+      "title":"Space Invaders: How Robotic Spacecraft Explore the Solar System ... ",
+      "tlDomain":"epdf.tips",
+      "summary":"T he Spacecraft Garage Keep it Clean Planetary Protection Shake, Rattle 'n' Roll ... True, we have set foot on the Moon, but the last time we did that was well over 30 ...... Scientists may want to study the composition of those beautiful rings of ...... Apart from enabling missions to the dark outer reaches of the Solar System, ..."
+    },
+    {
+      "trueRank":100,
+      "title":"Mapping the deep, and the real story behind the \"95% unexplored ... ",
+      "tlDomain":"moocs.southampton.ac.uk",
+      "summary":"NASA's Magellan spacecraft mapped 98 percent of the surface of Venus ... 60 percent of that planet has now been mapped at ~20 m resolution."
+    }
+  ]
+}

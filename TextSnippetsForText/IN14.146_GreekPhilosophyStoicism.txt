@@ -1,0 +1,36 @@
+{
+  "taskID": "IN14.146",
+  "query": "Greek, philosophy, stoicism",
+  "snippets": [
+    {
+      "trueRank":1,
+      "title":"Stoicism - Wikipedia ",
+      "url":"https://en.wikipedia.org/wiki/Stoicism",
+      "summary":"Stoicism is a school of Hellenistic philosophy founded by Zeno of Citium in  Athens in the early ... Stoicism flourished throughout the Roman and Greek world  until the 3rd century AD, and among its adherents was Emperor Marcus Aurelius."
+    },
+    {
+      "trueRank":5,
+      "title":"The philosophy of Stoicism - Massimo Pigliucci - YouTube ",
+      "url":"https://www.youtube.com/watch?v=R9OCA6UFE-0",
+      "summary":"min - Uploaded by TED-EdView full lesson: http://ed.ted.com/lessons/the-philosophy-of-stoicism-massimo- pigliucci What ..."
+    },
+    {
+      "trueRank":10,
+      "title":"Stoicism 101: An introduction to Stoicism, Stoic Philosophy and the ... ",
+      "url":"https://www.holstee.com/blogs/mindful-matter/stoicism-101-everything-you-wanted-to-know-about-stoicism-stoic-philosophy-and-the-stoics",
+      "summary":"Stoicism is a school of philosophy that hails from ancient Greece and Rome in  the early parts of the 3rd century, BC. It is a philosophy of life that maximizes ..."
+    },
+    {
+      "trueRank":50,
+      "title":"The Greek philosophy of Stoicism – EQB ",
+      "url":"https://www.eqb.works/the-greek-philosophy-of-stoicism/",
+      "summary":"It is a book about the ancient Greek philosophy of Stoicism, the goal of which is to  attain inner peace, i.e. a state marked by the absence of ..."
+    },
+    {
+      "trueRank":100,
+      "title":"Chief Rabbi Lord Sacks is too harsh on Greek philosophy ",
+      "url":"http://www.philosophyforlife.org/rabbi-sacks-is-too-harsh-on-greek-philosophy/",
+      "summary":"Stoics believe we are on Earth to develop our consciousness and reason and  bring them into harmony with the Logos. As the Stoic philosopher ..."
+    }
+  ]
+}

@@ -1,0 +1,64 @@
+@charset "UTF-8";
+/**
+ * "Yet Another Multicolumn Layout" - (X)HTML/CSS framework
+ * (en) stylesheet for screen layout
+ * (de) Stylesheet für das Bildschirm-Layout
+ *
+ * @creator       YAML Builder V1.2 (http://builder.yaml.de)
+ * @file          basemod.css
+ * @-yaml-minver  3.2
+ */
+
+@media screen, projection
+{
+  /** 
+   * (en) Forcing vertical scrollbars in IE8, Firefox, Webkit & Opera 
+   * (de) Erzwingen vertikaler Scrollbalken in IE8, Firefox, Webkit & Opera 
+   *
+   * @workaround
+   * @affected IE8, FF, Webkit, Opera
+   * @css-for all
+   * @valid CSS3
+   */
+
+  body { overflow-y: scroll; }
+
+  /*-------------------------------------------------------------------------*/
+
+  /* (en) Marginal areas & page background */
+  /* (de) Randbereiche & Seitenhintergrund */
+  body {
+	color:#444444;
+  }
+
+  /* Layout Alignment | Layout-Ausrichtung */
+  .page_margins { margin: 0 auto; }
+
+  /* Layout Properties | Layout-Eigenschaften */
+  .page_margins { width: 980px; background: #fff; }
+  .page { padding:0; background: #fafafa;}
+  #header { margin-top:14px; color: #000; }
+  #main { margin:10px 0 0 0; background: #fafafa; padding:0;
+  border-left:1px solid #D3D3D3; border-right:1px solid #D3D3D3; border-top:1px solid #D3D3D3; }
+  #teaser { clear:both; margin: 5px 0; height:160px;/* background:url(../../images/header_background.jpg) no-repeat scroll 50% 100% #fafafa;*/ }
+  #footer { padding:0 10px 10px 0; color:#666; background: #131313; border-top: 5px solid #DEDEDE; }
+
+  /*-------------------------------------------------------------------------*/
+
+  /**
+   * (en) Formatting content container
+   * (de) Formatierung der Inhalts-Container
+   *
+   */
+
+  #col1 { float: left; width: 25%}
+  #col2 { display:none}
+  #col3 { width: auto; margin: 0 0 0 25%}
+  #col1_content { padding:0; }
+  #col3_content { padding:0; border-left:1px solid #D3D3D3;}
+  #col3_inside { padding: 20px 30px;}
+  .node { text-align:justify;}
+  #blockfooter {margin: 10px ;}
+	
+  /*-------------------------------------------------------------------------*/
+}

@@ -1,0 +1,35 @@
+{
+  "taskID": "IN14.002",
+  "snippets": [
+    {
+      "trueRank":1,
+      "title":"Marine Vegetation | Regional Activity Centre for Specially Protected.",
+      "tlDomain":"rac-spa.org",
+      "summary":"Marine Vegetation. Introduction. Preparation and adoption of the Action Plan. Evaluation of the implementation of the Action Plan. Amendment of Annex II of ..."
+    },
+    {
+      "trueRank":5,
+      "title":"Marine vegetation analysis for the determination of ... - Science Direct.",
+      "tlDomain":"sciencedirect.com",
+      "summary":"In this study, different species of marine vegetation (algae and seaweed) were  collected in three different geographical areas, covering the ..."
+    },
+    {
+      "trueRank":10,
+      "title":"Guide to nominating threatened fish and marine vegetation.",
+      "tlDomain":"dpi.nsw.gov.au",
+      "summary":"Introduction. Biodiversity conservation includes the careful management of  animal and plant species that are threatened with extinction by human activities."
+    },
+    {
+      "trueRank":50,
+      "title":"4th Mediterranean Symposium on Marine Vegetation, Hammamet ...",
+      "tlDomain":"medwet.org",
+      "summary":"The 4th Mediterranean Symposium on Marine Vegetation will take place in  Hammamet, Tunisia, from the 2nd to the 4th of December 2010."
+    },
+    {
+      "trueRank":100,
+      "title":"Marine Vegetation Licence Regulations (Legal Notice 66 of 1997 ... ",
+      "tlDomain":"informea.org",
+      "summary":"A licence granted by the Department of Fisheries and  Aquaculture is compulsory  for fishing and for the cultivation of marine plants, as well as for using a fishing ..."
+    }
+  ]
+}

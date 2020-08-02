@@ -1,0 +1,2734 @@
+<!DOCTYPE html>
+<html class="no-js wf-ffmetaserifwebpro-n7-active wf-ffmetaserifwebpro-n5-active wf-ffmetaserifwebpro-n6-active wf-ffmetaserifwebpro-n3-active wf-active" dir="ltr" prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb#" lang="en-US"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge"><script src="50_files/nr-1130.js"></script><script async="" src="50_files/obtp.js" type="text/javascript"></script><script type="text/javascript" async="" src="50_files/insight.js"></script><script async="" src="50_files/fbevents.js"></script><script type="text/javascript" async="" src="50_files/bat.js"></script><script id="twitter-wjs" src="50_files/widgets.js"></script><script type="text/javascript" async="" src="50_files/recaptcha__en.js"></script><script type="text/javascript" async="" src="50_files/mixpanel-2.js"></script><script async="" src="50_files/analytics.js"></script><script src="50_files/kgg2svk.js" async=""></script><script type="text/javascript" async="" src="50_files/lio.js"></script><script async="" src="50_files/gtm.js"></script><script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,n,t){function r(t){if(!n[t]){var o=n[t]={exports:{}};e[t][0].call(o.exports,function(n){var o=e[t][1][n];return r(o||n)},o,o.exports)}return n[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<t.length;o++)r(t[o]);return r}({1:[function(e,n,t){function r(){}function o(e,n,t){return function(){return i(e,[c.now()].concat(u(arguments)),n?null:this,t),n?void 0:this}}var i=e("handle"),a=e(3),u=e(4),f=e("ee").get("tracer"),c=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],d="api-",l=d+"ixn-";a(p,function(e,n){s[n]=o(d+n,!0,"api")}),s.addPageAction=o(d+"addPageAction",!0),s.setCurrentRouteName=o(d+"routeName",!0),n.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,n){var t={},r=this,o="function"==typeof n;return i(l+"tracer",[c.now(),e,t],r),function(){if(f.emit((o?"":"no-")+"fn-start",[c.now(),r,o],t),o)try{return n.apply(this,arguments)}catch(e){throw f.emit("fn-err",[arguments,this,e],t),e}finally{f.emit("fn-end",[c.now()],t)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,n){m[n]=o(l+n)}),newrelic.noticeError=function(e,n){"string"==typeof e&&(e=new Error(e)),i("err",[e,c.now(),!1,n])}},{}],2:[function(e,n,t){function r(e,n){if(!o)return!1;if(e!==o)return!1;if(!n)return!0;if(!i)return!1;for(var t=i.split("."),r=n.split("."),a=0;a<r.length;a++)if(r[a]!==t[a])return!1;return!0}var o=null,i=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var u=navigator.userAgent,f=u.match(a);f&&u.indexOf("Chrome")===-1&&u.indexOf("Chromium")===-1&&(o="Safari",i=f[1])}n.exports={agent:o,version:i,match:r}},{}],3:[function(e,n,t){function r(e,n){var t=[],r="",i=0;for(r in e)o.call(e,r)&&(t[i]=n(r,e[r]),i+=1);return t}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],4:[function(e,n,t){function r(e,n,t){n||(n=0),"undefined"==typeof t&&(t=e?e.length:0);for(var r=-1,o=t-n||0,i=Array(o<0?0:o);++r<o;)i[r]=e[n+r];return i}n.exports=r},{}],5:[function(e,n,t){n.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,n,t){function r(){}function o(e){function n(e){return e&&e instanceof r?e:e?f(e,u,i):i()}function t(t,r,o,i){if(!d.aborted||i){e&&e(t,r,o);for(var a=n(o),u=v(t),f=u.length,c=0;c<f;c++)u[c].apply(a,r);var p=s[y[t]];return p&&p.push([b,t,r,a]),a}}function l(e,n){h[e]=v(e).concat(n)}function m(e,n){var t=h[e];if(t)for(var r=0;r<t.length;r++)t[r]===n&&t.splice(r,1)}function v(e){return h[e]||[]}function g(e){return p[e]=p[e]||o(t)}function w(e,n){c(e,function(e,t){n=n||"feature",y[t]=n,n in s||(s[n]=[])})}var h={},y={},b={on:l,addEventListener:l,removeEventListener:m,emit:t,get:g,listeners:v,context:n,buffer:w,abort:a,aborted:!1};return b}function i(){return new r}function a(){(s.api||s.feature)&&(d.aborted=!0,s=d.backlog={})}var u="nr@context",f=e("gos"),c=e(3),s={},p={},d=n.exports=o();d.backlog=s},{}],gos:[function(e,n,t){function r(e,n,t){if(o.call(e,n))return e[n];var r=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,n,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[n]=r,r}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],handle:[function(e,n,t){function r(e,n,t,r){o.buffer([e],r),o.emit(e,n,t)}var o=e("ee").get("handle");n.exports=r,r.ee=o},{}],id:[function(e,n,t){function r(e){var n=typeof e;return!e||"object"!==n&&"function"!==n?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");n.exports=r},{}],loader:[function(e,n,t){function r(){if(!E++){var e=x.info=NREUM.info,n=l.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&n))return s.abort();c(y,function(n,t){e[n]||(e[n]=t)}),f("mark",["onload",a()+x.offset],null,"api");var t=l.createElement("script");t.src="https://"+e.agent,n.parentNode.insertBefore(t,n)}}function o(){"complete"===l.readyState&&i()}function i(){f("mark",["domContent",a()+x.offset],null,"api")}function a(){return O.exists&&performance.now?Math.round(performance.now()):(u=Math.max((new Date).getTime(),u))-x.offset}var u=(new Date).getTime(),f=e("handle"),c=e(3),s=e("ee"),p=e(2),d=window,l=d.document,m="addEventListener",v="attachEvent",g=d.XMLHttpRequest,w=g&&g.prototype;NREUM.o={ST:setTimeout,SI:d.setImmediate,CT:clearTimeout,XHR:g,REQ:d.Request,EV:d.Event,PR:d.Promise,MO:d.MutationObserver};var h=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1130.min.js"},b=g&&w&&w[m]&&!/CriOS/.test(navigator.userAgent),x=n.exports={offset:u,now:a,origin:h,features:{},xhrWrappable:b,userAgent:p};e(1),l[m]?(l[m]("DOMContentLoaded",i,!1),d[m]("load",r,!1)):(l[v]("onreadystatechange",o),d[v]("onload",r)),f("mark",["firstbyte",u],null,"api");var E=0,O=e(5)},{}]},{},["loader"]);</script><script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","queueTime":0,"licenseKey":"9c8be68c12","agent":"","transactionName":"ZVJSZRFXWUVWABJbX1wYdkQNVUNfWA1JXFVFRB5HClNARQ0NA0VDbVNVRQJfWw==","applicationID":"1793432","errorBeacon":"bam.nr-data.net","applicationTime":627}</script>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+
+        
+        
+
+        
+
+        
+        
+        
+        
+            <title>Canada's next tallest tower is ready to rise in Toronto | Construction Dive</title>
+        
+
+        
+            <meta name="description" content="
+                    Construction industry news, trends and jobs for building professionals who want mobile-friendly content.">
+        
+
+        
+            <meta name="sailthru.tags" content="construction,type-newspost,construction-commercial,construction-residential,construction-design">
+        
+
+        
+
+        
+            <meta property="fb:pages" content="759050407538750">
+        
+
+        
+            
+            <script>
+                window.dive_location = "NonEU";
+                window.dive_limit_data_processing = false;
+                
+                
+            </script>
+        
+
+        
+
+
+        <!-- ====== FAVICONS ======= -->
+        
+            <!-- regular favicons -->
+            <link rel="shortcut icon" type="image/png" href="https://www.constructiondive.com/static/images/favicons/favicon.ico?550216110918">
+            <link rel="shortcut icon" type="image/png" sizes="16x16" href="https://www.constructiondive.com/static/images/favicons/favicon-16.png?550216110918">
+            <link rel="shortcut icon" type="image/png" sizes="32x32" href="https://www.constructiondive.com/static/images/favicons/favicon-32.png?550216110918">
+            <link rel="shortcut icon" type="image/png" sizes="96x96" href="https://www.constructiondive.com/static/images/favicons/favicon-96.png?550216110918">
+            <!-- apple touch favicon icons -->
+            <link rel="apple-touch-icon-precomposed" sizes="57x57" href="https://www.constructiondive.com/static/images/favicons/apple-touch-icon-57.png?550216110918">
+            <link rel="apple-touch-icon-precomposed" sizes="60x60" href="https://www.constructiondive.com/static/images/favicons/apple-touch-icon-60.png?550216110918">
+            <link rel="apple-touch-icon-precomposed" sizes="72x72" href="https://www.constructiondive.com/static/images/favicons/apple-touch-icon-72.png?550216110918">
+            <link rel="apple-touch-icon-precomposed" sizes="76x76" href="https://www.constructiondive.com/static/images/favicons/apple-touch-icon-76.png?550216110918">
+            <link rel="apple-touch-icon-precomposed" sizes="114x114" href="https://www.constructiondive.com/static/images/favicons/apple-touch-icon-114.png?550216110918">
+            <link rel="apple-touch-icon-precomposed" sizes="144x144" href="https://www.constructiondive.com/static/images/favicons/apple-touch-icon-144.png?550216110918">
+            <link rel="apple-touch-icon-precomposed" sizes="152x152" href="https://www.constructiondive.com/static/images/favicons/apple-touch-icon-152.png?550216110918">
+            <link rel="apple-touch-icon-precomposed" sizes="180x180" href="https://www.constructiondive.com/static/images/favicons/apple-touch-icon-180.png?550216110918">
+            <!-- ms tile favicon icons -->
+            <meta name="msapplication-TileColor" content="#ffffff">
+            <meta name="theme-color" content="#ffffff">
+            <meta name="msapplication-TileImage" content="/static/images/favicons/ms-tile-144.png?550216110918">
+        
+
+        
+            <link rel="alternate" type="application/rss+xml" title="Latest News Feed" href="https://www.constructiondive.com/feeds/news/">
+        
+        
+            <link rel="canonical" href="https://www.constructiondive.com/news/canadas-next-tallest-tower-is-ready-to-rise-in-toronto/506915/">
+
+            
+            
+
+        
+        
+    
+    <meta name="title" content="Canada's next tallest tower is ready to rise in Toronto">
+    <meta name="medium" content="news">
+    <meta name="date" content="2017-10-10">
+
+
+    
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:domain" content="Construction Dive">
+    
+        <meta name="twitter:site" content="@constructdive">
+    
+
+    
+    <meta property="og:title" name="og:title" content="Canada's next tallest tower is ready to rise in Toronto">
+    <meta property="og:site_name" name="og:site_name" content="Construction Dive">
+    <meta property="og:type" name="og:type" content="article">
+    <meta name="article_date_original" content="Tuesday, October 10, 2017, 09:04 AM">
+    <meta property="og:url" name="og:url" content="https://www.constructiondive.com/news/canadas-next-tallest-tower-is-ready-to-rise-in-toronto/506915/">
+    
+        
+        
+        
+        
+        <meta property="og:image" name="og:image" content="https://www.constructiondive.com/user_media/cache/74/88/74883d0b4a948ce77322920f8c9bd048.jpg">
+        
+    
+    
+        <meta property="og:description" name="og:description" content="The 1,003-foot-tall structure will beat other inhabitable buildings in the city, though it will fall&nbsp;short of the CN communications and observation tower nearby.
+">
+    
+
+    
+    
+    <meta name="sailthru.date" content="2017-10-10T09:04:02">
+    <meta name="sailthru.expire_date" content="2027-09-28T09:04:02">
+    
+      <meta name="sailthru.author" content="Kim Slowey">
+    
+    
+        
+            
+                <meta name="sailthru.image.full" content="https://www.constructiondive.com/user_media/cache/3d/64/3d6408bf45d6c1fe702b55c208aca7e3.jpg"> <!-- 770x364 -->
+            
+        
+        
+            
+                <meta name="sailthru.image.thumb" content="https://www.constructiondive.com/user_media/cache/4a/38/4a383f1d95330b83ecc441a2830446f7.jpg"> <!-- 106x50 -->
+            
+        
+    
+    
+    
+    
+        <meta name="sailthru.description" content="The 1,003-foot-tall structure will beat other inhabitable buildings in the city, though it will fall&nbsp;short of the CN communications and observation tower nearby.
+">
+    
+
+    
+    
+
+
+        
+            <meta name="google-site-verification" content="8W5WjnN-HKueLWx3QpGmnDas1e_wjGrb_x382rUSMp0">
+        
+
+        
+        
+        <link rel="stylesheet" href="50_files/dive_app.css">
+        <link rel="stylesheet" media="print" href="50_files/print.css">
+
+        
+        
+
+
+<script src="50_files/loglevel.js"></script>
+<script>
+window.diveLog = log.noConflict();
+diveLog.setDefaultLevel('warn');
+</script>
+
+        
+<script src="50_files/bugsnag.js"></script>
+<script>
+    window.bugsnagClient = bugsnag({
+        apiKey: 'b78c0f8dcaa1b7ff5fb5bdf5f2a110db',
+        releaseStage: 'production',
+        notifyReleaseStages: [ 'qa', 'production' ],
+        collectUserIp: false,
+        user: {
+    
+            id: "anonymous",
+            name: "",
+    
+        }
+    })
+</script>
+
+
+        
+            <!-- Google Tag Manager -->
+            <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+            new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+            j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+            'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+            })(window,document,'script','dataLayer','GTM-TW2HL59');</script>
+            <!-- End Google Tag Manager -->
+        
+
+        
+        
+        <!--[if lt IE 10]>
+            <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+        <![endif]-->
+        <!--[if gte IE 10]><!-->
+            <script src="50_files/jquery-2.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+
+            
+            <script>
+            window.jQuery || document.write('<script src="/static/js/jquery_224.min.js"><\/script>')
+            </script>
+
+            
+
+<script>
+    
+    // waitForTriggerHandler() is library for queuing up javascript to be stored and then executed when a trigger
+    // function is called. You can push() any number of functions which will be stored unless and until trigger()
+    // is called. Once trigger() is called any future functions that you push() in will be executed immediately.
+    // It is safe to call .trigger() multiple times. Any arguments passed to .trigger() will also be passed along
+    // to the associated function
+
+    function waitForTriggerHandler() {
+        var function_queue = [];
+        var trigger_arguments = [];
+        this._triggered = false;
+
+        this.push = function(fn) {
+            if (this._triggered) {
+                // just run it immediately if handler has already been triggered
+                fn.apply(null, trigger_arguments);
+            }
+            else {
+                // otherwise add to the queue to run later
+                function_queue.push(fn);
+            }
+        };
+
+        this.trigger = function() {
+            // any arguments passed to trigger(foo, bar, baz) will also be passed along to functions in the queue
+
+            // first convert any arguments to an array
+            trigger_arguments = Array.prototype.slice.call(arguments);
+            while (function_queue.length){
+                // for each function in the queue, pop it off and then execute it while passing in any
+                // args that may have been passed to trigger().
+                function_queue.pop().apply(null, trigger_arguments);
+                // The "null" above is for the value of "this".
+                // See https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function/apply#Parameters
+            }
+            this._triggered = true;
+        }
+
+    }
+    
+    // set up waitToLoadAds handler
+    window.waitToLoadAds = new waitForTriggerHandler();
+    // We set up the triggers for this below, they depend on whether we're loading lytics on the page
+</script>
+
+
+
+    <script type="text/javascript">
+        // This token is here for test_lytics_snippet.py test: lytics-is-enabled
+        
+        window.googletag = window.googletag || {};
+        googletag.cmd = googletag.cmd || [];
+
+        // initialize callback (source: https://learn.lytics.com/product-docs/lytics-javascript-tag/receiving-data-from-lytics)
+        !function (l, a) { a.liosetup = a.liosetup || {}, a.liosetup.callback = a.liosetup.callback || [], a.liosetup.addEntityLoadedCallback = function (l, o) { if ("function" == typeof a.liosetup.callback) { var i = []; i.push(a.liosetup.callback), a.liosetup.callback = i } a.lio && a.lio.loaded ? l(a.lio.data) : o ? a.liosetup.callback.unshift(l) : a.liosetup.callback.push(l) } }(document, window);
+
+
+        // custom init + lytics default install tag from https://activate.getlytics.com/connect?aid=2751
+        // see https://learn.lytics.com/understanding/product-docs/lytics-javascript-tag/configuration#configuration-options
+        
+            var lyticsCid = '44fda7674f94228540d8fba6786f9770';
+            diveLog.warn('You are using the Lytics Prod account');
+        
+
+        var lytics_init_options = {
+            cid: lyticsCid,
+            url: "//c.lytics.io",
+            min: true,
+            loadid: true
+        };
+        window.jstag=function(){function t(t){return function(){return t.apply(this,arguments),this}}function n(){var n=["ready"].concat(c.call(arguments));return t(function(){n.push(c.call(arguments)),this._q.push(n)})}var i={_q:[],_c:{},ts:(new Date).getTime(),ver:"2.0.0"},c=Array.prototype.slice;return i.init=function(t){return i._c=t,t.synchronous||i.loadtagmgr(t),this},i.loadtagmgr=function(t){var n=document.createElement("script");n.type="text/javascript",n.async=!0,n.src=t.url+"/api/tag/"+t.cid+"/lio.js";var i=document.getElementsByTagName("script")[0];i.parentNode.insertBefore(n,i)},i.ready=n(),i.send=n("send"),i.mock=n("mock"),i.identify=n("identify"),i.pageView=n("pageView"),i.bind=t(function(t){i._q.push([t,c.call(arguments,1)])}),i.block=t(function(){i._c.blockload=!0}),i.unblock=t(function(){i._c.blockload=!1}),i}(),window.jstag.init(lytics_init_options);
+
+        
+        (function(){
+            var sailthru_cookie, sailthru_user_id;
+            function read_cookie(cookieName) {
+              var re = new RegExp('[; ]'+cookieName+'=([^\\s;]*)');
+              var sMatch = (' '+document.cookie).match(re);
+              if (cookieName && sMatch) return unescape(sMatch[1]);
+              return '';
+            }
+            sailthru_cookie = read_cookie('sailthru_hid');
+            if (sailthru_cookie.length > 56) {
+              sailthru_user_id = sailthru_cookie.slice(32,56);
+              jstag.send({ st_profile_id: sailthru_user_id });
+            }
+        })();
+
+        
+        
+        
+        
+        window.liosetup.addEntityLoadedCallback(waitToLoadAds.trigger);  // trigger ads when lytics loads
+        setTimeout(waitToLoadAds.trigger, 1000);  // also trigger lytics if it's taking too long
+
+        
+        
+        waitToLoadAds.push(function (lytics_data) {
+            // lytics_data won't be defined if lytics failed to load correctly. In that case
+            // we don't need to set any segments.
+            if (lytics_data && lytics_data.segments) {
+                googletag.cmd.push(function() {
+                    googletag.pubads().setTargeting("LyticsSegments", lytics_data.segments);
+                });
+            }
+        });
+
+    </script>
+
+
+
+            
+                
+
+<script type="text/javascript" src="50_files/mailcheck.js"></script>
+<script type="text/javascript" src="50_files/dive_mailcheck.js"></script>
+
+            
+
+            
+            
+                <script>
+                    (function(d) {
+                        var config = {
+                            kitId: 'kgg2svk',
+                            scriptTimeout: 6000,
+                            async: true
+                        },
+                        h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+                    })(document);
+                </script>
+            
+        <!--<![endif]-->
+
+        
+        <script src="50_files/app.js"></script>
+
+        
+            <script type="text/javascript">
+                var divecounter_settings = {};
+                
+                    divecounter_settings.showSignupAd = true;
+                
+                
+            </script>
+        
+        <script type="text/javascript" src="50_files/divecounter.js"></script>
+
+        <script type="text/javascript">
+        // Special unbounce signup thing for google traffic. Test with ?test_unbounce in the URL
+        // Note: divecounter must already be loaded. Only enabled on pages that would normally have signup ads
+        // Note: showSignupAd is always off if prestitial is enabled!
+        if ((typeof divecounter !== "undefined") && ($(window).width() > 640)) {
+          var test_unbounce = (window.location.href.indexOf("?test_unbounce")>=0);
+          var force_unbounce = (window.location.href.indexOf("signupbounce=1")>=0) ||
+                                (window.location.href.indexOf("utm_campaign=Linked-HR")>=0) ||
+                                (window.location.href.indexOf("utm_source=outbrain")>=0);
+          if (test_unbounce ||
+            force_unbounce ||
+            (document.referrer.match(/^https?:\/\/(www\.google\.|news\.google\.|t\.co|twitter\.com|www\.facebook\.com)/i) &&
+              divecounter.getOption('showSignupAd') && divecounter.canShow(1,1)) ) {
+            // dyanmically load ouibounce.js only on pages where its needed
+            $.getScript("/static/js/ouibounce.min.js?550216110918", function(){
+                // Once ouibounce.js loads, call the script
+                // We're reusing divecounter's modal instead of OuiBounce's modal code (that's why we pass it 'false')
+                var _ouibounce = ouibounce(false, {
+                  aggressive: test_unbounce, // ignore cookie in test mode
+                  cookieName: '_viewedOuiBounce', // underscored cookies should be ignored by Varnish
+                  callback: function() {
+                    divecounter_open_ad('Unbounce');
+                  }
+                });
+            });
+          } // end should show unbounce
+        } // end divecounter defined
+        </script>
+
+        
+            
+
+
+
+    <script type="text/javascript" src="50_files/urlCleaner.js"></script>
+    <script type="text/javascript">
+        // We always send to two properties: the individual site and the aggregate
+        // essentially the pageUrlSemaphore count is how many things need the UTM querystring, and those UTM params
+        // were getting dropped between the calls to GA orig.send and agg.send for google analytics because it was
+        // only incrementing by 1. We should make sure to increment this by the proper amount if we add other calls in the future
+        
+            window.urlCleaner.pageUrlSemaphore += 2;
+        
+
+        
+            window.urlCleaner.pageUrlSemaphore++;
+        
+    </script>
+
+    
+        <script type="text/javascript">
+            // Load analytics.js (universal analytics) first
+            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+            })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+            // set all the variables that are per-session or per-visit
+            
+                ga(
+                    'create',
+                    'UA-19684343-5',
+                    'auto',
+                    {'name': 'orig'},
+                    {'siteSpeedSampleRate': 2}
+                );
+            
+
+            
+            
+                ga('orig.require', 'GTM-WRJLD4D');
+            
+
+            // Set the same variables for aggregate data profile
+            ga(
+                'create',
+                'UA-19684343-45',
+                'auto',
+                {'name': 'agg'},
+                {'siteSpeedSampleRate': 2}
+            );
+
+            //GA.js for tracking outbound links
+            function trackOutboundLink(link, category, action, redirect) {
+                try{
+                    ga('orig.send', 'event', category, action, {
+                        hitCallback: function() {
+                            window.urlCleaner.attemptCleanUrl();
+                        }
+                    });
+                } catch(err) {}
+
+                try{
+                    ga('agg.send', 'event', category, action, {
+                        hitCallback: function() {
+                            window.urlCleaner.attemptCleanUrl();
+                        }
+                    });
+                } catch(err) {}
+
+                //Timer to prevent redirect before processing data - not necessary if opening tab in new window
+                if(redirect){
+                    setTimeout(function(){
+                        document.location.href = link.href;
+                        }, 100);
+                }
+            }
+            $(document).ready(function() {
+              $(".outboundlink").click(function() {
+                trackOutboundLink(this, 'outboundlink', this.link, this.target != '_blank');
+              });
+            });
+            
+                
+                    ga("orig.set", {
+                        "dimension3": "Kim Slowey",
+                        "dimension4": "Oct 10, 2017",
+                        "dimension5": "Commercial Building, Residential Building, Design",
+                        "dimension6": "",
+                        "dimension7": "20171010",
+                        "dimension8": "Brief",
+                        
+                        
+                        "dimension11": "False",
+                        
+                    });
+                
+                
+                    ga("agg.set", {
+                        "dimension3": "Kim Slowey",
+                        "dimension7": "Oct 10, 2017",
+                        "dimension5": "Commercial Building, Residential Building, Design",
+                        "dimension6": "",
+                        "dimension4": "20171010",
+                        "dimension8": "Brief",
+                        
+                        
+                        "dimension11": "False",
+                        
+                    });
+                
+            
+
+            
+            
+                var diveSendPageviewEvent = true;
+            
+
+            
+            if (diveSendPageviewEvent === true) {
+                ga('orig.send', 'pageview', {
+                    'hitCallback': function() {
+                        window.urlCleaner.attemptCleanUrl();
+                    }
+                });
+                ga('agg.send', 'pageview', {
+                    'hitCallback': function() {
+                        window.urlCleaner.attemptCleanUrl();
+                    }
+                });
+
+                diveLog.info('Queued sending of the pageview event to Google Analytics.');
+            }
+            else{
+                diveLog.warn('Sending the Google Analytics pageview event is disabled for this page.');
+            }
+
+            // Actually track outbound links
+            // Not sure if this is being used?
+            var trackOutboundRegisterLink = function (url) {
+               ga('agg.send', 'event', 'event_register', url, 'Registered for event', {'hitCallback':
+                 function () {
+                     document.location = url;
+                 }
+               });
+            };
+            // Not sure if this is being used?
+            var trackOutboundWebsiteLink = function (url) {
+               // No need to manually change document.location; website opens in new tab
+               ga('agg.send', 'event', 'event_website', url, 'Visited event site');
+            };
+
+        </script>
+    
+
+    
+    
+        <!-- Start Mixpanel -->
+        <script type="text/javascript">(function(e,b){if(!b.__SV){var a,f,i,g;window.mixpanel=b;b._i=[];b.init=function(a,e,d){function f(b,h){var a=h.split(".");2==a.length&&(b=b[a[0]],h=a[1]);b[h]=function(){b.push([h].concat(Array.prototype.slice.call(arguments,0)))}}var c=b;"undefined"!==typeof d?c=b[d]=[]:d="mixpanel";c.people=c.people||[];c.toString=function(b){var a="mixpanel";"mixpanel"!==d&&(a+="."+d);b||(a+=" (stub)");return a};c.people.toString=function(){return c.toString(1)+".people (stub)"};i="disable track track_pageview track_links track_forms register register_once alias unregister identify name_tag set_config people.set people.set_once people.increment people.append people.track_charge people.clear_charges people.delete_user".split(" ");
+        for(g=0;g<i.length;g++)f(c,i[g]);b._i.push([a,e,d])};b.__SV=1.2;a=e.createElement("script");a.type="text/javascript";a.async=!0;a.src=("https:"===e.location.protocol?"https:":"http:")+'//cdn.mxpnl.com/libs/mixpanel-2.2.min.js';f=e.getElementsByTagName("script")[0];f.parentNode.insertBefore(a,f)}})(document,window.mixpanel||[]);
+        mixpanel.init("08fd38d945f3577b09226c184d101277");</script>
+        <!-- end Mixpanel -->
+
+        <script type="text/javascript">
+            
+            mixpanel.set_config({track_links_timeout: 500, track_pageview: false});
+            var superprops = {
+                'site_name':'Construction Dive',
+                'limited_data_processing': window.dive_limit_data_processing
+            };
+            
+              superprops.divesite_is_staff = false;
+            
+
+            
+              // read UID from sailthru cookie
+              function read_cookie(cookieName) {
+                var re = new RegExp('[; ]'+cookieName+'=([^\\s;]*)');
+                var sMatch = (' '+document.cookie).match(re);
+                if (cookieName && sMatch) return unescape(sMatch[1]);
+                return '';
+              }
+              var hid = read_cookie('sailthru_hid');
+              if (hid.length > 56) {
+                superprops.sailthru_hid = hid;
+                superprops.sailthru_user_id = hid.slice(32,56);
+              }
+              var divelink_cookie_id = parseInt(read_cookie('_divelink_cookie'));
+              if ( !isNaN(divelink_cookie_id) ) {
+                superprops.divelink_id = divelink_cookie_id;
+              }
+            
+
+            
+            mixpanel.register(superprops);
+            
+
+            function mixpanel_track_pageview(event_name, more_props){
+              var event_name = event_name ? event_name : "pageview"; //default event name
+              var pathparts = window.location.pathname.split('/');
+              var pageview_props = {
+                url: window.location.href.replace(/[\?\#].*$/,''), // no parameters or tracking codes
+                full_url: window.location.href, // everything in URL bar
+                page_title: document.title,
+                // ignore pathparts[0] since it's always empty string
+                // special case: root of site is "/" not "" for url_path_part_1
+                url_path_part_1: (pathparts.length > 1) && (pathparts[1] !== "") ? pathparts[1] : "/",
+                url_path_part_2: pathparts.length > 2 ? pathparts[2] : "",
+                url_path_part_3: pathparts.length > 3 ? pathparts[3] : ""
+              }
+              
+              
+                
+                try {
+                      var divecounter_data = divecounter.getData();
+                      pageview_props['page_view_count'] = divecounter_data.hits;
+                }
+                catch (err) {
+                    // swallow errors and just log them to console (if console exists)
+                    window.console && console.log && console.log( "Error getting divecounter hit count", err);
+                }
+              
+              for (var attrname in more_props) { if(more_props.hasOwnProperty(attrname)) pageview_props[attrname] = more_props[attrname]; }
+
+                mixpanel.track(event_name, pageview_props, function() {
+                    window.urlCleaner.attemptCleanUrl();
+                });
+            }
+
+            var pageview_props = {"item_force_to_weekender": false, "tags": [], "topics": ["Commercial Building", "commercial-building", "Commercial", "Residential Building", "residential-building", "Residential", "Design", "design-and-architecture"], "item_model_app": "news", "item_sponsored": false, "item_featured": false, "item_id": 506915, "item_pub_date": "2017-10-10T09:04:02", "item_authors": ["Kim Slowey"], "item_type": "newspost", "item_opinion": false, "item_model": "newspost", "item_touched": true};
+            mixpanel_track_pageview("pageview", pageview_props);
+
+            // mixpanel special link tracking, ported from actions.js
+            $(document).ready(function(){
+              if ($(".menu-bar a").length > 0) {
+                mixpanel.track_links(".menu-bar a","Topics Drawer Click",function(elem){
+                  return {'topic': $(elem).text()};
+                });
+              }
+              setTimeout(function(){
+                // need to wait a little while for Sailthru code to load
+                if ($(".sailthruRecommendation a").length > 0){
+                  mixpanel.track_links(".sailthruRecommendation a","Recommendation Click", function(elem){
+                    var $elem = $(elem);
+                    return {'label': $elem.text().trim(), 'href':$elem.attr('href'), 'from_page':window.location.href, 'style':'concierge'}
+                  });
+                }
+              },500);
+            })
+        </script>
+        
+    
+
+    
+      <!-- Start Visual Website Optimizer Asynchronous Code -->
+      <script type="text/javascript">
+          
+              var _vis_opt_url = document.URL;
+          
+
+          var _vwo_code=(function(){
+          var account_id=70793,
+          settings_tolerance=2000,
+          library_tolerance=2500,
+          use_existing_jquery=false,
+          // DO NOT EDIT BELOW THIS LINE
+          f=false,d=document;return{use_existing_jquery:function(){return use_existing_jquery;},library_tolerance:function(){return library_tolerance;},finish:function(){if(!f){f=true;var a=d.getElementById('_vis_opt_path_hides');if(a)a.parentNode.removeChild(a);}},finished:function(){return f;},load:function(a){var b=d.createElement('script');b.src=a;b.type='text/javascript';b.innerText;b.onerror=function(){_vwo_code.finish();};d.getElementsByTagName('head')[0].appendChild(b);},init:function(){settings_timer=setTimeout('_vwo_code.finish()',settings_tolerance);var a=d.createElement('style'),b='body{opacity:0 !important;filter:alpha(opacity=0) !important;background:none !important;}',h=d.getElementsByTagName('head')[0];a.setAttribute('id','_vis_opt_path_hides');a.setAttribute('type','text/css');if(a.styleSheet)a.styleSheet.cssText=b;else a.appendChild(d.createTextNode(b));h.appendChild(a);this.load('//dev.visualwebsiteoptimizer.com/j.php?a='+account_id+'&u='+encodeURIComponent(_vis_opt_url)+'&r='+Math.random());return settings_timer;}};}());_vwo_settings_timer=_vwo_code.init();
+      </script><script src="50_files/j.php" type="text/javascript"></script>
+      <!-- End Visual Website Optimizer Asynchronous Code -->
+    
+
+
+        
+
+        
+
+        
+        <script type="text/javascript">
+            jQuery.browser = {};
+            (function () {
+                jQuery.browser.msie = false;
+                jQuery.browser.version = 0;
+                if (navigator.userAgent.match(/MSIE ([0-9]+)\./)) {
+                    jQuery.browser.msie = true;
+                    jQuery.browser.version = RegExp.$1;
+                }
+            })();
+        </script>
+        <!-- for modal signup form -->
+
+        <script type="text/javascript" src="50_files/jquery_002.js"></script>
+
+        
+
+        <style>
+
+            /* dynamic style overrides based on DB go here*/
+            
+        </style>
+
+        
+    
+
+    <meta name="sailthru.title" content="Canada's next tallest tower is ready to rise in Toronto">
+    <meta name="sailthru.post_type" content="Brief">
+    
+    <meta name="lytics:topics" content="Residential, Commercial, Design">
+    
+    
+
+    
+        <meta name="news_keywords" content="Commercial Building,commercial-building,Commercial,Residential Building,residential-building,Residential,Design,design-and-architecture">
+    
+
+    
+    
+
+    <style>
+        #colorbox img {
+            max-width: 100%;
+        }
+
+        #colorbox figure {
+            margin: 0;
+        }
+
+    </style>
+    <link href="50_files/colorbox.css" rel="stylesheet">
+    <script type="text/javascript" src="50_files/jquery.js"></script>
+
+    
+    <script type="text/javascript">
+
+        /** Stolen from http://stackoverflow.com/questions/24816/escaping-html-strings-with-jquery **/
+        $(document).ready(function () {
+            //"Tweet this" pullquote sections
+
+            // This is used in the processing of 'tweet this' pull quotes
+            function escapeHtml(string) {
+                var entityMap = {
+                    "&": "&amp;",
+                    "<": "&lt;",
+                    ">": "&gt;",
+                    '"': '&quot;',
+                    "'": '&#39;',
+                    "/": '&#x2F;'
+                };
+                return String(string).replace(/[&<>"'\/]/g, function (s) {
+                    return entityMap[s];
+                });
+            }
+
+            // Process the twitter pullquote sections:
+            // * create the link
+            // * create the text ('tweet this quote') for the link
+            $(".pquote").each(function (index) {
+                var j_words;
+
+                if ($(this).data('twitter-text') != 'undefined') {
+                    j_words = $(this).children('.tweetwords').first();
+                } else {
+                    j_words = $(this).data('twitter-text');
+                }
+
+                var j_replace = $(this).children('.tweetquote').first();
+
+                var clean_text = escapeHtml(j_words.text());
+                var link_attributes = 'href="https://twitter.com/intent/tweet?text=' + clean_text + '%20https%3A//www.constructiondive.com/news/canadas-next-tallest-tower-is-ready-to-rise-in-toronto/506915/' + '" class="popup share_mixpanel_event button twitter" data-sharebutton="tweet_quote" data-shareusing="twitter"';
+                var img = '<img src="/static/img/social_icons/twitter-follow-icon.png?550216110918" alt="Share on Twitter"/>';
+
+                var link = '<a ' + link_attributes + '>Tweet this quote' + img + '</a>';
+                j_replace.html(link);
+            });
+        });
+
+
+
+        
+        
+    </script>
+    
+
+    
+
+    
+
+
+
+        
+        <!--[if lt IE 9]>
+
+            <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.6.2/html5shiv.js"></script>
+            <script src="//cdnjs.cloudflare.com/ajax/libs/respond.js/1.1.0/respond.min.js"></script>
+            <link rel="stylesheet"
+              href="/static/css/ie8-fixes.css?082716240919">
+        <![endif]-->
+
+        
+        
+            
+
+
+
+    <script type="text/javascript" src="50_files/prestitial.js"></script>
+
+
+
+    <script async="async" src="50_files/gpt.js"></script>
+
+
+
+
+
+<script>
+    
+    var eventMethod = window.addEventListener ? "addEventListener" : "attachEvent";
+    var eventer = window[eventMethod];
+    var messageEvent = eventMethod == "attachEvent" ? "onmessage" : "message";
+
+    
+    eventer(messageEvent, function (e) {
+        var key = e.message ? "message" : "data";
+        var data = e[key];
+
+        var eventName = data.message || 'ignore';
+
+        if (eventName == 'adContentAvailable') {
+            var $ad_element = $('div').filter('[data-container-ad-unit-id="' + data.adUnit + '-' + window.dfp_visibility + '"]');
+            
+            $ad_element.html(data.content);
+            
+            $ad_element.siblings().hide()
+        }
+
+        
+    }, false);
+
+    
+    var googletag = googletag || {};
+    googletag.cmd = googletag.cmd || [];
+
+    googletag.cmd.push(function () {
+        var desktopWidth = 1024;
+        
+        if (window.innerWidth >= desktopWidth) {
+            window.dfp_visibility = 'desktop';
+        }
+        else {
+            window.dfp_visibility = 'mobile';
+        }
+
+        var dfpDisplayConfiguration = {
+            "prestitialEnabled": true,
+            "leaderboardEnabled": true,
+            "sidebarAdsEnabled": true,
+            "visibility": window.dfp_visibility
+        };
+
+        diveLog.debug(dfpDisplayConfiguration);
+
+        if (window.dfp_visibility == 'desktop') {
+            
+            if (typeof prestitialAds == 'object' && prestitialAds.pageIsPrestitialEligible()) {
+                googletag.defineSlot('/21662595662/constructiondive/constructiondiveprestitial', [[500, 300], [640, 480]], 'paychekgoeshere').addService(googletag.pubads());
+            }
+            if (dfpDisplayConfiguration.leaderboardEnabled) {
+                googletag.defineSlot('/21662595662/constructiondive/constructiondiveleaderboard', [[970, 90], [728, 90]], 'dfp-leaderboard-desktop').addService(googletag.pubads());
+            }
+
+            if (dfpDisplayConfiguration.sidebarAdsEnabled) {
+                googletag.defineSlot('/21662595662/constructiondive/constructiondivehybrid1', [[300, 250], 'fluid'], 'dfp-hybrid1-desktop').addService(googletag.pubads());
+            }
+
+            googletag.defineSlot('/21662595662/constructiondive/constructiondivehybrid2', [[300, 250], 'fluid'], 'dfp-hybrid2-desktop').addService(googletag.pubads());
+            googletag.defineSlot('/21662595662/constructiondive/constructiondivehybrid3', [[300, 250], 'fluid'], 'dfp-hybrid3-desktop').addService(googletag.pubads());
+            googletag.defineSlot('/21662595662/constructiondive/constructiondivehybrid4', [[300, 250], 'fluid'], 'dfp-hybrid4-desktop').addService(googletag.pubads());
+            googletag.defineSlot('/21662595662/constructiondive/constructiondivethankyouhybrid1', ['fluid'], 'dfp-thankyouhybrid1-desktop').addService(googletag.pubads());
+            googletag.defineSlot('/21662595662/constructiondive/constructiondivethankyouhybrid2', ['fluid'], 'dfp-thankyouhybrid2-desktop').addService(googletag.pubads());
+
+        }
+        else {
+            googletag.defineSlot('/21662595662/constructiondive/constructiondivehybrid1', [[300, 250], 'fluid'], 'dfp-hybrid1-mobile').addService(googletag.pubads());
+            
+            googletag.defineSlot('/21662595662/constructiondive/constructiondivehybrid3', [[300, 250], 'fluid'], 'dfp-hybrid3-mobile').addService(googletag.pubads());
+            googletag.defineSlot('/21662595662/constructiondive/constructiondivehybrid4', [[300, 250], 'fluid'], 'dfp-hybrid4-mobile').addService(googletag.pubads());
+            googletag.defineSlot('/21662595662/constructiondive/constructiondivethankyouhybrid1', ['fluid'], 'dfp-thankyouhybrid1-mobile').addService(googletag.pubads());
+            googletag.defineSlot('/21662595662/constructiondive/constructiondivethankyouhybrid2', ['fluid'], 'dfp-thankyouhybrid2-mobile').addService(googletag.pubads());
+        }
+
+        
+
+
+        
+        
+            googletag.pubads().setTargeting("topics", ["Commercial Building","commercial-building","Commercial","Residential Building","residential-building","Residential","Design","design-and-architecture"]);
+        
+        
+
+        if ((typeof divecounter !== "undefined") && (divecounter.getData().is_subscriber)) {
+            googletag.pubads().setTargeting("is_subscriber", "yes");
+        }
+
+        
+        
+            googletag.pubads().setTargeting("articleID", "506915");
+            googletag.pubads().setTargeting("slug", "canadas next tallest tower is ready to rise in toronto");
+        
+
+        
+        
+
+        // Make sure we check that we have the things present in localStorage that we want to check before we add targeting on them.
+        // This is what sets targeting on trendline native ad units to make sure we only get ads associated with the
+        // content gate that a user filled out if they visited the page previously.
+        
+
+        googletag.pubads().setCentering(true);
+        googletag.pubads().collapseEmptyDivs(true);
+        googletag.pubads().enableSingleRequest();
+        googletag.enableServices();
+    });
+</script>
+
+        
+        <script src="50_files/api.js" async="" defer="defer"></script><style type="text/css">.tk-ff-meta-serif-web-pro{font-family:"ff-meta-serif-web-pro",serif;}</style><style type="text/css">@font-face{font-family:tk-ff-meta-serif-web-pro-n7;src:url(https://use.typekit.net/af/6da54c/00000000000000003b9b06f7/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3) format("woff2"),url(https://use.typekit.net/af/6da54c/00000000000000003b9b06f7/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3) format("woff"),url(https://use.typekit.net/af/6da54c/00000000000000003b9b06f7/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3) format("opentype");font-weight:700;font-style:normal;}@font-face{font-family:tk-ff-meta-serif-web-pro-n5;src:url(https://use.typekit.net/af/8e6183/00000000000000003b9b06f2/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n5&v=3) format("woff2"),url(https://use.typekit.net/af/8e6183/00000000000000003b9b06f2/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n5&v=3) format("woff"),url(https://use.typekit.net/af/8e6183/00000000000000003b9b06f2/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n5&v=3) format("opentype");font-weight:500;font-style:normal;}@font-face{font-family:tk-ff-meta-serif-web-pro-n6;src:url(https://use.typekit.net/af/c82052/00000000000000003b9b06f5/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n6&v=3) format("woff2"),url(https://use.typekit.net/af/c82052/00000000000000003b9b06f5/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n6&v=3) format("woff"),url(https://use.typekit.net/af/c82052/00000000000000003b9b06f5/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n6&v=3) format("opentype");font-weight:600;font-style:normal;}@font-face{font-family:tk-ff-meta-serif-web-pro-n3;src:url(https://use.typekit.net/af/d03d8b/00000000000000003b9b06f1/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n3&v=3) format("woff2"),url(https://use.typekit.net/af/d03d8b/00000000000000003b9b06f1/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n3&v=3) format("woff"),url(https://use.typekit.net/af/d03d8b/00000000000000003b9b06f1/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n3&v=3) format("opentype");font-weight:300;font-style:normal;}</style>
+    <style type="text/css">@font-face{font-family:ff-meta-serif-web-pro;src:url(https://use.typekit.net/af/6da54c/00000000000000003b9b06f7/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3) format("woff2"),url(https://use.typekit.net/af/6da54c/00000000000000003b9b06f7/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3) format("woff"),url(https://use.typekit.net/af/6da54c/00000000000000003b9b06f7/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3) format("opentype");font-weight:700;font-style:normal;}@font-face{font-family:ff-meta-serif-web-pro;src:url(https://use.typekit.net/af/8e6183/00000000000000003b9b06f2/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n5&v=3) format("woff2"),url(https://use.typekit.net/af/8e6183/00000000000000003b9b06f2/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n5&v=3) format("woff"),url(https://use.typekit.net/af/8e6183/00000000000000003b9b06f2/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n5&v=3) format("opentype");font-weight:500;font-style:normal;}@font-face{font-family:ff-meta-serif-web-pro;src:url(https://use.typekit.net/af/c82052/00000000000000003b9b06f5/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n6&v=3) format("woff2"),url(https://use.typekit.net/af/c82052/00000000000000003b9b06f5/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n6&v=3) format("woff"),url(https://use.typekit.net/af/c82052/00000000000000003b9b06f5/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n6&v=3) format("opentype");font-weight:600;font-style:normal;}@font-face{font-family:ff-meta-serif-web-pro;src:url(https://use.typekit.net/af/d03d8b/00000000000000003b9b06f1/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n3&v=3) format("woff2"),url(https://use.typekit.net/af/d03d8b/00000000000000003b9b06f1/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n3&v=3) format("woff"),url(https://use.typekit.net/af/d03d8b/00000000000000003b9b06f1/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n3&v=3) format("opentype");font-weight:300;font-style:normal;}</style><script type="text/javascript" src="50_files/io.js"></script><script async="" type="text/javascript" src="50_files/pathfora.js"></script><style type="text/css">[data-pftrigger], [data-pfrecommend]{ display: none; }</style><link rel="stylesheet" type="text/css" href="50_files/pathfora.css"></head>
+
+
+    
+
+    <body class="flush-top article-page news topic- commercial-building residential-building design-and-architecture" style="">
+
+    
+        
+
+        
+            <!-- Google Tag Manager (noscript) -->
+                <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TW2HL59" height="0" width="0" style="display:none;visibility:hidden">
+                </iframe></noscript>
+            <!-- End Google Tag Manager (noscript) -->
+        
+
+        
+            
+
+
+    
+        <style>
+            /* initial white overlay so google ads doesn't get mad */
+            .prestitial-init {
+                width: 100% !important;
+                height: 100% !important;
+                z-index: 600;
+                top: 0;
+                left: 0;
+                position: fixed;
+                background-color: #ffffff;
+            }
+
+            /* overlay that blocks out the content behind the prestitial */
+            .content-overlay {
+              width: 100% !important;
+              height: 100% !important;
+              z-index: 500;
+              top: 0;
+              left: 0;
+              position: fixed;
+              background-color: #434649;
+            }
+
+            .prestitial .paychek-page-wrapper .paychek-button {
+                color: #fff;
+                cursor: pointer;
+                font-size: 28px;
+                font-weight: bold;
+                margin-bottom: 2rem;
+                text-align: center;
+            }
+
+            
+            .prestitial .paychek-page-wrapper .paychek {
+                text-align: center;
+            }
+
+            
+            .prestitial .paychek-page-wrapper .paychek .clickarea {
+                margin: 0 auto;
+            }
+
+            
+            .prestitial .paychek-page-wrapper {
+                margin-top: 1rem;
+            }
+
+            @media screen and (min-width: 64em) {
+                
+                .prestitial .paychek-page-wrapper {
+                    margin-top: 0;
+                    position: relative;
+                    top: 50%;
+                    -webkit-transform: translateY(-50%);
+                    -ms-transform: translateY(-50%);
+                    transform: translateY(-50%);
+                }
+
+                .prestitial .paychek-page-wrapper .paychek, .prestitial .paychek-page-wrapper .paychek-button {
+                    text-align: left;
+                    height: 480px;
+                }
+
+                .prestitial .paychek-page-wrapper .paychek-button div, .prestitial .paychek #paychekgoeshere {
+                    position: relative;
+                    top: 50%;
+                    -webkit-transform: translateY(-50%);
+                    -ms-transform: translateY(-50%);
+                    transform: translateY(-50%);
+                }
+
+                .prestitial .paychek-page-wrapper .paychek .clickarea {
+                    margin-left: 0;
+                }
+            }
+
+            @media screen and (min-width: 72em) {
+                .prestitial .paychek-page-wrapper {
+                    font-size: 34px;
+                }
+            }
+        </style>
+
+        
+        <div id="prestitial-init" style="display: none;" class="prestitial-init"></div>
+        <div id="prestitial-outer" class="prestitial content-overlay" style="display: none;">
+            <section class="site-menu">
+                <div class="site-menu-inner">
+                    <img src="50_files/construction_white.svg" class="pub-logo">
+                </div>
+            </section>
+            <section class="paychek-page-wrapper row">
+                <div class="paychek-button large-4 large-push-8 columns">
+                    <div>
+                        CONTINUE TO SITE ➞
+                    </div>
+                </div>
+                <div class="paychek large-8 large-pull-4 columns">
+                    
+                    <div id="paychekgoeshere"></div>
+                    <script type="text/javascript">
+                        
+                        if (prestitialAds.pageIsPrestitialEligible()) {
+                          prestitialAds.initialize(7);
+                          
+                          prestitialAds.setPrestitialPossibleCookie();
+                          var prestitial_ad_is_loaded = false;
+                          var prestitial_ad_is_empty = false;
+
+                          googletag.cmd.push(function () {
+                            googletag.pubads().addEventListener('slotRenderEnded', function (event) {
+                              
+                              if (event.slot.getAdUnitPath() == '/21662595662/constructiondive/constructiondiveprestitial') {
+                                if (event.isEmpty || prestitialAds.testingNoAd()) {
+                                  prestitial_ad_is_empty = true;
+                                  prestitialAds.closePrestitial();
+                                }
+                                else {
+                                  prestitial_ad_is_loaded = true;
+                                  $.modal.close();
+                                  $('div#prestitial-init').hide(); // hide the all white overlay
+                                  prestitialAds.setCookie(
+                                    "_prestitialViewed",
+                                    (new Date()).getTime(),
+                                    prestitialAds.daysBetweenPrestitial
+                                  );
+                                }
+                              }
+                            });
+                          });
+
+                          
+                          if (prestitialAds.testingNoAd()) {
+                            
+                          } else {
+                            
+                            
+                            
+                            waitToLoadAds.push(function() {
+                              
+                              googletag.cmd.push(function () {
+                                
+                                googletag.display('paychekgoeshere');
+                              });
+                            });
+                          }
+
+                          
+                          setTimeout(
+                            function () {
+                              if (!prestitial_ad_is_loaded && !prestitialAds.overrideTimeout()) {
+                                
+                                if (!prestitial_ad_is_empty) {
+                                  
+                                  // if the prestitial is already hidden, then don't hide it again.
+                                  if (!prestitialAds.prestitialAdIsClosed()) {
+                                    prestitialAds.closePrestitial();
+                                    prestitialAds.logClosePrestitialAdBy('failed');
+                                  }
+                                }
+                              } else if (!prestitialAds.overrideTimeout()) {
+                                
+                                setTimeout(
+                                  function () {
+                                    // if the prestitial is already hidden, then don't hide it again.
+                                    if (!prestitialAds.prestitialAdIsClosed()) {
+                                      prestitialAds.closePrestitial();
+                                      prestitialAds.logClosePrestitialAdBy('timeout');
+                                    }
+                                  },
+                                  prestitialAds.timeoutSeconds()
+                                );
+                              } else {
+                                
+                              }
+
+                            },
+                            
+                            2900
+                          );
+                        } else {
+                          
+                          prestitialAds.closePrestitial();
+                        }
+                    </script>
+                </div>
+            </section>
+        </div>
+    
+
+
+        
+
+        
+        
+
+        <!--'Update your browser' message if IE < 11 -->
+        <!--[if lt IE 11]>
+        <div class="site-alert site-alert--loud">
+            <div class="row">
+                <div class="columns">
+                    <div class="site-alert__message site-alert__message--inverse">
+                        Industry Dive is supported on Chrome, Safari, Firefox and Internet Explorer 11+. If you have trouble viewing our site, please upgrade your browser</a>.
+                        <div class="site-alert__close">
+                            <img src="/static/img/close-white.svg?274214160519" alt="close">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <![endif]-->
+
+        
+            
+        
+
+        <!-- leaderboard -->
+        
+            
+            
+                
+<div class="hide-small show-large">
+
+    <div data-container-ad-unit-id="/21662595662/constructiondive/constructiondiveleaderboard-desktop"></div>
+    <div id="dfp-leaderboard-desktop">
+        <script>
+        waitToLoadAds.push(function() {
+	        googletag.cmd.push(function() {
+	            if (window.dfp_visibility == 'desktop') { googletag.display('dfp-leaderboard-desktop'); }
+	        })
+	    });
+        </script>
+    </div>
+</div>
+
+            
+        
+
+        <div class="page-container">
+            
+            
+            <header role="banner">
+                <nav id="top" class="site-menu">
+                    <div class="site-menu-inner">
+                        <!-- logo -->
+                        <div class="pub-logo-wrapper">
+                            <a href="https://www.constructiondive.com/">
+                                <img class="pub-logo" src="50_files/construction_white.svg" alt="website logo">
+                            </a>
+                        </div>
+                        <!-- desktop menu, not visible on mobile/tablet -->
+                        <div class="menu-content-wrapper">
+                            <ul class="desktop-menu-main">
+                                
+                                  <li>
+                                      <a href="https://www.constructiondive.com/deep-dive/">Deep Dive</a>
+                                  </li>
+                                
+                                
+                                    <li>
+                                        <a href="https://www.constructiondive.com/opinion/">Opinion</a>
+                                    </li>
+                                
+                                
+                                    <li><a href="https://www.constructiondive.com/data">Data</a></li>
+                                
+                                
+                                
+                                
+                                    <li>
+                                        <a href="https://www.constructiondive.com/library/">Library</a>
+                                    </li>
+                                
+                                
+                                    <li>
+                                        <a href="https://www.constructiondive.com/events/">Events</a>
+                                    </li>
+                                
+                                
+                                    <li>
+                                        <a href="https://www.constructiondive.com/jobs/">Jobs</a>
+                                    </li>
+                                
+                                <li class="topics top-nav-dropdown-item js-top-nav-item-active">
+                                    <a>
+                                        Topics
+                                        <span class="dropdown-toggle-arrow"></span>
+                                    </a>
+                                </li>
+                            </ul>
+                            <!-- mobile menu toggle icon, not visible on desktop -->
+                            <button class="mobile-menu-toggle">
+                                Menu
+                                <img src="50_files/menu.svg" alt="menu">
+                            </button>
+                            <!-- newsletter, courses and search, only shown on desktop -->
+                            <ul class="desktop-menu-sub list-no-bullets">
+                                
+                                <li>
+                                    <a href="https://www.constructiondive.com/signup/">
+                                        <img src="50_files/email-icon-white.png">
+                                        
+                                            Sign Up
+                                        
+                                    </a>
+                                </li>
+                                
+                                
+                                <li>
+                                    <a href="javascript:void(0)" class="search-toggle">
+                                        <img src="50_files/search-glass-white.png">
+                                        
+                                            <span class="sub-link">Search</span>
+                                        
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </header>
+            <div class="menu-search js-search-hide" style="position: absolute;">
+                <div class="menu-search-inner-wrapper row"> 
+                    <form action="/search/" method="GET" data-ajax="false">
+                        <label for="search">
+                            <span class="screen-reader-text search">Search</span>
+                        </label>
+                        <input id="search" type="search" name="q" placeholder="search" data-role="none">
+                        <button type="submit" value="" data-role="none">
+                            <img src="50_files/input-search.svg" alt="search">
+                        </button>
+                        <span class="close">x</span>
+                    </form>
+                </div>
+            </div>
+            <nav class="topics menu-bar js-menu-bar-transition" style="position: absolute; left: 0px;">
+                <ul class="list-no-bullets">
+                    
+                        
+                        
+                            <li>
+                                <a class="" href="https://www.constructiondive.com/topic/commercial-building/">Commercial</a>
+                            </li>
+                        
+                    
+                        
+                        
+                            <li>
+                                <a class="" href="https://www.constructiondive.com/topic/residential-building/">Residential</a>
+                            </li>
+                        
+                    
+                        
+                        
+                            <li>
+                                <a class="" href="https://www.constructiondive.com/topic/technology/">Tech</a>
+                            </li>
+                        
+                    
+                        
+                        
+                            <li>
+                                <a class="" href="https://www.constructiondive.com/topic/design-and-architecture/">Design</a>
+                            </li>
+                        
+                    
+                        
+                        
+                            <li>
+                                <a class="" href="https://www.constructiondive.com/topic/tools-and-equipment/">Products</a>
+                            </li>
+                        
+                    
+                        
+                        
+                            <li>
+                                <a class="" href="https://www.constructiondive.com/topic/green-building/">Green</a>
+                            </li>
+                        
+                    
+                        
+                        
+                            <li>
+                                <a class="" href="https://www.constructiondive.com/topic/economy/">Econ</a>
+                            </li>
+                        
+                    
+                        
+                        
+                            <li>
+                                <a class="" href="https://www.constructiondive.com/topic/legal/">Legal/Regs</a>
+                            </li>
+                        
+                    
+                        
+                        
+                            <li>
+                                <a class="" href="https://www.constructiondive.com/topic/infrastructure/">Infrastructure</a>
+                            </li>
+                        
+                    
+                        
+                        
+                            <li>
+                                <a class="" href="https://www.constructiondive.com/topic/corporate-business-news/">Corp</a>
+                            </li>
+                        
+                    
+                </ul>
+            </nav>
+            
+            
+
+            
+            <div class="page-wrapper">
+
+                
+                <div class="search-overlay"></div>
+
+                <!-- logo for print -->
+                <div class="printed-branding">
+                    <span class="promoted-branded-copy">An article from</span>
+                    <img src="50_files/constructiondive.jpg" alt="site logo">
+                </div>
+
+                <div class="page-inner-wrapper">
+
+                
+                
+                
+
+                
+
+                    <div class="row">
+                        <div class="medium-10 medium-centered large-12">
+                            <section id="main-content" class="main-content large-8 columns">
+
+                                
+
+                                
+                                    
+
+
+
+
+
+                                
+
+                                
+                                    
+                                    
+                                
+
+                                
+
+
+
+
+
+
+<article class="brief">
+
+        
+        <div class="article-title-wrapper">
+            
+
+
+
+
+    
+    
+    
+        
+        <span class="post-label post-label--loud">Brief</span>
+    
+
+
+            <h1 class="display-heading-04">
+                Canada's next tallest tower is ready to rise in Toronto
+                
+            </h1>
+            
+
+        </div>
+        
+
+        
+        
+            
+            
+                
+                
+                    
+                        <figure class="inside_story">
+                            <div class="figure_content article-hero-img">
+                                 <img itemprop="image" alt="" src="50_files/74883d0b4a948ce77322920f8c9bd048.jpg">
+                                
+                                <figcaption class="inside_story_caption">
+                                    <!--<div class="caption_text"></div>-->
+                                    <div class="source_text">Credit: <a href="https://www.flickr.com/photos/archer10/14840276941/in/photolist-oBoiiP-P3twHm-8ywDiE-oBBwZS-ok9p5j-gADHG3-ok9RAq-oBBRK7-psxU4T-oBqW6q-ozBEtq-Cqpbfs-oDoUqx-gAv42n-ok8TFw-oBDoQp-oBssxW-prjCe9-RS6o98-oka" rel="nofollow" target="_blank">
+                                    
+                                    Dennis Jarvis, via Flickr
+                                    
+                                        </a></div>
+                                </figcaption>
+                                
+                            </div>
+                        </figure>
+                
+            
+        
+
+        <div class="row">
+            
+            <div class="byline-large-2 columns">
+                <div class="article-byline">
+                    
+                    
+                        
+                        <div class="author">
+                            
+                            <h4 class="hide-small byline-show-large">Author</h4>
+                            
+                            <span class="byline-hide-large">By</span>
+
+                            
+                            
+                                
+                                    <div class="author-name">
+                                        
+                                        
+                                        
+                                        
+                                            <a rel="author" href="https://www.constructiondive.com/editors/kslowey/">Kim Slowey</a>
+                                        
+                                        
+
+                                        
+                                        
+                                            <a href="https://www.twitter.com/kimslowey" class="twitter hide-small byline-show-large">@kimslowey</a>
+                                        
+                                    </div>
+                                
+                            
+                        </div>
+                    
+                    <div class="date">
+                        
+                        <div class="published-info">
+                            <h4>Published</h4>
+                            Oct. 10, 2017
+                        </div>
+                    </div>
+                    <div class="social-share">
+                        <h4 class="hide-small byline-show-large">Share it</h4>
+                        <ul class="rrssb-buttons clearfix">
+                            <li class="rrssb-linkedin">
+                                <a href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3A//www.constructiondive.com/news/canadas-next-tallest-tower-is-ready-to-rise-in-toronto/506915/&amp;title=Canada%27s%20next%20tallest%20tower%20is%20ready%20to%20rise%20in%20Toronto" class="popup share_mixpanel_event button" data-sharebutton="rrssb_share" data-shareusing="linkedin">
+                                    <span class="rrssb-icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 28 28"><path d="M25.424 15.887v8.447h-4.896v-7.882c0-1.98-.71-3.33-2.48-3.33-1.354 0-2.158.91-2.514 1.802-.13.315-.162.753-.162 1.194v8.216h-4.9s.067-13.35 0-14.73h4.9v2.087c-.01.017-.023.033-.033.05h.032v-.05c.65-1.002 1.812-2.435 4.414-2.435 3.222 0 5.638 2.106 5.638 6.632zM5.348 2.5c-1.676 0-2.772 1.093-2.772 2.54 0 1.42 1.066 2.538 2.717 2.546h.032c1.71 0 2.77-1.132 2.77-2.546C8.056 3.593 7.02 2.5 5.344 2.5h.005zm-2.48 21.834h4.896V9.604H2.867v14.73z"></path></svg>
+                                    </span>
+                                    <span class="rrssb-text">post</span>
+                                </a>
+                            </li>
+                            <li class="rrssb-facebook">
+                                <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A//www.constructiondive.com/news/canadas-next-tallest-tower-is-ready-to-rise-in-toronto/506915/" class="popup share_mixpanel_event button" data-sharebutton="rrssb_share" data-shareusing="facebook">
+                                    <span class="rrssb-icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 29 29"><path d="M26.4 0H2.6C1.714 0 0 1.715 0 2.6v23.8c0 .884 1.715 2.6 2.6 2.6h12.393V17.988h-3.996v-3.98h3.997v-3.062c0-3.746 2.835-5.97 6.177-5.97 1.6 0 2.444.173 2.845.226v3.792H21.18c-1.817 0-2.156.9-2.156 2.168v2.847h5.045l-.66 3.978h-4.386V29H26.4c.884 0 2.6-1.716 2.6-2.6V2.6c0-.885-1.716-2.6-2.6-2.6z"></path></svg>
+                                    </span>
+                                  <span class="rrssb-text">share</span>
+                                </a>
+                            </li>
+                            <li class="rrssb-twitter">
+                                <a href="https://twitter.com/intent/tweet?text=Canada%27s%20next%20tallest%20tower%20is%20ready%20to%20rise%20in%20Toronto%20https%3A//www.constructiondive.com/news/canadas-next-tallest-tower-is-ready-to-rise-in-toronto/506915/%20via%20@constructdive" class="popup share_mixpanel_event button" data-sharebutton="rrssb_share" data-shareusing="twitter">
+                                    <span class="rrssb-icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 28 28"><path d="M24.253 8.756C24.69 17.08 18.297 24.182 9.97 24.62a15.093 15.093 0 0 1-8.86-2.32c2.702.18 5.375-.648 7.507-2.32a5.417 5.417 0 0 1-4.49-3.64c.802.13 1.62.077 2.4-.154a5.416 5.416 0 0 1-4.412-5.11 5.43 5.43 0 0 0 2.168.387A5.416 5.416 0 0 1 2.89 4.498a15.09 15.09 0 0 0 10.913 5.573 5.185 5.185 0 0 1 3.434-6.48 5.18 5.18 0 0 1 5.546 1.682 9.076 9.076 0 0 0 3.33-1.317 5.038 5.038 0 0 1-2.4 2.942 9.068 9.068 0 0 0 3.02-.85 5.05 5.05 0 0 1-2.48 2.71z"></path></svg>
+                                    </span>
+                                    <span class="rrssb-text">tweet</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="article-large-10 columns article-wrapper">
+                
+
+
+                <div class="print-wrapper"> 
+                    
+
+                    
+
+                    
+
+                    
+
+                    <div class=" article-body">
+                        
+
+<h3>Dive Brief:</h3>
+<ul>
+<li>
+<p>Construction is now underway on The One, which at an eventual height 
+of 1,003 feet will be Canada's tallest occupiable tower, according to <a href="http://newatlas.com/foster-partners-one-skyscraper-toronto/51672/" target="_blank">New Atlas</a>.</p>
+</li>
+<li>
+<p>Designed by Foster + Partners, the mixed-use tower will encompass 
+more than 860,000 square feet across 85 stories, including retail, 
+restaurants and luxury condominiums. Residents will also be able to 
+enjoy a sky lobby, which will offer up spa services, a fitness center 
+and a library.</p>
+</li>
+<li>
+<p>Although The One will be Canada's tallest inhabitable building when 
+it opens in 2020, it will fail to meet the height of Toronto's CN Tower.
+ The communications and observation tower was the world's tallest 
+man-made structure until 2010, when Dubai's Burj Khalifa claimed the top
+ spot.</p>
+</li>
+</ul>
+
+<div class="hybrid-ad-wrapper show-small hide-large">
+<div class="hybrid-ad-inner-wrapper">
+<div class="show-small hide-large">
+<div data-container-ad-unit-id="/21662595662/constructiondive/constructiondivehybrid1-mobile"></div>
+<div id="dfp-hybrid1-mobile">
+<script>
+                    waitToLoadAds.push(function() {
+                        googletag.cmd.push(function() {
+                            if (window.dfp_visibility == 'mobile' ) { googletag.display('dfp-hybrid1-mobile'); }
+                        });
+                    });
+                </script>
+</div>
+</div>
+</div>
+</div>
+<div class="hybrid-ad-wrapper hide-small show-large">
+<div class="hybrid-ad-inner-wrapper">
+<div class="hide-small show-large">
+<div data-container-ad-unit-id="/21662595662/constructiondive/constructiondivehybrid2-desktop"></div>
+<div id="dfp-hybrid2-desktop">
+<script>
+                    waitToLoadAds.push(function() {
+                        googletag.cmd.push(function() {
+                            if (window.dfp_visibility == 'desktop' ) { googletag.display('dfp-hybrid2-desktop'); }
+                        });
+                    });
+                </script>
+</div>
+</div>
+</div>
+</div>
+<h3>Dive Insight:</h3>
+<p>Foster + Partners was the creative force behind Bloomberg's <a href="https://www.constructiondive.com/news/bloombergs-new-european-hq-gets-high-marks-for-sustainability/506790/" target="_blank">new European headquarters</a>
+ in London, which achieved the highest BREEAM in-design score yet. The 
+building is now considered to be one of the most sustainable office 
+buildings in the world.</p>
+<p>Although the race to build higher seems to have slowed somewhat, many
+ developers are drawn by the cachet that comes with being the tallest, 
+or one of the tallest, buildings. For example, New York City developer 
+Greenwich Realty Capital is planning to construct <a href="https://www.constructiondive.com/news/developer-proposes-90-story-tower-for-denver/506097/" target="_blank">a 90-story, $400 million residential mixed-use tower</a>
+ in Denver. The city still must approve the project, but if it moves 
+forward, it will beat the Mile High City's current tallest building by 
+34 stories.</p>
+<p>Quicken Loans founder and billionaire Dan Gilbert wants to dominate the Detroit skyline with a <a href="https://www.constructiondive.com/news/costs-and-height-increase-with-dan-gilberts-latest-plans-for-a-new-detroit/505092/" target="_blank">$900 million mixed-use tower</a>&nbsp;downtown.
+ The 1 million-square-foot, dual-building project will be privately 
+financed with the exception of a 10% contribution from tax increment 
+financing. &nbsp;</p>
+<p>One project, however, will overshadow towers worldwide when it is complete,&nbsp;and that is the <a href="https://www.constructiondive.com/news/race-to-the-top-saudi-arabian-developer-secures-funding-to-build-worlds-t/410006/" target="_blank">Jeddah Tower</a>,&nbsp;in Saudi Arabia.&nbsp;Engineer Robert Sinn, a principal at Thornton Tomasetti, <a href="https://www.constructiondive.com/news/towering-over-the-pack-inside-the-engineering-and-design-challenges-of-sup/446399/" target="_blank">told Construction Dive in July</a>
+ that the 1 kilometer-tall building relies on a "three-legged" base for 
+stability. The highest occupancy will reach only 2,000 feet, although 
+the building will continue skyward.</p>
+<p>Sinn rejected some critics' poke at the unusable gap, or "vanity 
+space," between occupancy and a building's maximum height. "When you 
+talk about vanity, I talk about aspiration," Sinn said.&nbsp;"There's 
+always going to be another tallest building, but there's only one first.
+ It's something humans should be proud of."</p>
+
+                    </div>
+
+                    
+                        
+                    
+
+                    
+                    
+                        <div class="reading-list">
+                            
+
+                            
+                                <h3>Recommended Reading:</h3>
+                            
+                            <ul class="list-no-bullets">
+                                
+                                    <li>
+                                        <span class="label label--soft">
+                                            <img src="50_files/favicons_004.png">
+                                            
+                                                <span>New Atlas</span>
+                                            
+                                        </span>
+                                        <a href="http://newatlas.com/foster-partners-one-skyscraper-toronto/51672/">
+                                        Work begins on Canada's tallest skyscraper<img src="50_files/offsite_black.png" class="off-site-link" alt="offsite link"></a>
+                                    </li>
+                                
+                            </ul>
+                        </div>
+                    
+
+                    
+                    
+                        <div class="editor-box">
+                            
+                                <p>Follow
+                                    
+                                    <span rel="author">
+                                        Kim Slowey
+                                    </span>
+                                    on
+                                    
+                                    
+                                        <a href="https://www.twitter.com/kimslowey">
+                                            Twitter
+                                        </a>
+                                    
+                                </p>
+                            
+                        </div>
+                    
+
+                    
+                    
+
+                    <div class="post-article-wrapper">
+                        
+                        <div class="share-buttons">
+                            <ul class="rrssb-buttons clearfix">
+    <li class="rrssb-facebook">
+        <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A//www.constructiondive.com/news/canadas-next-tallest-tower-is-ready-to-rise-in-toronto/506915/" class="popup share_mixpanel_event button" data-sharebutton="rrssb_share" data-shareusing="facebook">
+            <span class="rrssb-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 29 29"><path d="M26.4 0H2.6C1.714 0 0 1.715 0 2.6v23.8c0 .884 1.715 2.6 2.6 2.6h12.393V17.988h-3.996v-3.98h3.997v-3.062c0-3.746 2.835-5.97 6.177-5.97 1.6 0 2.444.173 2.845.226v3.792H21.18c-1.817 0-2.156.9-2.156 2.168v2.847h5.045l-.66 3.978h-4.386V29H26.4c.884 0 2.6-1.716 2.6-2.6V2.6c0-.885-1.716-2.6-2.6-2.6z"></path></svg>
+            </span>
+          <span class="rrssb-text">share</span>
+        </a>
+    </li>
+    <li class="rrssb-twitter">
+        <a href="https://twitter.com/intent/tweet?text=Canada%27s%20next%20tallest%20tower%20is%20ready%20to%20rise%20in%20Toronto%20https%3A//www.constructiondive.com/news/canadas-next-tallest-tower-is-ready-to-rise-in-toronto/506915/%20via%20@constructdive" class="popup share_mixpanel_event button" data-sharebutton="rrssb_share" data-shareusing="twitter">
+            <span class="rrssb-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 28 28"><path d="M24.253 8.756C24.69 17.08 18.297 24.182 9.97 24.62a15.093 15.093 0 0 1-8.86-2.32c2.702.18 5.375-.648 7.507-2.32a5.417 5.417 0 0 1-4.49-3.64c.802.13 1.62.077 2.4-.154a5.416 5.416 0 0 1-4.412-5.11 5.43 5.43 0 0 0 2.168.387A5.416 5.416 0 0 1 2.89 4.498a15.09 15.09 0 0 0 10.913 5.573 5.185 5.185 0 0 1 3.434-6.48 5.18 5.18 0 0 1 5.546 1.682 9.076 9.076 0 0 0 3.33-1.317 5.038 5.038 0 0 1-2.4 2.942 9.068 9.068 0 0 0 3.02-.85 5.05 5.05 0 0 1-2.48 2.71z"></path></svg>
+            </span>
+            <span class="rrssb-text">tweet</span>
+        </a>
+    </li>
+    <li class="rrssb-linkedin">
+        <a href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3A//www.constructiondive.com/news/canadas-next-tallest-tower-is-ready-to-rise-in-toronto/506915/&amp;title=Canada%27s%20next%20tallest%20tower%20is%20ready%20to%20rise%20in%20Toronto" class="popup share_mixpanel_event button" data-sharebutton="rrssb_share" data-shareusing="linkedin">
+            <span class="rrssb-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 28 28"><path d="M25.424 15.887v8.447h-4.896v-7.882c0-1.98-.71-3.33-2.48-3.33-1.354 0-2.158.91-2.514 1.802-.13.315-.162.753-.162 1.194v8.216h-4.9s.067-13.35 0-14.73h4.9v2.087c-.01.017-.023.033-.033.05h.032v-.05c.65-1.002 1.812-2.435 4.414-2.435 3.222 0 5.638 2.106 5.638 6.632zM5.348 2.5c-1.676 0-2.772 1.093-2.772 2.54 0 1.42 1.066 2.538 2.717 2.546h.032c1.71 0 2.77-1.132 2.77-2.546C8.056 3.593 7.02 2.5 5.344 2.5h.005zm-2.48 21.834h4.896V9.604H2.867v14.73z"></path></svg>
+            </span>
+            <span class="rrssb-text">post</span>
+        </a>
+    </li>
+    <li class="rrssb-email">
+        <a href="mailto:?Subject=Canada%27s%20next%20tallest%20tower%20is%20ready%20to%20rise%20in%20Toronto&amp;Body=https%3A//www.constructiondive.com/news/canadas-next-tallest-tower-is-ready-to-rise-in-toronto/506915/" class="share_mixpanel_event button" data-sharebutton="rrssb_share" data-shareusing="email">
+            <span class="rrssb-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M21.386 2.614H2.614A2.345 2.345 0 0 0 .279 4.961l-.01 14.078a2.353 2.353 0 0 0 2.346 2.347h18.771a2.354 2.354 0 0 0 2.347-2.347V4.961a2.356 2.356 0 0 0-2.347-2.347zm0 4.694L12 13.174 2.614 7.308V4.961L12 10.827l9.386-5.866v2.347z"></path></svg>
+            </span>
+            <span class="rrssb-text">email</span>
+        </a>
+    </li>
+    <li class="rrssb-print">
+        <a href="javascript:window.print()" class="share_mixpanel_event button" data-sharebutton="rrssb_share" data-shareusing="print">
+            <span class="rrssb-icon">
+                <svg viewBox="0 0 24 24"><path fill="#000000" d="M18,3H6V7H18M19,12A1,1 0 0,1 18,11A1,1 0 0,1 19,10A1,1 0 0,1 20,11A1,1 0 0,1 19,12M16,19H8V14H16M19,8H5A3,3 0 0,0 2,11V17H6V21H18V17H22V11A3,3 0 0,0 19,8Z"></path></svg>
+            </span>
+            <span class="rrssb-text">print</span>
+        </a>
+    </li>
+</ul>
+
+                        </div>
+
+                        
+                        <div class="post-article-topics">
+                            
+                                
+                                    <span>Filed Under:</span>
+                                    
+                                        <a class="topic" href="https://www.constructiondive.com/topic/commercial-building/">Commercial Building</a>
+                                        
+                                    
+                                        <a class="topic" href="https://www.constructiondive.com/topic/residential-building/">Residential Building</a>
+                                        
+                                    
+                                        <a class="topic" href="https://www.constructiondive.com/topic/design-and-architecture/">Design</a>
+                                        
+                                    
+                                
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </article>
+
+    
+
+
+
+
+                            </section>
+                            <aside class="sidebar large-4 columns">
+                                
+    
+    
+    
+
+                                    
+                                    
+                                        
+<div class="hybrid-ad-wrapper hide-small show-large">
+    <div class="hybrid-ad-inner-wrapper">
+        
+        <div class="hide-small show-large">
+        
+            <div data-container-ad-unit-id="/21662595662/constructiondive/constructiondivehybrid1-desktop"></div>
+            <div id="dfp-hybrid1-desktop">
+                <script>
+                    waitToLoadAds.push(function() {
+                        googletag.cmd.push(function() {
+                            if (window.dfp_visibility == 'desktop' ) { googletag.display('dfp-hybrid1-desktop'); }
+                        });
+                    });
+                </script>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+                                    
+
+                                    
+                                        
+                                        
+
+
+<div class="signup sidebar-box hide-small show-large" data-box-priority="0">
+    <h3 class="sidebar-box__header">Get the Newsletter</h3>
+    <p class="sidebar-box__description">Subscribe to <strong>Construction Dive</strong> to get the must-read news &amp; insights in your inbox.</p>
+    
+
+
+
+
+ 
+    
+    
+
+            <form class="form js-form-email-validate" name="signup" action="/signup/" method="POST" id="signup_right_sidebar">
+
+                
+
+                
+                
+                    <label for="id_8271ad_email" class="email-input js-email-input">
+                        <span class="screen-reader-text">Email:</span>
+                        <input type="email" name="email" required="" placeholder="Enter your work email" class="email" id="id_8271ad_email">
+                    </label>
+                
+
+                <input type="hidden" name="signup_box_location" value="sidebar">
+                
+                
+                    <input type="hidden" name="signup_url" value="https://www.constructiondive.com/news/canadas-next-tallest-tower-is-ready-to-rise-in-toronto/506915/" id="id_8271ad_signup_url">
+                
+                    <input type="hidden" name="js_enabled" id="id_8271ad_js_enabled" value="1">
+                
+
+                
+                
+                    
+                    <ul class="signup-list list-no-bullets">
+                        
+                            <li>
+                                <label><span class="screen-reader-text">Select Newsletter:</span></label>
+                                <input type="checkbox" name="site_newsletters" value="1" class="checkbox" checked="checked">
+                                <span class="newsletter-title">Construction Dive</span>
+                                
+                                    <p class="newsletter-description">Topics covered: commercial, infrastructure, design, green, regulation, multifamily construction, and more.</p>
+                                
+                                
+                                    <span class="secondary-label">Daily</span>
+                                
+                                
+                                    <a class="primary-link" href="https://www.constructiondive.com/user_media/thumbnails/newsletter_lists/construction_2018.png" target="_blank">view sample</a>
+                                
+                            </li>
+                        
+                            <li>
+                                <label><span class="screen-reader-text">Select Newsletter:</span></label>
+                                <input type="checkbox" name="site_newsletters" value="69" class="checkbox">
+                                <span class="newsletter-title">Construction Dive: Tech</span>
+                                
+                                
+                                    <span class="secondary-label">Weekly</span>
+                                
+                                
+                                    <a class="primary-link" href="https://www.constructiondive.com/user_media/thumbnails/newsletter_lists/construction_tech_2018.png" target="_blank">view sample</a>
+                                
+                            </li>
+                        
+                        
+                    </ul>
+                
+
+                
+                
+
+                
+                <button class="button button--loud button--full-width" type="submit" value="Sign up">
+                    <img class="button__icon button__icon--left" src="50_files/email.svg" alt="email icon"> Sign up
+                </button>
+
+                
+                <label class="error email_error" style="display:none;">A valid email address is required.</label>
+                <label class="error newsletter-error" style="display:none;">Please select at least one newsletter.</label>
+
+                
+                <p class="help-text help-text--small">By signing up you agree to our <a href="http://www.industrydive.com/privacy-policy/" target="_blank">privacy policy</a>. You can opt out anytime.</p>
+            </form>
+    
+
+</div>
+
+                                        
+                                    
+
+                                    
+                                        
+
+
+
+    
+    <div class="sidebar-box" data-box-priority="2">
+        <h3 class="sidebar-box__header"><img src="50_files/fire.svg" class="sidebar-box__header-icon">Most Popular</h3>
+        <ol class="sidebar-box-list sidebar-box-list--ordered">
+            
+                <li class="sidebar-box-list__item sidebar-box-list__item--ordered">
+                    
+                        <!-- image -->
+                        <a class="hide-small show-large" href="https://www.constructiondive.com/news/human-error-cited-for-deadly-google-seattle-crane-collapse-3-firms-fined/565416/">
+                            
+                            
+                                <img class="sidebar-box-list__image" src="50_files/9ea65d38863967a143c453da8a31a4de.jpg" alt="story image">
+                            
+                        </a>
+
+                        
+
+
+
+
+    
+    
+    
+            
+        
+
+
+                        <a class="sidebar-box-list__item-title" href="https://www.constructiondive.com/news/human-error-cited-for-deadly-google-seattle-crane-collapse-3-firms-fined/565416/">'Human error' cited for deadly Google Seattle crane collapse, 3 firms fined $107K</a> <!--Article Title-->
+                    
+                </li>
+            
+                <li class="sidebar-box-list__item sidebar-box-list__item--ordered">
+                    
+                        
+
+
+
+
+    
+    
+    
+            
+        
+
+
+                        <a class="sidebar-box-list__item-title" href="https://www.constructiondive.com/news/footage-shows-workers-concerned-about-hard-rock-new-orleans-before-deadly-c/565338/">Footage shows workers concerned about Hard Rock New Orleans before deadly collapse</a> <!--Article Title-->
+                    
+                </li>
+            
+                <li class="sidebar-box-list__item sidebar-box-list__item--ordered">
+                    
+                        
+
+
+
+
+    
+    
+    
+            
+        
+
+
+                        <a class="sidebar-box-list__item-title" href="https://www.constructiondive.com/news/2-dead-after-part-of-85m-hard-rock-hotel-project-in-new-orleans-collapses/564939/">2 dead, 1 missing after collapse of Hard Rock Hotel project in New Orleans</a> <!--Article Title-->
+                    
+                </li>
+            
+                <li class="sidebar-box-list__item sidebar-box-list__item--ordered">
+                    
+                        
+
+
+
+
+    
+    
+    
+            
+        
+
+
+                        <a class="sidebar-box-list__item-title" href="https://www.constructiondive.com/news/top-subcontractors-enrs-2019-list-analysis/565302/">Top subcontractors: ENR's 2019 list, analysis</a> <!--Article Title-->
+                    
+                </li>
+            
+                <li class="sidebar-box-list__item sidebar-box-list__item--ordered">
+                    
+                        
+
+
+
+
+
+                        <a class="sidebar-box-list__item-title" href="https://www.constructiondive.com/news/rebar-tying-robot-attracts-shark-tank-investor-3m-in-seed-funding/565090/">Rebar-tying robot attracts Shark Tank investor, $3M in funding</a> <!--Article Title-->
+                    
+                </li>
+            
+        </ol>
+    </div>
+    
+
+
+                                    
+
+                                    
+                                        
+
+
+
+
+    
+        <div class="sidebar-box" data-box-priority="3">
+            <h3 class="sidebar-box__header"><img src="50_files/badge.svg" class="sidebar-box__header-icon" height="35px">Staff Picks</h3>
+            <ul class="sidebar-box-list">
+                
+                    <li class="sidebar-box-list__item">
+                        <a class="sidebar-box-list__item-title" href="https://www.constructiondive.com/news/the-most-expensive-projects-on-the-planet-175b-fuels-these-5-jobsites/564232/">The most expensive projects on the planet: $175B fuels these 5 jobsites</a> <!--Article Title-->
+                    </li>
+                
+                    <li class="sidebar-box-list__item">
+                        <a class="sidebar-box-list__item-title" href="https://www.constructiondive.com/news/what-contractors-should-know-about-building-on-sacred-land/564516/">What builders should know about construction on sacred land</a> <!--Article Title-->
+                    </li>
+                
+                    <li class="sidebar-box-list__item">
+                        <a class="sidebar-box-list__item-title" href="https://www.constructiondive.com/news/building-the-wall-a-construction-timeline/551050/">Building the wall: A construction timeline</a> <!--Article Title-->
+                    </li>
+                
+                    <li class="sidebar-box-list__item">
+                        <a class="sidebar-box-list__item-title" href="https://www.constructiondive.com/news/5-metro-markets-to-dominate-us-megaproject-trend/564125/">5 metro markets to dominate US megaproject trend</a> <!--Article Title-->
+                    </li>
+                
+                    <li class="sidebar-box-list__item">
+                        <a class="sidebar-box-list__item-title" href="https://www.constructiondive.com/news/market-watch-track-constructions-economic-health/563113/">Market watch: Track construction's economic health</a> <!--Article Title-->
+                    </li>
+                
+            </ul>
+        </div>
+    
+
+
+                                    
+
+                                    
+
+                                    
+                                        
+                                            
+
+
+    
+        
+        <div class="sidebar-box hide-small show-large" data-box-priority="3">
+            <h3 class="sidebar-box__header">What We're Reading</h3>
+
+            
+            
+
+                <ul class="sidebar-box-list">
+                    
+                    
+                        
+                            <li class="sidebar-box-list__item">
+                                <img src="50_files/favicons_003.png">
+                                <span class="label label--soft">CBS Dallas/Fort Worth</span>
+                                <a class="sidebar-box-list__item-title" href="https://dfw.cbslocal.com/2019/10/17/globe-life-park-transformation/" target="_blank">
+                                    Globe Life Park Transformation From Baseball To Football, Soccer Stadium Begins
+                                    <img src="50_files/offsite_black.png" class="off-site-link" alt="offsite link">
+                                </a>
+                                <span class="secondary-label">Oct. 21</span>
+                            </li>
+                        
+                    
+                        
+                            <li class="sidebar-box-list__item">
+                                <img src="50_files/favicons.png">
+                                <span class="label label--soft">KHOU</span>
+                                <a class="sidebar-box-list__item-title" href="https://www.khou.com/article/news/local/12-billion-iah-international-terminal-expansion-underway/285-2fcb3588-5fb3-4717-af90-a1ad4a4e8d98" target="_blank">
+                                    $1.2B IAH international terminal expansion underway
+                                    <img src="50_files/offsite_black.png" class="off-site-link" alt="offsite link">
+                                </a>
+                                <span class="secondary-label">Oct. 21</span>
+                            </li>
+                        
+                    
+                        
+                            <li class="sidebar-box-list__item">
+                                <img src="50_files/favicons_002.png">
+                                <span class="label label--soft">Crain's Detroit Business</span>
+                                <a class="sidebar-box-list__item-title" href="https://www.crainsdetroit.com/real-estate/sterling-group-seeking-redevelop-joe-louis-arena-site" target="_blank">
+                                    Sterling Group seeking to redevelop Joe Louis Arena site
+                                    <img src="50_files/offsite_black.png" class="off-site-link" alt="offsite link">
+                                </a>
+                                <span class="secondary-label">Oct. 21</span>
+                            </li>
+                        
+                    
+                        
+                    
+                </ul>
+            
+            <a class="sidebar-box__cta" href="https://www.constructiondive.com/what-we-are-reading">View all</a>
+        </div>
+    
+
+
+                                        
+                                    
+
+                                    
+                                        
+
+
+
+    
+
+
+                                    
+
+                                    
+                                        
+    
+
+
+                                    
+
+                                    
+                                        
+
+
+
+
+
+
+                                    
+
+                                    
+                                        
+
+
+    
+
+
+                                    
+
+                                    
+                                    
+                                        
+<div class="hybrid-ad-wrapper hide-small show-large">
+    <div class="hybrid-ad-inner-wrapper">
+        
+        <div class="hide-small show-large">
+        
+            <div data-container-ad-unit-id="/21662595662/constructiondive/constructiondivehybrid3-desktop"></div>
+            <div id="dfp-hybrid3-desktop">
+                <script>
+                    waitToLoadAds.push(function() {
+                        googletag.cmd.push(function() {
+                            if (window.dfp_visibility == 'desktop' ) { googletag.display('dfp-hybrid3-desktop'); }
+                        });
+                    });
+                </script>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+                                    
+                            </aside>
+                        </div>
+                    </div>
+
+                
+
+                </div> <!-- ends page-inner-wrapper -->
+
+                <section class="pre-footer">
+                    
+    
+    
+    
+    
+    <section class="signup call-out">
+        <div class="row">
+            <div class="large-9 medium-10 medium-centered columns">
+                <h3>Get Construction Dive in your inbox</h3>
+                <p class="subhead">The free newsletter covering the top industry headlines</p>
+                
+
+
+
+
+ 
+    
+    
+
+            <form class="form js-form-email-validate" name="signup" action="/signup/" method="POST" id="signup_right_sidebar">
+
+                
+
+                
+                
+                    <label for="id_f2aff7_email" class="email-input js-email-input">
+                        <span class="screen-reader-text">Email:</span>
+                        <input type="email" name="email" required="" placeholder="Enter your work email" class="email" id="id_f2aff7_email">
+                    </label>
+                
+
+                <input type="hidden" name="signup_box_location" value="bottom">
+                
+                
+                    <input type="hidden" name="signup_url" value="https://www.constructiondive.com/news/canadas-next-tallest-tower-is-ready-to-rise-in-toronto/506915/" id="id_f2aff7_signup_url">
+                
+                    <input type="hidden" name="js_enabled" id="id_f2aff7_js_enabled" value="1">
+                
+
+                
+                
+                    
+                    <ul class="signup-list list-no-bullets">
+                        
+                            <li>
+                                <label><span class="screen-reader-text">Select Newsletter:</span></label>
+                                <input type="checkbox" name="site_newsletters" value="1" class="checkbox" checked="checked">
+                                <span class="newsletter-title">Construction Dive</span>
+                                
+                                    <p class="newsletter-description">Topics covered: commercial, infrastructure, design, green, regulation, multifamily construction, and more.</p>
+                                
+                                
+                                    <span class="secondary-label">Daily</span>
+                                
+                                
+                                    <a class="primary-link" href="https://www.constructiondive.com/user_media/thumbnails/newsletter_lists/construction_2018.png" target="_blank">view sample</a>
+                                
+                            </li>
+                        
+                            <li>
+                                <label><span class="screen-reader-text">Select Newsletter:</span></label>
+                                <input type="checkbox" name="site_newsletters" value="69" class="checkbox">
+                                <span class="newsletter-title">Construction Dive: Tech</span>
+                                
+                                
+                                    <span class="secondary-label">Weekly</span>
+                                
+                                
+                                    <a class="primary-link" href="https://www.constructiondive.com/user_media/thumbnails/newsletter_lists/construction_tech_2018.png" target="_blank">view sample</a>
+                                
+                            </li>
+                        
+                        
+                    </ul>
+                
+
+                
+                
+
+                
+                <button class="button button--loud button--full-width" type="submit" value="Sign up">
+                    <img class="button__icon button__icon--left" src="50_files/email.svg" alt="email icon"> Sign up
+                </button>
+
+                
+                <label class="error email_error" style="display:none;">A valid email address is required.</label>
+                <label class="error newsletter-error" style="display:none;">Please select at least one newsletter.</label>
+
+                
+                <p class="help-text help-text--small">By signing up you agree to our <a href="http://www.industrydive.com/privacy-policy/" target="_blank">privacy policy</a>. You can opt out anytime.</p>
+            </form>
+    
+
+            </div>
+        </div>
+    </section>
+    
+
+                </section>
+
+                
+                <hr class="footer-hr">
+                <footer>
+                    <div class="custom-article-footer">
+                        <div class="row">
+                            <div class="medium-6 columns footer-links">
+                                <h4 class="uppercase-heading-01">Explore</h4>
+                                        <ul class="list-no-bullets footer-links">
+                                            
+                                            <li>
+                                                <a href="https://www.constructiondive.com/submit-tip/">Submit A Tip</a>
+                                            </li>
+                                            <li>
+                                                <a href="https://www.constructiondive.com/editors/">Editorial Team</a>
+                                            </li>
+                                            <li>
+                                                <a href="https://www.constructiondive.com/about/">About</a>
+                                            </li>
+                                            <li>
+                                                <a href="https://www.constructiondive.com/signup/">Newsletter</a>
+                                            </li>
+                                            <li>
+                                                <a href="https://www.industrydive.com/article-reprints/">Article Reprints</a>
+                                            </li>
+
+                                            
+                                            
+                                                <li>
+                                                    <a href="https://www.constructiondive.com/press-release/">Press Releases</a>
+                                                </li>
+                                            
+                                            
+                                                <li>
+                                                    <a href="https://www.constructiondive.com/what-we-are-reading/">What We're Reading</a>
+                                                </li>
+                                            
+                                            
+                                                <li>
+                                                    <a href="https://www.constructiondive.com/advertise/">Advertising</a>
+                                                </li>
+                                            
+                                            <li>
+                                                
+                                                <a href="https://www.constructiondive.com/feedback/">Contact</a>
+                                            </li>
+                                            
+                                        </ul>
+                                
+                                    
+                                
+                                <h4 class="uppercase-heading-01">Follow</h4>
+                                
+                                <a href="https://twitter.com/constructdive" class="button social"><img src="50_files/twitter-follow-icon-black.png" alt="Twitter"></a>
+                                
+
+                                
+                                <a href="https://www.facebook.com/ConstructionDive/" class="button social"><img src="50_files/facebook-follow-icon-black.png" alt="Facebook"></a>
+                                
+
+                                
+                                <a href="https://www.linkedin.com/company/construction-dive-construction-and-builder-news" class="button social"><img src="50_files/linkedin-follow-icon-black.png" alt="LinkedIn"></a>
+                                
+
+                                
+                                    <a href="https://www.constructiondive.com/feeds/news/" class="button social"><img src="50_files/rss-follow-icon-black.png" alt="LinkedIn"></a>
+                                
+                            </div>
+
+                            <!-- Footer feedback form -->
+                            <div class="medium-6 columns">
+                                <form id="footer-feedback-form" class="form js-form-email-validate" method="POST" action="/feedback/" onsubmit="javascript:$('#feedback-footer-canary').val('(blank)');$('#mixpanel_id').val(mixpanel.get_distinct_id());">
+                                    <h4 class="uppercase-heading-01">Feedback</h4>
+
+                                    <label for="email" class="email-input">Work email: <span class="form__required-tag">*</span></label>
+                                    <input id="email" type="email" name="email" placeholder="Enter your work email" required="">
+
+                                    <label for="feedback">Message: <span class="form__required-tag">*</span></label>
+                                    <textarea id="feedback" name="feedback" placeholder="Send us your feedback here" required=""></textarea>
+
+                                    <div class="g-recaptcha" data-sitekey="6LfnFggUAAAAAKaDTgN6vqjZtnNENIqa--TCG9F4"><div style="width: 304px; height: 78px;"><div><iframe src="50_files/anchor.html" role="presentation" name="a-3qq37k2ol003" scrolling="no" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation allow-modals allow-popups-to-escape-sandbox allow-storage-access-by-user-activation" width="304" height="78" frameborder="0"></iframe></div><textarea id="g-recaptcha-response" name="g-recaptcha-response" class="g-recaptcha-response" style="width: 250px; height: 40px; border: 1px solid rgb(193, 193, 193); margin: 10px 25px; padding: 0px; resize: none; display: none;"></textarea></div></div>
+
+                                    <button type="submit" class="button button--soft">Submit</button>
+
+                                    <div style="display:none">
+                                        <label for="feedback-footer-canary">Please leave this field blank
+                                            <input id="feedback-footer-canary" type="text" name="canary">
+                                            <input id="mixpanel_id" type="text" name="mixpanel_id" value="blank">
+                                        </label>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </footer>
+                <hr class="footer-hr">
+                <div class="baseline-footer-wrapper">
+                    <!-- smt user footer --> 
+
+<div class="baseline-footer">
+    © 2019 <a href="http://www.industrydive.com/">Industry Dive</a>. All rights reserved. | View our <a href="http://www.industrydive.com/industries/">other publications</a>
+    | <a href="http://www.industrydive.com/privacy-policy/">Privacy policy</a>
+    | <a href="http://www.industrydive.com/terms-of-use/">Terms of use</a>
+    | <a href="http://www.industrydive.com/takedown-policy/">Take down policy</a>.
+</div>
+                </div>
+                
+            </div>
+        </div>
+
+
+        <!-- mobile menu, not visible on desktop, must go AFTER footer -->
+        
+        <nav class="mobile-menu">
+            <div class="mm-top-bar">
+                <button class="mobile-menu-toggle">
+                    <img src="50_files/close_white.svg" alt="menu">
+                </button>
+                <div class="mm-search">
+                    <form action="/search/" method="GET" data-ajax="false">
+                        <label for="search">
+                            <span class="screen-reader-text">Search</span>
+                            <input id="search" type="search" name="q" placeholder="search" data-role="none">
+                        </label>
+                        <button type="submit" value="" data-role="none">
+                            <img src="50_files/search.svg" alt="search">
+                        </button>
+                    </form>
+                </div>
+            </div>
+            <ul class="mm-list list-no-bullets">
+                <li>
+                    <a href="https://www.constructiondive.com/" class="">
+                        <img src="50_files/home.svg" alt="home" width="20" height="20">
+                        <span>Home</span>
+                    </a>
+                </li>
+                <li class="mm-accordion">
+                    <button>
+                        <img src="50_files/topics.svg" alt="topics" width="20" height="20">
+                        <span>Topics</span>
+                        <span class="accordion-toggle-arrow">
+                            <img src="50_files/chevron_down.svg" alt="down arrow">
+                        </span>
+                    </button>
+                    <ul class="list-no-bullets" style="display: none;">
+                        
+                            
+                            
+                                <li>
+                                    <a class="" href="https://www.constructiondive.com/topic/commercial-building/">Commercial</a>
+                                </li>
+                            
+                        
+                            
+                            
+                                <li>
+                                    <a class="" href="https://www.constructiondive.com/topic/residential-building/">Residential</a>
+                                </li>
+                            
+                        
+                            
+                            
+                                <li>
+                                    <a class="" href="https://www.constructiondive.com/topic/technology/">Tech</a>
+                                </li>
+                            
+                        
+                            
+                            
+                                <li>
+                                    <a class="" href="https://www.constructiondive.com/topic/design-and-architecture/">Design</a>
+                                </li>
+                            
+                        
+                            
+                            
+                                <li>
+                                    <a class="" href="https://www.constructiondive.com/topic/tools-and-equipment/">Products</a>
+                                </li>
+                            
+                        
+                            
+                            
+                                <li>
+                                    <a class="" href="https://www.constructiondive.com/topic/green-building/">Green</a>
+                                </li>
+                            
+                        
+                            
+                            
+                                <li>
+                                    <a class="" href="https://www.constructiondive.com/topic/economy/">Econ</a>
+                                </li>
+                            
+                        
+                            
+                            
+                                <li>
+                                    <a class="" href="https://www.constructiondive.com/topic/legal/">Legal/Regs</a>
+                                </li>
+                            
+                        
+                            
+                            
+                                <li>
+                                    <a class="" href="https://www.constructiondive.com/topic/infrastructure/">Infrastructure</a>
+                                </li>
+                            
+                        
+                            
+                            
+                                <li>
+                                    <a class="" href="https://www.constructiondive.com/topic/corporate-business-news/">Corp</a>
+                                </li>
+                            
+                        
+                    </ul>
+                </li>
+                
+                <li>
+                    <a href="https://www.constructiondive.com/deep-dive/" class="">
+                         <img src="50_files/deep_dive.svg" alt="deep dive" width="20" height="20">
+                        <span>Deep Dive</span>
+                    </a>
+                </li>
+                
+                
+                    <li>
+                        <a href="https://www.constructiondive.com/opinion/">
+                            <img src="50_files/opinion.svg" alt="opinion" width="20" height="20">
+                            <span>Opinion</span>
+                        </a>
+                    </li>
+                
+                
+                
+                    <li>
+                        <a href="https://www.constructiondive.com/library/" class="">
+                            <img src="50_files/library.svg" alt="library" width="20" height="20">
+                            <span>Library</span>
+                        </a>
+                    </li>
+                
+                
+                    <li>
+                        <a href="https://www.constructiondive.com/events/" class="">
+                            <img src="50_files/events.svg" alt="events" width="20" height="20">
+                            <span>Events</span>
+                        </a>
+                    </li>
+                
+                
+                    <li>
+                        <a href="https://www.constructiondive.com/jobs/" class="">
+                            <img src="50_files/jobs.svg" alt="jobs" width="20" height="20">
+                            <span>Jobs</span>
+                        </a>
+                    </li>
+                
+
+                
+            </ul>
+            
+                
+                <section class="signup mm-signup">
+                    <div class="row">
+                        <div class="columns">
+                            <h3>Get Construction Dive in your inbox</h3>
+                            <p class="subhead">The free newsletter covering the top industry headlines</p>
+                            
+
+
+
+
+ 
+    
+    
+
+            <form class="form js-form-email-validate" name="signup" action="/signup/" method="POST" id="signup_right_sidebar">
+
+                
+
+                
+                
+                    <label for="id_bb7fc_email" class="email-input js-email-input">
+                        <span class="screen-reader-text">Email:</span>
+                        <input type="email" name="email" required="" placeholder="Enter your work email" class="email" id="id_bb7fc_email">
+                    </label>
+                
+
+                <input type="hidden" name="signup_box_location" value="integrated_menu">
+                
+                
+                    <input type="hidden" name="signup_url" value="https://www.constructiondive.com/news/canadas-next-tallest-tower-is-ready-to-rise-in-toronto/506915/" id="id_bb7fc_signup_url">
+                
+                    <input type="hidden" name="js_enabled" id="id_bb7fc_js_enabled" value="1">
+                
+
+                
+                
+                    
+                    <ul class="signup-list list-no-bullets">
+                        
+                            <li>
+                                <label><span class="screen-reader-text">Select Newsletter:</span></label>
+                                <input type="checkbox" name="site_newsletters" value="1" class="checkbox" checked="checked">
+                                <span class="newsletter-title">Construction Dive</span>
+                                
+                                    <p class="newsletter-description">Topics covered: commercial, infrastructure, design, green, regulation, multifamily construction, and more.</p>
+                                
+                                
+                                    <span class="secondary-label">Daily</span>
+                                
+                                
+                                    <a class="primary-link" href="https://www.constructiondive.com/user_media/thumbnails/newsletter_lists/construction_2018.png" target="_blank">view sample</a>
+                                
+                            </li>
+                        
+                            <li>
+                                <label><span class="screen-reader-text">Select Newsletter:</span></label>
+                                <input type="checkbox" name="site_newsletters" value="69" class="checkbox">
+                                <span class="newsletter-title">Construction Dive: Tech</span>
+                                
+                                
+                                    <span class="secondary-label">Weekly</span>
+                                
+                                
+                                    <a class="primary-link" href="https://www.constructiondive.com/user_media/thumbnails/newsletter_lists/construction_tech_2018.png" target="_blank">view sample</a>
+                                
+                            </li>
+                        
+                        
+                    </ul>
+                
+
+                
+                
+
+                
+                <button class="button button--loud button--full-width" type="submit" value="Sign up">
+                    <img class="button__icon button__icon--left" src="50_files/email.svg" alt="email icon"> Sign up
+                </button>
+
+                
+                <label class="error email_error" style="display:none;">A valid email address is required.</label>
+                <label class="error newsletter-error" style="display:none;">Please select at least one newsletter.</label>
+
+                
+                <p class="help-text help-text--small">By signing up you agree to our <a href="http://www.industrydive.com/privacy-policy/" target="_blank">privacy policy</a>. You can opt out anytime.</p>
+            </form>
+    
+
+                        </div>
+                    </div>
+                </section>
+            
+        </nav>
+        
+
+        
+    <script src="50_files/news.js" async=""></script>
+    
+    <script>
+        //Add styling for pdf only if admin button is clicked
+        $(".download-promoted-story-button").click(function(){
+            $("body").addClass("admin-pdf-styling");
+        });
+        $(".rrssb-print").click(function(){
+            if ($("body").hasClass("admin-pdf-styling")){
+                $("body").removeClass("admin-pdf-styling");
+            }
+        });
+
+    </script>
+
+
+        
+
+        
+    <script src="50_files/oct.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        if(typeof twttr !== "undefined") {
+            twttr.conversion.trackPid('l6gug', { tw_sale_amount: 0, tw_order_quantity: 0 });
+        } else {
+            window.console && console.log && console.log("twttr undefined; Unable to track twitter retargeting");
+        }
+    </script>
+    <noscript>
+    <img height="1" width="1" style="display:none;" alt="" src="https://analytics.twitter.com/i/adsct?txn_id=l6gug&amp;p_id=Twitter&amp;tw_sale_amount=0&amp;tw_order_quantity=0" />
+    <img height="1" width="1" style="display:none;" alt="" src="//t.co/i/adsct?txn_id=l6gug&amp;p_id=Twitter&amp;tw_sale_amount=0&amp;tw_order_quantity=0" />
+    </noscript>
+
+
+
+        
+
+        <!--[if lt IE 9]>
+            <script type="text/javascript" src="/static/js/rem.min.js?550216110918" ></script>
+        <![endif]-->
+
+         
+    
+        
+        <!-- Sailthru Horizon -->
+
+
+<!-- <script type="text/javascript" src="https://ak.sail-horizon.com/horizon/v1.js"></script> -->
+<script src="50_files/spm.js"></script>
+<script type="text/javascript">
+    $(function() {
+        // Sailthru Personalization Engine Setup
+        var sailthru_setup = {
+            customerId: '12ab35a80530ffa5450add9c09f5de04',
+            domain: 'horizon.constructiondive.com',
+            spider: true
+        };
+        
+        if (window.Sailthru) {
+            Sailthru.init(sailthru_setup);
+        }
+    });
+</script>
+
+    
+
+
+        <script async="" type="text/javascript" src="50_files/shared.js"></script>
+
+        <script>
+            // Set cookie if we're on mobile app. Expire if we're not. This affects
+            // which template is used to display the site to the user.
+            $(document).ready(function() {
+                // Get integer value of mobileapp param from URL and default to 0 if it doesn't exist
+                var mobileapp = '';
+
+                // Set cookie if mobileapp is 1 or 2 or expire cookie if mobileapp == 0
+                if (mobileapp == '0') {
+                    document.cookie = 'mobileapp=; path=/; expires=Thu, 01 Jan 1970 00:00:01 GMT;';
+                } else if (mobileapp == '1' || mobileapp == '2') {
+                    document.cookie = 'mobileapp=' + mobileapp + '; path=/;';
+                }
+            });
+        </script>
+
+        <script type="text/javascript">
+            function alert_recaptcha(event) {
+                /*
+                Generic function to check whether the recaptcha widget in the page has been checked or not.
+                If not, does not submit the form and instead prompts the user with a modal to do so.
+                Can/should be used against submit events for forms installed with a google recaptcha widget.
+                I abstracted it here because I use it on other derived pages and wanted to keep it a bit more DRY.
+                */
+                var recaptcha_checked = grecaptcha.getResponse().length > 0;
+                if (!recaptcha_checked) {
+                    event.preventDefault();
+                    alert("Please verify that you are not a robot")
+                }
+            }
+
+            $('#footer-feedback-form').submit(function(event){
+                // check if the user filled out the recaptcha widget
+                alert_recaptcha(event)
+            });
+        </script>
+    
+
+<div id="cboxOverlay" style="display: none;"></div><div id="colorbox" class="" role="dialog" tabindex="-1" style="display: none;"><div id="cboxWrapper"><div><div id="cboxTopLeft" style="float: left;"></div><div id="cboxTopCenter" style="float: left;"></div><div id="cboxTopRight" style="float: left;"></div></div><div style="clear: left;"><div id="cboxMiddleLeft" style="float: left;"></div><div id="cboxContent" style="float: left;"><div id="cboxTitle" style="float: left;"></div><div id="cboxCurrent" style="float: left;"></div><button type="button" id="cboxPrevious"></button><button type="button" id="cboxNext"></button><button id="cboxSlideshow"></button><div id="cboxLoadingOverlay" style="float: left;"></div><div id="cboxLoadingGraphic" style="float: left;"></div></div><div id="cboxMiddleRight" style="float: left;"></div></div><div style="clear: left;"><div id="cboxBottomLeft" style="float: left;"></div><div id="cboxBottomCenter" style="float: left;"></div><div id="cboxBottomRight" style="float: left;"></div></div></div><div style="position: absolute; width: 9999px; visibility: hidden; display: none; max-width: none;"></div></div>
+<script type="text/javascript" id="">!function(b,e,f,g,a,c,d){b.fbq||(a=b.fbq=function(){a.callMethod?a.callMethod.apply(a,arguments):a.queue.push(arguments)},b._fbq||(b._fbq=a),a.push=a,a.loaded=!0,a.version="2.0",a.queue=[],c=e.createElement(f),c.async=!0,c.src=g,d=e.getElementsByTagName(f)[0],d.parentNode.insertBefore(c,d))}(window,document,"script","https://connect.facebook.net/en_US/fbevents.js");fbq("init","113976282335052",{em:"insert_email_variable,"});fbq("track","PageView");</script>
+<noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=113976282335052&amp;ev=PageView&amp;noscript=1"></noscript>
+
+<script type="text/javascript" id="">_linkedin_data_partner_id="47808";</script><script type="text/javascript" id="">(function(){var b=document.getElementsByTagName("script")[0],a=document.createElement("script");a.type="text/javascript";a.async=!0;a.src="https://snap.licdn.com/li.lms-analytics/insight.min.js";b.parentNode.insertBefore(a,b)})();</script>
+<noscript>
+<img height="1" width="1" style="display:none;" alt="" src="https://dc.ads.linkedin.com/collect/?pid=47808&amp;fmt=gif">
+</noscript>
+<script type="text/javascript" id="">!function(d,e){var b="0089be3aaf6aadd50cfb43aa324d1fedc4";if(d.obApi){var c=function(a){return"[object Array]"===Object.prototype.toString.call(a)?a:[a]};d.obApi.marketerId=c(d.obApi.marketerId).concat(c(b))}else{var a=d.obApi=function(){a.dispatch?a.dispatch.apply(a,arguments):a.queue.push(arguments)};a.version="1.1";a.loaded=!0;a.marketerId=b;a.queue=[];b=e.createElement("script");b.async=!0;b.src="//amplify.outbrain.com/cp/obtp.js";b.type="text/javascript";c=e.getElementsByTagName("script")[0];
+c.parentNode.insertBefore(b,c)}}(window,document);obApi("track","PAGE_VIEW");</script>
+<script type="text/javascript" id="">!function(b,e,f,g,a,c,d){b.fbq||(a=b.fbq=function(){a.callMethod?a.callMethod.apply(a,arguments):a.queue.push(arguments)},b._fbq||(b._fbq=a),a.push=a,a.loaded=!0,a.version="2.0",a.queue=[],c=e.createElement(f),c.async=!0,c.src=g,d=e.getElementsByTagName(f)[0],d.parentNode.insertBefore(c,d))}(window,document,"script","https://connect.facebook.net/en_US/fbevents.js");fbq("init","113976282335052");fbq("set","agent","tmgoogletagmanager","113976282335052");fbq("track","PageView");</script>
+<noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=113976282335052&amp;ev=PageView&amp;noscript=1"></noscript>
+<div style="width:0px; height:0px; display:none; visibility:hidden;" id="batBeacon0.3972156366643027"><img style="width:0px; height:0px; display:none; visibility:hidden;" id="batBeacon0.16567416162730852" alt="" src="50_files/0.txt" width="0" height="0"></div><div style="background-color: rgb(255, 255, 255); border: 1px solid rgb(204, 204, 204); box-shadow: rgba(0, 0, 0, 0.2) 2px 2px 3px; position: absolute; transition: visibility 0s linear 0.3s, opacity 0.3s linear 0s; opacity: 0; visibility: hidden; z-index: 2000000000; left: 0px; top: -10000px;"><div style="width: 100%; height: 100%; position: fixed; top: 0px; left: 0px; z-index: 2000000000; background-color: rgb(255, 255, 255); opacity: 0.05;"></div><div style="border: 11px solid transparent; width: 0px; height: 0px; position: absolute; pointer-events: none; margin-top: -11px; z-index: 2000000000;" class="g-recaptcha-bubble-arrow"></div><div style="border: 10px solid transparent; width: 0px; height: 0px; position: absolute; pointer-events: none; margin-top: -10px; z-index: 2000000000;" class="g-recaptcha-bubble-arrow"></div><div style="z-index: 2000000000; position: relative;"><iframe title="recaptcha challenge" src="50_files/bframe.html" style="width: 100%; height: 100%;" name="c-3qq37k2ol003" scrolling="no" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation allow-modals allow-popups-to-escape-sandbox allow-storage-access-by-user-activation" frameborder="0"></iframe></div></div><script async="" type="text/javascript" src="50_files/config.js"></script></body></html>

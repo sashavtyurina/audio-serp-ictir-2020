@@ -1,0 +1,566 @@
+/*
+Theme Name:     Soton Blog G3
+Description:    Third generation of the Soton blog theme, based on Pinboard
+Author:         Hembo Pagi
+Author URI:     http://archaeoweb.net/author/hembo-pagi/
+Template:       pinboard
+Version:        0.7.5(28.04.2014)
+*/
+
+@import url("../pinboard/style.css");
+
+/* header color */
+#header {
+    background-color: #0097c2;
+}
+
+/* lets remove background image if set by Pinboard */
+body {
+    background-image: none !important;
+}
+
+/* Soton logo */
+#header img {
+    margin: 25px 0 5px 25px;
+}
+
+/* Blog name below the Soton logo - position */
+#site-description {
+    margin-left: 25px;
+    font-size: 18px;
+    font-weight: normal;
+    line-height: 30px;
+    float: left;
+}
+
+/* Blog name below the Soton logo - color */
+#site-title a, 
+#site-description {
+    color: #fff !important;
+}
+
+/* Header border */
+#header {
+    border-top: none;
+}
+
+/* Search-form position */
+#header #searchform {
+    float: right;
+    margin: 0 25px 10px 0;
+}
+
+/* Search-form background */
+#header input#s {
+    background-color: #dfdfdf;
+}
+
+
+/* Navigation - background */
+#access {
+    background: #bbbbbb;
+}
+
+/* Navigation - menu items */
+#access ul {
+	text-transform:none !important;
+}
+
+/* Navigation - paging */
+#posts-nav {
+    margin:7px !important;
+}
+
+/* Navigation - current and active item */
+#access a:hover, 
+#access li.current_page_item > a, 
+#access li.current-menu-item > a,
+#access li li {
+    background: #a7a7a7;
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Currently browsing */
+#current-location .prefix-text {
+    color: #000;
+    font-size: 12px;
+    line-height: 1.62em;
+    text-transform: none;
+}
+
+/* Page title, for example category name */
+.page-title, #sidebar-wide .widget-title, #sidebar-footer-wide .widget-title {
+    font-size: 18px;
+    font-style: normal;
+}
+
+
+/* lets break long words */
+.entry-summary {
+    word-wrap:break-word;
+}
+
+/* Meta information below the post */
+.entry-meta span {
+    margin-left: 0px;
+}
+
+.entry-title a:hover,
+section#content > article > .entry a,
+section#content > article > .entry a.active,
+section#content > article > .entry a.hover,
+section#content > article > .entry a.visited {
+    color: #0097c2;
+}
+
+/* Coauthor metabox alignrment */
+.coauthor {
+    float:left;
+    display: inline;
+    margin: 25px 5px 5px 0;
+}
+.coauthor .author {
+    margin-left: 0 !important;
+}
+
+/* Breadcrumbs */
+
+ol.breadcrumb {
+	list-style: none;
+	margin:0;
+	}
+ol.breadcrumb li {
+	display: inline;
+	}
+ol.breadcrumb > li + li::before {
+	padding: 0 5px;
+	color: #ccc;
+	content: "/";
+	}
+
+/* Accordion */
+.ui-state-active, .ui-widget-content .ui-state-active, .ui-widget-header .ui-state-active {
+	border: 1px solid #ddd !important;
+	background: #ffffff !important;
+	}
+.ui-widget-content {
+	border: 1px solid #ddd !important;
+	background: #fff !important;
+	color: inherit !important;
+	}
+.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default {
+    border: 1px solid #d3d3d3;
+    background-color: #f8f8f8 !important;
+    background-image: none !important;
+}
+
+
+/* Data tabeles */
+table {
+	border-collapse: separate;
+	}
+table td,
+table th {
+	padding: 10px;
+	}
+tr:first-child th:first-child {
+	border-left: solid 1px #ddd;
+	}
+tr:first-child th:last-child { 
+	border-right: solid 1px #ddd;
+	}
+th {
+	border-top: solid 1px #ddd;
+	}
+th {
+	border-bottom: solid 2px #ddd;
+	text-align: left;
+	}
+td {
+	border-bottom: solid 1px #ddd;
+	text-align: left;
+	}
+td:first-child {
+	border-left: solid 1px #ddd;
+	}
+td:last-child {
+	border-right: solid 1px #ddd;
+	}
+tr:first-child th:first-child {
+	border-top-left-radius: 4px;
+	}
+tr:first-child th:last-child {
+	border-top-right-radius: 4px;
+	}
+tr:last-child td:first-child {
+	border-bottom-left-radius: 4px;
+	}
+tr:last-child td:last-child {
+	border-bottom-right-radius: 4px;
+	}
+	
+/* Footer */
+#footer-area {
+	background: #f8f8f8;
+}
+#copyright {
+    background: #f8f8f8;
+}
+#footer {
+    border-top: none;
+}
+
+/* AddThis */
+#soton-addthis span {
+    padding-left: 5px !important;
+}
+
+/* Comments  */
+.comments-link-align {
+	float:right !important;
+}
+
+
+/* Fonts and text size*/
+body {
+	font-family:Verdana, Geneva, "DejaVu Sans", sans-serif;
+	line-height:1.4em;
+}
+body,
+#slider .entry-title,
+.page-title,
+#sidebar-wide .widget-title,
+#sidebar-boxes .widget-title,
+#sidebar-footer-wide .widget-title {
+   font-family:Verdana, Geneva, "DejaVu Sans", sans-serif;
+}
+h1, h2, h3, h4, h5, h6,
+td, th,
+#site-title,
+#site-description,
+.entry-title,
+#comments-title,
+#reply-title,
+.widget-title {
+    font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
+.entry-content {
+   font-family:Verdana, Geneva, "DejaVu Sans", sans-serif;
+}
+
+#social-media-icons {
+    margin-top: 0px;
+    margin-bottom: 7px;
+    margin-right: 5px;
+}
+.entry-title {
+    font-size:17px !important;
+    line-height:1.1em !important;
+}
+.threefourthcol .threecol .entry, .onecol .fourcol .entry, .fourcol .widget {
+	margin:2%;
+}
+
+
+#header input#s {
+    background:#dedede url(images/socialmedia/header/search.png) right center no-repeat;
+    background:rgba(0, 0, 0, .1) url(images/socialmedia/header/search.png) right center no-repeat;
+}
+
+#header input#s:focus {
+    background:#ececec url(images/socialmedia/header/search.png) right center no-repeat;
+}
+
+/* Social media images */
+
+
+.facebook {
+    background-image: url(images/socialmedia/header/facebook.png);
+}
+
+.twitter {
+    background-image: url(images/socialmedia/header/twitter.png);
+}
+
+.pinterest {
+    background-image: url(images/socialmedia/header/dribble.png);
+}
+
+.flickr {
+    background-image: url(images/socialmedia/header/flickr.png);
+}
+
+.vimeo {
+    background-image: url(images/socialmedia/header/vimeo.png);
+}
+
+.youtube {
+    background-image: url(images/socialmedia/header/youtube.png);
+}
+
+.google-plus {
+    background-image: url(images/socialmedia/header/google-plus.png);
+}
+
+.dribble {
+    background-image: url(images/socialmedia/header/dribble.png);
+}
+
+.linkedin {
+    background-image: url(images/socialmedia/header/linkedin.png);
+}
+
+.entry-author-link {
+    background:url(images/socialmedia/header/user.png) left center no-repeat;
+}
+
+.entry-date {
+    background:url(images/socialmedia/header/time.png) left center no-repeat;
+}
+
+.entry-category {
+    background:url(images/socialmedia/header/ribbon.png) left center no-repeat;
+}
+
+.attachment-size {
+    background:url(images/socialmedia/header/image.png) left center no-repeat;
+}
+
+.edit-link {
+    background:url(images/socialmedia/header/edit.png) left center no-repeat;
+}
+
+.entry-permalink {
+    float:right;
+    margin:0;
+    background:url(images/socialmedia/header/link.png) left center no-repeat;
+}
+
+.language-it {
+	background-image: url(images/languages/it.png);
+}
+
+.language-fr {
+	background-image: url(images/languages/fr.png);
+}
+
+.language-en {
+	background-image: url(images/languages/en.png);
+}
+
+ul.user-list .author-bio img { /*removes padding from images at users listing page */
+	padding: 0 !important;
+	border: none !important;
+	margin-right: 5px !important;
+}
+
+/* lets overwrite the Pinboard image background handling  - otherwise pins in maps gets white bg */
+.entry-content a img,
+#attachment-nav a img,
+.entry-content a:hover img,
+#attachment-nav a:hover img {
+	box-shadow: none;
+	background: transparent;
+	border: none;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio : 1.5), screen and (min-device-pixel-ratio : 1.5) {
+
+    #access .nav-show,
+    #access a.nav-show:hover {
+        background-image: url(images/socialmedia/header/nav_2x.png);
+        background-size:100%;
+    }
+
+    #header input#s {
+        background-image: url(images/socialmedia/header/search_2x.png);
+        background-size:36px;
+        background-position: -3px center;
+    }
+    .facebook {
+        background-image: url(images/socialmedia/header/facebook_2x.png);
+        background-size:100%;
+    }
+
+    .twitter {
+        background-image: url(images/socialmedia/header/twitter_2x.png);
+        background-size:100%;
+    }
+
+    .pinterest {
+        background-image: url(images/socialmedia/header/pinterest_2x.png);
+        background-size:100%;
+    }
+
+    .google-plus {
+        background-image: url(images/socialmedia/header/google-plus_2x.png);
+        background-size:100%;
+    }
+
+    .vimeo {
+        background-image: url(images/socialmedia/header/vimeo_2x.png);
+        background-size:100%;
+    }
+
+    .dribble {
+        background-image: url(images/socialmedia/header/dribble_2x.png);
+        background-size:100%;
+    }
+
+    .flickr {
+        background-image: url(images/socialmedia/header/flickr_2x.png);
+        background-size:100%;
+    }
+
+    .youtube {
+        background-image: url(images/socialmedia/header/youtube_2x.png);
+        background-size:100%;
+    }
+
+    .linkedin {
+        background-image: url(images/socialmedia/header/linkedin_2x.png);
+        background-size:100%;
+    }
+    .entry-author-link {
+        background-image: url(images/socialmedia/header/user_2x.png);
+        background-size: 12px;
+    }
+
+    .entry-date {
+        background-image: url(images/socialmedia/header/time_2x.png);
+        background-size: 12px;
+    }
+
+    .entry-category {
+        background-image: url(images/socialmedia/header/ribbon_2x.png);
+        background-size: 12px;
+    }
+
+    .attachment-size {
+        background-image: url(images/socialmedia/header/image_2x.png);
+        background-size: 12px;
+    }
+
+    .edit-link {
+        background-image: url(images/socialmedia/header/edit_2x.png);
+        background-size: 12px;
+    }
+
+    .entry-permalink {
+        background-image: url(images/socialmedia/header/link_2x.png);
+        background-size: 12px;
+    }
+}
+
+@media (max-width: 760px) {
+	/* Comments  */
+	.comments-link-align {
+		float:left !important;
+	}
+    #header img {
+        max-width: 70%;
+    }
+    #header #searchform {
+        margin: 10px auto !important;
+        float: left !important;
+        width: 40px !important;
+    }
+    #header input#s {
+        margin: 0 20px;
+        width: 150px;
+        transition: none !important;
+
+    }
+    #access .nav-show,
+    #access a.nav-show:hover {
+        background: url(images/socialmedia/header/nav.png) no-repeat;
+    }
+    #header input#s {
+        background:#ececec url(images/socialmedia/header/nav.png/search.png) right center no-repeat;
+    }
+    /* Navigation - background */
+    #access, 
+    #access a:hover,
+    #access a.nav-show:hover {
+        background-color: transparent !important;
+    }
+    #social-media-icons {
+        float: left;
+        margin: 0 0 0 180px;
+        text-align: center;
+        padding: 10px 0;
+    }
+    #access .nav-show, #access a.nav-show:hover {
+        top: 40px;
+        right: 5%;
+    }
+    #access:target .menu {
+        margin-top: 100px;
+    }
+	#access:target .nav-hide,
+	#access:target a.nav-hide:hover {
+		height: 100px !important;
+		background: none;
+	}
+}
+
+/* Pods forms */
+
+input[type=submit] {
+    color: #fff;
+    text-align: right;
+}
+
+.pods-submit .waiting {
+    display:none;
+}
+.pods-form-ui-label {
+    color:#666;
+}
+input[type="text"], 
+input[type="password"], 
+textarea {
+    border:#ccc 1px solid; 
+    width:96%;
+}
+
+/* Widget area */ 
+
+.sidebar,
+#sidebar .textwidget,
+.widget-title {
+    color:#666 !important;
+}
+
+.widget-area li {
+    border-bottom:none;
+}
+
+
+/* Fixing Firefox issue with calculating the withs*/
+@media (max-width: 1152px) {
+
+    .threefourthcol .threecol {
+        width: 49.9%;
+    }
+}
+
+@media screen and (max-width: 760px) {
+    
+    .twocol,
+    .threecol,
+    .fourcol,
+    .onecol .threecol,
+    .threefourthcol .threecol,
+    .onecol .fourcol {
+        float:none;
+        width:100%;
+    }
+    
+    /* lets hide user profile text for narrow screens*/
+    .author-bio.hidable {
+    	display: none;
+    }
+}
+

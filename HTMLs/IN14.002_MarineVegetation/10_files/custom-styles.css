@@ -1,0 +1,62 @@
+/*
+  Running Squiz Matrix
+  Developed by Squiz - http://www.squiz.net
+  Squiz, Squiz Matrix, MySource, MySource Matrix and Squiz.net are registered Trademarks of Squiz Pty Ltd
+  Page generated: 22 October 2019 07:18:05
+*/
+
+
+/* Custom Share Style */
+.addthis.desktop {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: flex;
+    justify-content: flex-end;
+    min-width: 9rem;
+}
+.addthis.mobile {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: flex;
+    justify-content: flex-end;
+}
+
+/* Custom Bootstrap Styles */
+.dropdown-menu li:before {
+    display: none;
+}
+.dropdown-menu a {
+    text-decoration: none;
+}
+
+@media (min-width: 60em) {
+    .addthis.mobile {
+        display: none;
+    }
+    .breadcrumbs {
+        display: -webkit-flex;
+        display: -moz-flex;
+        display: -ms-flex;
+        display: flex;
+        justify-content: space-between;
+    }
+}
+@page {
+    margin-top: 1cm;
+    margin-bottom: 1cm;
+}
+
+.tab-content {
+    overflow: scroll;
+}
+
+.auto-width {
+    width: initial !important;
+    margin: 0;
+}
+
+/*.at-svc-compact {*/
+/*    background-color: rgb(6, 63, 92) !important;*/
+/*}*/

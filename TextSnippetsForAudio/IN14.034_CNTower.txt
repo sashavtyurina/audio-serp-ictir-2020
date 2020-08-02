@@ -1,0 +1,35 @@
+{
+  "taskID": "IN14.034",
+  "snippets": [
+    {
+      "trueRank":1,
+      "title":"How Tall Is the CN Tower? - Height and Other Facts - TripSavvy.",
+      "tlDomain":"tripsavvy.com",
+      "summary":"Answer: At its highest point, the CN Tower is 553.33 metres tall (or 1,815 feet, 5 inches). That measurement is to the top of the 102 metre broadcast antenna however, so visitors to the CN Tower won't actually reach that height."
+    },
+    {
+      "trueRank":5,
+      "title":"Glass Floor - CN Tower.",
+      "tlDomain":"cntower.ca",
+      "summary":"The CN Tower's Glass Floor has been designed for you to have fun on it, so walk  or crawl across it, sit on it or even jump on it. Don't worry it won't break!"
+    },
+    {
+      "trueRank":10,
+      "title":"Two Of North America's Tallest Buildings: Toronto's CN Tower and ... ",
+      "tlDomain":"citypass.com",
+      "summary":"Two Of North America's Tallest Buildings: Toronto's CN Tower and NYC's Empire  State Building. August 29th, 2016. A visit to a major city often inspires wonder ..."
+    },
+    {
+      "trueRank":50,
+      "title":"Canada's next tallest tower is ready to rise in Toronto | Construction...",
+      "tlDomain":"constructiondive.com",
+      "summary":"Canada's next tallest tower is ready to rise in Toronto ... building when it opens in  2020, it will fail to meet the height of Toronto's CN Tower. ... in July that the 1  kilometer-tall building relies on a \"three-legged\" base for stability."
+    },
+    {
+      "trueRank":100,
+      "title":"A Condo Three Times The Size Of The CN Tower! - Toronto Realty ... ",
+      "tlDomain":"torontorealtyblog.com",
+      "summary":"After yesterday's blog post about the CN Tower, a colleague of mine asked, ...  and “mid-rise” condos change as buildings get taller and taller."
+    }
+  ]
+}

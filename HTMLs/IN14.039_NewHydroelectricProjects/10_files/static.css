@@ -1,0 +1,249 @@
+/* This Stylesheet formats the Columns as defined in the colctrl component */
+/* layout 0 : 50% 50% ( grid6 + grid6 ) - Legacy layout with spaces in between */
+/* layout 1 : 50% 50% ( grid6 + grid6 ) - New layout without spaces */
+/* layout 2 : 33% with spacing - New 3 column layout with spaces */
+/* layout 3 : 33% with no margins - New 3 column layout without spaces */
+
+div.parsys_column {
+    height: 100%; /* temp fix for the column height in the blank page */
+    width: 100%;
+    float: left;
+    border: 0;
+    vertical-align:top;
+    padding: 0;
+    margin: 0;
+}
+
+div.section {
+    // Property added to avoid IE hasLayout issue on paragraphs
+    // see #20817 - IE6: div around Drag Components image not big enough
+    zoom: 1;
+}
+
+div.parsys_column .section {
+    overflow:hidden;
+    width: 100%;
+}
+
+/* column control layouts */
+div.cq-colctrl-cols {width: 100%; float: left; }
+
+div.cq-colctrl-default { width: 100%;}
+
+
+/* --------------------------------------------------------------------------- Layout 0 */
+/* layout 0 : 50% 50% ( grid6 + grid6 ) */
+div.bch-cq-colctrl-lt0 { }
+/* -------------------------------------- Column Styles */
+div.bch-cq-colctrl-lt0-c0 { 
+    width: 300px; 
+    float: left;
+    margin-right: 60px;
+}
+div.bch-cq-colctrl-lt0-c1 { 
+    width: 300px; 
+    float: left; 
+}
+/* -------------------------------------- Navigation Grid Styles */
+div.bch-cq-colctrl-lt0 .text{
+    padding: 10px 0;
+}   
+div.bch-cq-colctrl-lt0 .info-box-red .text{
+    padding: 0;
+}  
+div.bch-cq-colctrl-lt0 .info-box-blue .text{
+    padding: 0;
+}  
+div.bch-cq-colctrl-lt0 .row {
+    overflow:hidden;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    z-index: -1;
+}
+
+/* --------------------------------------------------------------------------- Layout 1 */
+/* layout 1 : 50% 50% ( grid6 + grid6 ) */
+div.bch-cq-colctrl-lt1 { }
+/* -------------------------------------- Column Styles */
+div.bch-cq-colctrl-lt1-c0 { 
+    width: 49.5%; 
+    float: left;
+    border-left: solid 1px #CBC4BC;
+    border-right: solid 1px #CBC4BC;
+}
+div.bch-cq-colctrl-lt1-c1 { 
+    width: 50%; 
+    float: left;
+    border-right: solid 1px #CBC4BC;
+}
+/* -------------------------------------- Navigation Grid Styles */
+div.bch-cq-colctrl-lt1 .text{
+    padding: 30px;
+}      
+div.bch-cq-colctrl-lt1 .info-box-red .text{
+    padding: 0;
+}  
+div.bch-cq-colctrl-lt1 .info-box-blue .text{
+    padding: 0;
+}  
+div.bch-cq-colctrl-lt1 .row {
+    overflow:hidden;
+    border-bottom: solid 1px #CBC4BC;
+}
+div.bch-cq-colctrl-lt1 .row:hover {
+    box-shadow: inset 0 0 10px 3px rgba(0,0,0,0.1);
+}
+
+/* --------------------------------------------------------------------------- Layout 2 */
+/* layout 2 : 33% with spacing */
+div.bch-cq-colctrl-lt2 {
+    margin-bottom: 50px;
+}
+/* -------------------------------------- Column Styles */
+div.bch-cq-colctrl-lt2-c0 {
+    float: left;
+    margin: 0 2% 0 0;
+    width: 32%;
+}
+div.bch-cq-colctrl-lt2-c1 {
+    float: left;
+    margin: 0;
+    width: 32%;
+}
+div.bch-cq-colctrl-lt2-c2 {
+    float: left;
+    margin: 0 0 0 2%;
+    width: 32%;
+}.bch-cq-colctrl-lt2-c0 .row{
+    border-right: solid 1px #CBC4BC;
+    border-bottom: solid 1px #CBC4BC;
+}
+.bch-cq-colctrl-lt2-c1 .row{
+    border-right: solid 1px #CBC4BC;
+    border-bottom: solid 1px #CBC4BC;
+}
+.bch-cq-colctrl-lt2-c2 .row{
+    border-bottom: solid 1px #CBC4BC;
+}
+/* -------------------------------------- Navigation Grid Styles */
+div.bch-cq-colctrl-lt2 .text{
+    padding: 30px;
+}  
+div.bch-cq-colctrl-lt2 .image img{
+    width: 100%;
+}  
+div.bch-cq-colctrl-lt2 .info-box-red .text{
+    padding: 0;
+}  
+div.bch-cq-colctrl-lt2 .info-box-blue .text{
+    padding: 0;
+}  
+div.bch-cq-colctrl-lt2 .row {
+    overflow:hidden;
+    border: solid 1px #CBC4BC;
+	border-radius: 4px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+div.bch-cq-colctrl-lt2 .row:hover {
+    box-shadow: inset 0 0 10px 3px rgba(0,0,0,0.1);
+}
+
+/* --------------------------------------------------------------------------- Layout 3 */
+/* layout 3 : 33% with no margins */
+div.bch-cq-colctrl-lt3 {
+    box-shadow: 0 0 27px 3px rgba(0,0,0,0.1); 
+    margin-bottom: 50px;
+}
+/* -------------------------------------- Column Styles */
+div.bch-cq-colctrl-lt3-c0 {
+    float: left;
+    width: 33.33%;
+}
+div.bch-cq-colctrl-lt3-c1 {
+    float: left;
+    width: 33.33%;
+}
+div.bch-cq-colctrl-lt3-c2 {
+    float: left;
+    width: 33.33%;
+}
+.bch-cq-colctrl-lt3-c0 .row{
+    border-right: solid 1px #CBC4BC;
+    border-bottom: solid 1px #CBC4BC;
+}
+.bch-cq-colctrl-lt3-c1 .row{
+    border-right: solid 1px #CBC4BC;
+    border-bottom: solid 1px #CBC4BC;
+}
+.bch-cq-colctrl-lt3-c2 .row{
+	border-bottom: solid 1px #CBC4BC;
+}
+/* -------------------------------------- Navigation Grid Styles */
+div.bch-cq-colctrl-lt3 .text{
+    padding: 30px;
+}     
+div.bch-cq-colctrl-lt3 .info-box-red .text{
+    padding: 0;
+}  
+div.bch-cq-colctrl-lt3 .info-box-blue .text{
+    padding: 0;
+}  
+div.bch-cq-colctrl-lt3 .row {
+    overflow:hidden;
+}
+div.bch-cq-colctrl-lt3 .row img {
+    width: 100%;
+}
+div.bch-cq-colctrl-lt3 .row:hover {
+    box-shadow: inset 0 0 10px 3px rgba(0,0,0,0.1);
+}
+
+/* --------------------------------------------------------------------------- Layout 4 (inherited from 2) */
+/* layout 2 : 33% with spacing */
+div.bch-cq-colctrl-lt4 { 
+    margin-bottom: 30px;
+    margin-left: -1.5%;
+    width: 103%;
+}
+/* -------------------------------------- Column Styles */
+div.bch-cq-colctrl-lt4-c0 {
+    float: left;
+    width: 33.33%;
+}
+div.bch-cq-colctrl-lt4-c1 {
+    float: left;
+    margin: 0;
+    width: 33.33%;
+}
+div.bch-cq-colctrl-lt4-c2 {
+    float: left;
+    width: 33.33%;
+}
+/* -------------------------------------- Navigation Grid Styles */
+div.bch-cq-colctrl-lt4 .text{
+    padding: 30px;
+    background: #FFFFFF;
+}     
+div.bch-cq-colctrl-lt4 .info-box-red .text{
+    padding: 0;
+    font-size: 14px;
+}  
+div.bch-cq-colctrl-lt4 .info-box-blue .text{
+    padding: 0;
+    font-size: 14px;
+}  
+div.bch-cq-colctrl-lt4 .row {
+    overflow:hidden;
+	border-radius: 4px;
+    box-shadow: 0 0 27px 3px rgba(0,0,0,0.1);
+}
+div.bch-cq-colctrl-lt4-c0 .row {
+    margin:0 2% 20px 4%;
+}
+div.bch-cq-colctrl-lt4-c1 .row {
+    margin:0 2% 20px;
+}
+div.bch-cq-colctrl-lt4-c2 .row {
+    margin:0 4% 20px 2%;
+}

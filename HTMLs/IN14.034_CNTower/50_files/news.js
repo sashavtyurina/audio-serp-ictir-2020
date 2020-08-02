@@ -1,0 +1,7 @@
+function createLightbox($image,caption){var finalCaption=caption||'';var expansionType=$image.data('expandable-type');var imageUrl=$image.attr('src');switch(expansionType){case 'dive_expand_uncropped':case 'dive_expand_url':if($image.data('expandable-url')){imageUrl=$image.data('expandable-url');}
+break;case 'dive_expand_same':default:break;}
+var figure='<figure><img src="'+imageUrl+'" alt="story image">';if(finalCaption.length){figure+='<figcaption class="inside_story_caption">'+
+'<div class="caption_text">'+finalCaption+'</div>'+
+'</figcaption>';}
+figure+='</figure>';var $newImage=$('img',figure);$newImage.one('load',function(){$image.wrap('<a class="expandable_link"></a>');var $link=$image.parent();$link.colorbox({html:figure,scrolling:false,maxWidth:'100%',scalePhotos:true,imgError:'Sorry, could not load the image. Try reloading the page.',});});$('<div style="display: none;"></div>').append($newImage).appendTo('body');}
+$(document).ready(function(){$('figure.inside_story').has('img.is_expandable').each(function(index,figure){var $figure=$(figure);var $oldImage=$figure.find('img');var caption=$figure.find('.caption_text').text();createLightbox($oldImage,caption);});$('figcaption .source_text').each(function(){var $sourceDiv=$(this);if($sourceDiv.text().trim().length>0){var newSourceHtml='Credit: '+$sourceDiv.html().trim();$sourceDiv.html(newSourceHtml);if($sourceDiv.siblings('.caption_text')){var $captionDiv=$($sourceDiv.siblings('.caption_text')[0]);if($captionDiv.text().trim().length>0){$captionDiv.append(' |');}}}});});

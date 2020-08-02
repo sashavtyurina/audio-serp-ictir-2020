@@ -1,0 +1,256 @@
+body {
+	margin: 0px;
+	/* background: url(/images/side.gif) repeat-y top left; */
+	background-color: white;
+	font-family: arial, sans-serif;
+}
+
+#Miscellany {
+    display: none;
+}
+
+div#meetingBanner {
+	width: 0px;
+	height: 0px;
+	display: none;
+	opacity: 0;
+}
+
+#Banner h1 {
+	margin: 0px;
+	width: 138px;
+	height: 66px;
+	background: url(/images/logo.gif) no-repeat top left;
+	background-color: #003366;
+}
+
+#Banner h1 span {
+	display: none;
+}
+
+#Gratuitous {
+	margin: 0px;
+	width: 138px;
+	height: 37px;
+	background: url(/images/bar.gif) no-repeat top left;
+}
+
+#Nav {
+	margin: 0px;
+	width: 138px;
+	background: url(/images/vert-side.gif) no-repeat top left;
+}
+
+#Nav ul {
+	margin: 0px;
+	padding: 5px 0px 0px 0px;
+	cursor: default;
+	list-style-type: none;
+}
+
+#Nav li {
+	padding: 0px 0px 0px 0px;
+	margin: 5px 0px 0px 10px;
+	font-size: 12px;
+	font-weight: bold;
+}
+
+#Nav a {
+	color: #FFFFCC;
+	padding: 5px;
+	text-decoration: none;
+	display: block;
+	width: 113px;
+}
+
+#Nav a:hover {
+	background-color: #036;
+	color: #fff;
+	display: block;
+	width: 113px;
+}
+
+#Main {
+	margin: 0px;
+	padding: 0px;
+	width: 700px;
+}
+
+#Header {
+	background-color: #FFFFCC;
+	padding: 10px;
+	text-align: center;
+}
+
+#BodyArea {
+	background-color: white;
+	padding: 10px;
+	text-align: left;
+}
+
+#BodyArea2 {
+	padding: 10px;
+	text-align: left;
+}
+
+h2 {
+	padding: 0px;
+	margin: 0px 0px 5px 0px;
+	color: #003366;
+	font-size: 12pt;
+}
+
+.emph {
+	color: #006699;
+	font-size: 10pt;
+	font-weight: bold;
+}
+
+ul#Nav1A {
+	/* display: none; */
+}
+
+ul#Nav1B {
+	display: none;
+}
+
+ul#Nav1B {
+	margin: 8px 0px 5px 0px;
+	padding: 0px 0px 0px 0px;
+	cursor: default;
+	list-style-type: none;
+}
+
+ul#Nav1B li {
+	padding: 5px 10px 5px 10px;
+	margin: 0px 0px 0px 0px;
+	display: inline;
+	font-size: 12px;
+	font-weight: bold;
+	background-color: #006699;
+}
+
+ul#Nav1B a {
+	color: #FFFFCC;
+	text-decoration: none;
+}
+
+ul#Nav3
+{
+	padding: 0px 0px 0px 10px;
+}
+ul#Nav3 a
+{
+	width: 103px;
+}
+ul#Nav3 a:hover
+{
+	width: 103px;
+}
+.eventList_day
+{
+	font-weight: bold;
+	background-color: #ddd;
+	padding: 4px;
+}
+.eventList_event
+{
+	padding: 4px 4px 0 4px;
+	background-color: #fcfcfc;
+}
+.eventList_eventOdd 
+{
+	padding: 4px 4px 0 4px;
+	background-color: #eee;
+}
+.eventList_eventLeft 
+{
+	float: left;
+	width: 200px;
+}
+.eventList_eventRight 
+{
+	margin-left: 200px;
+}
+
+.smallnormal 
+{
+	margin: 0px;
+	font-size: 11px;
+	font-weight: normal;
+	font-family: arial, sans-serif;
+	color: #006699;
+}
+
+
+.NormalBold
+{
+	margin: 0px;
+	font-size: 13px;
+	font-weight: Normal;
+	font-family: arial, sans-serif;
+	color: #006699;
+}
+
+.smallbold 
+{
+	margin: 0px;
+	font-size: 12px;
+	font-weight: bold;
+	font-family: arial, sans-serif;
+	color: #006699;
+}
+
+.smallitalic
+{
+	margin: 0px;
+	font-size: 11px;
+	font-weight: normal;
+	font-family: arial, sans-serif;
+	color: #006699;
+	font-style: italic;
+}
+
+.largerbold 
+{
+	margin: 0px;
+	font-size: 14px;
+	font-weight: bold;
+	font-family: arial, sans-serif;
+	color: #006699;
+}
+
+.largernormal 
+{
+	margin: 0px;
+	font-size: 14px;
+	font-weight: normal;
+	font-family: arial, sans-serif;
+	color: #006699;
+}
+
+.noprn {
+  display:none;
+}
+
+/* New Print Styles */
+
+#topBar {
+	display:none;
+}
+#sidebar {
+	display:none;
+}
+#mainContent {
+	width:90%;
+}
+#leftHolder {
+	display: none;	
+}
+#header {
+	display: none;	
+}
+#footer {
+	display: none;	
+}
+	

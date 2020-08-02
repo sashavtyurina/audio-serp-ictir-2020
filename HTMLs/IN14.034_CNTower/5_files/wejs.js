@@ -1,0 +1,1 @@
+(function(t,r,i,p){i=t.createElement(r);i.src="https://www.tripadvisor.ca/WidgetEmbed-certificateOfExcellence?year=2019&locationId=681795&display_version=2&uniq=855&lang=en_CA";i.async=true;p=t.getElementsByTagName(r)[0];p.parentNode.insertBefore(i,p)})(document,"script");

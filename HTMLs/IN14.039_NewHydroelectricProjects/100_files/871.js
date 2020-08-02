@@ -1,0 +1,1 @@
+!function(){var i={fbPixelId:"2028446377462990",domain:".inquirer.com",appId:871,in_eu:!1,ping_activity:!0,snowplow_src:"//cdn.keywee.co/dist/sp-2.9.1.js"};window&&window.kwa&&window.kwa("loadConfig",i)}();
