@@ -1,6 +1,9 @@
 This dataset accompanies the following paper:
-A Mixed-Method Analysis of Text and Audio Search Interfaceswith Varying Task Complexity
+
+"A Mixed-Method Analysis of Text and Audio Search Interfaceswith Varying Task Complexity"
+
 Alxandra Vtyurina, Charles L.A. Clarke, Edith Law, Johanne R. Trippas, Horatiu Bota
+
 ICTIR 2020
 
 ## Structure of the folder:
